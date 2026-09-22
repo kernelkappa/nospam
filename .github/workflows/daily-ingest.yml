@@ -31,7 +31,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/spam_db.json
+          git add docs/spam_db.json docs/spam_prefixes.json
           git diff --cached --quiet && exit 0
-          git commit -m "chore: aggiorna spam_db.json"
+          git commit -m "chore: aggiorna spam_db.json e spam_prefixes.json"
           git push

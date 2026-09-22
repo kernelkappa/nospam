@@ -1,12 +1,17 @@
 package com.konrad.nospam
 
+import android.Manifest
 import android.app.role.RoleManager
+import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.runtime.LaunchedEffect
+import androidx.core.content.ContextCompat
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -120,6 +125,20 @@ fun MainScreen(modifier: Modifier = Modifier) {
     val prefs = remember { context.getSharedPreferences("nospam_prefs", android.content.Context.MODE_PRIVATE) }
     var showOnboarding by remember {
         mutableStateOf(!isCallScreeningRoleHeld && !prefs.getBoolean("onboarding_shown", false))
+    }
+
+    // Necessario dall'API 33 per mostrare l'avviso "possibile wangiri" quando
+    // arriva una chiamata da un prefisso della watchlist.
+    val notificationPermissionLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.RequestPermission(),
+    ) {}
+    LaunchedEffect(Unit) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+            ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) !=
+            PackageManager.PERMISSION_GRANTED
+        ) {
+            notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+        }
     }
 
     if (showOnboarding) {

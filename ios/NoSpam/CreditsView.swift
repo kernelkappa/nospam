@@ -27,6 +27,12 @@ private let dataSources: [DataSource] = [
         license: "CC BY-SA 4.0",
         url: URL(string: "https://github.com/thesqual87/blocklist-telefonica-italia")!
     ),
+    DataSource(
+        name: "lista-telefonos-spam",
+        description: "Lista di numeri spam spagnoli, a cura di mv12star.",
+        license: "Unlicense (pubblico dominio)",
+        url: URL(string: "https://github.com/mv12star/lista-telefonos-spam")!
+    ),
 ]
 
 struct CreditsView: View {

@@ -5,9 +5,10 @@ import androidx.room3.Database
 import androidx.room3.Room
 import androidx.room3.RoomDatabase
 
-@Database(entities = [SpamNumberEntity::class], version = 2, exportSchema = false)
+@Database(entities = [SpamNumberEntity::class, SpamPrefixEntity::class], version = 3, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun spamNumberDao(): SpamNumberDao
+    abstract fun spamPrefixDao(): SpamPrefixDao
 
     companion object {
         @Volatile
