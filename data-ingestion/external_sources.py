@@ -6,8 +6,16 @@ pubblica una lista statica, senza protezioni anti-bot e consentita da
 robots.txt, di numeri segnalati dalla loro community: la trattiamo come
 fonte pre-verificata e la includiamo sempre, indipendentemente dalla
 soglia MIN_REPORTS che applichiamo alle nostre segnalazioni dirette.
+
+blocklist-telefonica-italia (github.com/thesqual87) e' un CSV statico,
+licenza CC BY-SA 4.0 (uso commerciale esplicitamente consentito citando la
+fonte), con criteri di inclusione propri (>=2 segnalazioni indipendenti o
+riscontri pubblici verificabili) e un canale di contestazione dedicato:
+anche questa e' trattata come fonte pre-verificata.
 """
 
+import csv
+import io
 import re
 import time
 
@@ -61,3 +69,37 @@ def fetch_shopsicuro() -> list[dict]:
         time.sleep(REQUEST_DELAY_SECONDS)
 
     return list(entries_by_number.values())
+
+
+BLOCKLIST_TELEFONICA_ITALIA_URL = (
+    "https://raw.githubusercontent.com/thesqual87/blocklist-telefonica-italia/main/data/blocklist.csv"
+)
+
+BLOCKLIST_TELEFONICA_ITALIA_CATEGORY_MAP = {
+    "truffa": "scam",
+    "finanza": "scam",
+    "energia": "telemarketing",
+    "telefonia": "telemarketing",
+    "sondaggi": "other",
+    "pubblicita": "telemarketing",
+    "ping": "robocall",
+    "altro": "other",
+}
+
+
+def fetch_blocklist_telefonica_italia() -> list[dict]:
+    resp = requests.get(BLOCKLIST_TELEFONICA_ITALIA_URL, timeout=30)
+    resp.raise_for_status()
+
+    reader = csv.DictReader(io.StringIO(resp.text))
+    entries = []
+    for row in reader:
+        category = BLOCKLIST_TELEFONICA_ITALIA_CATEGORY_MAP.get(row["categoria"].strip().lower(), "other")
+        entries.append(
+            {
+                "number": row["numero"].strip(),
+                "report_count": int(row["segnalazioni"]),
+                "category": category,
+            }
+        )
+    return entries
