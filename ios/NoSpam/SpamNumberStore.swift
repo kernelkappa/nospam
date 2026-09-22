@@ -94,4 +94,14 @@ enum SpamNumberStore {
         }
         return Array(Set(numbers)).sorted()
     }
+
+    /// Usato dall'estensione di filtro SMS/iMessage: confronta solo le cifre,
+    /// dato che il mittente riportato dal sistema potrebbe non includere il
+    /// prefisso "+".
+    static func isSpamNumber(_ rawNumber: String) -> Bool {
+        let digits = rawNumber.filter(\.isNumber)
+        guard !digits.isEmpty else { return false }
+        let allNumbers = communityEntries().map(\.number) + personalNumbers()
+        return allNumbers.contains { $0.filter(\.isNumber) == digits }
+    }
 }

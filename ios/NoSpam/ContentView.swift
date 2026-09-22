@@ -77,6 +77,14 @@ struct ContentView: View {
                     }
                 }
 
+                Text(
+                    "Per filtrare anche gli SMS spam, abilita NoSpam da " +
+                    "Impostazioni > Messaggi > Filtraggio SMS sconosciuti."
+                )
+                .font(.footnote)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+
                 Button(isSyncing ? "Aggiornamento..." : "Aggiorna database spam") {
                     syncDatabase()
                 }
