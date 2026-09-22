@@ -1,15 +1,19 @@
 package com.konrad.nospam
 
+import android.app.role.RoleManager
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.rememberLauncherForActivityResult
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
@@ -37,7 +41,7 @@ class MainActivity : ComponentActivity() {
             MaterialTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
                     Scaffold { innerPadding ->
-                        ReportScreen(modifier = Modifier.padding(innerPadding))
+                        MainScreen(modifier = Modifier.padding(innerPadding))
                     }
                 }
             }
@@ -46,13 +50,27 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun ReportScreen(modifier: Modifier = Modifier) {
+fun MainScreen(modifier: Modifier = Modifier) {
     val context = LocalContext.current
     val scope = rememberCoroutineScope()
+
     var phoneNumber by remember { mutableStateOf("") }
     var category by remember { mutableStateOf(ReportCategory.SPAM) }
     var statusMessage by remember { mutableStateOf<String?>(null) }
     var isSubmitting by remember { mutableStateOf(false) }
+
+    var isSyncing by remember { mutableStateOf(false) }
+    var syncMessage by remember { mutableStateOf<String?>(null) }
+
+    val roleManager = remember { context.getSystemService(RoleManager::class.java) }
+    var isCallScreeningRoleHeld by remember {
+        mutableStateOf(roleManager?.isRoleHeld(RoleManager.ROLE_CALL_SCREENING) == true)
+    }
+    val roleRequestLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.StartActivityForResult(),
+    ) {
+        isCallScreeningRoleHeld = roleManager?.isRoleHeld(RoleManager.ROLE_CALL_SCREENING) == true
+    }
 
     Column(
         modifier = modifier.fillMaxSize().padding(24.dp),
@@ -100,5 +118,44 @@ fun ReportScreen(modifier: Modifier = Modifier) {
         }
 
         statusMessage?.let { Text(text = it) }
+
+        HorizontalDivider()
+
+        Text(
+            text = if (isCallScreeningRoleHeld) {
+                "Blocco chiamate attivo."
+            } else {
+                "NoSpam non è l'app di blocco chiamate predefinita."
+            },
+        )
+
+        if (!isCallScreeningRoleHeld && roleManager?.isRoleAvailable(RoleManager.ROLE_CALL_SCREENING) == true) {
+            Button(onClick = {
+                roleRequestLauncher.launch(roleManager.createRequestRoleIntent(RoleManager.ROLE_CALL_SCREENING))
+            }) {
+                Text("Diventa app predefinita")
+            }
+        }
+
+        Button(
+            onClick = {
+                isSyncing = true
+                syncMessage = null
+                scope.launch {
+                    try {
+                        SpamDatabaseSync.sync(context)
+                        syncMessage = "Database aggiornato."
+                    } catch (e: Exception) {
+                        syncMessage = "Errore: ${e.message}"
+                    }
+                    isSyncing = false
+                }
+            },
+            enabled = !isSyncing,
+        ) {
+            Text(if (isSyncing) "Aggiornamento..." else "Aggiorna database spam")
+        }
+
+        syncMessage?.let { Text(text = it) }
     }
 }
