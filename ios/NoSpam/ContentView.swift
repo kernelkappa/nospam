@@ -10,6 +10,8 @@ struct ContentView: View {
     @State private var enabledStatus: CXCallDirectoryManager.EnabledStatus = .unknown
     @State private var syncMessage: String?
     @State private var isSyncing = false
+    @State private var showOnboarding = false
+    @AppStorage("onboarding_shown") private var onboardingShown = false
 
     var body: some View {
         VStack(spacing: 16) {
@@ -66,6 +68,22 @@ struct ContentView: View {
         }
         .padding()
         .onAppear(perform: refreshEnabledStatus)
+        .alert("Blocca le chiamate spam", isPresented: $showOnboarding) {
+            Button("Apri Impostazioni") {
+                onboardingShown = true
+                if let url = URL(string: UIApplication.openSettingsURLString) {
+                    UIApplication.shared.open(url)
+                }
+            }
+            Button("Più tardi", role: .cancel) {
+                onboardingShown = true
+            }
+        } message: {
+            Text(
+                "Per bloccare automaticamente le chiamate spam, abilita l'estensione NoSpam da " +
+                "Impostazioni > Telefono > Blocco e identificazione chiamate."
+            )
+        }
     }
 
     private var blockingStatusDescription: String {
@@ -83,6 +101,9 @@ struct ContentView: View {
         CallDirectoryManager.checkEnabled { status in
             DispatchQueue.main.async {
                 enabledStatus = status
+                if status != .enabled && !onboardingShown {
+                    showOnboarding = true
+                }
             }
         }
     }
