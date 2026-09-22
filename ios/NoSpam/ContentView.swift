@@ -45,11 +45,18 @@ struct ContentView: View {
             }
             .pickerStyle(.segmented)
 
-            Button(isSubmitting ? "Invio..." : "Segnala") {
-                submit()
+            HStack(spacing: 12) {
+                Button("Blocca") {
+                    blockOnly()
+                }
+                .disabled(phoneNumber.isEmpty || isSubmitting)
+
+                Button(isSubmitting ? "Invio..." : "Blocca e segnala") {
+                    blockAndReport()
+                }
+                .disabled(phoneNumber.isEmpty || isSubmitting)
+                .buttonStyle(.borderedProminent)
             }
-            .disabled(phoneNumber.isEmpty || isSubmitting)
-            .buttonStyle(.borderedProminent)
 
             if let statusMessage {
                 Text(statusMessage)
@@ -124,18 +131,33 @@ struct ContentView: View {
         }
     }
 
-    private func submit() {
+    private func blockOnly() {
+        statusMessage = nil
+        SpamNumberStore.addPersonalNumber(phoneNumber, category: category.rawValue)
+        phoneNumber = ""
+        CallDirectoryManager.reloadExtension { error in
+            DispatchQueue.main.async {
+                statusMessage = error == nil
+                    ? "Numero bloccato localmente."
+                    : "Bloccato, ma l'estensione non si è ricaricata: \(error!.localizedDescription)"
+            }
+        }
+    }
+
+    private func blockAndReport() {
         isSubmitting = true
         statusMessage = nil
+        SpamNumberStore.addPersonalNumber(phoneNumber, category: category.rawValue)
         Task {
             do {
                 try await ReportService.submit(phoneNumberE164: phoneNumber, category: category)
-                statusMessage = "Segnalazione inviata."
-                phoneNumber = ""
+                statusMessage = "Numero bloccato e segnalato alla community."
             } catch {
-                statusMessage = "Errore: \(error.localizedDescription)"
+                statusMessage = "Bloccato localmente, ma la segnalazione non è riuscita: \(error.localizedDescription)"
             }
+            phoneNumber = ""
             isSubmitting = false
+            CallDirectoryManager.reloadExtension()
         }
     }
 

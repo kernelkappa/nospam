@@ -53,20 +53,25 @@ enum SpamNumberStore {
         return entries
     }
 
-    static func personalNumbers() -> [String] {
-        (sharedDefaults?.stringArray(forKey: personalListKey) ?? []).sorted()
+    /// Numero -> categoria.
+    private static func personalEntriesDict() -> [String: String] {
+        sharedDefaults?.dictionary(forKey: personalListKey) as? [String: String] ?? [:]
     }
 
-    static func addPersonalNumber(_ number: String) {
-        var numbers = Set(sharedDefaults?.stringArray(forKey: personalListKey) ?? [])
-        numbers.insert(number)
-        sharedDefaults?.set(Array(numbers), forKey: personalListKey)
+    static func personalNumbers() -> [String] {
+        personalEntriesDict().keys.sorted()
+    }
+
+    static func addPersonalNumber(_ number: String, category: String = "personale") {
+        var entries = personalEntriesDict()
+        entries[number] = category
+        sharedDefaults?.set(entries, forKey: personalListKey)
     }
 
     static func removePersonalNumber(_ number: String) {
-        var numbers = Set(sharedDefaults?.stringArray(forKey: personalListKey) ?? [])
-        numbers.remove(number)
-        sharedDefaults?.set(Array(numbers), forKey: personalListKey)
+        var entries = personalEntriesDict()
+        entries.removeValue(forKey: number)
+        sharedDefaults?.set(entries, forKey: personalListKey)
     }
 
     /// Elenco unificato per la schermata "Numeri bloccati": community + personali.
@@ -74,8 +79,8 @@ enum SpamNumberStore {
         let community = communityEntries().map {
             BlockedNumberDisplay(number: $0.number, source: .community, category: $0.category)
         }
-        let personal = personalNumbers().map {
-            BlockedNumberDisplay(number: $0, source: .personal, category: nil)
+        let personal = personalEntriesDict().map {
+            BlockedNumberDisplay(number: $0.key, source: .personal, category: $0.value)
         }
         return (community + personal).sorted { $0.number < $1.number }
     }

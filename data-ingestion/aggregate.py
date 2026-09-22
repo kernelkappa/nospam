@@ -26,7 +26,7 @@ EXTERNAL_SOURCES = {
 
 SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_SERVICE_KEY = os.environ["SUPABASE_SERVICE_KEY"]
-MIN_REPORTS = int(os.environ.get("MIN_REPORTS", "3"))
+MIN_REPORTS = int(os.environ.get("MIN_REPORTS", "5"))
 DEFAULT_REGION = os.environ.get("DEFAULT_REGION", "IT")
 OUTPUT_PATH = Path(os.environ.get("OUTPUT_PATH", "docs/spam_db.json"))
 PAGE_SIZE = 1000

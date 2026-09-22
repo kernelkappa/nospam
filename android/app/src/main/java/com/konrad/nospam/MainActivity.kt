@@ -9,12 +9,14 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -181,24 +183,47 @@ fun MainScreen(modifier: Modifier = Modifier) {
             }
         }
 
-        Button(
-            onClick = {
-                isSubmitting = true
-                statusMessage = null
-                scope.launch {
-                    try {
-                        ReportService.submit(context, phoneNumber, category)
-                        statusMessage = "Segnalazione inviata."
-                        phoneNumber = ""
-                    } catch (e: Exception) {
-                        statusMessage = "Errore: ${e.message}"
+        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+            OutlinedButton(
+                onClick = {
+                    isSubmitting = true
+                    statusMessage = null
+                    scope.launch {
+                        try {
+                            PersonalBlocklist.add(context, phoneNumber, category.apiValue)
+                            statusMessage = "Numero bloccato localmente."
+                            phoneNumber = ""
+                        } catch (e: Exception) {
+                            statusMessage = "Errore: ${e.message}"
+                        }
+                        isSubmitting = false
                     }
-                    isSubmitting = false
-                }
-            },
-            enabled = phoneNumber.isNotBlank() && !isSubmitting,
-        ) {
-            Text(if (isSubmitting) "Invio..." else "Segnala")
+                },
+                enabled = phoneNumber.isNotBlank() && !isSubmitting,
+            ) {
+                Text("Blocca")
+            }
+
+            Button(
+                onClick = {
+                    isSubmitting = true
+                    statusMessage = null
+                    scope.launch {
+                        try {
+                            PersonalBlocklist.add(context, phoneNumber, category.apiValue)
+                            ReportService.submit(context, phoneNumber, category)
+                            statusMessage = "Numero bloccato e segnalato alla community."
+                        } catch (e: Exception) {
+                            statusMessage = "Bloccato localmente, ma la segnalazione non è riuscita: ${e.message}"
+                        }
+                        phoneNumber = ""
+                        isSubmitting = false
+                    }
+                },
+                enabled = phoneNumber.isNotBlank() && !isSubmitting,
+            ) {
+                Text(if (isSubmitting) "Invio..." else "Blocca e segnala")
+            }
         }
 
         statusMessage?.let { Text(text = it) }
