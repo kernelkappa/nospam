@@ -1,9 +1,11 @@
 """
-Aggrega le segnalazioni crowdsourced salvate su Supabase in spam_db.json.
+Aggrega le segnalazioni crowdsourced salvate su Supabase, unite alle fonti
+esterne gratuite disponibili, in spam_db.json.
 
 Eseguito quotidianamente da GitHub Actions. Legge la tabella `reports` con la
 service role key (bypassa RLS), normalizza i numeri in E.164, scarta i numeri
-sotto la soglia minima di segnalazioni indipendenti e scrive il JSON finale.
+sotto la soglia minima di segnalazioni indipendenti, li unisce alle fonti
+esterne (sempre incluse, gia' pre-verificate) e scrive il JSON finale.
 """
 
 import collections
@@ -14,6 +16,8 @@ from pathlib import Path
 
 import phonenumbers
 import requests
+
+from external_sources import fetch_shopsicuro
 
 SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_SERVICE_KEY = os.environ["SUPABASE_SERVICE_KEY"]
@@ -71,28 +75,46 @@ def build_spam_db(rows: list[dict]) -> list[dict]:
         entry["report_count"] += 1
         entry["categories"][row["category"]] += 1
 
-    spam_db = [
-        {
+    spam_db = {
+        number: {
             "number": number,
             "report_count": data["report_count"],
             "category": data["categories"].most_common(1)[0][0],
         }
         for number, data in by_number.items()
         if data["report_count"] >= MIN_REPORTS
-    ]
-    spam_db.sort(key=lambda entry: entry["number"])
+    }
     return spam_db
+
+
+def merge_external_entries(spam_db: dict[str, dict], external_entries: list[dict]) -> None:
+    for entry in external_entries:
+        existing = spam_db.get(entry["number"])
+        if existing is None or entry["report_count"] > existing["report_count"]:
+            spam_db[entry["number"]] = entry
 
 
 def main() -> None:
     rows = fetch_reports()
     spam_db = build_spam_db(rows)
+    crowdsourced_count = len(spam_db)
+
+    try:
+        external_entries = fetch_shopsicuro()
+    except requests.RequestException as error:
+        print(f"Avviso: fonte esterna ShopSicuro non raggiungibile ({error}), la salto", file=sys.stderr)
+        external_entries = []
+    merge_external_entries(spam_db, external_entries)
+
+    sorted_entries = sorted(spam_db.values(), key=lambda entry: entry["number"])
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_PATH.write_text(json.dumps(spam_db, ensure_ascii=False, indent=2), encoding="utf-8")
+    OUTPUT_PATH.write_text(json.dumps(sorted_entries, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"Segnalazioni lette: {len(rows)}", file=sys.stderr)
-    print(f"Numeri pubblicati (>= {MIN_REPORTS} segnalazioni): {len(spam_db)}", file=sys.stderr)
+    print(f"Numeri da crowdsourcing (>= {MIN_REPORTS} segnalazioni): {crowdsourced_count}", file=sys.stderr)
+    print(f"Numeri da fonti esterne: {len(external_entries)}", file=sys.stderr)
+    print(f"Numeri pubblicati totali: {len(sorted_entries)}", file=sys.stderr)
     print(f"Output: {OUTPUT_PATH}", file=sys.stderr)
 
 
