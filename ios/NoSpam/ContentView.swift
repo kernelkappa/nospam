@@ -18,6 +18,11 @@ struct ContentView: View {
             mainContent
                 .navigationTitle("NoSpam")
                 .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        NavigationLink("Crediti") {
+                            CreditsView()
+                        }
+                    }
                     ToolbarItem(placement: .navigationBarTrailing) {
                         NavigationLink("Numeri bloccati") {
                             BlockedNumbersView()
