@@ -24,6 +24,7 @@ import androidx.compose.material3.SegmentedButtonDefaults
 import androidx.compose.material3.SingleChoiceSegmentedButtonRow
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -35,15 +36,43 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 
+private enum class NospamScreen { MAIN, BLOCKED_NUMBERS }
+
 class MainActivity : ComponentActivity() {
+    @OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
             MaterialTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
-                    Scaffold { innerPadding ->
-                        MainScreen(modifier = Modifier.padding(innerPadding))
+                    var screen by remember { mutableStateOf(NospamScreen.MAIN) }
+
+                    Scaffold(
+                        topBar = {
+                            TopAppBar(
+                                title = { Text(if (screen == NospamScreen.MAIN) "NoSpam" else "Numeri bloccati") },
+                                navigationIcon = {
+                                    if (screen == NospamScreen.BLOCKED_NUMBERS) {
+                                        TextButton(onClick = { screen = NospamScreen.MAIN }) {
+                                            Text("‹ Indietro")
+                                        }
+                                    }
+                                },
+                                actions = {
+                                    if (screen == NospamScreen.MAIN) {
+                                        TextButton(onClick = { screen = NospamScreen.BLOCKED_NUMBERS }) {
+                                            Text("Numeri bloccati")
+                                        }
+                                    }
+                                },
+                            )
+                        },
+                    ) { innerPadding ->
+                        when (screen) {
+                            NospamScreen.MAIN -> MainScreen(modifier = Modifier.padding(innerPadding))
+                            NospamScreen.BLOCKED_NUMBERS -> BlockedNumbersScreen(modifier = Modifier.padding(innerPadding))
+                        }
                     }
                 }
             }

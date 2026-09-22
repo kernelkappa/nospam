@@ -14,10 +14,21 @@ struct ContentView: View {
     @AppStorage("onboarding_shown") private var onboardingShown = false
 
     var body: some View {
-        VStack(spacing: 16) {
-            Text("NoSpam")
-                .font(.largeTitle)
+        NavigationStack {
+            mainContent
+                .navigationTitle("NoSpam")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        NavigationLink("Numeri bloccati") {
+                            BlockedNumbersView()
+                        }
+                    }
+                }
+        }
+    }
 
+    private var mainContent: some View {
+        VStack(spacing: 16) {
             TextField("Numero (es. +393331234567)", text: $phoneNumber)
                 .textFieldStyle(.roundedBorder)
                 .keyboardType(.phonePad)
