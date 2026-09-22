@@ -26,7 +26,7 @@ object SpamDatabaseSync {
             }
         }
 
-        AppDatabase.getInstance(context).spamNumberDao().replaceAll(entities)
+        AppDatabase.getInstance(context).spamNumberDao().replaceCommunityEntries(entities)
     }
 
     private fun parseEntities(json: String): List<SpamNumberEntity> {
@@ -41,6 +41,7 @@ object SpamDatabaseSync {
                         category = entry.getString("category"),
                         reportCount = entry.getInt("report_count"),
                         digitsOnly = phoneNumber.filter(Char::isDigit),
+                        source = NumberSource.COMMUNITY,
                     ),
                 )
             }
