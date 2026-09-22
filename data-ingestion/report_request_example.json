@@ -1,0 +1,7 @@
+{
+  "_comment": "Esempio di richiesta che l'app (iOS/Android) invia a Supabase per registrare una segnalazione. POST verso {SUPABASE_URL}/rest/v1/reports con header apikey/Authorization = anon key pubblica e Prefer: return=minimal.",
+  "phone_number": "+393331234567",
+  "category": "spam",
+  "device_hash": "a3f9c2e1b7d4...",
+  "app_platform": "ios"
+}
