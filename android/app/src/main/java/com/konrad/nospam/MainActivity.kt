@@ -12,8 +12,10 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
@@ -70,6 +72,47 @@ fun MainScreen(modifier: Modifier = Modifier) {
         contract = ActivityResultContracts.StartActivityForResult(),
     ) {
         isCallScreeningRoleHeld = roleManager?.isRoleHeld(RoleManager.ROLE_CALL_SCREENING) == true
+    }
+
+    val prefs = remember { context.getSharedPreferences("nospam_prefs", android.content.Context.MODE_PRIVATE) }
+    var showOnboarding by remember {
+        mutableStateOf(!isCallScreeningRoleHeld && !prefs.getBoolean("onboarding_shown", false))
+    }
+
+    if (showOnboarding) {
+        AlertDialog(
+            onDismissRequest = {
+                prefs.edit().putBoolean("onboarding_shown", true).apply()
+                showOnboarding = false
+            },
+            title = { Text("Blocca le chiamate spam") },
+            text = {
+                Text(
+                    "Per bloccare automaticamente le chiamate spam, NoSpam deve diventare " +
+                        "l'app di blocco e identificazione chiamate del telefono. Puoi cambiarla " +
+                        "in qualsiasi momento dalle impostazioni di sistema.",
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = {
+                    prefs.edit().putBoolean("onboarding_shown", true).apply()
+                    showOnboarding = false
+                    roleManager?.let {
+                        roleRequestLauncher.launch(it.createRequestRoleIntent(RoleManager.ROLE_CALL_SCREENING))
+                    }
+                }) {
+                    Text("Attiva ora")
+                }
+            },
+            dismissButton = {
+                TextButton(onClick = {
+                    prefs.edit().putBoolean("onboarding_shown", true).apply()
+                    showOnboarding = false
+                }) {
+                    Text("Più tardi")
+                }
+            },
+        )
     }
 
     Column(

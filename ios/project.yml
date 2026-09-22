@@ -12,8 +12,6 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.konrad.nospam
         SWIFT_VERSION: "5.0"
-        GENERATE_INFOPLIST_FILE: YES
-        INFOPLIST_KEY_UILaunchScreen_Generation: YES
         CODE_SIGN_STYLE: Automatic
         MARKETING_VERSION: "1.0"
         CURRENT_PROJECT_VERSION: "1"
@@ -22,6 +20,14 @@ targets:
       properties:
         com.apple.security.application-groups:
           - group.com.konrad.nospam
+    info:
+      path: NoSpam/Info.plist
+      properties:
+        UILaunchScreen: {}
+        BGTaskSchedulerPermittedIdentifiers:
+          - com.konrad.nospam.refresh
+        UIBackgroundModes:
+          - fetch
     dependencies:
       - target: NoSpamCallDirectory
         embed: true
