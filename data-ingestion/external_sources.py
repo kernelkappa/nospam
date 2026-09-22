@@ -12,6 +12,18 @@ licenza CC BY-SA 4.0 (uso commerciale esplicitamente consentito citando la
 fonte), con criteri di inclusione propri (>=2 segnalazioni indipendenti o
 riscontri pubblici verificabili) e un canale di contestazione dedicato:
 anche questa e' trattata come fonte pre-verificata.
+
+lista-telefonos-spam (github.com/mv12star) e' un TXT statico di numeri
+spagnoli in formato nazionale (senza prefisso), licenza Unlicense (dominio
+pubblico): la trattiamo come fonte pre-verificata.
+
+nophonespam-fr (github.com/jeromerobert) e' un TXT statico di intervalli di
+prefissi telemarketing francesi (numeri con cifre finali sostituite da "_"),
+senza un file LICENSE esplicito: inclusa comunque perche' pubblicata
+apertamente proprio per essere consumata da app di blocco chiamate come la
+nostra (e' gia' la fonte dati della app open source NoPhoneSpam). Il formato
+a intervalli non si presta alla lista di numeri esatti (spam_db.json):
+finisce invece in spam_prefixes.json, confrontata per prefisso.
 """
 
 import csv
@@ -100,6 +112,57 @@ def fetch_blocklist_telefonica_italia() -> list[dict]:
                 "number": row["numero"].strip(),
                 "report_count": int(row["segnalazioni"]),
                 "category": category,
+            }
+        )
+    return entries
+
+
+LISTA_TELEFONOS_SPAM_ES_URL = (
+    "https://raw.githubusercontent.com/mv12star/lista-telefonos-spam/main/lista_numeros_spam.txt"
+)
+
+
+def fetch_lista_telefonos_spam_es() -> list[dict]:
+    resp = requests.get(LISTA_TELEFONOS_SPAM_ES_URL, timeout=30)
+    resp.raise_for_status()
+
+    entries = []
+    for line in resp.text.splitlines():
+        national_number = line.strip()
+        if not national_number.isdigit():
+            continue
+        entries.append(
+            {
+                "number": f"+34{national_number}",
+                "report_count": 1,
+                "category": "spam",
+            }
+        )
+    return entries
+
+
+NOPHONESPAM_FR_URL = "https://raw.githubusercontent.com/jeromerobert/nophonespam-fr/main/NoPhoneSpam_blacklist.txt"
+
+NOPHONESPAM_FR_LINE_PATTERN = re.compile(r"^(?P<prefix>\+33[\d_]+):\s*(?P<label>.+?)\s+\d+$")
+
+
+def fetch_nophonespam_fr() -> list[dict]:
+    """Ritorna intervalli di prefisso (non numeri esatti): {prefix, label, mode, source}."""
+    resp = requests.get(NOPHONESPAM_FR_URL, timeout=30)
+    resp.raise_for_status()
+
+    entries = []
+    for line in resp.text.splitlines():
+        match = NOPHONESPAM_FR_LINE_PATTERN.match(line.strip())
+        if match is None:
+            continue
+        digit_prefix = match.group("prefix").rstrip("_")
+        entries.append(
+            {
+                "prefix": digit_prefix,
+                "label": match.group("label").strip(),
+                "mode": "block",
+                "source": "nophonespam-fr",
             }
         )
     return entries

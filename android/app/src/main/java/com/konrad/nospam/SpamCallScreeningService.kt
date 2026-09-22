@@ -16,13 +16,22 @@ class SpamCallScreeningService : CallScreeningService() {
         val digitsOnly = incomingNumber.filter(Char::isDigit)
 
         scope.launch {
-            val match = if (digitsOnly.isNotEmpty()) {
-                AppDatabase.getInstance(applicationContext).spamNumberDao().findByDigitsOnly(digitsOnly)
+            val dao = AppDatabase.getInstance(applicationContext)
+            val exactMatch = if (digitsOnly.isNotEmpty()) {
+                dao.spamNumberDao().findByDigitsOnly(digitsOnly)
             } else {
                 null
             }
 
-            val response = if (match != null) {
+            val prefixMatch = if (exactMatch == null && digitsOnly.isNotEmpty()) {
+                dao.spamPrefixDao().findAll().firstOrNull { digitsOnly.startsWith(it.digitsOnlyPrefix) }
+            } else {
+                null
+            }
+
+            val shouldBlock = exactMatch != null || prefixMatch?.mode == PrefixMode.BLOCK
+
+            val response = if (shouldBlock) {
                 CallResponse.Builder()
                     .setDisallowCall(true)
                     .setRejectCall(true)
@@ -34,6 +43,10 @@ class SpamCallScreeningService : CallScreeningService() {
             }
 
             respondToCall(callDetails, response)
+
+            if (prefixMatch?.mode == PrefixMode.IDENTIFY) {
+                WangiriNotifier.notify(applicationContext, prefixMatch.label)
+            }
         }
     }
 }

@@ -41,6 +41,27 @@ private val dataSources = listOf(
         license = "CC BY-SA 4.0",
         url = "https://github.com/thesqual87/blocklist-telefonica-italia",
     ),
+    DataSource(
+        name = "lista-telefonos-spam",
+        description = "Lista di numeri spam spagnoli, a cura di mv12star.",
+        license = "Unlicense (pubblico dominio)",
+        url = "https://github.com/mv12star/lista-telefonos-spam",
+    ),
+    DataSource(
+        name = "nophonespam-fr",
+        description = "Intervalli di prefissi telemarketing francesi, a cura di jeromerobert (fonte dati " +
+            "anche dell'app open source NoPhoneSpam). Nessuna licenza esplicita dichiarata dall'autore.",
+        license = null,
+        url = "https://github.com/jeromerobert/nophonespam-fr",
+    ),
+    DataSource(
+        name = "Watchlist wangiri",
+        description = "Prefissi internazionali spesso citati in segnalazioni di truffe \"wangiri\" (uno " +
+            "squillo per indurre a richiamare un numero a tariffazione speciale). Solo avviso, le chiamate " +
+            "non vengono bloccate perché sono interi paesi con tante chiamate legittime.",
+        license = null,
+        url = "https://www.europol.europa.eu/publications-events/publications/wangiri-%E2%80%93-telephone-scam",
+    ),
 )
 
 @Composable
