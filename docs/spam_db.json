@@ -275,6 +275,11 @@
     "category": "spam"
   },
   {
+    "number": "+390281276702",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390281278039",
     "report_count": 1,
     "category": "scam"
@@ -503,6 +508,11 @@
     "number": "+390683393764",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+390684033981",
+    "report_count": 1,
+    "category": "telemarketing"
   },
   {
     "number": "+390687811484",
@@ -743,6 +753,11 @@
     "number": "+39335346334",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+393356362848",
+    "report_count": 1,
+    "category": "telemarketing"
   },
   {
     "number": "+393373046331",
