@@ -4,8 +4,9 @@ esterne gratuite disponibili, in spam_db.json.
 
 Eseguito quotidianamente da GitHub Actions. Legge la tabella `reports` con la
 service role key (bypassa RLS), normalizza i numeri in E.164, scarta i numeri
-sotto la soglia minima di segnalazioni indipendenti, li unisce alle fonti
-esterne (sempre incluse, gia' pre-verificate) e scrive il JSON finale.
+segnalati da meno di MIN_REPORTS dispositivi distinti (non basta che un solo
+utente segnali piu' volte in giorni diversi), li unisce alle fonti esterne
+(sempre incluse, gia' pre-verificate) e scrive il JSON finale.
 """
 
 import collections
@@ -44,7 +45,7 @@ def fetch_reports() -> list[dict]:
             f"{SUPABASE_URL}/rest/v1/reports",
             headers=headers,
             params={
-                "select": "phone_number,category",
+                "select": "phone_number,category,device_hash",
                 "limit": PAGE_SIZE,
                 "offset": offset,
             },
@@ -70,24 +71,28 @@ def normalize_e164(raw_number: str) -> str | None:
 
 
 def build_spam_db(rows: list[dict]) -> list[dict]:
-    by_number = collections.defaultdict(lambda: {"report_count": 0, "categories": collections.Counter()})
+    by_number = collections.defaultdict(lambda: {"device_hashes": set(), "categories": collections.Counter()})
 
     for row in rows:
         e164 = normalize_e164(row["phone_number"])
         if e164 is None:
             continue
         entry = by_number[e164]
-        entry["report_count"] += 1
+        # Contiamo dispositivi distinti, non righe: un singolo utente non deve
+        # poter far entrare un numero nella lista condivisa segnalandolo piu'
+        # volte in giorni diversi (il vincolo unico in DB blocca solo i
+        # duplicati nello stesso giorno).
+        entry["device_hashes"].add(row["device_hash"])
         entry["categories"][row["category"]] += 1
 
     spam_db = {
         number: {
             "number": number,
-            "report_count": data["report_count"],
+            "report_count": len(data["device_hashes"]),
             "category": data["categories"].most_common(1)[0][0],
         }
         for number, data in by_number.items()
-        if data["report_count"] >= MIN_REPORTS
+        if len(data["device_hashes"]) >= MIN_REPORTS
     }
     return spam_db
 

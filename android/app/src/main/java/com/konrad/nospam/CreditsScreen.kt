@@ -25,7 +25,7 @@ private data class DataSource(
 private val dataSources = listOf(
     DataSource(
         name = "Segnalazioni utenti NoSpam",
-        description = "Numeri segnalati direttamente dalla community di NoSpam (almeno 5 segnalazioni indipendenti).",
+        description = "Numeri segnalati direttamente dalla community di NoSpam (almeno 5 segnalazioni da utenti diversi).",
         license = null,
         url = "https://github.com/kernelkappa/nospam",
     ),
