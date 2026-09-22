@@ -17,7 +17,12 @@ from pathlib import Path
 import phonenumbers
 import requests
 
-from external_sources import fetch_shopsicuro
+from external_sources import fetch_blocklist_telefonica_italia, fetch_shopsicuro
+
+EXTERNAL_SOURCES = {
+    "ShopSicuro": fetch_shopsicuro,
+    "blocklist-telefonica-italia": fetch_blocklist_telefonica_italia,
+}
 
 SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SUPABASE_SERVICE_KEY = os.environ["SUPABASE_SERVICE_KEY"]
@@ -99,12 +104,16 @@ def main() -> None:
     spam_db = build_spam_db(rows)
     crowdsourced_count = len(spam_db)
 
-    try:
-        external_entries = fetch_shopsicuro()
-    except requests.RequestException as error:
-        print(f"Avviso: fonte esterna ShopSicuro non raggiungibile ({error}), la salto", file=sys.stderr)
-        external_entries = []
-    merge_external_entries(spam_db, external_entries)
+    external_total = 0
+    for name, fetch_fn in EXTERNAL_SOURCES.items():
+        try:
+            entries = fetch_fn()
+        except requests.RequestException as error:
+            print(f"Avviso: fonte esterna {name} non raggiungibile ({error}), la salto", file=sys.stderr)
+            continue
+        merge_external_entries(spam_db, entries)
+        external_total += len(entries)
+        print(f"Numeri da {name}: {len(entries)}", file=sys.stderr)
 
     sorted_entries = sorted(spam_db.values(), key=lambda entry: entry["number"])
 
@@ -113,8 +122,8 @@ def main() -> None:
 
     print(f"Segnalazioni lette: {len(rows)}", file=sys.stderr)
     print(f"Numeri da crowdsourcing (>= {MIN_REPORTS} segnalazioni): {crowdsourced_count}", file=sys.stderr)
-    print(f"Numeri da fonti esterne: {len(external_entries)}", file=sys.stderr)
-    print(f"Numeri pubblicati totali: {len(sorted_entries)}", file=sys.stderr)
+    print(f"Numeri da fonti esterne (totale grezzo): {external_total}", file=sys.stderr)
+    print(f"Numeri pubblicati totali (uniti, deduplicati): {len(sorted_entries)}", file=sys.stderr)
     print(f"Output: {OUTPUT_PATH}", file=sys.stderr)
 
 
