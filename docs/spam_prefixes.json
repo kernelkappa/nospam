@@ -1,0 +1,770 @@
+[
+  {
+    "prefix": "+213",
+    "label": "Algeria",
+    "mode": "identify",
+    "source": "wangiri-watchlist"
+  },
+  {
+    "prefix": "+216",
+    "label": "Tunisia",
+    "mode": "identify",
+    "source": "wangiri-watchlist"
+  },
+  {
+    "prefix": "+3316200",
+    "label": "Manifone",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3316209",
+    "label": "Cyd",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3316214",
+    "label": "Get & Go",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3316215",
+    "label": "Vast",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3316219",
+    "label": "Spartel",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3316220",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3316221",
+    "label": "Comunik CRM",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3316224",
+    "label": "DVS",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3316230",
+    "label": "Kav El",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3316232",
+    "label": "Yaatel",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33162491",
+    "label": "Lineconnects",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33162529",
+    "label": "Infinivox",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33162541",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33162542",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33162543",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33162544",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33162545",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33162549",
+    "label": "Cloud telecom",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33189375",
+    "label": "Infinivox",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33189379",
+    "label": "Lineconnects",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33221829",
+    "label": "Infinivox",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3327000",
+    "label": "Manifone",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3327009",
+    "label": "Cyd",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3327011",
+    "label": "Get & Go",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3327014",
+    "label": "Vast",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3327018",
+    "label": "Spartel",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3327019",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3327020",
+    "label": "Comunik CRM",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3327023",
+    "label": "DVS",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3327029",
+    "label": "Kav El",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3327031",
+    "label": "Yaatel",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33270454",
+    "label": "Infinivox",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33270456",
+    "label": "Cloud telecom",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33270457",
+    "label": "Lineconnects",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33270470",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33270471",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33270472",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33270473",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33270474",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3327049",
+    "label": "Manifone",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33279769",
+    "label": "Lineconnects",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33339582",
+    "label": "Lineconnects",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33353658",
+    "label": "Infinivox",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3337700",
+    "label": "Manifone",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3337709",
+    "label": "Cyd",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3337711",
+    "label": "Get & Go",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3337714",
+    "label": "Vast",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3337718",
+    "label": "Spartel",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3337719",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3337720",
+    "label": "Comunik CRM",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3337723",
+    "label": "DVS",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3337729",
+    "label": "Kav El",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3337731",
+    "label": "Yaatel",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33377445",
+    "label": "Infinivox",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33377447",
+    "label": "Cloud telecom",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33377448",
+    "label": "Lineconnects",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33377460",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33377461",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33377462",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33377463",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33377464",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3337748",
+    "label": "Manifone",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33412139",
+    "label": "Infinivox",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33420230",
+    "label": "Lineconnects",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3342400",
+    "label": "Manifone",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3342409",
+    "label": "Cyd",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3342411",
+    "label": "Get & Go",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3342414",
+    "label": "Vast",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3342418",
+    "label": "Spartel",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3342419",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3342420",
+    "label": "Comunik CRM",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3342423",
+    "label": "DVS",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3342428",
+    "label": "Kav El",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3342430",
+    "label": "Yaatel",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33424455",
+    "label": "Infinivox",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33424457",
+    "label": "Cloud telecom",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33424458",
+    "label": "Lineconnects",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33424470",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33424471",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33424472",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33424473",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33424474",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3342450",
+    "label": "Manifone",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33519093",
+    "label": "Lineconnects",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33525347",
+    "label": "Infinivox",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3356800",
+    "label": "Manifone",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3356809",
+    "label": "Cyd",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3356811",
+    "label": "Get & Go",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3356814",
+    "label": "Vast",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3356818",
+    "label": "Spartel",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3356819",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3356820",
+    "label": "Comunik CRM",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3356823",
+    "label": "DVS",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3356828",
+    "label": "Kav El",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3356830",
+    "label": "Yaatel",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33568464",
+    "label": "Infinivox",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33568466",
+    "label": "Cloud telecom",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33568467",
+    "label": "Lineconnects",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33568480",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33568481",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33568482",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33568483",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33568484",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3356850",
+    "label": "Manifone",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3393908",
+    "label": "Get & Go",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3393909",
+    "label": "Vast",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3394800",
+    "label": "Manifone",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3394805",
+    "label": "Cyd",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3394814",
+    "label": "Spartel",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3394815",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3394816",
+    "label": "Comunik CRM",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3394820",
+    "label": "DVS",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+3394826",
+    "label": "Kav El",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33948351",
+    "label": "Cloud telecom",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33948352",
+    "label": "Lineconnects",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33948459",
+    "label": "Infinivox",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33948471",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33948472",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33948473",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33948474",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33948475",
+    "label": "Oxilog",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33973703",
+    "label": "Lineconnects",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+33974079",
+    "label": "Infinivox",
+    "mode": "block",
+    "source": "nophonespam-fr"
+  },
+  {
+    "prefix": "+373",
+    "label": "Moldova",
+    "mode": "identify",
+    "source": "wangiri-watchlist"
+  },
+  {
+    "prefix": "+53",
+    "label": "Cuba",
+    "mode": "identify",
+    "source": "wangiri-watchlist"
+  },
+  {
+    "prefix": "+93",
+    "label": "Afghanistan",
+    "mode": "identify",
+    "source": "wangiri-watchlist"
+  }
+]
