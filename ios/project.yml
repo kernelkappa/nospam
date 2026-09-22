@@ -1,6 +1,9 @@
 name: NoSpam
 options:
   bundleIdPrefix: com.konrad
+settings:
+  base:
+    DEVELOPMENT_TEAM: H7477F644K
 targets:
   NoSpam:
     type: application

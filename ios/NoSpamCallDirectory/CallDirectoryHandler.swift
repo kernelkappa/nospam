@@ -4,12 +4,12 @@ class CallDirectoryHandler: CXCallDirectoryProvider {
     override func beginRequest(with context: CXCallDirectoryExtensionContext) {
         context.delegate = self
 
-        // L'MVP non traccia delta incrementali: se il sistema ci richiede un
-        // aggiornamento incrementale rifiutiamo, cosi verra' ripetuto un
-        // caricamento completo (isIncremental = false).
+        // L'MVP non traccia delta incrementali: quando il sistema chiede un
+        // aggiornamento incrementale, azzeriamo tutto e poi ri-aggiungiamo
+        // l'intero set corrente, cosi' il risultato e' sempre corretto.
         if context.isIncremental {
-            context.cancelRequest(withError: NSError(domain: "com.konrad.nospam.CallDirectory", code: 1))
-            return
+            context.removeAllBlockingEntries()
+            context.removeAllIdentificationEntries()
         }
 
         let numbers = SpamNumberStore.loadSortedPhoneNumbers()
