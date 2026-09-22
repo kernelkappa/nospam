@@ -22,21 +22,33 @@ ANDROID_RES_DIR = ROOT.parent / "android" / "app" / "src" / "main" / "res"
 
 
 def draw_handset(draw: ImageDraw.ImageDraw, size: int) -> None:
-    """Cornetta telefonica "a manubrio": due padiglioni collegati da una barra diagonale."""
+    """Cornetta telefonica vista di profilo: una curva a S spessa tra padiglione
+    auricolare (in alto) e microfono (in basso), come nella classica icona
+    "telefono" (es. app Telefono di iOS)."""
     center = size / 2
-    offset = size * 0.16
-    earpiece_r = size * 0.15
-    bar_width = size * 0.11
 
-    p1 = (center - offset, center - offset)  # in alto a sinistra
-    p2 = (center + offset, center + offset)  # in basso a destra
+    # Bezier quadratica: P0 = microfono (basso sinistra), P2 = auricolare
+    # (alto destra), P1 = punto di controllo che crea la curvatura a "C".
+    p0 = (center - 0.20 * size, center + 0.24 * size)
+    p2 = (center + 0.20 * size, center - 0.24 * size)
+    p1 = (center - 0.16 * size, center - 0.16 * size)
 
-    draw.line([p1, p2], fill=GLYPH_COLOR, width=int(bar_width))
-    for cx, cy in (p1, p2):
-        draw.ellipse(
-            [cx - earpiece_r, cy - earpiece_r, cx + earpiece_r, cy + earpiece_r],
-            fill=GLYPH_COLOR,
-        )
+    # Disegniamo la curva come tanti cerchi pieni sovrapposti (invece di una
+    # linea con "width"): ImageDraw.line con tratti larghi su molti segmenti
+    # brevi lascia giunture visibili e seghettate lungo i bordi.
+    stroke_width = size * 0.085
+    cap_r = stroke_width / 2
+    steps = 240
+    for i in range(steps + 1):
+        t = i / steps
+        x = (1 - t) ** 2 * p0[0] + 2 * (1 - t) * t * p1[0] + t**2 * p2[0]
+        y = (1 - t) ** 2 * p0[1] + 2 * (1 - t) * t * p1[1] + t**2 * p2[1]
+        draw.ellipse([x - cap_r, y - cap_r, x + cap_r, y + cap_r], fill=GLYPH_COLOR)
+
+    # Padiglioni auricolare e microfono, piu' grandi alle due estremita'.
+    end_r = size * 0.135
+    for x, y in (p0, p2):
+        draw.ellipse([x - end_r, y - end_r, x + end_r, y + end_r], fill=GLYPH_COLOR)
 
 
 def draw_prohibition_sign(draw: ImageDraw.ImageDraw, size: int) -> None:
