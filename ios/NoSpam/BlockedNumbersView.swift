@@ -1,32 +1,41 @@
 import SwiftUI
 
+private enum SourceFilter: String, CaseIterable {
+    case all = "Tutti"
+    case personal = "Personali"
+}
+
 struct BlockedNumbersView: View {
-    @State private var entries: [BlockedNumberDisplay] = []
-    @State private var newNumber: String = ""
-    @State private var errorMessage: String?
+    @State private var allEntries: [BlockedNumberDisplay] = []
+    @State private var searchText: String = ""
+    @State private var sourceFilter: SourceFilter = .all
+
+    private var filteredEntries: [BlockedNumberDisplay] {
+        allEntries
+            .filter { sourceFilter == .all || $0.source == .personal }
+            .filter { searchText.isEmpty || $0.number.contains(searchText) }
+    }
 
     var body: some View {
         List {
             Section {
-                HStack {
-                    TextField("Aggiungi numero (es. +393331234567)", text: $newNumber)
-                        .keyboardType(.phonePad)
-                    Button("Aggiungi", action: addPersonalNumber)
-                        .disabled(newNumber.isEmpty)
+                TextField("Cerca numero (es. 0691 o +3933...)", text: $searchText)
+                    .keyboardType(.phonePad)
+
+                Picker("Filtro", selection: $sourceFilter) {
+                    ForEach(SourceFilter.allCases, id: \.self) { filter in
+                        Text(filter.rawValue).tag(filter)
+                    }
                 }
-                if let errorMessage {
-                    Text(errorMessage)
-                        .font(.footnote)
-                        .foregroundStyle(.red)
-                }
+                .pickerStyle(.segmented)
             }
 
-            Section("Numeri bloccati (\(entries.count))") {
-                if entries.isEmpty {
-                    Text("Nessun numero bloccato al momento.")
+            Section("Numeri bloccati (\(filteredEntries.count))") {
+                if filteredEntries.isEmpty {
+                    Text("Nessun numero trovato.")
                         .foregroundStyle(.secondary)
                 }
-                ForEach(entries) { entry in
+                ForEach(filteredEntries) { entry in
                     HStack {
                         VStack(alignment: .leading) {
                             Text(entry.number)
@@ -35,12 +44,12 @@ struct BlockedNumbersView: View {
                                 .foregroundStyle(.secondary)
                         }
                         Spacer()
-                    }
-                    .swipeActions {
                         if entry.source == .personal {
-                            Button("Rimuovi", role: .destructive) {
+                            Button("Sblocca") {
                                 deletePersonalEntry(entry)
                             }
+                            .buttonStyle(.bordered)
+                            .tint(.red)
                         }
                     }
                 }
@@ -51,23 +60,7 @@ struct BlockedNumbersView: View {
     }
 
     private func reload() {
-        entries = SpamNumberStore.allEntries()
-    }
-
-    private func addPersonalNumber() {
-        let trimmed = newNumber.trimmingCharacters(in: .whitespaces)
-        guard !trimmed.isEmpty else { return }
-        SpamNumberStore.addPersonalNumber(trimmed)
-        newNumber = ""
-        errorMessage = nil
-        reload()
-        CallDirectoryManager.reloadExtension { error in
-            if let error {
-                DispatchQueue.main.async {
-                    errorMessage = "Errore: \(error.localizedDescription)"
-                }
-            }
-        }
+        allEntries = SpamNumberStore.allEntries()
     }
 
     private func deletePersonalEntry(_ entry: BlockedNumberDisplay) {

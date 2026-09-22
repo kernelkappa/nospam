@@ -6,17 +6,19 @@ esporta in tutte le dimensioni richieste da iOS e Android.
 Uso: .venv/bin/python generate_icon.py
 """
 
+import math
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageDraw
 from reportlab.graphics import renderPM
 from svglib.svglib import svg2rlg
 
 BACKGROUND_COLOR = (30, 41, 82, 255)  # blu/indaco scuro
 GLYPH_COLOR = "#FFFFFF"
+PROHIBIT_COLOR = (229, 57, 53, 255)  # rosso
 
 MASTER_SIZE = 1024
-GLYPH_SCALE = 0.62  # frazione della tela occupata dal glifo
+BADGE_SCALE = 0.66  # frazione della tela occupata dal cerchio di divieto
 
 ROOT = Path(__file__).parent
 SOURCE_SVG = ROOT / "assets" / "phone_disabled.svg"
@@ -50,11 +52,30 @@ def render_glyph(size: int) -> Image.Image:
     return glyph
 
 
-def compose(canvas_size: int, transparent_background: bool, glyph_scale: float = GLYPH_SCALE) -> Image.Image:
+def draw_prohibition_sign(draw: ImageDraw.ImageDraw, canvas_size: int, badge_scale: float) -> None:
+    center = canvas_size / 2
+    radius = canvas_size * badge_scale / 2
+    ring_width = radius * 0.19
+
+    bbox = [center - radius, center - radius, center + radius, center + radius]
+    draw.ellipse(bbox, outline=PROHIBIT_COLOR, width=int(ring_width))
+
+    angle = math.radians(45)
+    bar_len = radius - ring_width / 2
+    x1 = center - bar_len * math.cos(angle)
+    y1 = center - bar_len * math.sin(angle)
+    x2 = center + bar_len * math.cos(angle)
+    y2 = center + bar_len * math.sin(angle)
+    draw.line([x1, y1, x2, y2], fill=PROHIBIT_COLOR, width=int(ring_width))
+
+
+def compose(canvas_size: int, transparent_background: bool, badge_scale: float = BADGE_SCALE) -> Image.Image:
     background = (0, 0, 0, 0) if transparent_background else BACKGROUND_COLOR
     canvas = Image.new("RGBA", (canvas_size, canvas_size), background)
 
-    glyph_size = int(canvas_size * glyph_scale)
+    # Il glifo occupa la parte interna del cerchio (come nei segnali di
+    # divieto stradali: l'icona al centro e' piu' piccola dell'anello).
+    glyph_size = int(canvas_size * badge_scale * 0.66)
     glyph = render_glyph(glyph_size)
     # La renderPM esporta un canvas rettangolare con margini: ritagliamo al
     # contenuto non trasparente per poterlo centrare correttamente.
@@ -65,6 +86,9 @@ def compose(canvas_size: int, transparent_background: bool, glyph_scale: float =
 
     offset = ((canvas_size - glyph.width) // 2, (canvas_size - glyph.height) // 2)
     canvas.paste(glyph, offset, glyph)
+
+    draw = ImageDraw.Draw(canvas)
+    draw_prohibition_sign(draw, canvas_size, badge_scale)
     return canvas
 
 
@@ -114,14 +138,14 @@ def export_android() -> None:
         "mipmap-xxhdpi": 324,
         "mipmap-xxxhdpi": 432,
     }
-    # Il glifo deve stare nella "safe zone" (66dp su 108dp) per non essere
-    # tagliato dalla maschera adattiva del sistema (cerchio/squircle/ecc.).
-    safe_zone_scale = 0.42
+    # Il badge (cerchio + glifo) deve stare nella "safe zone" (66dp su
+    # 108dp) per non essere tagliato dalla maschera adattiva del sistema.
+    safe_zone_scale = 0.58
 
     for folder, canvas_size in densities.items():
         target_dir = ANDROID_RES_DIR / folder
         target_dir.mkdir(parents=True, exist_ok=True)
-        image = compose(canvas_size, transparent_background=True, glyph_scale=safe_zone_scale)
+        image = compose(canvas_size, transparent_background=True, badge_scale=safe_zone_scale)
         image.save(target_dir / "ic_launcher_foreground.png")
 
     values_dir = ANDROID_RES_DIR / "values"
