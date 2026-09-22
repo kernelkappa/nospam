@@ -1,3 +1,4 @@
+import CallKit
 import SwiftUI
 
 struct ContentView: View {
@@ -5,6 +6,10 @@ struct ContentView: View {
     @State private var category: ReportCategory = .spam
     @State private var statusMessage: String?
     @State private var isSubmitting = false
+
+    @State private var enabledStatus: CXCallDirectoryManager.EnabledStatus = .unknown
+    @State private var syncMessage: String?
+    @State private var isSyncing = false
 
     var body: some View {
         VStack(spacing: 16) {
@@ -32,8 +37,54 @@ struct ContentView: View {
                 Text(statusMessage)
                     .foregroundStyle(.secondary)
             }
+
+            Divider().padding(.vertical)
+
+            VStack(spacing: 12) {
+                Text(blockingStatusDescription)
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+
+                Button("Apri Impostazioni") {
+                    if let url = URL(string: UIApplication.openSettingsURLString) {
+                        UIApplication.shared.open(url)
+                    }
+                }
+
+                Button(isSyncing ? "Aggiornamento..." : "Aggiorna database spam") {
+                    syncDatabase()
+                }
+                .disabled(isSyncing)
+
+                if let syncMessage {
+                    Text(syncMessage)
+                        .font(.footnote)
+                        .foregroundStyle(.secondary)
+                }
+            }
         }
         .padding()
+        .onAppear(perform: refreshEnabledStatus)
+    }
+
+    private var blockingStatusDescription: String {
+        switch enabledStatus {
+        case .enabled:
+            return "Blocco chiamate attivo."
+        case .disabled:
+            return "Blocco chiamate disattivato. Abilitalo da Impostazioni > Telefono > Blocco e identificazione chiamate."
+        default:
+            return "Stato blocco chiamate sconosciuto."
+        }
+    }
+
+    private func refreshEnabledStatus() {
+        CallDirectoryManager.checkEnabled { status in
+            DispatchQueue.main.async {
+                enabledStatus = status
+            }
+        }
     }
 
     private func submit() {
@@ -48,6 +99,21 @@ struct ContentView: View {
                 statusMessage = "Errore: \(error.localizedDescription)"
             }
             isSubmitting = false
+        }
+    }
+
+    private func syncDatabase() {
+        isSyncing = true
+        syncMessage = nil
+        Task {
+            do {
+                try await SpamDatabaseSync.sync()
+                syncMessage = "Database aggiornato."
+            } catch {
+                syncMessage = "Errore: \(error.localizedDescription)"
+            }
+            isSyncing = false
+            refreshEnabledStatus()
         }
     }
 }
