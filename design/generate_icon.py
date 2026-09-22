@@ -1,85 +1,76 @@
 """
-Genera l'icona dell'app (cornetta telefonica + simbolo di divieto) e la
+Genera l'icona dell'app a partire dal glifo Material Symbols
+"phone_disabled" (Google, licenza Apache 2.0 - vedi assets/LICENSE) e la
 esporta in tutte le dimensioni richieste da iOS e Android.
 
 Uso: .venv/bin/python generate_icon.py
 """
 
-import math
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image
+from reportlab.graphics import renderPM
+from svglib.svglib import svg2rlg
 
 BACKGROUND_COLOR = (30, 41, 82, 255)  # blu/indaco scuro
-GLYPH_COLOR = (255, 255, 255, 255)  # bianco
-PROHIBIT_COLOR = (229, 57, 53, 255)  # rosso
+GLYPH_COLOR = "#FFFFFF"
 
 MASTER_SIZE = 1024
+GLYPH_SCALE = 0.62  # frazione della tela occupata dal glifo
 
 ROOT = Path(__file__).parent
+SOURCE_SVG = ROOT / "assets" / "phone_disabled.svg"
 IOS_APPICON_DIR = ROOT.parent / "ios" / "NoSpam" / "Assets.xcassets" / "AppIcon.appiconset"
 ANDROID_RES_DIR = ROOT.parent / "android" / "app" / "src" / "main" / "res"
 
 
-def draw_handset(draw: ImageDraw.ImageDraw, size: int) -> None:
-    """Cornetta telefonica vista di profilo: una curva a S spessa tra padiglione
-    auricolare (in alto) e microfono (in basso), come nella classica icona
-    "telefono" (es. app Telefono di iOS)."""
-    center = size / 2
+def render_glyph(size: int) -> Image.Image:
+    svg_text = SOURCE_SVG.read_text(encoding="utf-8").replace("<path ", f'<path fill="{GLYPH_COLOR}" ', 1)
+    tmp_svg = ROOT / "_tmp_glyph.svg"
+    tmp_svg.write_text(svg_text, encoding="utf-8")
+    try:
+        drawing = svg2rlg(str(tmp_svg))
+        scale = size / max(drawing.width, drawing.height)
+        drawing.width *= scale
+        drawing.height *= scale
+        drawing.scale(scale, scale)
+        png_path = ROOT / "_tmp_glyph.png"
+        renderPM.drawToFile(drawing, str(png_path), fmt="PNG", bg=0x000000)
+        rendered = Image.open(png_path).convert("RGB")
 
-    # Bezier quadratica: P0 = microfono (basso sinistra), P2 = auricolare
-    # (alto destra), P1 = punto di controllo che crea la curvatura a "C".
-    p0 = (center - 0.20 * size, center + 0.24 * size)
-    p2 = (center + 0.20 * size, center - 0.24 * size)
-    p1 = (center - 0.16 * size, center - 0.16 * size)
-
-    # Disegniamo la curva come tanti cerchi pieni sovrapposti (invece di una
-    # linea con "width"): ImageDraw.line con tratti larghi su molti segmenti
-    # brevi lascia giunture visibili e seghettate lungo i bordi.
-    stroke_width = size * 0.085
-    cap_r = stroke_width / 2
-    steps = 240
-    for i in range(steps + 1):
-        t = i / steps
-        x = (1 - t) ** 2 * p0[0] + 2 * (1 - t) * t * p1[0] + t**2 * p2[0]
-        y = (1 - t) ** 2 * p0[1] + 2 * (1 - t) * t * p1[1] + t**2 * p2[1]
-        draw.ellipse([x - cap_r, y - cap_r, x + cap_r, y + cap_r], fill=GLYPH_COLOR)
-
-    # Padiglioni auricolare e microfono, piu' grandi alle due estremita'.
-    end_r = size * 0.135
-    for x, y in (p0, p2):
-        draw.ellipse([x - end_r, y - end_r, x + end_r, y + end_r], fill=GLYPH_COLOR)
+        # Il glifo e' bianco su sfondo nero: usiamo la luminanza come canale
+        # alpha (bianco -> opaco, nero -> trasparente) invece di affidarci al
+        # color-keying di renderPM, che con questo backend non funziona.
+        luminance = rendered.convert("L")
+        glyph = Image.new("RGBA", rendered.size, (255, 255, 255, 0))
+        glyph.putalpha(luminance)
+    finally:
+        tmp_svg.unlink(missing_ok=True)
+        (ROOT / "_tmp_glyph.png").unlink(missing_ok=True)
+    return glyph
 
 
-def draw_prohibition_sign(draw: ImageDraw.ImageDraw, size: int) -> None:
-    """Cerchio rosso con barra diagonale, sovrapposto alla cornetta."""
-    center = size / 2
-    radius = size * 0.42
-    ring_width = size * 0.075
+def compose(canvas_size: int, transparent_background: bool, glyph_scale: float = GLYPH_SCALE) -> Image.Image:
+    background = (0, 0, 0, 0) if transparent_background else BACKGROUND_COLOR
+    canvas = Image.new("RGBA", (canvas_size, canvas_size), background)
 
-    bbox = [center - radius, center - radius, center + radius, center + radius]
-    draw.ellipse(bbox, outline=PROHIBIT_COLOR, width=int(ring_width))
+    glyph_size = int(canvas_size * glyph_scale)
+    glyph = render_glyph(glyph_size)
+    # La renderPM esporta un canvas rettangolare con margini: ritagliamo al
+    # contenuto non trasparente per poterlo centrare correttamente.
+    bbox = glyph.getbbox()
+    if bbox:
+        glyph = glyph.crop(bbox)
+    glyph.thumbnail((glyph_size, glyph_size), Image.LANCZOS)
 
-    angle = math.radians(45)
-    bar_len = radius - ring_width / 2
-    x1 = center - bar_len * math.cos(angle)
-    y1 = center - bar_len * math.sin(angle)
-    x2 = center + bar_len * math.cos(angle)
-    y2 = center + bar_len * math.sin(angle)
-    draw.line([x1, y1, x2, y2], fill=PROHIBIT_COLOR, width=int(ring_width))
-
-
-def render_glyph(size: int, transparent_background: bool) -> Image.Image:
-    image = Image.new("RGBA", (size, size), (0, 0, 0, 0) if transparent_background else BACKGROUND_COLOR)
-    draw = ImageDraw.Draw(image)
-    draw_handset(draw, size)
-    draw_prohibition_sign(draw, size)
-    return image
+    offset = ((canvas_size - glyph.width) // 2, (canvas_size - glyph.height) // 2)
+    canvas.paste(glyph, offset, glyph)
+    return canvas
 
 
 def export_ios() -> None:
     IOS_APPICON_DIR.mkdir(parents=True, exist_ok=True)
-    master = render_glyph(MASTER_SIZE, transparent_background=False).convert("RGB")
+    master = compose(MASTER_SIZE, transparent_background=False).convert("RGB")
 
     sizes = {
         "icon-20@2x.png": 40,
@@ -116,8 +107,6 @@ def export_ios() -> None:
 
 
 def export_android() -> None:
-    # Adaptive icon: sfondo colore piatto + foreground trasparente, minSdk 29
-    # non richiede fallback legacy (mipmap quadrati/round pre-Android 8).
     densities = {
         "mipmap-mdpi": 108,
         "mipmap-hdpi": 162,
@@ -125,28 +114,20 @@ def export_android() -> None:
         "mipmap-xxhdpi": 324,
         "mipmap-xxxhdpi": 432,
     }
-
-    # Il glifo deve stare nella "safe zone" centrale (66dp su 108dp) per non
-    # essere tagliato dalla maschera adattiva del sistema.
-    safe_zone_ratio = 0.60
+    # Il glifo deve stare nella "safe zone" (66dp su 108dp) per non essere
+    # tagliato dalla maschera adattiva del sistema (cerchio/squircle/ecc.).
+    safe_zone_scale = 0.42
 
     for folder, canvas_size in densities.items():
         target_dir = ANDROID_RES_DIR / folder
         target_dir.mkdir(parents=True, exist_ok=True)
-
-        glyph_size = int(canvas_size * safe_zone_ratio)
-        glyph = render_glyph(glyph_size, transparent_background=True)
-
-        canvas = Image.new("RGBA", (canvas_size, canvas_size), (0, 0, 0, 0))
-        offset = (canvas_size - glyph_size) // 2
-        canvas.paste(glyph, (offset, offset), glyph)
-        canvas.save(target_dir / "ic_launcher_foreground.png")
+        image = compose(canvas_size, transparent_background=True, glyph_scale=safe_zone_scale)
+        image.save(target_dir / "ic_launcher_foreground.png")
 
     values_dir = ANDROID_RES_DIR / "values"
     values_dir.mkdir(parents=True, exist_ok=True)
     color_hex = "#{:02X}{:02X}{:02X}".format(*BACKGROUND_COLOR[:3])
-    colors_path = values_dir / "ic_launcher_background_color.xml"
-    colors_path.write_text(
+    (values_dir / "ic_launcher_background_color.xml").write_text(
         f'<?xml version="1.0" encoding="utf-8"?>\n'
         f"<resources>\n"
         f'    <color name="ic_launcher_background">{color_hex}</color>\n'
@@ -171,7 +152,7 @@ def export_android() -> None:
 
 def main() -> None:
     preview_path = ROOT / "icon_preview.png"
-    render_glyph(512, transparent_background=False).convert("RGB").save(preview_path)
+    compose(512, transparent_background=False).convert("RGB").save(preview_path)
     print(f"Anteprima: {preview_path}")
 
     export_ios()

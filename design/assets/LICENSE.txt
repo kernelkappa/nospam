@@ -1,0 +1,5 @@
+phone_disabled.svg proviene da Google Material Symbols
+(https://github.com/google/material-design-icons), rilasciato sotto
+licenza Apache License 2.0.
+
+Testo completo della licenza: https://www.apache.org/licenses/LICENSE-2.0
