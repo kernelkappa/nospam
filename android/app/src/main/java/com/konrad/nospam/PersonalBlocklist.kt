@@ -3,10 +3,10 @@ package com.konrad.nospam
 import android.content.Context
 
 object PersonalBlocklist {
-    suspend fun add(context: Context, phoneNumber: String) {
+    suspend fun add(context: Context, phoneNumber: String, category: String = "personale") {
         val entity = SpamNumberEntity(
             phoneNumber = phoneNumber,
-            category = "personale",
+            category = category,
             reportCount = 0,
             digitsOnly = phoneNumber.filter(Char::isDigit),
             source = NumberSource.PERSONAL,

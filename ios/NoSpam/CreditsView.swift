@@ -11,7 +11,7 @@ private struct DataSource: Identifiable {
 private let dataSources: [DataSource] = [
     DataSource(
         name: "Segnalazioni utenti NoSpam",
-        description: "Numeri segnalati direttamente dalla community di NoSpam (almeno 3 segnalazioni indipendenti).",
+        description: "Numeri segnalati direttamente dalla community di NoSpam (almeno 5 segnalazioni indipendenti).",
         license: nil,
         url: URL(string: "https://github.com/kernelkappa/nospam")!
     ),
