@@ -36,7 +36,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 
-private enum class NospamScreen { MAIN, BLOCKED_NUMBERS }
+private enum class NospamScreen { MAIN, BLOCKED_NUMBERS, CREDITS }
 
 class MainActivity : ComponentActivity() {
     @OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
@@ -51,9 +51,17 @@ class MainActivity : ComponentActivity() {
                     Scaffold(
                         topBar = {
                             TopAppBar(
-                                title = { Text(if (screen == NospamScreen.MAIN) "NoSpam" else "Numeri bloccati") },
+                                title = {
+                                    Text(
+                                        when (screen) {
+                                            NospamScreen.MAIN -> "NoSpam"
+                                            NospamScreen.BLOCKED_NUMBERS -> "Numeri bloccati"
+                                            NospamScreen.CREDITS -> "Crediti"
+                                        },
+                                    )
+                                },
                                 navigationIcon = {
-                                    if (screen == NospamScreen.BLOCKED_NUMBERS) {
+                                    if (screen != NospamScreen.MAIN) {
                                         TextButton(onClick = { screen = NospamScreen.MAIN }) {
                                             Text("‹ Indietro")
                                         }
@@ -61,6 +69,9 @@ class MainActivity : ComponentActivity() {
                                 },
                                 actions = {
                                     if (screen == NospamScreen.MAIN) {
+                                        TextButton(onClick = { screen = NospamScreen.CREDITS }) {
+                                            Text("Crediti")
+                                        }
                                         TextButton(onClick = { screen = NospamScreen.BLOCKED_NUMBERS }) {
                                             Text("Numeri bloccati")
                                         }
@@ -72,6 +83,7 @@ class MainActivity : ComponentActivity() {
                         when (screen) {
                             NospamScreen.MAIN -> MainScreen(modifier = Modifier.padding(innerPadding))
                             NospamScreen.BLOCKED_NUMBERS -> BlockedNumbersScreen(modifier = Modifier.padding(innerPadding))
+                            NospamScreen.CREDITS -> CreditsScreen(modifier = Modifier.padding(innerPadding))
                         }
                     }
                 }
