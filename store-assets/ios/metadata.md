@@ -3,6 +3,9 @@
 ## Sottotitolo
 Blocca le chiamate spam
 
+## Testo promozionale
+Blocca automaticamente le chiamate spam e truffa. Segnala i numeri sospetti e aiuta la community a proteggersi. Gratuita, senza bisogno di dati personali.
+
 ## Descrizione
 
 NoSpam blocca e identifica automaticamente le chiamate spam, truffa e telemarketing, sfruttando una lista di numeri sospetti condivisa dalla community e da fonti pubbliche europee.
