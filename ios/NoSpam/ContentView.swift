@@ -169,10 +169,11 @@ struct ContentView: View {
     private func blockAndReport() {
         isSubmitting = true
         statusMessage = nil
-        SpamNumberStore.addPersonalNumber(phoneNumber, category: category.rawValue)
+        let normalized = SpamNumberStore.normalizedNumber(phoneNumber)
+        SpamNumberStore.addPersonalNumber(normalized, category: category.rawValue)
         Task {
             do {
-                try await ReportService.submit(phoneNumberE164: phoneNumber, category: category)
+                try await ReportService.submit(phoneNumberE164: normalized, category: category)
                 statusMessage = "Numero bloccato e segnalato alla community."
             } catch {
                 statusMessage = "Bloccato localmente, ma la segnalazione non è riuscita: \(error.localizedDescription)"

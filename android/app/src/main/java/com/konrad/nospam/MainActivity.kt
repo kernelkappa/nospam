@@ -252,8 +252,9 @@ fun MainScreen(modifier: Modifier = Modifier) {
                     statusMessage = null
                     scope.launch {
                         try {
+                            val normalized = PersonalBlocklist.normalize(phoneNumber)
                             PersonalBlocklist.add(context, phoneNumber, category.apiValue)
-                            ReportService.submit(context, phoneNumber, category)
+                            ReportService.submit(context, normalized, category)
                             statusMessage = "Numero bloccato e segnalato alla community."
                         } catch (e: Exception) {
                             statusMessage = "Bloccato localmente, ma la segnalazione non è riuscita: ${e.message}"

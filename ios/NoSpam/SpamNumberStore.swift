@@ -62,15 +62,23 @@ enum SpamNumberStore {
         personalEntriesDict().keys.sorted()
     }
 
+    /// Rimuove spazi e altri separatori (es. copiati dal registro chiamate),
+    /// mantenendo solo le cifre e un eventuale "+" iniziale.
+    static func normalizedNumber(_ raw: String) -> String {
+        let trimmed = raw.trimmingCharacters(in: .whitespacesAndNewlines)
+        let digits = trimmed.filter(\.isNumber)
+        return trimmed.hasPrefix("+") ? "+\(digits)" : digits
+    }
+
     static func addPersonalNumber(_ number: String, category: String = "personale") {
         var entries = personalEntriesDict()
-        entries[number] = category
+        entries[normalizedNumber(number)] = category
         sharedDefaults?.set(entries, forKey: personalListKey)
     }
 
     static func removePersonalNumber(_ number: String) {
         var entries = personalEntriesDict()
-        entries.removeValue(forKey: number)
+        entries.removeValue(forKey: normalizedNumber(number))
         sharedDefaults?.set(entries, forKey: personalListKey)
     }
 
