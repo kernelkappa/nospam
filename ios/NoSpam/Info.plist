@@ -24,6 +24,8 @@
 	<string>1</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Questo identificativo viene usato per mostrarti annunci pubblicitari piu' pertinenti e per misurarne l'efficacia.</string>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>

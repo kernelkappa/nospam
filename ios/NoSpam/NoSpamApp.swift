@@ -8,6 +8,9 @@ struct NoSpamApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .task {
+                    ConsentManager.shared.start()
+                }
         }
         .onChange(of: scenePhase) { newPhase in
             if newPhase == .background {

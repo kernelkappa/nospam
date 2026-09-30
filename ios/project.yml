@@ -8,6 +8,9 @@ packages:
   GoogleMobileAds:
     url: https://github.com/googleads/swift-package-manager-google-mobile-ads.git
     from: 13.0.0
+  GoogleUserMessagingPlatform:
+    url: https://github.com/googleads/swift-package-manager-google-user-messaging-platform.git
+    from: 3.0.0
 targets:
   NoSpam:
     type: application
@@ -41,6 +44,9 @@ targets:
         GADApplicationIdentifier: ca-app-pub-3940256099942544~1458002511
         SKAdNetworkItems:
           - SKAdNetworkIdentifier: cstr6suwn9.skadnetwork
+        NSUserTrackingUsageDescription: >-
+          Questo identificativo viene usato per mostrarti annunci pubblicitari
+          piu' pertinenti e per misurarne l'efficacia.
     dependencies:
       - target: NoSpamCallDirectory
         embed: true
@@ -48,6 +54,8 @@ targets:
         embed: true
       - package: GoogleMobileAds
         product: GoogleMobileAds
+      - package: GoogleUserMessagingPlatform
+        product: GoogleUserMessagingPlatform
 
   NoSpamCallDirectory:
     type: app-extension

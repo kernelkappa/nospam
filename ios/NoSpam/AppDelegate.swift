@@ -1,4 +1,3 @@
-import GoogleMobileAds
 import UIKit
 
 class AppDelegate: NSObject, UIApplicationDelegate {
@@ -10,10 +9,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         // questo vive qui e non in una view SwiftUI.
         BGTaskManager.registerTasks()
 
-        // Ads non personalizzate: evita il prompt di App Tracking Transparency
-        // e la richiesta di consenso GDPR per le ads personalizzate in UE.
-        MobileAds.shared.requestConfiguration.publisherPrivacyPersonalizationState = .disabled
-        MobileAds.shared.start(completionHandler: nil)
+        // L'SDK AdMob viene avviato da ConsentManager solo dopo la raccolta
+        // del consenso GDPR (Google UMP) e dell'autorizzazione ATT.
 
         return true
     }

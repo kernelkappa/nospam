@@ -24,13 +24,18 @@ private const val AD_UNIT_ID = "ca-app-pub-3940256099942544/6300978111"
  * Il refresh automatico configurabile da dashboard AdMob ha un minimo di 30
  * secondi imposto da Google (refresh più aggressivi rischiano la sospensione
  * dell'account per "invalid traffic"), quindi qui il banner si ricarica
- * manualmente ogni 30 secondi con lo stesso intervallo minimo. Le ads non
- * personalizzate sono configurate globalmente in NoSpamApplication.
+ * manualmente ogni 30 secondi con lo stesso intervallo minimo.
  */
 private const val REFRESH_INTERVAL_MS = 30_000L
 
+/**
+ * Non mostra nulla finché ConsentManager non ha concluso la raccolta del
+ * consenso GDPR (l'SDK AdMob non è nemmeno inizializzato prima di allora).
+ */
 @Composable
 fun AdBanner(modifier: Modifier = Modifier) {
+    if (!ConsentManager.canRequestAds.value) return
+
     val context = LocalContext.current
     val adView = remember {
         AdView(context).apply {
