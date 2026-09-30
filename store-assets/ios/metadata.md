@@ -30,7 +30,11 @@ spam,chiamate,blocco,spam call,telemarketing,truffa,antispam,robocall,wangiri,ca
 
 ## URL
 - Supporto: https://github.com/kernelkappa/nospam
+- Marketing (opzionale): https://github.com/kernelkappa/nospam (stesso del supporto, nessun sito dedicato)
 - Privacy: https://kernelkappa.github.io/nospam/privacy.html
+
+## Copyright
+© 2026 kernelkappa
 
 ## Categoria
 Utilità
