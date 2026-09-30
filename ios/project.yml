@@ -36,6 +36,10 @@ targets:
       path: NoSpam/Info.plist
       properties:
         CFBundleDisplayName: NoSpam
+        # Usiamo solo crittografia standard esente (SHA-256 via CryptoKit per
+        # l'hash anonimo del dispositivo, HTTPS di sistema) - nessun algoritmo
+        # proprietario. Evita il modulo di conformita' export a ogni upload.
+        ITSAppUsesNonExemptEncryption: false
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
