@@ -45,12 +45,18 @@ struct ContentView: View {
                 .keyboardType(.phonePad)
                 .focused($isPhoneFieldFocused)
 
-            Picker("Categoria", selection: $category) {
-                ForEach(ReportCategory.allCases, id: \.self) { option in
-                    Text(option.rawValue.capitalized).tag(option)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 8) {
+                    ForEach(ReportCategory.allCases, id: \.self) { option in
+                        Button(option.rawValue.capitalized) {
+                            category = option
+                        }
+                        .buttonStyle(.bordered)
+                        .tint(category == option ? .accentColor : .gray)
+                        .buttonBorderShape(.capsule)
+                    }
                 }
             }
-            .pickerStyle(.segmented)
 
             HStack(spacing: 12) {
                 Button("Blocca") {
