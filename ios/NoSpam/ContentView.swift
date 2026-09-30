@@ -16,20 +16,25 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            mainContent
-                .navigationTitle("NoSpam")
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        NavigationLink("Crediti") {
-                            CreditsView()
-                        }
-                    }
-                    ToolbarItem(placement: .navigationBarTrailing) {
-                        NavigationLink("Numeri bloccati") {
-                            BlockedNumbersView()
-                        }
+            VStack(spacing: 0) {
+                mainContent
+                Spacer(minLength: 0)
+                AdBannerView()
+                    .frame(height: 50)
+            }
+            .navigationTitle("NoSpam")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    NavigationLink("Crediti") {
+                        CreditsView()
                     }
                 }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink("Numeri bloccati") {
+                        BlockedNumbersView()
+                    }
+                }
+            }
         }
     }
 

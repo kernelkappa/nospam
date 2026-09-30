@@ -18,44 +18,48 @@ struct BlockedNumbersView: View {
     }
 
     var body: some View {
-        List {
-            Section {
-                TextField("Cerca numero (es. 0691 o +3933...)", text: $searchText)
-                    .keyboardType(.phonePad)
-                    .focused($isSearchFieldFocused)
+        VStack(spacing: 0) {
+            List {
+                Section {
+                    TextField("Cerca numero (es. 0691 o +3933...)", text: $searchText)
+                        .keyboardType(.phonePad)
+                        .focused($isSearchFieldFocused)
 
-                Picker("Filtro", selection: $sourceFilter) {
-                    ForEach(SourceFilter.allCases, id: \.self) { filter in
-                        Text(filter.rawValue).tag(filter)
-                    }
-                }
-                .pickerStyle(.segmented)
-            }
-
-            Section("Numeri bloccati (\(filteredEntries.count))") {
-                if filteredEntries.isEmpty {
-                    Text("Nessun numero trovato.")
-                        .foregroundStyle(.secondary)
-                }
-                ForEach(filteredEntries) { entry in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(entry.number)
-                            Text(entry.source == .community ? "Community" + (entry.category.map { " · \($0)" } ?? "") : "Personale")
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
+                    Picker("Filtro", selection: $sourceFilter) {
+                        ForEach(SourceFilter.allCases, id: \.self) { filter in
+                            Text(filter.rawValue).tag(filter)
                         }
-                        Spacer()
-                        if entry.source == .personal {
-                            Button("Sblocca") {
-                                deletePersonalEntry(entry)
+                    }
+                    .pickerStyle(.segmented)
+                }
+
+                Section("Numeri bloccati (\(filteredEntries.count))") {
+                    if filteredEntries.isEmpty {
+                        Text("Nessun numero trovato.")
+                            .foregroundStyle(.secondary)
+                    }
+                    ForEach(filteredEntries) { entry in
+                        HStack {
+                            VStack(alignment: .leading) {
+                                Text(entry.number)
+                                Text(entry.source == .community ? "Community" + (entry.category.map { " · \($0)" } ?? "") : "Personale")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
                             }
-                            .buttonStyle(.bordered)
-                            .tint(.red)
+                            Spacer()
+                            if entry.source == .personal {
+                                Button("Sblocca") {
+                                    deletePersonalEntry(entry)
+                                }
+                                .buttonStyle(.bordered)
+                                .tint(.red)
+                            }
                         }
                     }
                 }
             }
+            AdBannerView()
+                .frame(height: 50)
         }
         .navigationTitle("Numeri bloccati")
         .toolbar {

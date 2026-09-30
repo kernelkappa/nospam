@@ -43,4 +43,5 @@ dependencies {
     implementation(libs.androidx.room3.runtime)
     ksp(libs.androidx.room3.compiler)
     implementation(libs.androidx.work.runtime)
+    implementation(libs.play.services.ads)
 }

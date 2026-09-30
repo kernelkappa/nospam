@@ -4,6 +4,10 @@ options:
 settings:
   base:
     DEVELOPMENT_TEAM: H7477F644K
+packages:
+  GoogleMobileAds:
+    url: https://github.com/googleads/swift-package-manager-google-mobile-ads.git
+    from: 13.0.0
 targets:
   NoSpam:
     type: application
@@ -32,11 +36,18 @@ targets:
           - com.konrad.nospam.refresh
         UIBackgroundModes:
           - fetch
+        # ID App AdMob di TEST (Google, pubblico, sicuro da usare in sviluppo).
+        # Sostituire con l'App ID reale prima della pubblicazione.
+        GADApplicationIdentifier: ca-app-pub-3940256099942544~1458002511
+        SKAdNetworkItems:
+          - SKAdNetworkIdentifier: cstr6suwn9.skadnetwork
     dependencies:
       - target: NoSpamCallDirectory
         embed: true
       - target: NoSpamMessageFilter
         embed: true
+      - package: GoogleMobileAds
+        product: GoogleMobileAds
 
   NoSpamCallDirectory:
     type: app-extension

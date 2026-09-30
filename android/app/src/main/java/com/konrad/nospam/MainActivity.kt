@@ -187,127 +187,131 @@ fun MainScreen(modifier: Modifier = Modifier) {
         )
     }
 
-    Column(
-        modifier = modifier
-            .fillMaxSize()
-            .pointerInput(Unit) {
-                detectTapGestures(onTap = {
+    Column(modifier = modifier.fillMaxSize()) {
+        Column(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxWidth()
+                .pointerInput(Unit) {
+                    detectTapGestures(onTap = {
+                        focusManager.clearFocus()
+                        keyboardController?.hide()
+                    })
+                }
+                .padding(24.dp),
+            verticalArrangement = Arrangement.spacedBy(16.dp),
+        ) {
+            Text(text = "NoSpam", style = MaterialTheme.typography.headlineLarge)
+
+            OutlinedTextField(
+                value = phoneNumber,
+                onValueChange = { phoneNumber = it },
+                label = { Text("Numero (es. +393331234567)") },
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone, imeAction = ImeAction.Done),
+                keyboardActions = KeyboardActions(onDone = {
                     focusManager.clearFocus()
                     keyboardController?.hide()
-                })
-            }
-            .padding(24.dp),
-        verticalArrangement = Arrangement.spacedBy(16.dp),
-    ) {
-        Text(text = "NoSpam", style = MaterialTheme.typography.headlineLarge)
+                }),
+                modifier = Modifier.fillMaxWidth(),
+            )
 
-        OutlinedTextField(
-            value = phoneNumber,
-            onValueChange = { phoneNumber = it },
-            label = { Text("Numero (es. +393331234567)") },
-            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone, imeAction = ImeAction.Done),
-            keyboardActions = KeyboardActions(onDone = {
-                focusManager.clearFocus()
-                keyboardController?.hide()
-            }),
-            modifier = Modifier.fillMaxWidth(),
-        )
-
-        SingleChoiceSegmentedButtonRow(modifier = Modifier.fillMaxWidth()) {
-            ReportCategory.entries.forEachIndexed { index, option ->
-                SegmentedButton(
-                    selected = category == option,
-                    onClick = { category = option },
-                    shape = SegmentedButtonDefaults.itemShape(index = index, count = ReportCategory.entries.size),
-                ) {
-                    Text(option.apiValue)
+            SingleChoiceSegmentedButtonRow(modifier = Modifier.fillMaxWidth()) {
+                ReportCategory.entries.forEachIndexed { index, option ->
+                    SegmentedButton(
+                        selected = category == option,
+                        onClick = { category = option },
+                        shape = SegmentedButtonDefaults.itemShape(index = index, count = ReportCategory.entries.size),
+                    ) {
+                        Text(option.apiValue)
+                    }
                 }
             }
-        }
 
-        Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-            OutlinedButton(
-                onClick = {
-                    isSubmitting = true
-                    statusMessage = null
-                    scope.launch {
-                        try {
-                            PersonalBlocklist.add(context, phoneNumber, category.apiValue)
-                            statusMessage = "Numero bloccato localmente."
-                            phoneNumber = ""
-                        } catch (e: Exception) {
-                            statusMessage = "Errore: ${e.message}"
+            Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+                OutlinedButton(
+                    onClick = {
+                        isSubmitting = true
+                        statusMessage = null
+                        scope.launch {
+                            try {
+                                PersonalBlocklist.add(context, phoneNumber, category.apiValue)
+                                statusMessage = "Numero bloccato localmente."
+                                phoneNumber = ""
+                            } catch (e: Exception) {
+                                statusMessage = "Errore: ${e.message}"
+                            }
+                            isSubmitting = false
                         }
-                        isSubmitting = false
-                    }
+                    },
+                    enabled = phoneNumber.isNotBlank() && !isSubmitting,
+                ) {
+                    Text("Blocca")
+                }
+
+                Button(
+                    onClick = {
+                        isSubmitting = true
+                        statusMessage = null
+                        scope.launch {
+                            try {
+                                val normalized = PersonalBlocklist.normalize(phoneNumber)
+                                PersonalBlocklist.add(context, phoneNumber, category.apiValue)
+                                ReportService.submit(context, normalized, category)
+                                statusMessage = "Numero bloccato e segnalato alla community."
+                            } catch (e: Exception) {
+                                statusMessage = "Bloccato localmente, ma la segnalazione non è riuscita: ${e.message}"
+                            }
+                            phoneNumber = ""
+                            isSubmitting = false
+                        }
+                    },
+                    enabled = phoneNumber.isNotBlank() && !isSubmitting,
+                ) {
+                    Text(if (isSubmitting) "Invio..." else "Blocca e segnala")
+                }
+            }
+
+            statusMessage?.let { Text(text = it) }
+
+            HorizontalDivider()
+
+            Text(
+                text = if (isCallScreeningRoleHeld) {
+                    "Blocco chiamate attivo."
+                } else {
+                    "NoSpam non è l'app di blocco chiamate predefinita."
                 },
-                enabled = phoneNumber.isNotBlank() && !isSubmitting,
-            ) {
-                Text("Blocca")
+            )
+
+            if (!isCallScreeningRoleHeld && roleManager?.isRoleAvailable(RoleManager.ROLE_CALL_SCREENING) == true) {
+                Button(onClick = {
+                    roleRequestLauncher.launch(roleManager.createRequestRoleIntent(RoleManager.ROLE_CALL_SCREENING))
+                }) {
+                    Text("Diventa app predefinita")
+                }
             }
 
             Button(
                 onClick = {
-                    isSubmitting = true
-                    statusMessage = null
+                    isSyncing = true
+                    syncMessage = null
                     scope.launch {
                         try {
-                            val normalized = PersonalBlocklist.normalize(phoneNumber)
-                            PersonalBlocklist.add(context, phoneNumber, category.apiValue)
-                            ReportService.submit(context, normalized, category)
-                            statusMessage = "Numero bloccato e segnalato alla community."
+                            SpamDatabaseSync.sync(context)
+                            syncMessage = "Database aggiornato."
                         } catch (e: Exception) {
-                            statusMessage = "Bloccato localmente, ma la segnalazione non è riuscita: ${e.message}"
+                            syncMessage = "Errore: ${e.message}"
                         }
-                        phoneNumber = ""
-                        isSubmitting = false
+                        isSyncing = false
                     }
                 },
-                enabled = phoneNumber.isNotBlank() && !isSubmitting,
+                enabled = !isSyncing,
             ) {
-                Text(if (isSubmitting) "Invio..." else "Blocca e segnala")
+                Text(if (isSyncing) "Aggiornamento..." else "Aggiorna database spam")
             }
+
+            syncMessage?.let { Text(text = it) }
         }
-
-        statusMessage?.let { Text(text = it) }
-
-        HorizontalDivider()
-
-        Text(
-            text = if (isCallScreeningRoleHeld) {
-                "Blocco chiamate attivo."
-            } else {
-                "NoSpam non è l'app di blocco chiamate predefinita."
-            },
-        )
-
-        if (!isCallScreeningRoleHeld && roleManager?.isRoleAvailable(RoleManager.ROLE_CALL_SCREENING) == true) {
-            Button(onClick = {
-                roleRequestLauncher.launch(roleManager.createRequestRoleIntent(RoleManager.ROLE_CALL_SCREENING))
-            }) {
-                Text("Diventa app predefinita")
-            }
-        }
-
-        Button(
-            onClick = {
-                isSyncing = true
-                syncMessage = null
-                scope.launch {
-                    try {
-                        SpamDatabaseSync.sync(context)
-                        syncMessage = "Database aggiornato."
-                    } catch (e: Exception) {
-                        syncMessage = "Errore: ${e.message}"
-                    }
-                    isSyncing = false
-                }
-            },
-            enabled = !isSyncing,
-        ) {
-            Text(if (isSyncing) "Aggiornamento..." else "Aggiorna database spam")
-        }
-
-        syncMessage?.let { Text(text = it) }
+        AdBanner()
     }
 }

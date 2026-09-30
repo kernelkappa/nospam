@@ -58,74 +58,78 @@ fun BlockedNumbersScreen(modifier: Modifier = Modifier) {
         .filter { sourceFilter == SourceFilter.ALL || it.source == NumberSource.PERSONAL }
         .filter { searchText.isBlank() || it.phoneNumber.contains(searchText) }
 
-    Column(
-        modifier = modifier
-            .fillMaxSize()
-            .pointerInput(Unit) {
-                detectTapGestures(onTap = {
+    Column(modifier = modifier.fillMaxSize()) {
+        Column(
+            modifier = Modifier
+                .weight(1f)
+                .fillMaxWidth()
+                .pointerInput(Unit) {
+                    detectTapGestures(onTap = {
+                        focusManager.clearFocus()
+                        keyboardController?.hide()
+                    })
+                }
+                .padding(24.dp),
+        ) {
+            OutlinedTextField(
+                value = searchText,
+                onValueChange = { searchText = it },
+                label = { Text("Cerca numero (es. 0691 o +3933...)") },
+                keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone, imeAction = ImeAction.Done),
+                keyboardActions = KeyboardActions(onDone = {
                     focusManager.clearFocus()
                     keyboardController?.hide()
-                })
-            }
-            .padding(24.dp),
-    ) {
-        OutlinedTextField(
-            value = searchText,
-            onValueChange = { searchText = it },
-            label = { Text("Cerca numero (es. 0691 o +3933...)") },
-            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone, imeAction = ImeAction.Done),
-            keyboardActions = KeyboardActions(onDone = {
-                focusManager.clearFocus()
-                keyboardController?.hide()
-            }),
-            modifier = Modifier.fillMaxWidth(),
-        )
+                }),
+                modifier = Modifier.fillMaxWidth(),
+            )
 
-        SingleChoiceSegmentedButtonRow(modifier = Modifier.fillMaxWidth().padding(top = 12.dp)) {
-            SourceFilter.entries.forEachIndexed { index, filter ->
-                SegmentedButton(
-                    selected = sourceFilter == filter,
-                    onClick = { sourceFilter = filter },
-                    shape = SegmentedButtonDefaults.itemShape(index = index, count = SourceFilter.entries.size),
-                ) {
-                    Text(filter.label)
+            SingleChoiceSegmentedButtonRow(modifier = Modifier.fillMaxWidth().padding(top = 12.dp)) {
+                SourceFilter.entries.forEachIndexed { index, filter ->
+                    SegmentedButton(
+                        selected = sourceFilter == filter,
+                        onClick = { sourceFilter = filter },
+                        shape = SegmentedButtonDefaults.itemShape(index = index, count = SourceFilter.entries.size),
+                    ) {
+                        Text(filter.label)
+                    }
                 }
             }
-        }
 
-        Text(
-            text = "Numeri bloccati (${entries.size})",
-            style = MaterialTheme.typography.titleMedium,
-            modifier = Modifier.padding(top = 16.dp, bottom = 8.dp),
-        )
+            Text(
+                text = "Numeri bloccati (${entries.size})",
+                style = MaterialTheme.typography.titleMedium,
+                modifier = Modifier.padding(top = 16.dp, bottom = 8.dp),
+            )
 
-        LazyColumn(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-            items(entries, key = { it.phoneNumber }) { entry ->
-                Row(
-                    modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Column(modifier = Modifier.weight(1f)) {
-                        Text(entry.phoneNumber)
-                        Text(
-                            text = if (entry.source == NumberSource.COMMUNITY) {
-                                "Community · ${entry.category}"
-                            } else {
-                                "Personale"
-                            },
-                            style = MaterialTheme.typography.bodySmall,
-                        )
-                    }
-                    if (entry.source == NumberSource.PERSONAL) {
-                        TextButton(onClick = {
-                            scope.launch { PersonalBlocklist.remove(context, entry.phoneNumber) }
-                        }) {
-                            Text("Sblocca")
+            LazyColumn(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                items(entries, key = { it.phoneNumber }) { entry ->
+                    Row(
+                        modifier = Modifier.fillMaxWidth().padding(vertical = 8.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Column(modifier = Modifier.weight(1f)) {
+                            Text(entry.phoneNumber)
+                            Text(
+                                text = if (entry.source == NumberSource.COMMUNITY) {
+                                    "Community · ${entry.category}"
+                                } else {
+                                    "Personale"
+                                },
+                                style = MaterialTheme.typography.bodySmall,
+                            )
+                        }
+                        if (entry.source == NumberSource.PERSONAL) {
+                            TextButton(onClick = {
+                                scope.launch { PersonalBlocklist.remove(context, entry.phoneNumber) }
+                            }) {
+                                Text("Sblocca")
+                            }
                         }
                     }
+                    HorizontalDivider()
                 }
-                HorizontalDivider()
             }
         }
+        AdBanner()
     }
 }
