@@ -14,11 +14,7 @@ import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import kotlinx.coroutines.delay
 
-/**
- * ID di TEST ufficiale Google (banner formato fisso 320x50), sicuro da usare
- * in sviluppo. Sostituire con l'ID reale AdMob prima di pubblicare.
- */
-private const val AD_UNIT_ID = "ca-app-pub-3940256099942544/6300978111"
+private const val AD_UNIT_ID = "ca-app-pub-3640143071817482/4243010602"
 
 /**
  * Il refresh automatico configurabile da dashboard AdMob ha un minimo di 30

@@ -11,11 +11,9 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Material.Light.NoActionBar">
 
-        <!-- ID App AdMob di TEST (Google, pubblico, sicuro da usare in
-             sviluppo). Sostituire con l'App ID reale prima della pubblicazione. -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713" />
+            android:value="ca-app-pub-3640143071817482~5206496078" />
 
         <activity
             android:name=".MainActivity"
