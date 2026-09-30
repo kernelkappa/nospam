@@ -24,9 +24,7 @@ struct AdBannerView: View {
 /// sospensione dell'account per "invalid traffic"), quindi qui il banner si
 /// ricarica manualmente ogni 30 secondi con lo stesso intervallo minimo.
 private struct AdBannerRepresentable: UIViewRepresentable {
-    /// ID di TEST ufficiale Google (banner formato fisso 320x50), sicuro da
-    /// usare in sviluppo. Sostituire con l'ID reale AdMob prima di pubblicare.
-    var adUnitID: String = "ca-app-pub-3940256099942544/2934735716"
+    var adUnitID: String = "ca-app-pub-3640143071817482/3121414906"
 
     private static let refreshInterval: TimeInterval = 30
 

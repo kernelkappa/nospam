@@ -39,9 +39,7 @@ targets:
           - com.konrad.nospam.refresh
         UIBackgroundModes:
           - fetch
-        # ID App AdMob di TEST (Google, pubblico, sicuro da usare in sviluppo).
-        # Sostituire con l'App ID reale prima della pubblicazione.
-        GADApplicationIdentifier: ca-app-pub-3940256099942544~1458002511
+        GADApplicationIdentifier: ca-app-pub-3640143071817482~8948542375
         SKAdNetworkItems:
           - SKAdNetworkIdentifier: cstr6suwn9.skadnetwork
         NSUserTrackingUsageDescription: >-
