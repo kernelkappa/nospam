@@ -9,6 +9,7 @@ struct BlockedNumbersView: View {
     @State private var allEntries: [BlockedNumberDisplay] = []
     @State private var searchText: String = ""
     @State private var sourceFilter: SourceFilter = .all
+    @FocusState private var isSearchFieldFocused: Bool
 
     private var filteredEntries: [BlockedNumberDisplay] {
         allEntries
@@ -21,6 +22,7 @@ struct BlockedNumbersView: View {
             Section {
                 TextField("Cerca numero (es. 0691 o +3933...)", text: $searchText)
                     .keyboardType(.phonePad)
+                    .focused($isSearchFieldFocused)
 
                 Picker("Filtro", selection: $sourceFilter) {
                     ForEach(SourceFilter.allCases, id: \.self) { filter in
@@ -56,6 +58,14 @@ struct BlockedNumbersView: View {
             }
         }
         .navigationTitle("Numeri bloccati")
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
+                Button("Fine") {
+                    isSearchFieldFocused = false
+                }
+            }
+        }
         .onAppear(perform: reload)
     }
 

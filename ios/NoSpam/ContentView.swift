@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var isSyncing = false
     @State private var showOnboarding = false
     @AppStorage("onboarding_shown") private var onboardingShown = false
+    @FocusState private var isPhoneFieldFocused: Bool
 
     var body: some View {
         NavigationStack {
@@ -37,6 +38,7 @@ struct ContentView: View {
             TextField("Numero (es. +393331234567)", text: $phoneNumber)
                 .textFieldStyle(.roundedBorder)
                 .keyboardType(.phonePad)
+                .focused($isPhoneFieldFocused)
 
             Picker("Categoria", selection: $category) {
                 ForEach(ReportCategory.allCases, id: \.self) { option in
@@ -98,6 +100,18 @@ struct ContentView: View {
             }
         }
         .padding()
+        .contentShape(Rectangle())
+        .onTapGesture {
+            isPhoneFieldFocused = false
+        }
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                Spacer()
+                Button("Fine") {
+                    isPhoneFieldFocused = false
+                }
+            }
+        }
         .onAppear(perform: refreshEnabledStatus)
         .alert("Blocca le chiamate spam", isPresented: $showOnboarding) {
             Button("Apri Impostazioni") {

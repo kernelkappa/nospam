@@ -1,5 +1,6 @@
 package com.konrad.nospam
 
+import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -8,6 +9,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
@@ -25,7 +28,12 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 
@@ -40,6 +48,8 @@ fun BlockedNumbersScreen(modifier: Modifier = Modifier) {
     val scope = rememberCoroutineScope()
     val dao = remember { AppDatabase.getInstance(context).spamNumberDao() }
     val allEntries by dao.observeAll().collectAsState(initial = emptyList())
+    val focusManager = LocalFocusManager.current
+    val keyboardController = LocalSoftwareKeyboardController.current
 
     var searchText by remember { mutableStateOf("") }
     var sourceFilter by remember { mutableStateOf(SourceFilter.ALL) }
@@ -48,11 +58,26 @@ fun BlockedNumbersScreen(modifier: Modifier = Modifier) {
         .filter { sourceFilter == SourceFilter.ALL || it.source == NumberSource.PERSONAL }
         .filter { searchText.isBlank() || it.phoneNumber.contains(searchText) }
 
-    Column(modifier = modifier.fillMaxSize().padding(24.dp)) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .pointerInput(Unit) {
+                detectTapGestures(onTap = {
+                    focusManager.clearFocus()
+                    keyboardController?.hide()
+                })
+            }
+            .padding(24.dp),
+    ) {
         OutlinedTextField(
             value = searchText,
             onValueChange = { searchText = it },
             label = { Text("Cerca numero (es. 0691 o +3933...)") },
+            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone, imeAction = ImeAction.Done),
+            keyboardActions = KeyboardActions(onDone = {
+                focusManager.clearFocus()
+                keyboardController?.hide()
+            }),
             modifier = Modifier.fillMaxWidth(),
         )
 
