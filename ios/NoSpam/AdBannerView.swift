@@ -32,6 +32,7 @@ private struct AdBannerRepresentable: UIViewRepresentable {
         let banner = BannerView(adSize: AdSizeBanner)
         banner.adUnitID = adUnitID
         banner.rootViewController = Self.currentRootViewController()
+        banner.delegate = context.coordinator
         banner.load(Request())
         context.coordinator.startRefreshTimer(for: banner)
         return banner
@@ -43,7 +44,7 @@ private struct AdBannerRepresentable: UIViewRepresentable {
         Coordinator()
     }
 
-    final class Coordinator {
+    final class Coordinator: NSObject, BannerViewDelegate {
         private var timer: Timer?
 
         func startRefreshTimer(for banner: BannerView) {
@@ -51,6 +52,10 @@ private struct AdBannerRepresentable: UIViewRepresentable {
             timer = Timer.scheduledTimer(withTimeInterval: AdBannerRepresentable.refreshInterval, repeats: true) { [weak banner] _ in
                 banner?.load(Request())
             }
+        }
+
+        func bannerView(_ bannerView: BannerView, didFailToReceiveAdWithError error: Error) {
+            print("AdBannerView: errore caricamento annuncio: \(error.localizedDescription)")
         }
 
         deinit {
