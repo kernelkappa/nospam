@@ -4,6 +4,27 @@ Da incollare in App Store Connect: sia come risposta al messaggio di revisione, 
 
 ---
 
+**Versione compatta (sotto 4000 caratteri, usare questa per il campo risposta di App Store Connect)**
+
+2. App purpose and target audience
+NoSpam is a free call-blocking and caller-ID utility for iPhone, aimed mainly at users in Italy (with growing data coverage for Spain and France). It solves the problem of unwanted spam, scam, telemarketing, robocall and "wangiri" (one-ring-hangup fraud) phone calls: it blocks and identifies incoming calls from numbers already reported as spam, lets users report new numbers to a shared community blocklist, and filters spam SMS/iMessage using the same data. No accounts, no user-generated free text, no paid features — the app is free, supported only by non-intrusive banner ads.
+
+3. Setup and access instructions
+No login or account exists. 1) Launch the app; an onboarding alert explains how to set NoSpam as the default Call Screening app (Settings > Phone > Call Blocking & Identification, or the in-app "Diventa app predefinita" button). 2) On the main screen, enter a phone number and pick a category. 3) "Blocca" blocks it locally only; "Blocca e segnala" also submits an anonymous report (number + category + random non-identifying device hash) to our backend. 4) "Numeri bloccati" lists all blocked numbers with search and an unblock action for personal entries. 5) "Aggiorna database spam" manually refreshes the cached community list (also auto-refreshes every 24h). 6) A banner ad appears after the GDPR consent flow (Google UMP) and, on iOS, the App Tracking Transparency prompt both resolve.
+
+4. External services used
+Supabase (stores community reports), GitHub Pages (hosts the public aggregated anonymized spam-number list the app downloads), Google AdMob + Google User Messaging Platform (ads and consent management, no other analytics/crash SDKs). A few free openly-licensed third-party number lists are merged in and credited in the app's own Credits screen: ShopSicuro and blocklist-telefonica-italia (Italy, CC BY-SA 4.0), lista-telefonos-spam (Spain, Unlicense).
+
+5. Regional differences
+The app works identically in every region — same code, same shared dataset. The only difference is data coverage, not functionality: the blocklist currently has more numbers for Italy, Spain and France, so users elsewhere may see fewer pre-identified numbers. No feature is hidden or changed by region.
+
+6. Regulated industry / third-party material
+NoSpam is not a financial, medical, legal or similarly regulated service, and includes no protected/proprietary third-party material. Phone-number data is either submitted by our own users or drawn from openly-licensed/public-domain sources, each credited by name, license and link in the app's Credits screen. No authorization documentation applies since nothing proprietary is used.
+
+---
+
+**Versione estesa originale (solo come riferimento interno, non adatta al campo 4000 caratteri)**
+
 **2. App purpose and target audience**
 
 NoSpam is a free call-blocking and caller-identification utility for iPhone, targeted primarily at users in Italy (with growing coverage for Spain and France). It solves a common problem: unwanted spam, scam, telemarketing, and robocall phone calls, including "wangiri" (one-ring-and-hangup) fraud calls. The app automatically blocks and identifies incoming calls from numbers already reported as spam, and lets users report new numbers to a shared, community-maintained blocklist. It also filters spam SMS/iMessage using the same data. The app contains no account system, no user-generated free-text content, and no paid features — it is entirely free, supported by non-intrusive banner ads.
