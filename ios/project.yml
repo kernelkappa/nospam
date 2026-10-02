@@ -23,8 +23,8 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.konrad.nospam
         SWIFT_VERSION: "5.0"
         CODE_SIGN_STYLE: Automatic
-        MARKETING_VERSION: "1.0"
-        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0.1"
+        CURRENT_PROJECT_VERSION: "2"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         TARGETED_DEVICE_FAMILY: "1"
     entitlements:
@@ -36,6 +36,8 @@ targets:
       path: NoSpam/Info.plist
       properties:
         CFBundleDisplayName: NoSpam
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         # Usiamo solo crittografia standard esente (SHA-256 via CryptoKit per
         # l'hash anonimo del dispositivo, HTTPS di sistema) - nessun algoritmo
         # proprietario. Evita il modulo di conformita' export a ogni upload.
@@ -75,8 +77,8 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.konrad.nospam.CallDirectory
         SWIFT_VERSION: "5.0"
         CODE_SIGN_STYLE: Automatic
-        MARKETING_VERSION: "1.0"
-        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0.1"
+        CURRENT_PROJECT_VERSION: "2"
         TARGETED_DEVICE_FAMILY: "1"
     entitlements:
       path: NoSpamCallDirectory/NoSpamCallDirectory.entitlements
@@ -87,6 +89,8 @@ targets:
       path: NoSpamCallDirectory/Info.plist
       properties:
         CFBundleDisplayName: NoSpam CallDirectory
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         NSExtension:
           NSExtensionPointIdentifier: com.apple.callkit.call-directory
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).CallDirectoryHandler
@@ -103,8 +107,8 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.konrad.nospam.MessageFilter
         SWIFT_VERSION: "5.0"
         CODE_SIGN_STYLE: Automatic
-        MARKETING_VERSION: "1.0"
-        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "1.0.1"
+        CURRENT_PROJECT_VERSION: "2"
         TARGETED_DEVICE_FAMILY: "1"
     entitlements:
       path: NoSpamMessageFilter/NoSpamMessageFilter.entitlements
@@ -115,6 +119,8 @@ targets:
       path: NoSpamMessageFilter/Info.plist
       properties:
         CFBundleDisplayName: NoSpam MessageFilter
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         NSExtension:
           NSExtensionPointIdentifier: com.apple.identitylookup.message-filter
           NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).MessageFilterExtension
