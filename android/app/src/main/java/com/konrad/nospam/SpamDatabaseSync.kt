@@ -25,7 +25,7 @@ object SpamDatabaseSync {
             connection.requestMethod = "GET"
             val statusCode = connection.responseCode
             if (statusCode !in 200..299) {
-                throw IllegalStateException("HTTP $statusCode from $url")
+                throw HttpStatusException(statusCode, url)
             }
             return connection.inputStream.bufferedReader().use { it.readText() }
         } finally {

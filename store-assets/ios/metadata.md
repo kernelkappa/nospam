@@ -42,6 +42,7 @@ Utilità
 ## Note per il questionario Privacy dell'app (App Privacy)
 - Identificatori (device_hash anonimo) — NON collegato all'identità dell'utente, usato per: Funzionalità dell'app
 - Identificatori pubblicitari (IDFA, tramite Google AdMob/UMP, solo con consenso) — usato per: Pubblicità o marketing
+- Dati di diagnostica (tipo di errore, contesto tecnico, versione app/OS — NON collegati all'identità, nessun input utente) — usato per: Funzionalità dell'app
 - Nessun dato di contatto, nessun dato finanziario, nessuna posizione raccolti
 
 ## Note per il questionario età/contenuti

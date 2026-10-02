@@ -10,4 +10,5 @@ android/app/build/
 ios/DerivedData/
 ios/*.xcodeproj/
 *.iml
+supabase/.temp/
 

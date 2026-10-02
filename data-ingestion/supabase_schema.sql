@@ -29,3 +29,27 @@ create policy "public can insert reports"
     on reports for insert
     to anon
     with check (true);
+
+-- Log di errore inviati automaticamente dall'app (solo tipo errore e
+-- contesto tecnico, mai input dell'utente: niente numeri di telefono).
+create table if not exists error_reports (
+    id          uuid primary key default gen_random_uuid(),
+    platform    text not null check (platform in ('ios', 'android')),
+    context     text not null,
+    message     text not null,
+    app_version text,
+    os_version  text,
+    reported_at timestamptz not null default now()
+);
+
+alter table error_reports enable row level security;
+
+create policy "public can insert error reports"
+    on error_reports for insert
+    to anon
+    with check (true);
+
+-- L'inoltro via email (Edge Function send-error-email) è configurato come
+-- Database Webhook dalla dashboard Supabase (Database > Webhooks), non qui:
+-- Table error_reports, Event INSERT, Type HTTP Request verso l'URL della
+-- function, header "apikey: <publishable key>". Da fare una tantum.

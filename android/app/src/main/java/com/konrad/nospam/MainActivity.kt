@@ -242,7 +242,8 @@ fun MainScreen(modifier: Modifier = Modifier) {
                                 statusMessage = "Numero bloccato localmente."
                                 phoneNumber = ""
                             } catch (e: Exception) {
-                                statusMessage = "Errore: ${e.message}"
+                                ErrorReporter.report(context, e, "blockOnly")
+                                statusMessage = "Errore: ${UserFacingError.message(e)}"
                             }
                             isSubmitting = false
                         }
@@ -263,7 +264,8 @@ fun MainScreen(modifier: Modifier = Modifier) {
                                 ReportService.submit(context, normalized, category)
                                 statusMessage = "Numero bloccato e segnalato alla community."
                             } catch (e: Exception) {
-                                statusMessage = "Bloccato localmente, ma la segnalazione non è riuscita: ${e.message}"
+                                ErrorReporter.report(context, e, "blockAndReport")
+                                statusMessage = "Bloccato localmente, ma la segnalazione non è riuscita: ${UserFacingError.message(e)}"
                             }
                             phoneNumber = ""
                             isSubmitting = false
@@ -304,7 +306,8 @@ fun MainScreen(modifier: Modifier = Modifier) {
                             SpamDatabaseSync.sync(context)
                             syncMessage = "Database aggiornato."
                         } catch (e: Exception) {
-                            syncMessage = "Errore: ${e.message}"
+                            ErrorReporter.report(context, e, "syncDatabase")
+                            syncMessage = "Errore: ${UserFacingError.message(e)}"
                         }
                         isSyncing = false
                     }

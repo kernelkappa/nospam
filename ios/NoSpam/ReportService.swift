@@ -11,9 +11,9 @@ enum ReportError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidResponse:
-            return "Risposta non valida dal server."
+            return "Risposta non valida dal server. Riprova più tardi."
         case .server(let statusCode):
-            return "Il server ha risposto con codice \(statusCode)."
+            return "Il server non è raggiungibile al momento (codice \(statusCode)). Riprova più tardi."
         }
     }
 }

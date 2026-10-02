@@ -10,6 +10,7 @@ class SpamSyncWorker(context: Context, params: WorkerParameters) : CoroutineWork
             SpamDatabaseSync.sync(applicationContext)
             Result.success()
         } catch (e: Exception) {
+            ErrorReporter.report(applicationContext, e, "SpamSyncWorker.doWork")
             Result.retry()
         }
 }

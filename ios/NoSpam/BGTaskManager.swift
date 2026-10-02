@@ -27,6 +27,7 @@ enum BGTaskManager {
                 try await SpamDatabaseSync.sync()
                 task.setTaskCompleted(success: true)
             } catch {
+                ErrorReporter.report(error, context: "BGTaskManager.handleRefresh")
                 task.setTaskCompleted(success: false)
             }
         }
