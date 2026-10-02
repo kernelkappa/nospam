@@ -11,4 +11,5 @@ ios/DerivedData/
 ios/*.xcodeproj/
 *.iml
 supabase/.temp/
+android/keystore/
 
