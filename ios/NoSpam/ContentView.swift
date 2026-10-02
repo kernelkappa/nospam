@@ -11,6 +11,7 @@ struct ContentView: View {
     @State private var syncMessage: String?
     @State private var isSyncing = false
     @State private var showOnboarding = false
+    @State private var showSettingsGuide = false
     @AppStorage("onboarding_shown") private var onboardingShown = false
     @FocusState private var isPhoneFieldFocused: Bool
 
@@ -85,9 +86,7 @@ struct ContentView: View {
                     .multilineTextAlignment(.center)
 
                 Button("Apri Impostazioni") {
-                    if let url = URL(string: UIApplication.openSettingsURLString) {
-                        UIApplication.shared.open(url)
-                    }
+                    showSettingsGuide = true
                 }
 
                 Text(
@@ -125,19 +124,33 @@ struct ContentView: View {
         }
         .onAppear(perform: refreshEnabledStatus)
         .alert("Blocca le chiamate spam", isPresented: $showOnboarding) {
-            Button("Apri Impostazioni") {
+            Button("Continua") {
                 onboardingShown = true
-                if let url = URL(string: UIApplication.openSettingsURLString) {
-                    UIApplication.shared.open(url)
-                }
+                showSettingsGuide = true
             }
             Button("Più tardi", role: .cancel) {
                 onboardingShown = true
             }
         } message: {
             Text(
-                "Per bloccare automaticamente le chiamate spam, abilita l'estensione NoSpam da " +
-                "Impostazioni > Telefono > Blocco e identificazione chiamate."
+                "Per bloccare automaticamente le chiamate spam, NoSpam deve essere abilitato da " +
+                "Impostazioni > Telefono > Blocco e identificazione chiamate. Ti guidiamo passo passo."
+            )
+        }
+        .alert("Attiva il blocco chiamate", isPresented: $showSettingsGuide) {
+            Button("Vai su Impostazioni") {
+                if let url = URL(string: UIApplication.openSettingsURLString) {
+                    UIApplication.shared.open(url)
+                }
+            }
+            Button("Annulla", role: .cancel) {}
+        } message: {
+            Text(
+                "Impostazioni si aprirà sulla pagina di NoSpam, non su quella giusta. Da lì:\n\n" +
+                "1. Torna alla schermata principale di Impostazioni (tocca « ‹ Impostazioni » in alto a sinistra)\n" +
+                "2. Tocca Telefono\n" +
+                "3. Tocca Blocco e identificazione chiamate\n" +
+                "4. Attiva l'interruttore NoSpam"
             )
         }
     }
@@ -147,7 +160,7 @@ struct ContentView: View {
         case .enabled:
             return "Blocco chiamate attivo."
         case .disabled:
-            return "Blocco chiamate disattivato. Abilitalo da Impostazioni > Telefono > Blocco e identificazione chiamate."
+            return "Blocco chiamate disattivato. Tocca «Apri Impostazioni» qui sotto: ti guidiamo passo passo per attivarlo."
         default:
             return "Stato blocco chiamate sconosciuto."
         }
@@ -169,10 +182,15 @@ struct ContentView: View {
         SpamNumberStore.addPersonalNumber(phoneNumber, category: category.rawValue)
         phoneNumber = ""
         CallDirectoryManager.reloadExtension { error in
+            if let error, !CallDirectoryManager.isExtensionDisabledError(error) {
+                ErrorReporter.report(error, context: "blockOnly.reloadExtension")
+            }
             DispatchQueue.main.async {
-                statusMessage = error == nil
-                    ? "Numero bloccato localmente."
-                    : "Bloccato, ma l'estensione non si è ricaricata: \(error!.localizedDescription)"
+                if let error, !CallDirectoryManager.isExtensionDisabledError(error) {
+                    statusMessage = "Bloccato, ma l'estensione non si è ricaricata: \(UserFacingError.message(for: error))"
+                } else {
+                    statusMessage = "Numero bloccato localmente."
+                }
             }
         }
     }
@@ -187,7 +205,8 @@ struct ContentView: View {
                 try await ReportService.submit(phoneNumberE164: normalized, category: category)
                 statusMessage = "Numero bloccato e segnalato alla community."
             } catch {
-                statusMessage = "Bloccato localmente, ma la segnalazione non è riuscita: \(error.localizedDescription)"
+                ErrorReporter.report(error, context: "blockAndReport")
+                statusMessage = "Bloccato localmente, ma la segnalazione non è riuscita: \(UserFacingError.message(for: error))"
             }
             phoneNumber = ""
             isSubmitting = false
@@ -203,7 +222,12 @@ struct ContentView: View {
                 try await SpamDatabaseSync.sync()
                 syncMessage = "Database aggiornato."
             } catch {
-                syncMessage = "Errore: \(error.localizedDescription)"
+                if CallDirectoryManager.isExtensionDisabledError(error) {
+                    syncMessage = "Database aggiornato. Per attivare il blocco, tocca «Apri Impostazioni» qui sopra e segui la guida."
+                } else {
+                    ErrorReporter.report(error, context: "syncDatabase")
+                    syncMessage = "Errore: \(UserFacingError.message(for: error))"
+                }
             }
             isSyncing = false
             refreshEnabledStatus()

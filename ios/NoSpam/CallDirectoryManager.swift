@@ -15,4 +15,12 @@ enum CallDirectoryManager {
             completion(status)
         }
     }
+
+    /// `reloadExtension` restituisce questo errore quando l'utente non ha
+    /// ancora abilitato l'estensione da Impostazioni: non e' un bug, va
+    /// mostrato come stato informativo e non come errore tecnico.
+    static func isExtensionDisabledError(_ error: Error) -> Bool {
+        let nsError = error as NSError
+        return nsError.domain == "com.apple.CallKit.error.calldirectorymanager" && nsError.code == 6
+    }
 }
