@@ -13,7 +13,6 @@ NoSpam blocca e identifica automaticamente le chiamate spam, truffa e telemarket
 COME FUNZIONA
 • Blocco automatico delle chiamate da numeri già segnalati come spam
 • Identificazione della chiamata prima ancora di rispondere
-• Filtro SMS spam
 • Blocca un numero solo sul tuo dispositivo, oppure segnalalo anche alla community
 • Un numero entra nella lista condivisa solo dopo almeno 5 segnalazioni da utenti diversi
 
