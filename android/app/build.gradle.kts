@@ -21,7 +21,7 @@ android {
         applicationId = "com.konrad.nospam"
         minSdk = 29
         targetSdk = 37
-        versionCode = 1
+        versionCode = 3
         versionName = "1.0"
     }
 
