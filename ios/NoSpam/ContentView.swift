@@ -23,6 +23,7 @@ struct ContentView: View {
                 AdBannerView()
             }
             .navigationTitle("NoSpam")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     NavigationLink("Crediti") {
