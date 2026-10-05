@@ -34,8 +34,13 @@ fun AdBanner(modifier: Modifier = Modifier) {
 
     val context = LocalContext.current
     val adView = remember {
+        // Il banner adattivo usa lo spazio in modo piu' efficiente del
+        // formato fisso 320x50: altezza 50-150dp calcolata da Google in base
+        // alla larghezza dello schermo, stesso principio su iOS.
+        val widthDp = (context.resources.displayMetrics.widthPixels / context.resources.displayMetrics.density).toInt()
+        val adaptiveSize = AdSize.getLargeAnchoredAdaptiveBannerAdSize(context, widthDp)
         AdView(context).apply {
-            setAdSize(AdSize.BANNER)
+            setAdSize(adaptiveSize)
             adUnitId = AD_UNIT_ID
             layoutParams = FrameLayout.LayoutParams(
                 FrameLayout.LayoutParams.MATCH_PARENT,

@@ -59,7 +59,6 @@ struct BlockedNumbersView: View {
                 }
             }
             AdBannerView()
-                .frame(height: 50)
         }
         .navigationTitle("Numeri bloccati")
         .toolbar {

@@ -8,14 +8,22 @@ import SwiftUI
 struct AdBannerView: View {
     @ObservedObject private var consentManager = ConsentManager.shared
 
+    /// L'altezza del banner adattivo dipende solo dalla larghezza del
+    /// dispositivo (non dal contenuto), quindi si puo' calcolare una sola
+    /// volta dalla larghezza dello schermo invece che misurare il layout.
+    private var adSize: AdSize {
+        largeAnchoredAdaptiveBanner(width: UIScreen.main.bounds.width)
+    }
+
     var body: some View {
         Group {
             if consentManager.canRequestAds {
-                AdBannerRepresentable()
+                AdBannerRepresentable(adSize: adSize)
             } else {
                 Color.clear
             }
         }
+        .frame(height: adSize.size.height)
     }
 }
 
@@ -24,12 +32,13 @@ struct AdBannerView: View {
 /// sospensione dell'account per "invalid traffic"), quindi qui il banner si
 /// ricarica manualmente ogni 30 secondi con lo stesso intervallo minimo.
 private struct AdBannerRepresentable: UIViewRepresentable {
+    var adSize: AdSize
     var adUnitID: String = "ca-app-pub-3640143071817482/3121414906"
 
     private static let refreshInterval: TimeInterval = 30
 
     func makeUIView(context: Context) -> BannerView {
-        let banner = BannerView(adSize: AdSizeBanner)
+        let banner = BannerView(adSize: adSize)
         banner.adUnitID = adUnitID
         banner.rootViewController = Self.currentRootViewController()
         banner.delegate = context.coordinator

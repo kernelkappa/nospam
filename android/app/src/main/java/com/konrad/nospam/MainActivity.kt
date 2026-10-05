@@ -62,6 +62,17 @@ class MainActivity : ComponentActivity() {
         setContent {
             MaterialTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
+                    val context = LocalContext.current
+                    var updateRequired by remember { mutableStateOf(false) }
+                    LaunchedEffect(Unit) {
+                        updateRequired = UpdateGate.isUpdateRequired(context)
+                    }
+
+                    if (updateRequired) {
+                        UpdateRequiredScreen()
+                        return@Surface
+                    }
+
                     var screen by remember { mutableStateOf(NospamScreen.MAIN) }
 
                     Scaffold(

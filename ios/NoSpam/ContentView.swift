@@ -21,7 +21,6 @@ struct ContentView: View {
                 mainContent
                 Spacer(minLength: 0)
                 AdBannerView()
-                    .frame(height: 50)
             }
             .navigationTitle("NoSpam")
             .toolbar {
