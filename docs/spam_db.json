@@ -1,8 +1,23 @@
 [
   {
+    "number": "+0393781929818",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+12763153358",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+13252002769",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+15096922063",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+18094256786",
@@ -10,14 +25,34 @@
     "category": "scam"
   },
   {
+    "number": "+18295923314",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+18324834313",
     "report_count": 1,
     "category": "spam"
   },
   {
+    "number": "+19102297545",
+    "report_count": 3,
+    "category": "spam"
+  },
+  {
+    "number": "+19175942543",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
     "number": "+212675188437",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+2203659679",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+2203924422",
@@ -26,6 +61,11 @@
   },
   {
     "number": "+22969680032",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+2349162853154",
     "report_count": 1,
     "category": "scam"
   },
@@ -61,6 +101,16 @@
   },
   {
     "number": "+33648625627",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+33744829688",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3375761202",
     "report_count": 1,
     "category": "spam"
   },
@@ -335,6 +385,11 @@
     "category": "spam"
   },
   {
+    "number": "+34600291505",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34600291544",
     "report_count": 1,
     "category": "spam"
@@ -431,6 +486,11 @@
   },
   {
     "number": "+34600432375",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34600457439",
     "report_count": 1,
     "category": "spam"
   },
@@ -661,6 +721,11 @@
   },
   {
     "number": "+34601027814",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34601069307",
     "report_count": 1,
     "category": "spam"
   },
@@ -1360,6 +1425,11 @@
     "category": "spam"
   },
   {
+    "number": "+34602622622",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34602625377",
     "report_count": 1,
     "category": "spam"
@@ -1635,6 +1705,11 @@
     "category": "spam"
   },
   {
+    "number": "+34603277947",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34603280169",
     "report_count": 1,
     "category": "spam"
@@ -1871,6 +1946,11 @@
   },
   {
     "number": "+34603862180",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34603887921",
     "report_count": 1,
     "category": "spam"
   },
@@ -2190,6 +2270,11 @@
     "category": "spam"
   },
   {
+    "number": "+34604060929",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34604060950",
     "report_count": 1,
     "category": "spam"
@@ -2261,6 +2346,11 @@
   },
   {
     "number": "+34604163681",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34604164856",
     "report_count": 1,
     "category": "spam"
   },
@@ -2510,6 +2600,11 @@
     "category": "spam"
   },
   {
+    "number": "+34605017296",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34605020534",
     "report_count": 1,
     "category": "spam"
@@ -2601,6 +2696,11 @@
   },
   {
     "number": "+34605179461",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34605182974",
     "report_count": 1,
     "category": "spam"
   },
@@ -2785,7 +2885,17 @@
     "category": "spam"
   },
   {
+    "number": "+34605515469",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34605515929",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34605515947",
     "report_count": 1,
     "category": "spam"
   },
@@ -3606,6 +3716,11 @@
   },
   {
     "number": "+34606990334",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34606999474",
     "report_count": 1,
     "category": "spam"
   },
@@ -6245,6 +6360,11 @@
     "category": "spam"
   },
   {
+    "number": "+34611273601",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34611279524",
     "report_count": 1,
     "category": "spam"
@@ -6955,6 +7075,11 @@
     "category": "spam"
   },
   {
+    "number": "+34613450027",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34613450872",
     "report_count": 1,
     "category": "spam"
@@ -6996,6 +7121,11 @@
   },
   {
     "number": "+34613522538",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34613531648",
     "report_count": 1,
     "category": "spam"
   },
@@ -7356,6 +7486,11 @@
   },
   {
     "number": "+34614695608",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34614710658",
     "report_count": 1,
     "category": "spam"
   },
@@ -7970,6 +8105,11 @@
     "category": "spam"
   },
   {
+    "number": "+34615647046",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34615647049",
     "report_count": 1,
     "category": "spam"
@@ -8206,6 +8346,11 @@
   },
   {
     "number": "+34615885573",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34615885709",
     "report_count": 1,
     "category": "spam"
   },
@@ -9315,7 +9460,17 @@
     "category": "spam"
   },
   {
+    "number": "+34617654388",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34617662213",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34617672592",
     "report_count": 1,
     "category": "spam"
   },
@@ -10795,6 +10950,11 @@
     "category": "spam"
   },
   {
+    "number": "+34620290413",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34620296715",
     "report_count": 1,
     "category": "spam"
@@ -11670,6 +11830,11 @@
     "category": "spam"
   },
   {
+    "number": "+34621674471",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34621675364",
     "report_count": 1,
     "category": "spam"
@@ -11691,6 +11856,11 @@
   },
   {
     "number": "+34621677200",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34621677248",
     "report_count": 1,
     "category": "spam"
   },
@@ -13011,6 +13181,11 @@
   },
   {
     "number": "+34625490058",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34625504613",
     "report_count": 1,
     "category": "spam"
   },
@@ -17315,6 +17490,11 @@
     "category": "spam"
   },
   {
+    "number": "+34634009938",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34634018617",
     "report_count": 1,
     "category": "spam"
@@ -17951,6 +18131,11 @@
   },
   {
     "number": "+34635379335",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34635381232",
     "report_count": 1,
     "category": "spam"
   },
@@ -18950,6 +19135,11 @@
     "category": "spam"
   },
   {
+    "number": "+34637047548",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34637051301",
     "report_count": 1,
     "category": "spam"
@@ -19290,6 +19480,11 @@
     "category": "spam"
   },
   {
+    "number": "+34637802657",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34637805818",
     "report_count": 1,
     "category": "spam"
@@ -19626,6 +19821,11 @@
   },
   {
     "number": "+34638491381",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34638491435",
     "report_count": 1,
     "category": "spam"
   },
@@ -21490,6 +21690,11 @@
     "category": "spam"
   },
   {
+    "number": "+34641633466",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34641666189",
     "report_count": 1,
     "category": "spam"
@@ -21526,6 +21731,11 @@
   },
   {
     "number": "+34641849409",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34641862454",
     "report_count": 1,
     "category": "spam"
   },
@@ -21761,6 +21971,11 @@
   },
   {
     "number": "+34642555189",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34642565914",
     "report_count": 1,
     "category": "spam"
   },
@@ -22180,6 +22395,11 @@
     "category": "spam"
   },
   {
+    "number": "+34643719242",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34643731757",
     "report_count": 1,
     "category": "spam"
@@ -22311,6 +22531,11 @@
   },
   {
     "number": "+34644039570",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34644063070",
     "report_count": 1,
     "category": "spam"
   },
@@ -22545,6 +22770,11 @@
     "category": "spam"
   },
   {
+    "number": "+34644879836",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34644890878",
     "report_count": 1,
     "category": "spam"
@@ -22735,6 +22965,11 @@
     "category": "spam"
   },
   {
+    "number": "+34645231884",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34645238975",
     "report_count": 1,
     "category": "spam"
@@ -22871,6 +23106,11 @@
   },
   {
     "number": "+34645441226",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34645464798",
     "report_count": 1,
     "category": "spam"
   },
@@ -23576,6 +23816,11 @@
   },
   {
     "number": "+34646540536",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34646548058",
     "report_count": 1,
     "category": "spam"
   },
@@ -24491,6 +24736,11 @@
   },
   {
     "number": "+34648463664",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34648482470",
     "report_count": 1,
     "category": "spam"
   },
@@ -25790,6 +26040,11 @@
     "category": "spam"
   },
   {
+    "number": "+34651142520",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34651180251",
     "report_count": 1,
     "category": "spam"
@@ -26021,6 +26276,11 @@
   },
   {
     "number": "+34651714108",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34651717752",
     "report_count": 1,
     "category": "spam"
   },
@@ -26450,6 +26710,11 @@
     "category": "spam"
   },
   {
+    "number": "+34652463822",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34652490402",
     "report_count": 1,
     "category": "spam"
@@ -26656,6 +26921,11 @@
   },
   {
     "number": "+34652992990",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34653010915",
     "report_count": 1,
     "category": "spam"
   },
@@ -27126,6 +27396,11 @@
   },
   {
     "number": "+34654120194",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34654130566",
     "report_count": 1,
     "category": "spam"
   },
@@ -27740,6 +28015,11 @@
     "category": "spam"
   },
   {
+    "number": "+34655203271",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34655215438",
     "report_count": 1,
     "category": "spam"
@@ -27761,6 +28041,11 @@
   },
   {
     "number": "+34655273920",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34655284587",
     "report_count": 1,
     "category": "spam"
   },
@@ -27901,6 +28186,11 @@
   },
   {
     "number": "+34655630017",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34655648790",
     "report_count": 1,
     "category": "spam"
   },
@@ -28981,6 +29271,11 @@
   },
   {
     "number": "+34658328206",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34658328212",
     "report_count": 1,
     "category": "spam"
   },
@@ -30230,6 +30525,11 @@
     "category": "spam"
   },
   {
+    "number": "+34660998504",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34661000324",
     "report_count": 1,
     "category": "spam"
@@ -30855,6 +31155,11 @@
     "category": "spam"
   },
   {
+    "number": "+34662306815",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34662309254",
     "report_count": 1,
     "category": "spam"
@@ -31090,6 +31395,11 @@
     "category": "spam"
   },
   {
+    "number": "+34662900191",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34662900206",
     "report_count": 1,
     "category": "spam"
@@ -31115,12 +31425,22 @@
     "category": "spam"
   },
   {
+    "number": "+34662900229",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34662900232",
     "report_count": 1,
     "category": "spam"
   },
   {
     "number": "+34662900236",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34662900254",
     "report_count": 1,
     "category": "spam"
   },
@@ -31356,6 +31676,11 @@
   },
   {
     "number": "+34662970265",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34662970311",
     "report_count": 1,
     "category": "spam"
   },
@@ -33375,6 +33700,11 @@
     "category": "spam"
   },
   {
+    "number": "+34665615653",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34665632277",
     "report_count": 1,
     "category": "spam"
@@ -34760,6 +35090,11 @@
     "category": "spam"
   },
   {
+    "number": "+34668690356",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34668690432",
     "report_count": 1,
     "category": "spam"
@@ -35860,6 +36195,11 @@
     "category": "spam"
   },
   {
+    "number": "+34671305248",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34671317077",
     "report_count": 1,
     "category": "spam"
@@ -36185,6 +36525,11 @@
     "category": "spam"
   },
   {
+    "number": "+34672116703",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34672121453",
     "report_count": 1,
     "category": "spam"
@@ -36196,6 +36541,11 @@
   },
   {
     "number": "+34672129015",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34672155745",
     "report_count": 1,
     "category": "spam"
   },
@@ -36825,6 +37175,11 @@
     "category": "spam"
   },
   {
+    "number": "+34673707777",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34673713485",
     "report_count": 1,
     "category": "spam"
@@ -36861,6 +37216,11 @@
   },
   {
     "number": "+34673834200",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34673840083",
     "report_count": 1,
     "category": "spam"
   },
@@ -37076,6 +37436,11 @@
   },
   {
     "number": "+34674554735",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34674594785",
     "report_count": 1,
     "category": "spam"
   },
@@ -38005,7 +38370,17 @@
     "category": "spam"
   },
   {
+    "number": "+34676897274",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34676908614",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34676919993",
     "report_count": 1,
     "category": "spam"
   },
@@ -38685,6 +39060,11 @@
     "category": "spam"
   },
   {
+    "number": "+34678659032",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34678659405",
     "report_count": 1,
     "category": "spam"
@@ -39106,6 +39486,11 @@
   },
   {
     "number": "+34679627116",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34679661913",
     "report_count": 1,
     "category": "spam"
   },
@@ -39560,6 +39945,16 @@
     "category": "spam"
   },
   {
+    "number": "+34681234127",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34681236487",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+34681251796",
     "report_count": 1,
     "category": "spam"
@@ -39751,6 +40146,11 @@
   },
   {
     "number": "+34681959171",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34681959568",
     "report_count": 1,
     "category": "spam"
   },
@@ -40761,6 +41161,11 @@
   },
   {
     "number": "+34685205795",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34685209523",
     "report_count": 1,
     "category": "spam"
   },
@@ -42535,6 +42940,11 @@
     "category": "spam"
   },
   {
+    "number": "+34689666124",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34689669831",
     "report_count": 1,
     "category": "spam"
@@ -42880,6 +43290,11 @@
     "category": "spam"
   },
   {
+    "number": "+34690642547",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34690642971",
     "report_count": 1,
     "category": "spam"
@@ -43131,6 +43546,11 @@
   },
   {
     "number": "+34691353990",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34691361096",
     "report_count": 1,
     "category": "spam"
   },
@@ -43636,6 +44056,11 @@
   },
   {
     "number": "+34692535285",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34692540298",
     "report_count": 1,
     "category": "spam"
   },
@@ -44350,6 +44775,11 @@
     "category": "spam"
   },
   {
+    "number": "+34693737654",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34693777116",
     "report_count": 1,
     "category": "spam"
@@ -44621,6 +45051,11 @@
   },
   {
     "number": "+34694860843",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34694928404",
     "report_count": 1,
     "category": "spam"
   },
@@ -46450,6 +46885,11 @@
     "category": "spam"
   },
   {
+    "number": "+34717060146",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34717061467",
     "report_count": 1,
     "category": "spam"
@@ -46506,6 +46946,11 @@
   },
   {
     "number": "+34717069745",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34717113629",
     "report_count": 1,
     "category": "spam"
   },
@@ -46571,6 +47016,11 @@
   },
   {
     "number": "+34717784462",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34717786099",
     "report_count": 1,
     "category": "spam"
   },
@@ -47111,6 +47561,11 @@
   },
   {
     "number": "+34726026093",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34726026345",
     "report_count": 1,
     "category": "spam"
   },
@@ -61435,6 +61890,66 @@
     "category": "spam"
   },
   {
+    "number": "+34791198485",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34791210773",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34791238425",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34791238426",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34791238427",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34791238428",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34791238433",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34791238434",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34791238435",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34791238438",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34791238439",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34791238440",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34791911875",
     "report_count": 1,
     "category": "spam"
@@ -61750,6 +62265,11 @@
     "category": "spam"
   },
   {
+    "number": "+34806465014",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34806465043",
     "report_count": 1,
     "category": "spam"
@@ -61775,7 +62295,17 @@
     "category": "spam"
   },
   {
+    "number": "+34806481363",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34806481410",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34806481491",
     "report_count": 1,
     "category": "spam"
   },
@@ -62055,6 +62585,11 @@
     "category": "spam"
   },
   {
+    "number": "+34807499944",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34807502130",
     "report_count": 1,
     "category": "spam"
@@ -62126,6 +62661,11 @@
   },
   {
     "number": "+34808241852",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34808980838",
     "report_count": 1,
     "category": "spam"
   },
@@ -63000,6 +63540,11 @@
     "category": "spam"
   },
   {
+    "number": "+34818220402",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34818988102",
     "report_count": 1,
     "category": "spam"
@@ -63635,6 +64180,11 @@
     "category": "spam"
   },
   {
+    "number": "+34828153426",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34828153605",
     "report_count": 1,
     "category": "spam"
@@ -64251,6 +64801,11 @@
   },
   {
     "number": "+34846636003",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34846636007",
     "report_count": 1,
     "category": "spam"
   },
@@ -65550,6 +66105,11 @@
     "category": "spam"
   },
   {
+    "number": "+34854613777",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34854613805",
     "report_count": 1,
     "category": "spam"
@@ -65951,6 +66511,11 @@
   },
   {
     "number": "+34854794027",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34854794029",
     "report_count": 1,
     "category": "spam"
   },
@@ -66426,6 +66991,11 @@
   },
   {
     "number": "+34854794955",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34854794998",
     "report_count": 1,
     "category": "spam"
   },
@@ -68395,6 +68965,11 @@
     "category": "spam"
   },
   {
+    "number": "+34858886833",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34858886834",
     "report_count": 1,
     "category": "spam"
@@ -68835,6 +69410,11 @@
     "category": "spam"
   },
   {
+    "number": "+34865459311",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34865459319",
     "report_count": 1,
     "category": "spam"
@@ -68921,6 +69501,16 @@
   },
   {
     "number": "+34865459399",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34865459483",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34865459499",
     "report_count": 1,
     "category": "spam"
   },
@@ -69021,6 +69611,11 @@
   },
   {
     "number": "+34865484165",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34865484605",
     "report_count": 1,
     "category": "spam"
   },
@@ -71740,6 +72335,11 @@
     "category": "spam"
   },
   {
+    "number": "+34871493659",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34871493664",
     "report_count": 1,
     "category": "spam"
@@ -72116,6 +72716,11 @@
   },
   {
     "number": "+34871870618",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34871906383",
     "report_count": 1,
     "category": "spam"
   },
@@ -74950,6 +75555,11 @@
     "category": "spam"
   },
   {
+    "number": "+34886442882",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34886445029",
     "report_count": 1,
     "category": "spam"
@@ -75621,6 +76231,11 @@
   },
   {
     "number": "+34900858685",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34900861744",
     "report_count": 1,
     "category": "spam"
   },
@@ -76715,6 +77330,11 @@
     "category": "spam"
   },
   {
+    "number": "+34902247526",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34902248080",
     "report_count": 1,
     "category": "spam"
@@ -77380,6 +78000,11 @@
     "category": "spam"
   },
   {
+    "number": "+34903166826",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34903440126",
     "report_count": 1,
     "category": "spam"
@@ -77916,6 +78541,11 @@
   },
   {
     "number": "+34910151357",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34910165305",
     "report_count": 1,
     "category": "spam"
   },
@@ -78540,6 +79170,11 @@
     "category": "spam"
   },
   {
+    "number": "+34910502321",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34910502333",
     "report_count": 1,
     "category": "spam"
@@ -78791,6 +79426,11 @@
   },
   {
     "number": "+34910612103",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34910612104",
     "report_count": 1,
     "category": "spam"
   },
@@ -82940,6 +83580,11 @@
     "category": "spam"
   },
   {
+    "number": "+34911403335",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34911410438",
     "report_count": 1,
     "category": "spam"
@@ -83171,6 +83816,11 @@
   },
   {
     "number": "+34911515086",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34911516983",
     "report_count": 1,
     "category": "spam"
   },
@@ -83441,6 +84091,11 @@
   },
   {
     "number": "+34911676689",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34911677213",
     "report_count": 1,
     "category": "spam"
   },
@@ -83796,6 +84451,11 @@
   },
   {
     "number": "+34911822958",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34911823094",
     "report_count": 1,
     "category": "spam"
   },
@@ -84161,6 +84821,11 @@
   },
   {
     "number": "+34911916283",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34911927688",
     "report_count": 1,
     "category": "spam"
   },
@@ -86905,6 +87570,11 @@
     "category": "spam"
   },
   {
+    "number": "+34913669725",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34913669742",
     "report_count": 1,
     "category": "spam"
@@ -87425,12 +88095,22 @@
     "category": "spam"
   },
   {
+    "number": "+34914289906",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34914321406",
     "report_count": 1,
     "category": "spam"
   },
   {
     "number": "+34914321973",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34914331507",
     "report_count": 1,
     "category": "spam"
   },
@@ -87726,6 +88406,11 @@
   },
   {
     "number": "+34914848958",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34914849016",
     "report_count": 1,
     "category": "spam"
   },
@@ -88060,6 +88745,11 @@
     "category": "spam"
   },
   {
+    "number": "+34915238962",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34915238975",
     "report_count": 1,
     "category": "spam"
@@ -88275,7 +88965,17 @@
     "category": "spam"
   },
   {
+    "number": "+34915498504",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34915498841",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34915499914",
     "report_count": 1,
     "category": "spam"
   },
@@ -88440,6 +89140,11 @@
     "category": "spam"
   },
   {
+    "number": "+34915648760",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34915648822",
     "report_count": 1,
     "category": "spam"
@@ -88481,6 +89186,11 @@
   },
   {
     "number": "+34915738714",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34915741661",
     "report_count": 1,
     "category": "spam"
   },
@@ -89735,6 +90445,11 @@
     "category": "spam"
   },
   {
+    "number": "+34917614112",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34917614113",
     "report_count": 1,
     "category": "spam"
@@ -90360,6 +91075,11 @@
     "category": "spam"
   },
   {
+    "number": "+34917890111",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34917890634",
     "report_count": 1,
     "category": "spam"
@@ -90506,6 +91226,11 @@
   },
   {
     "number": "+34917929044",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34917929938",
     "report_count": 1,
     "category": "spam"
   },
@@ -90960,6 +91685,16 @@
     "category": "spam"
   },
   {
+    "number": "+34918272370",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34918272400",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34918279840",
     "report_count": 1,
     "category": "spam"
@@ -91341,6 +92076,11 @@
   },
   {
     "number": "+34918388504",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34918486918",
     "report_count": 1,
     "category": "spam"
   },
@@ -92650,6 +93390,11 @@
     "category": "spam"
   },
   {
+    "number": "+34919462651",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34919462657",
     "report_count": 1,
     "category": "spam"
@@ -93271,6 +94016,11 @@
   },
   {
     "number": "+34919582280",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34919582674",
     "report_count": 1,
     "category": "spam"
   },
@@ -94305,6 +95055,11 @@
     "category": "spam"
   },
   {
+    "number": "+34919599557",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34919600414",
     "report_count": 1,
     "category": "spam"
@@ -94581,6 +95336,11 @@
   },
   {
     "number": "+34919616819",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34919616915",
     "report_count": 1,
     "category": "spam"
   },
@@ -95805,6 +96565,16 @@
     "category": "spam"
   },
   {
+    "number": "+34919898725",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34919898765",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34919898788",
     "report_count": 1,
     "category": "spam"
@@ -95831,6 +96601,11 @@
   },
   {
     "number": "+34919898951",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34919898967",
     "report_count": 1,
     "category": "spam"
   },
@@ -96411,6 +97186,11 @@
   },
   {
     "number": "+34919970684",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34919970695",
     "report_count": 1,
     "category": "spam"
   },
@@ -98755,6 +99535,11 @@
     "category": "spam"
   },
   {
+    "number": "+34922069469",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34922072659",
     "report_count": 1,
     "category": "spam"
@@ -98861,6 +99646,11 @@
   },
   {
     "number": "+34922166066",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34922166148",
     "report_count": 1,
     "category": "spam"
   },
@@ -99261,6 +100051,11 @@
   },
   {
     "number": "+34923387038",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34923454399",
     "report_count": 1,
     "category": "spam"
   },
@@ -100105,6 +100900,11 @@
     "category": "spam"
   },
   {
+    "number": "+34925025658",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34925049042",
     "report_count": 1,
     "category": "spam"
@@ -100321,6 +101121,11 @@
   },
   {
     "number": "+34926114901",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34926189215",
     "report_count": 1,
     "category": "spam"
   },
@@ -101520,6 +102325,11 @@
     "category": "spam"
   },
   {
+    "number": "+34930212010",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34930214980",
     "report_count": 1,
     "category": "spam"
@@ -101961,6 +102771,11 @@
   },
   {
     "number": "+34930443175",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34930450209",
     "report_count": 1,
     "category": "spam"
   },
@@ -104660,6 +105475,11 @@
     "category": "spam"
   },
   {
+    "number": "+34930965951",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34930966140",
     "report_count": 1,
     "category": "spam"
@@ -105431,6 +106251,11 @@
   },
   {
     "number": "+34931223651",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34931224272",
     "report_count": 1,
     "category": "spam"
   },
@@ -106650,6 +107475,11 @@
     "category": "spam"
   },
   {
+    "number": "+34931860001",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34931871727",
     "report_count": 1,
     "category": "spam"
@@ -107296,6 +108126,11 @@
   },
   {
     "number": "+34933095158",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34933101334",
     "report_count": 1,
     "category": "spam"
   },
@@ -108820,6 +109655,11 @@
     "category": "spam"
   },
   {
+    "number": "+34935854529",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34935872290",
     "report_count": 1,
     "category": "spam"
@@ -108876,6 +109716,16 @@
   },
   {
     "number": "+34935918879",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34935918912",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34935919716",
     "report_count": 1,
     "category": "spam"
   },
@@ -109121,6 +109971,11 @@
   },
   {
     "number": "+34936219712",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34936267000",
     "report_count": 1,
     "category": "spam"
   },
@@ -109786,6 +110641,11 @@
   },
   {
     "number": "+34939956031",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34939995867",
     "report_count": 1,
     "category": "spam"
   },
@@ -111055,6 +111915,11 @@
     "category": "spam"
   },
   {
+    "number": "+34944029851",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34944030924",
     "report_count": 1,
     "category": "spam"
@@ -111611,6 +112476,11 @@
   },
   {
     "number": "+34944774513",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34944775034",
     "report_count": 1,
     "category": "spam"
   },
@@ -112276,6 +113146,11 @@
   },
   {
     "number": "+34945952879",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34945953384",
     "report_count": 1,
     "category": "spam"
   },
@@ -115110,6 +115985,11 @@
     "category": "spam"
   },
   {
+    "number": "+34951173849",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34951176650",
     "report_count": 1,
     "category": "spam"
@@ -115376,6 +116256,11 @@
   },
   {
     "number": "+34951386374",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34951386591",
     "report_count": 1,
     "category": "spam"
   },
@@ -117745,6 +118630,11 @@
     "category": "spam"
   },
   {
+    "number": "+34952606767",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34952764230",
     "report_count": 1,
     "category": "spam"
@@ -119025,6 +119915,11 @@
     "category": "spam"
   },
   {
+    "number": "+34954329539",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34954329854",
     "report_count": 1,
     "category": "spam"
@@ -120250,6 +121145,11 @@
     "category": "spam"
   },
   {
+    "number": "+34955847999",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34955852655",
     "report_count": 1,
     "category": "spam"
@@ -120331,6 +121231,11 @@
   },
   {
     "number": "+34956030623",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34956030687",
     "report_count": 1,
     "category": "spam"
   },
@@ -120676,6 +121581,11 @@
   },
   {
     "number": "+34957192551",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34957192872",
     "report_count": 1,
     "category": "spam"
   },
@@ -122016,6 +122926,16 @@
   },
   {
     "number": "+34959774432",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34959774492",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34959774726",
     "report_count": 1,
     "category": "spam"
   },
@@ -124025,6 +124945,11 @@
     "category": "spam"
   },
   {
+    "number": "+34960354365",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34960383006",
     "report_count": 1,
     "category": "spam"
@@ -124156,6 +125081,11 @@
   },
   {
     "number": "+34960383224",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34960383225",
     "report_count": 1,
     "category": "spam"
   },
@@ -124306,6 +125236,11 @@
   },
   {
     "number": "+34960383936",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34960383969",
     "report_count": 1,
     "category": "spam"
   },
@@ -125231,6 +126166,11 @@
   },
   {
     "number": "+34961198493",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34961198504",
     "report_count": 1,
     "category": "spam"
   },
@@ -127020,6 +127960,16 @@
     "category": "spam"
   },
   {
+    "number": "+34966384765",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34966398504",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34966447203",
     "report_count": 1,
     "category": "spam"
@@ -128795,6 +129745,11 @@
     "category": "spam"
   },
   {
+    "number": "+34971892729",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34971902942",
     "report_count": 1,
     "category": "spam"
@@ -129961,6 +130916,11 @@
   },
   {
     "number": "+34975719968",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34975765390",
     "report_count": 1,
     "category": "spam"
   },
@@ -132105,6 +133065,11 @@
     "category": "spam"
   },
   {
+    "number": "+34982499749",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34982500004",
     "report_count": 1,
     "category": "spam"
@@ -132896,6 +133861,11 @@
   },
   {
     "number": "+34983571865",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34983571869",
     "report_count": 1,
     "category": "spam"
   },
@@ -133760,12 +134730,22 @@
     "category": "spam"
   },
   {
+    "number": "+34983951849",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34983951955",
     "report_count": 1,
     "category": "spam"
   },
   {
     "number": "+34983953103",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34983953314",
     "report_count": 1,
     "category": "spam"
   },
@@ -134241,6 +135221,11 @@
   },
   {
     "number": "+34984342396",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34984342463",
     "report_count": 1,
     "category": "spam"
   },
@@ -135106,6 +136091,11 @@
   },
   {
     "number": "+34987880862",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34987888593",
     "report_count": 1,
     "category": "spam"
   },
@@ -136305,6 +137295,11 @@
     "category": "spam"
   },
   {
+    "number": "+34995564827",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34995800000",
     "report_count": 1,
     "category": "spam"
@@ -136610,6 +137605,11 @@
     "category": "spam"
   },
   {
+    "number": "+34998564399",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34998777112",
     "report_count": 1,
     "category": "spam"
@@ -136665,6 +137665,16 @@
     "category": "spam"
   },
   {
+    "number": "+34999850452",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+34999990447",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+34999999999",
     "report_count": 1,
     "category": "spam"
@@ -136680,7 +137690,22 @@
     "category": "scam"
   },
   {
+    "number": "+351927178894",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+35791014035",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+35791045854",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+36201256564",
     "report_count": 1,
     "category": "scam"
   },
@@ -136700,6 +137725,26 @@
     "category": "spam"
   },
   {
+    "number": "+390110121500",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390110435332",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390110660333",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+390110701552",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390110722780",
     "report_count": 1,
     "category": "spam"
@@ -136715,14 +137760,49 @@
     "category": "spam"
   },
   {
+    "number": "+390110844201",
+    "report_count": 2,
+    "category": "scam"
+  },
+  {
+    "number": "+390110844331",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+390110844350",
     "report_count": 1,
     "category": "other"
   },
   {
+    "number": "+390110844522",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+390110877571",
     "report_count": 1,
     "category": "spam"
+  },
+  {
+    "number": "+3901118410100",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3901119117646",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3901119836809",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3901119838647",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+3901119881883",
@@ -136735,6 +137815,11 @@
     "category": "scam"
   },
   {
+    "number": "+390131081238",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+3901411930738",
     "report_count": 1,
     "category": "scam"
@@ -136745,7 +137830,17 @@
     "category": "spam"
   },
   {
+    "number": "+3901611760686",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+390171051026",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390171051056",
     "report_count": 1,
     "category": "spam"
   },
@@ -136770,9 +137865,69 @@
     "category": "telemarketing"
   },
   {
+    "number": "+390209951075",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3902147924212",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390220011357",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390221104641",
     "report_count": 1,
     "category": "telemarketing"
+  },
+  {
+    "number": "+3902280781044",
+    "report_count": 1,
+    "category": "telemarketing"
+  },
+  {
+    "number": "+39022926570",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390230619845",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+39023567449",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+390237901576",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390237920651",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390237920797",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390238244011",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+390239304815",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+390240042149",
@@ -136780,7 +137935,32 @@
     "category": "scam"
   },
   {
+    "number": "+390240042465",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390240042723",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+390240042756",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390240044150",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390240047068",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+390240135543",
     "report_count": 1,
     "category": "spam"
   },
@@ -136790,8 +137970,53 @@
     "category": "spam"
   },
   {
+    "number": "+390240700608",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390240700779",
+    "report_count": 2,
+    "category": "other"
+  },
+  {
+    "number": "+390240705300",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
     "number": "+390240706144",
     "report_count": 3,
+    "category": "scam"
+  },
+  {
+    "number": "+390240707510",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390240709777",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390240709921",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390240741138",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
+    "number": "+390240741601",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390242107377",
+    "report_count": 1,
     "category": "scam"
   },
   {
@@ -136805,9 +138030,29 @@
     "category": "scam"
   },
   {
+    "number": "+390245073381",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390245073698",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390245074371",
     "report_count": 1,
     "category": "other"
+  },
+  {
+    "number": "+390245074507",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390245075289",
+    "report_count": 2,
+    "category": "scam"
   },
   {
     "number": "+390245467015",
@@ -136815,12 +138060,37 @@
     "category": "spam"
   },
   {
+    "number": "+390247924004",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390247924108",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390247924212",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390247924654",
     "report_count": 1,
     "category": "spam"
   },
   {
+    "number": "+390247924926",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390247950851",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
+    "number": "+390247951760",
     "report_count": 1,
     "category": "scam"
   },
@@ -136835,7 +138105,97 @@
     "category": "spam"
   },
   {
+    "number": "+39025077717",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390256565445",
+    "report_count": 1,
+    "category": "telemarketing"
+  },
+  {
+    "number": "+390273103752",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390273103768",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390273103775",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390273103781",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390273103786",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+390273103787",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
+    "number": "+390273103788",
+    "report_count": 2,
+    "category": "scam"
+  },
+  {
+    "number": "+390273103799",
+    "report_count": 4,
+    "category": "spam"
+  },
+  {
+    "number": "+390273103814",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
+    "number": "+390273103817",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390273103824",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390273103834",
+    "report_count": 3,
+    "category": "spam"
+  },
+  {
+    "number": "+390273103839",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390279100177",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+390279102800",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+390279250165",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390279251538",
     "report_count": 1,
     "category": "spam"
   },
@@ -136845,14 +138205,39 @@
     "category": "scam"
   },
   {
-    "number": "+390280889337",
+    "number": "+390280781745",
     "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390280782026",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390280889337",
+    "report_count": 2,
     "category": "spam"
   },
   {
     "number": "+390280889687",
     "report_count": 2,
     "category": "spam"
+  },
+  {
+    "number": "+390280896150",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390280897606",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+390280897869",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+390281276702",
@@ -136875,6 +138260,21 @@
     "category": "scam"
   },
   {
+    "number": "+390282949024",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390283905761",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+390285908558",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390286882684",
     "report_count": 1,
     "category": "scam"
@@ -136882,6 +138282,11 @@
   {
     "number": "+390287165818",
     "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390287176887",
+    "report_count": 3,
     "category": "spam"
   },
   {
@@ -136895,9 +138300,44 @@
     "category": "spam"
   },
   {
+    "number": "+390289950751",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390289954791",
     "report_count": 1,
     "category": "other"
+  },
+  {
+    "number": "+39029014430",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+39029094239",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390299946676",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390299949851",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390302042035",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390302045638",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+390302046333",
@@ -136910,9 +138350,49 @@
     "category": "spam"
   },
   {
+    "number": "+390303891379",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390303891559",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390303891971",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390305780445",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390306801622",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+390307640570",
     "report_count": 1,
     "category": "telemarketing"
+  },
+  {
+    "number": "+390316685458",
+    "report_count": 1,
+    "category": "telemarketing"
+  },
+  {
+    "number": "+390316882338",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390319120277",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+3903211742909",
@@ -136920,14 +138400,39 @@
     "category": "scam"
   },
   {
+    "number": "+3903311735143",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+390344012459",
     "report_count": 1,
     "category": "spam"
   },
   {
+    "number": "+390344012750",
+    "report_count": 1,
+    "category": "telemarketing"
+  },
+  {
     "number": "+390350087509",
     "report_count": 1,
     "category": "other"
+  },
+  {
+    "number": "+390350687414",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390350688930",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3903550050893",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+3903620920102",
@@ -136950,12 +138455,42 @@
     "category": "spam"
   },
   {
+    "number": "+390405894576",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+390410989901",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+390418688842",
     "report_count": 1,
     "category": "spam"
   },
   {
+    "number": "+3904261955315",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+3904321709985",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3904371850993",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3904371854359",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+3904441521572",
     "report_count": 1,
     "category": "spam"
   },
@@ -136965,14 +138500,34 @@
     "category": "spam"
   },
   {
+    "number": "+3904611221701",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+3904611222041",
     "report_count": 1,
     "category": "spam"
   },
   {
+    "number": "+3904711270153",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390481385346",
     "report_count": 1,
     "category": "spam"
+  },
+  {
+    "number": "+390492975169",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390492977899",
+    "report_count": 1,
+    "category": "other"
   },
   {
     "number": "+390492978765",
@@ -136995,7 +138550,27 @@
     "category": "spam"
   },
   {
+    "number": "+390510670272",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+390510670797",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390510827982",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+390510915109",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390510918384",
     "report_count": 1,
     "category": "spam"
   },
@@ -137010,9 +138585,39 @@
     "category": "spam"
   },
   {
+    "number": "+3905211900901",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3905221441771",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
+    "number": "+3905231923650",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390523192372",
+    "report_count": 1,
+    "category": "telemarketing"
+  },
+  {
+    "number": "+3905231923855",
+    "report_count": 1,
+    "category": "telemarketing"
+  },
+  {
     "number": "+390536042665",
     "report_count": 1,
     "category": "telemarketing"
+  },
+  {
+    "number": "+390536845376",
+    "report_count": 1,
+    "category": "other"
   },
   {
     "number": "+3905411727934",
@@ -137035,7 +138640,32 @@
     "category": "scam"
   },
   {
+    "number": "+390575357875",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+3905771804957",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390583210111",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+39058355318",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+3905841776345",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390592934643",
     "report_count": 1,
     "category": "spam"
   },
@@ -137055,6 +138685,41 @@
     "category": "spam"
   },
   {
+    "number": "+39062418775",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+39065503175",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390656557258",
+    "report_count": 3,
+    "category": "scam"
+  },
+  {
+    "number": "+390656558185",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+390662270944",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
+    "number": "+390662290704",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+39066229074",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390669791804",
     "report_count": 1,
     "category": "scam"
@@ -137070,9 +138735,24 @@
     "category": "scam"
   },
   {
+    "number": "+390672654201",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390673000731",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+390673000805",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
+    "number": "+390673000813",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+390680451511",
@@ -137080,7 +138760,17 @@
     "category": "spam"
   },
   {
+    "number": "+390681157170",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390682951206",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390682955",
     "report_count": 1,
     "category": "spam"
   },
@@ -137090,9 +138780,29 @@
     "category": "scam"
   },
   {
+    "number": "+390683846806",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+390684033981",
     "report_count": 1,
     "category": "telemarketing"
+  },
+  {
+    "number": "+390685901769",
+    "report_count": 1,
+    "category": "telemarketing"
+  },
+  {
+    "number": "+390685903339",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390687153873",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+390687811484",
@@ -137103,6 +138813,16 @@
     "number": "+390687811786",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+390691712274",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390694808047",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+390695550196",
@@ -137125,6 +138845,21 @@
     "category": "telemarketing"
   },
   {
+    "number": "+390698380353",
+    "report_count": 2,
+    "category": "scam"
+  },
+  {
+    "number": "+390699181232",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+390699330100",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390712383942",
     "report_count": 1,
     "category": "spam"
@@ -137140,7 +138875,32 @@
     "category": "scam"
   },
   {
+    "number": "+390712384316",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390712384357",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390712385502",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390712385513",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390716250112",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3907211640857",
     "report_count": 1,
     "category": "spam"
   },
@@ -137165,12 +138925,57 @@
     "category": "spam"
   },
   {
+    "number": "+3907611682449",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390775399307",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390784030406",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390808600233",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390809997696",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3908118555480",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+3908118933477",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3908118933764",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
     "number": "+3908119676204",
     "report_count": 1,
     "category": "spam"
   },
   {
     "number": "+3908119676285",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3908119676339",
     "report_count": 1,
     "category": "spam"
   },
@@ -137185,12 +138990,57 @@
     "category": "scam"
   },
   {
+    "number": "+390815514314",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390818142743",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+39081997008",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+3908231882916",
     "report_count": 1,
     "category": "scam"
   },
   {
+    "number": "+3908241910586",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+3908351844980",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390852293088",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+390852296266",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390852296312",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390862373150",
+    "report_count": 1,
+    "category": "telemarketing"
+  },
+  {
+    "number": "+3908711760232",
     "report_count": 1,
     "category": "spam"
   },
@@ -137205,12 +139055,22 @@
     "category": "scam"
   },
   {
+    "number": "+3908902843930",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+390892843688",
     "report_count": 1,
     "category": "spam"
   },
   {
     "number": "+390912575387",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+390918775231",
     "report_count": 1,
     "category": "spam"
   },
@@ -137225,6 +139085,16 @@
     "category": "spam"
   },
   {
+    "number": "+3909651963472",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+3909651963494",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+3909711783266",
     "report_count": 1,
     "category": "telemarketing"
@@ -137233,6 +139103,36 @@
     "number": "+3909711783278",
     "report_count": 1,
     "category": "spam"
+  },
+  {
+    "number": "+3909841999802",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3910052500",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+39213661262924",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3922946000575",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+392349066511228",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393019075445",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+39302310397624",
@@ -137247,6 +139147,16 @@
   {
     "number": "+393138090112",
     "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393203696722",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393240040490",
+    "report_count": 2,
     "category": "scam"
   },
   {
@@ -137265,7 +139175,22 @@
     "category": "spam"
   },
   {
+    "number": "+393271403551",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393272747164",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393273313945",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393274023131",
     "report_count": 1,
     "category": "spam"
   },
@@ -137285,6 +139210,11 @@
     "category": "scam"
   },
   {
+    "number": "+393285644901",
+    "report_count": 1,
+    "category": "telemarketing"
+  },
+  {
     "number": "+393286169315",
     "report_count": 1,
     "category": "scam"
@@ -137300,7 +139230,42 @@
     "category": "spam"
   },
   {
+    "number": "+393290087205",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393290159738",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393294553656",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393295553791",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393296976407",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393299366520",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+39330519566",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393311630704",
     "report_count": 1,
     "category": "spam"
   },
@@ -137310,9 +139275,34 @@
     "category": "spam"
   },
   {
+    "number": "+393317256563",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393317445282",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+39331903421174",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393332836518",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
     "number": "+393334401750",
     "report_count": 1,
     "category": "spam"
+  },
+  {
+    "number": "+393335393895",
+    "report_count": 1,
+    "category": "other"
   },
   {
     "number": "+393335694903",
@@ -137325,9 +139315,24 @@
     "category": "spam"
   },
   {
+    "number": "+393338286453",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393338544043",
     "report_count": 1,
     "category": "other"
+  },
+  {
+    "number": "+393339204225",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393343231333",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+39335346334",
@@ -137335,9 +139340,24 @@
     "category": "scam"
   },
   {
+    "number": "+393356055140",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393356362848",
     "report_count": 1,
     "category": "telemarketing"
+  },
+  {
+    "number": "+393356879722",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3933644679307",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+393373046331",
@@ -137353,6 +139373,11 @@
     "number": "+393381827027",
     "report_count": 1,
     "category": "other"
+  },
+  {
+    "number": "+39338260188",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+393387385738",
@@ -137380,7 +139405,22 @@
     "category": "scam"
   },
   {
+    "number": "+393397367619",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393398104265",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393399957376",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393402627686",
     "report_count": 1,
     "category": "spam"
   },
@@ -137400,6 +139440,21 @@
     "category": "telemarketing"
   },
   {
+    "number": "+393420562375",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393421923762",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393429926139",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393444201253",
     "report_count": 1,
     "category": "scam"
@@ -137410,7 +139465,32 @@
     "category": "spam"
   },
   {
+    "number": "+393457690423",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393459259649",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
     "number": "+393461457564",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393464446616",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393464773713",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393466329244",
     "report_count": 1,
     "category": "spam"
   },
@@ -137430,9 +139510,24 @@
     "category": "other"
   },
   {
+    "number": "+393476050792",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393476964333",
     "report_count": 1,
     "category": "telemarketing"
+  },
+  {
+    "number": "+393478423710",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393481796465",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+393485852489",
@@ -137440,7 +139535,72 @@
     "category": "other"
   },
   {
+    "number": "+393490021872",
+    "report_count": 1,
+    "category": "telemarketing"
+  },
+  {
+    "number": "+393492196841",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393497796431",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393497895652",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393500493275",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393500914364",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393500959123",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393501017644",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393501429604",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
+    "number": "+393501906805",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393501931350",
+    "report_count": 1,
+    "category": "telemarketing"
+  },
+  {
+    "number": "+393505785998",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393505874674",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393508079768",
     "report_count": 1,
     "category": "scam"
   },
@@ -137455,6 +139615,11 @@
     "category": "scam"
   },
   {
+    "number": "+393508389052",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
     "number": "+393508443386",
     "report_count": 1,
     "category": "scam"
@@ -137465,7 +139630,22 @@
     "category": "spam"
   },
   {
+    "number": "+393508689554",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393508702815",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
     "number": "+393508712634",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393508768667",
     "report_count": 1,
     "category": "scam"
   },
@@ -137475,9 +139655,24 @@
     "category": "spam"
   },
   {
-    "number": "+393509036448",
+    "number": "+393509016496",
     "report_count": 1,
-    "category": "scam"
+    "category": "spam"
+  },
+  {
+    "number": "+393509036448",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
+    "number": "+393509039533",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393509138753",
+    "report_count": 2,
+    "category": "spam"
   },
   {
     "number": "+393509238589",
@@ -137510,9 +139705,19 @@
     "category": "scam"
   },
   {
+    "number": "+393509594232",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393509722932",
     "report_count": 1,
     "category": "telemarketing"
+  },
+  {
+    "number": "+393509732045",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+393509814875",
@@ -137523,6 +139728,16 @@
     "number": "+393509852090",
     "report_count": 1,
     "category": "spam"
+  },
+  {
+    "number": "+393509891762",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393509957703",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+393510084632",
@@ -137540,14 +139755,54 @@
     "category": "telemarketing"
   },
   {
+    "number": "+393510413346",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393510508990",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393510549480",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393510572650",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393510589141",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393510595013",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393510621292",
     "report_count": 1,
     "category": "scam"
   },
   {
+    "number": "+393510850851",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393510891144",
     "report_count": 1,
     "category": "spam"
+  },
+  {
+    "number": "+393510925265",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+393511017150",
@@ -137556,6 +139811,21 @@
   },
   {
     "number": "+393511080660",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393511144398",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393511147389",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393511282904",
     "report_count": 1,
     "category": "spam"
   },
@@ -137570,9 +139840,24 @@
     "category": "scam"
   },
   {
+    "number": "+393511699378",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393511819013",
     "report_count": 1,
     "category": "other"
+  },
+  {
+    "number": "+393511867267",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393511920451",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+393511932211",
@@ -137585,9 +139870,24 @@
     "category": "scam"
   },
   {
+    "number": "+393512250849",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393512288432",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393512355925",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+393512464307",
+    "report_count": 1,
+    "category": "telemarketing"
   },
   {
     "number": "+393512487246",
@@ -137600,14 +139900,44 @@
     "category": "spam"
   },
   {
+    "number": "+393512535006",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393512581410",
     "report_count": 2,
+    "category": "scam"
+  },
+  {
+    "number": "+393512613092",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393512625853",
+    "report_count": 3,
+    "category": "spam"
+  },
+  {
+    "number": "+393512643223",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393512759915",
+    "report_count": 1,
     "category": "scam"
   },
   {
     "number": "+393512775021",
     "report_count": 1,
     "category": "spam"
+  },
+  {
+    "number": "+393512837652",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+393513164440",
@@ -137620,14 +139950,39 @@
     "category": "scam"
   },
   {
+    "number": "+393513345857",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393513356217",
     "report_count": 1,
     "category": "other"
   },
   {
+    "number": "+393513775570",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393513799195",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393513807106",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393514036943",
     "report_count": 1,
     "category": "spam"
+  },
+  {
+    "number": "+393514127563",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+393514263298",
@@ -137640,12 +139995,22 @@
     "category": "spam"
   },
   {
-    "number": "+393514478931",
+    "number": "+393514337964",
     "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393514478931",
+    "report_count": 2,
     "category": "spam"
   },
   {
     "number": "+393514639943",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393514782619",
     "report_count": 1,
     "category": "scam"
   },
@@ -137660,12 +140025,22 @@
     "category": "scam"
   },
   {
+    "number": "+393515407865",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393516047553",
     "report_count": 1,
     "category": "other"
   },
   {
     "number": "+3935166920727",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393516984083",
     "report_count": 1,
     "category": "scam"
   },
@@ -137680,9 +140055,24 @@
     "category": "other"
   },
   {
+    "number": "+393517691431",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393517917297",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393518032767",
     "report_count": 1,
     "category": "spam"
+  },
+  {
+    "number": "+393518206335",
+    "report_count": 1,
+    "category": "other"
   },
   {
     "number": "+393518703471",
@@ -137700,12 +140090,27 @@
     "category": "scam"
   },
   {
+    "number": "+393520043023",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393520179333",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393520187916",
     "report_count": 1,
     "category": "other"
   },
   {
     "number": "+393520261884",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393520411874",
     "report_count": 1,
     "category": "scam"
   },
@@ -137720,7 +140125,22 @@
     "category": "spam"
   },
   {
+    "number": "+393520591011",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393520615267",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393520688505",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393520719255",
     "report_count": 1,
     "category": "scam"
   },
@@ -137755,9 +140175,44 @@
     "category": "spam"
   },
   {
+    "number": "+393520835999",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393520979722",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393522087746",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393522149454",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393522169645",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393522179149",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393522265030",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+393522368306",
+    "report_count": 1,
+    "category": "other"
   },
   {
     "number": "+393522534021",
@@ -137766,6 +140221,21 @@
   },
   {
     "number": "+393522756234",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393522900368",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393522925271",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393522969340",
     "report_count": 1,
     "category": "scam"
   },
@@ -137785,12 +140255,22 @@
     "category": "scam"
   },
   {
+    "number": "+393534010129",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393534045243",
     "report_count": 1,
     "category": "other"
   },
   {
     "number": "+393534053027",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393534075308",
     "report_count": 1,
     "category": "scam"
   },
@@ -137820,9 +140300,49 @@
     "category": "scam"
   },
   {
+    "number": "+393534169867",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393534178241",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+393534247516",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393534253791",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393534262320",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393534268845",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393534277679",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393534413831",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393534526546",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+393534928186",
@@ -137831,6 +140351,11 @@
   },
   {
     "number": "+393534934270",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393534956886",
     "report_count": 1,
     "category": "scam"
   },
@@ -137845,9 +140370,24 @@
     "category": "scam"
   },
   {
+    "number": "+393534990724",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393534994668",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393534995679",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+393534995836",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+393534998697",
@@ -137860,6 +140400,11 @@
     "category": "scam"
   },
   {
+    "number": "+39359677160",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393667586452",
     "report_count": 1,
     "category": "other"
@@ -137867,6 +140412,21 @@
   {
     "number": "+393714241635",
     "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393757856828",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393760243915",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393760243985",
+    "report_count": 2,
     "category": "spam"
   },
   {
@@ -137885,6 +140445,21 @@
     "category": "scam"
   },
   {
+    "number": "+393761559473",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393761944305",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393762887377",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393762895598",
     "report_count": 1,
     "category": "scam"
@@ -137893,6 +140468,16 @@
     "number": "+393770977786",
     "report_count": 1,
     "category": "spam"
+  },
+  {
+    "number": "+393770981536",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393771320514",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+393773027758",
@@ -137905,12 +140490,42 @@
     "category": "scam"
   },
   {
+    "number": "+393773046331",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393773060366",
     "report_count": 1,
     "category": "spam"
   },
   {
+    "number": "+393773129581",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393773178777",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393773192531",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393773194682",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393773239404",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393773252507",
     "report_count": 1,
     "category": "scam"
   },
@@ -137920,8 +140535,18 @@
     "category": "spam"
   },
   {
+    "number": "+393773275311",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
     "number": "+393773292407",
     "report_count": 2,
+    "category": "spam"
+  },
+  {
+    "number": "+393773295236",
+    "report_count": 1,
     "category": "spam"
   },
   {
@@ -137945,6 +140570,16 @@
     "category": "spam"
   },
   {
+    "number": "+393773360558",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393773364026",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
     "number": "+393773377818",
     "report_count": 1,
     "category": "scam"
@@ -137960,9 +140595,29 @@
     "category": "spam"
   },
   {
+    "number": "+393773421266",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393773429965",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393773523928",
+    "report_count": 1,
+    "category": "telemarketing"
+  },
+  {
     "number": "+393773543873",
     "report_count": 2,
     "category": "spam"
+  },
+  {
+    "number": "+393773557143",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+393773600484",
@@ -137970,9 +140625,29 @@
     "category": "scam"
   },
   {
+    "number": "+393773608264",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393773621755",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393773643216",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393773792517",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+393773810976",
+    "report_count": 1,
+    "category": "other"
   },
   {
     "number": "+393773832801",
@@ -137990,6 +140665,11 @@
     "category": "scam"
   },
   {
+    "number": "+393773948723",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393773961406",
     "report_count": 1,
     "category": "scam"
@@ -138005,9 +140685,64 @@
     "category": "scam"
   },
   {
-    "number": "+393778221658",
+    "number": "+393775780911",
     "report_count": 1,
-    "category": "other"
+    "category": "scam"
+  },
+  {
+    "number": "+393775786518",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393775791904",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393775791908",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393775981511",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393778123869",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393778221658",
+    "report_count": 2,
+    "category": "spam"
+  },
+  {
+    "number": "+393778299253",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393778543804",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393778544884",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393778544976",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393778546673",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+393778830905",
@@ -138015,7 +140750,32 @@
     "category": "scam"
   },
   {
+    "number": "+393778873527",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+393780390711",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393784108646",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393784120990",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393784121153",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393784136644",
     "report_count": 1,
     "category": "scam"
   },
@@ -138025,7 +140785,37 @@
     "category": "scam"
   },
   {
+    "number": "+393784137920",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393784148586",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393784333548",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+393784435333",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393784444585",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393784445924",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393784475516",
     "report_count": 1,
     "category": "scam"
   },
@@ -138050,12 +140840,37 @@
     "category": "scam"
   },
   {
+    "number": "+393792523241",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393792568122",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
     "number": "+393793083050",
     "report_count": 1,
     "category": "spam"
   },
   {
     "number": "+393793094951",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393793189229",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393793267995",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393793596239",
     "report_count": 1,
     "category": "spam"
   },
@@ -138068,6 +140883,11 @@
     "number": "+393793791179",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+393793801358",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+393793836676",
@@ -138100,9 +140920,39 @@
     "category": "scam"
   },
   {
+    "number": "+393793970959",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+393801466124",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+393890005798",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393890414143",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+393895857481",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+39390102385437",
     "report_count": 1,
     "category": "spam"
+  },
+  {
+    "number": "+393901119117646",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+393918767043",
@@ -138120,7 +140970,17 @@
     "category": "scam"
   },
   {
+    "number": "+393926866967",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
     "number": "+393929870026",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+39393375231326",
     "report_count": 1,
     "category": "scam"
   },
@@ -138133,6 +140993,11 @@
     "number": "+39393491435468",
     "report_count": 1,
     "category": "scam"
+  },
+  {
+    "number": "+393935089030",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+39393519776413",
@@ -138175,7 +141040,42 @@
     "category": "spam"
   },
   {
+    "number": "+39436566172825",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+39447462983049",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+394915153052663",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+39672560707",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+39672857659",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+39800729016",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+398297650795",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+398495884183",
     "report_count": 1,
     "category": "scam"
   },
@@ -138185,14 +141085,64 @@
     "category": "scam"
   },
   {
+    "number": "+3989342218",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3989342220",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3989342229",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+3989342256",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
     "number": "+3989342267",
     "report_count": 2,
+    "category": "spam"
+  },
+  {
+    "number": "+3989347795",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+3989347796",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+3989349448",
+    "report_count": 1,
     "category": "spam"
   },
   {
     "number": "+3989349464",
     "report_count": 1,
     "category": "other"
+  },
+  {
+    "number": "+40778280600",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+41779239433",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+41794860985",
+    "report_count": 1,
+    "category": "spam"
   },
   {
     "number": "+41918016125",
@@ -138210,9 +141160,19 @@
     "category": "spam"
   },
   {
+    "number": "+436776116502",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+441641270001",
     "report_count": 1,
     "category": "spam"
+  },
+  {
+    "number": "+447346264538",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+447380889105",
@@ -138220,9 +141180,64 @@
     "category": "spam"
   },
   {
+    "number": "+447450346465",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+447575553365",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
     "number": "+447822104277",
     "report_count": 1,
     "category": "other"
+  },
+  {
+    "number": "+454294580",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+456566163633",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+4915585010865",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+491710361645",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+491716099995",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+4917631513324",
+    "report_count": 1,
+    "category": "spam"
+  },
+  {
+    "number": "+4917650754506",
+    "report_count": 1,
+    "category": "other"
+  },
+  {
+    "number": "+573019075445",
+    "report_count": 1,
+    "category": "scam"
+  },
+  {
+    "number": "+573102600292",
+    "report_count": 1,
+    "category": "scam"
   },
   {
     "number": "+881641437452",
