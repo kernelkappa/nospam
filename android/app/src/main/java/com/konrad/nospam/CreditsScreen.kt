@@ -49,11 +49,25 @@ private val dataSources = listOf(
         url = "https://github.com/mv12star/lista-telefonos-spam",
     ),
     DataSource(
+        name = "callavert-spam-list",
+        description = "Numeri spam statunitensi compilati dai dati pubblici \"Do Not Call\" della FTC, a cura del progetto Call Avert.",
+        license = "CC0 1.0",
+        url = "https://github.com/Call-Avert/callavert-spam-list",
+    ),
+    DataSource(
         name = "nophonespam-fr",
         description = "Intervalli di prefissi telemarketing francesi, a cura di jeromerobert (fonte dati " +
             "anche dell'app open source NoPhoneSpam). Nessuna licenza esplicita dichiarata dall'autore.",
         license = null,
         url = "https://github.com/jeromerobert/nophonespam-fr",
+    ),
+    DataSource(
+        name = "Prefissi telemarketing regolamentati",
+        description = "Prefissi riservati per norma al telemarketing da TRAI (India, serie 140xx/1600) e " +
+            "Anatel (Brasile, +55303). Solo avviso: identificano tutte le chiamate di telemarketing " +
+            "conforme, non solo quelle abusive.",
+        license = null,
+        url = "https://www.trai.gov.in/",
     ),
     DataSource(
         name = "Watchlist wangiri",

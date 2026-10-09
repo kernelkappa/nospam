@@ -20,8 +20,10 @@ import requests
 
 from external_sources import (
     fetch_blocklist_telefonica_italia,
+    fetch_callavert_us,
     fetch_lista_telefonos_spam_es,
     fetch_nophonespam_fr,
+    fetch_regulatory_telemarketing_prefixes,
     fetch_shopsicuro,
 )
 
@@ -31,12 +33,21 @@ EXTERNAL_SOURCES = {
     "lista-telefonos-spam": fetch_lista_telefonos_spam_es,
 }
 
+# Dati FTC "Do Not Call" non verificati (vedi external_sources.py): a
+# differenza delle altre fonti esterne, qui applichiamo la stessa soglia
+# MIN_REPORTS delle nostre segnalazioni crowdsourced invece di includerla
+# sempre come pre-verificata.
+UNVERIFIED_EXTERNAL_SOURCES = {
+    "callavert-spam-list": fetch_callavert_us,
+}
+
 # Fonti a intervalli di prefisso (non numeri esatti): finiscono in
 # spam_prefixes.json, non in spam_db.json. Usate solo da Android, che ha
 # logica di confronto custom (CXCallDirectoryProvider su iOS richiede numeri
 # singoli espliciti e non supporta intervalli/prefissi).
 PREFIX_SOURCES = {
     "nophonespam-fr": fetch_nophonespam_fr,
+    "regulatory-telemarketing-prefixes": fetch_regulatory_telemarketing_prefixes,
 }
 
 # Prefissi internazionali spesso citati in segnalazioni di truffe "wangiri"
@@ -169,6 +180,17 @@ def main() -> None:
         merge_external_entries(spam_db, entries)
         external_total += len(entries)
         print(f"Numeri da {name}: {len(entries)}", file=sys.stderr)
+
+    for name, fetch_fn in UNVERIFIED_EXTERNAL_SOURCES.items():
+        try:
+            entries = fetch_fn()
+        except requests.RequestException as error:
+            print(f"Avviso: fonte esterna {name} non raggiungibile ({error}), la salto", file=sys.stderr)
+            continue
+        qualifying = [entry for entry in entries if entry["report_count"] >= MIN_REPORTS]
+        merge_external_entries(spam_db, qualifying)
+        external_total += len(qualifying)
+        print(f"Numeri da {name} (>= {MIN_REPORTS} segnalazioni, di {len(entries)} totali): {len(qualifying)}", file=sys.stderr)
 
     sorted_entries = sorted(spam_db.values(), key=lambda entry: entry["number"])
 

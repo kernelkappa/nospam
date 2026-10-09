@@ -33,6 +33,12 @@ private let dataSources: [DataSource] = [
         license: "Unlicense (pubblico dominio)",
         url: URL(string: "https://github.com/mv12star/lista-telefonos-spam")!
     ),
+    DataSource(
+        name: "callavert-spam-list",
+        description: "Numeri spam statunitensi compilati dai dati pubblici \"Do Not Call\" della FTC, a cura del progetto Call Avert.",
+        license: "CC0 1.0",
+        url: URL(string: "https://github.com/Call-Avert/callavert-spam-list")!
+    ),
 ]
 
 struct CreditsView: View {

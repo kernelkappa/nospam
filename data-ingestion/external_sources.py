@@ -24,9 +24,26 @@ apertamente proprio per essere consumata da app di blocco chiamate come la
 nostra (e' gia' la fonte dati della app open source NoPhoneSpam). Il formato
 a intervalli non si presta alla lista di numeri esatti (spam_db.json):
 finisce invece in spam_prefixes.json, confrontata per prefisso.
+
+callavert-spam-list (github.com/Call-Avert) e' un CSV gzippato, licenza CC0
+1.0 dichiarata esplicitamente nel README del repository (nessun file LICENSE
+separato, ma la dichiarazione e' inequivocabile: "This compilation is
+published under CC0 1.0 - use it freely"), compilato quotidianamente dai dati
+pubblici "Do Not Call" della FTC statunitense (opera del governo USA, di
+dominio pubblico). I dati FTC sono segnalazioni non verificate quindi li
+trattiamo come le nostre segnalazioni crowdsourced: li uniamo solo se il
+report_count supera MIN_REPORTS, non come fonte pre-verificata.
+
+Le liste per India e Brasile non sono numeri esatti ma prefissi imposti per
+norma dai rispettivi regolatori delle telecomunicazioni a tutte le chiamate di
+telemarketing (non solo quelle illecite): finiscono quindi in
+spam_prefixes.json in modalita' "identify" (etichetta informativa, la
+chiamata continua a squillare) invece di "block", perche' bloccare
+includerebbe anche telemarketing legittimo e conforme.
 """
 
 import csv
+import gzip
 import io
 import re
 import time
@@ -166,3 +183,81 @@ def fetch_nophonespam_fr() -> list[dict]:
             }
         )
     return entries
+
+
+CALLAVERT_US_URL = "https://raw.githubusercontent.com/Call-Avert/callavert-spam-list/main/spam/current.csv.gz"
+
+# Sottoinsieme delle "subject" esatte usate dal feed (vedi README del
+# repository), mappate sulle nostre categorie. Tutto cio' che non compare qui
+# (incluso "Other" e "No Subject Provided") ricade su "other".
+CALLAVERT_US_CATEGORY_MAP = {
+    "Calls pretending to be government, businesses, or family and friends": "scam",
+    "Lotteries, prizes  & sweepstakes": "scam",
+    "Computer  & technical support": "scam",
+    "Work from home  & other ways to make money": "scam",
+    "Warranties  & protection plans": "scam",
+    "Dropped call or no message": "robocall",
+    "Reducing your debt (credit cards, mortgage, student loans)": "telemarketing",
+    "Medical  & prescriptions": "telemarketing",
+    "Home improvement  & cleaning": "telemarketing",
+    "Vacation  & timeshares": "telemarketing",
+    "Energy, solar,  & utilities": "telemarketing",
+    "Home security  & alarms": "telemarketing",
+    "Charities": "other",
+}
+
+
+def fetch_callavert_us() -> list[dict]:
+    resp = requests.get(CALLAVERT_US_URL, timeout=30)
+    resp.raise_for_status()
+    text = gzip.decompress(resp.content).decode("utf-8")
+
+    entries = []
+    for line in text.splitlines():
+        if not line or line.startswith("#"):
+            continue
+        # Il "subject" puo' contenere virgole: si divide solo sulle prime due
+        # (vedi README del repository).
+        parts = line.split(",", 2)
+        if len(parts) != 3:
+            continue
+        number, report_count, subject = parts
+        entries.append(
+            {
+                "number": number.strip(),
+                "report_count": int(report_count),
+                "category": CALLAVERT_US_CATEGORY_MAP.get(subject.strip(), "other"),
+            }
+        )
+    return entries
+
+
+# Prefissi imposti per norma, non liste di numeri segnalati: ogni
+# telemarketer conforme li usa, non solo quelli abusivi. Vedi il modulo
+# docstring per il motivo per cui sono in modalita' "identify".
+REGULATORY_TELEMARKETING_PREFIXES = [
+    {
+        "prefix": "+91140",
+        "label": "Telemarketing (TRAI 140xx)",
+        "mode": "identify",
+        "source": "trai-telemarketing-prefix",
+    },
+    {
+        "prefix": "+911600",
+        "label": "Telemarketing (TRAI 1600)",
+        "mode": "identify",
+        "source": "trai-telemarketing-prefix",
+    },
+    {
+        "prefix": "+55303",
+        "label": "Telemarketing (Anatel +55303)",
+        "mode": "identify",
+        "source": "anatel-telemarketing-prefix",
+    },
+]
+
+
+def fetch_regulatory_telemarketing_prefixes() -> list[dict]:
+    """Prefissi di telemarketing imposti per norma da TRAI (India) e Anatel
+    (Brasile), non una lista scaricata: nessuna richiesta HTTP necessaria."""
+    return list(REGULATORY_TELEMARKETING_PREFIXES)
