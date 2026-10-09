@@ -22,11 +22,28 @@ jobs:
       - name: Install dependencies
         run: pip install -r data-ingestion/requirements.txt
 
+      # fetch_reports() (Supabase) e le fonti esterne fanno richieste di rete
+      # che possono avere blip transitori: ritentiamo l'intero script fino a
+      # 5 volte prima di arrendersi. E' sicuro rilanciarlo da capo perche'
+      # scrive i file di output solo alla fine, non lascia stati intermedi.
       - name: Run aggregation
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
-        run: python data-ingestion/aggregate.py
+        run: |
+          max_attempts=5
+          for attempt in $(seq 1 "$max_attempts"); do
+            if python data-ingestion/aggregate.py; then
+              echo "Raccolta dati riuscita (tentativo $attempt/$max_attempts)."
+              exit 0
+            fi
+            if [ "$attempt" -eq "$max_attempts" ]; then
+              echo "Raccolta dati fallita dopo $max_attempts tentativi, mi fermo qui."
+              exit 1
+            fi
+            echo "Raccolta dati fallita (tentativo $attempt/$max_attempts), ritento..."
+            sleep 30
+          done
 
       - name: Commit updated spam_db.json
         id: commit
