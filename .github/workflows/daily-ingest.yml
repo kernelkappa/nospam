@@ -44,6 +44,9 @@ jobs:
       # nostro quindi non possiamo editarne la definizione, ma possiamo
       # osservarlo via API e ritentarlo se il runner non viene assegnato
       # (capitato una volta, errore transitorio GitHub, non un bug nostro).
+      # Tetto massimo di tentativi apposta: se il fallimento fosse persistente
+      # (non transitorio) vogliamo che il job finisca comunque per fallito e
+      # arrivi l'email, non che giri all'infinito in silenzio.
       - name: Ritenta il deploy di GitHub Pages se fallisce
         if: steps.commit.outputs.pushed == 'true'
         env:
@@ -60,9 +63,18 @@ jobs:
             echo "Nessuna esecuzione di pages-build-deployment trovata per questo commit, salto il controllo."
             exit 0
           fi
-          if gh run watch "$run_id" --repo "$GITHUB_REPOSITORY" --exit-status; then
-            echo "Deploy di GitHub Pages riuscito."
-          else
-            echo "Deploy di GitHub Pages fallito, ritento una volta..."
+
+          max_attempts=5
+          for attempt in $(seq 1 "$max_attempts"); do
+            if gh run watch "$run_id" --repo "$GITHUB_REPOSITORY" --exit-status; then
+              echo "Deploy di GitHub Pages riuscito (tentativo $attempt/$max_attempts)."
+              exit 0
+            fi
+            if [ "$attempt" -eq "$max_attempts" ]; then
+              echo "Deploy di GitHub Pages fallito dopo $max_attempts tentativi, mi fermo qui."
+              exit 1
+            fi
+            echo "Deploy di GitHub Pages fallito (tentativo $attempt/$max_attempts), ritento..."
             gh run rerun "$run_id" --repo "$GITHUB_REPOSITORY"
-          fi
+            sleep 30
+          done
