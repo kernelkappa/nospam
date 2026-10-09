@@ -25,12 +25,13 @@ struct ContentView: View {
             .navigationTitle("NoSpam")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    NavigationLink("Crediti") {
-                        CreditsView()
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    NavigationLink {
+                        SettingsView()
+                    } label: {
+                        Image(systemName: "gearshape")
                     }
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
+                    .accessibilityLabel(Text("Impostazioni"))
                     NavigationLink("Numeri bloccati") {
                         BlockedNumbersView()
                     }
@@ -49,7 +50,7 @@ struct ContentView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 8) {
                     ForEach(ReportCategory.allCases, id: \.self) { option in
-                        Button(option.rawValue.capitalized) {
+                        Button(option.displayName) {
                             category = option
                         }
                         .buttonStyle(.bordered)
@@ -89,15 +90,12 @@ struct ContentView: View {
                     showSettingsGuide = true
                 }
 
-                Text(
-                    "Per filtrare anche gli SMS spam, abilita NoSpam da " +
-                    "Impostazioni > Messaggi > Filtraggio SMS sconosciuti."
-                )
+                Text(String(localized: "main.smsFilterHint"))
                 .font(.footnote)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
 
-                Button(isSyncing ? "Aggiornamento..." : "Aggiorna database spam") {
+                Button(isSyncing ? String(localized: "main.syncing") : String(localized: "main.syncButton")) {
                     syncDatabase()
                 }
                 .disabled(isSyncing)
@@ -132,10 +130,7 @@ struct ContentView: View {
                 onboardingShown = true
             }
         } message: {
-            Text(
-                "Per bloccare automaticamente le chiamate spam, NoSpam deve essere abilitato da " +
-                "Impostazioni > Telefono > Blocco e identificazione chiamate. Ti guidiamo passo passo."
-            )
+            Text(String(localized: "onboarding.message"))
         }
         .alert("Attiva il blocco chiamate", isPresented: $showSettingsGuide) {
             Button("Vai su Impostazioni") {
@@ -145,24 +140,18 @@ struct ContentView: View {
             }
             Button("Annulla", role: .cancel) {}
         } message: {
-            Text(
-                "Impostazioni si aprirà sulla pagina di NoSpam, non su quella giusta. Da lì:\n\n" +
-                "1. Torna alla schermata principale di Impostazioni (tocca « ‹ Impostazioni » in alto a sinistra)\n" +
-                "2. Tocca Telefono\n" +
-                "3. Tocca Blocco e identificazione chiamate\n" +
-                "4. Attiva l'interruttore NoSpam"
-            )
+            Text(String(localized: "settingsGuide.message"))
         }
     }
 
     private var blockingStatusDescription: String {
         switch enabledStatus {
         case .enabled:
-            return "Blocco chiamate attivo."
+            return String(localized: "status.callBlockingActive")
         case .disabled:
-            return "Blocco chiamate disattivato. Tocca «Apri Impostazioni» qui sotto: ti guidiamo passo passo per attivarlo."
+            return String(localized: "status.callBlockingDisabled")
         default:
-            return "Stato blocco chiamate sconosciuto."
+            return String(localized: "status.callBlockingUnknown")
         }
     }
 
@@ -187,9 +176,12 @@ struct ContentView: View {
             }
             DispatchQueue.main.async {
                 if let error, !CallDirectoryManager.isExtensionDisabledError(error) {
-                    statusMessage = "Bloccato, ma l'estensione non si è ricaricata: \(UserFacingError.message(for: error))"
+                    statusMessage = String(
+                        format: String(localized: "status.extensionReloadFailed"),
+                        UserFacingError.message(for: error)
+                    )
                 } else {
-                    statusMessage = "Numero bloccato localmente."
+                    statusMessage = String(localized: "status.blockedLocally")
                 }
             }
         }
@@ -203,10 +195,13 @@ struct ContentView: View {
         Task {
             do {
                 try await ReportService.submit(phoneNumberE164: normalized, category: category)
-                statusMessage = "Numero bloccato e segnalato alla community."
+                statusMessage = String(localized: "status.blockedAndReported")
             } catch {
                 ErrorReporter.report(error, context: "blockAndReport")
-                statusMessage = "Bloccato localmente, ma la segnalazione non è riuscita: \(UserFacingError.message(for: error))"
+                statusMessage = String(
+                    format: String(localized: "status.reportFailed"),
+                    UserFacingError.message(for: error)
+                )
             }
             phoneNumber = ""
             isSubmitting = false
@@ -220,13 +215,16 @@ struct ContentView: View {
         Task {
             do {
                 try await SpamDatabaseSync.sync()
-                syncMessage = "Database aggiornato."
+                syncMessage = String(localized: "status.syncSuccess")
             } catch {
                 if CallDirectoryManager.isExtensionDisabledError(error) {
-                    syncMessage = "Database aggiornato. Per attivare il blocco, tocca «Apri Impostazioni» qui sopra e segui la guida."
+                    syncMessage = String(localized: "status.syncSuccessButDisabled")
                 } else {
                     ErrorReporter.report(error, context: "syncDatabase")
-                    syncMessage = "Errore: \(UserFacingError.message(for: error))"
+                    syncMessage = String(
+                        format: String(localized: "status.errorPrefix"),
+                        UserFacingError.message(for: error)
+                    )
                 }
             }
             isSyncing = false

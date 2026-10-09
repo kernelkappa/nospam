@@ -1,0 +1,626 @@
+{
+  "sourceLanguage" : "it",
+  "strings" : {
+    "NoSpam" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "NoSpam" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "NoSpam" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "NoSpam" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "NoSpam" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "NoSpam" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "NoSpam" } }
+      }
+    },
+    "Crediti" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Crediti" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Credits" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Créditos" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Crédits" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Danksagungen" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Créditos" } }
+      }
+    },
+    "Impostazioni" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Impostazioni" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Ajustes" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Réglages" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Einstellungen" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Definições" } }
+      }
+    },
+    "Numeri bloccati" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Numeri bloccati" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Blocked numbers" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Números bloqueados" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Numéros bloqués" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Blockierte Nummern" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Números bloqueados" } }
+      }
+    },
+    "Numero (es. +393331234567)" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Numero (es. +393331234567)" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Number (e.g. +393331234567)" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Número (ej. +393331234567)" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Numéro (ex. +393331234567)" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Nummer (z. B. +393331234567)" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Número (ex. +393331234567)" } }
+      }
+    },
+    "Blocca" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Blocca" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Block" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Bloquear" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Bloquer" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Blockieren" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Bloquear" } }
+      }
+    },
+    "Invio..." : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Invio..." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Sending…" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Enviando…" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Envoi…" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Wird gesendet…" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "A enviar…" } }
+      }
+    },
+    "Blocca e segnala" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Blocca e segnala" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Block and report" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Bloquear y denunciar" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Bloquer et signaler" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Blockieren und melden" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Bloquear e denunciar" } }
+      }
+    },
+    "Apri Impostazioni" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Apri Impostazioni" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Open Settings" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Abrir Ajustes" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Ouvrir les réglages" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Einstellungen öffnen" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Abrir Definições" } }
+      }
+    },
+    "Fine" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Fine" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Done" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Listo" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Terminé" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Fertig" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Concluído" } }
+      }
+    },
+    "Blocca le chiamate spam" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Blocca le chiamate spam" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Block spam calls" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Bloquea las llamadas spam" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Bloquez les appels indésirables" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Spam-Anrufe blockieren" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Bloqueie chamadas spam" } }
+      }
+    },
+    "Continua" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Continua" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Continue" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Continuar" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Continuer" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Weiter" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Continuar" } }
+      }
+    },
+    "Più tardi" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Più tardi" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Later" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Más tarde" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Plus tard" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Später" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Mais tarde" } }
+      }
+    },
+    "Attiva il blocco chiamate" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Attiva il blocco chiamate" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Enable call blocking" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Activa el bloqueo de llamadas" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Activer le blocage des appels" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Anrufblockierung aktivieren" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Ative o bloqueio de chamadas" } }
+      }
+    },
+    "Vai su Impostazioni" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Vai su Impostazioni" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Go to Settings" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Ir a Ajustes" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Aller dans Réglages" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Zu den Einstellungen" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Ir para Definições" } }
+      }
+    },
+    "Annulla" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Annulla" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cancel" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Cancelar" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Annuler" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Abbrechen" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Cancelar" } }
+      }
+    },
+    "Sistema" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Sistema" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "System" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Sistema" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Système" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "System" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Sistema" } }
+      }
+    },
+    "Chiaro" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Chiaro" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Light" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Claro" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Clair" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Hell" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Claro" } }
+      }
+    },
+    "Scuro" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Scuro" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dark" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Oscuro" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Sombre" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Dunkel" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Escuro" } }
+      }
+    },
+    "Lingua" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Lingua" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Language" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Idioma" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Langue" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Sprache" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Idioma" } }
+      }
+    },
+    "Scegli la lingua dell'app dalle Impostazioni di sistema, indipendentemente da quella del telefono." : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Scegli la lingua dell'app dalle Impostazioni di sistema, indipendentemente da quella del telefono." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Choose the app's language from system Settings, independently of your phone's." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Elige el idioma de la app desde los Ajustes del sistema, independientemente del de tu teléfono." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Choisissez la langue de l'application depuis les réglages système, indépendamment de celle du téléphone." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Wähle die Sprache der App in den Systemeinstellungen, unabhängig von der deines Telefons." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Escolha o idioma da app nas Definições do sistema, independentemente do idioma do telefone." } }
+      }
+    },
+    "Aspetto" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Aspetto" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Appearance" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Apariencia" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Apparence" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Erscheinungsbild" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Aparência" } }
+      }
+    },
+    "Fonti dati" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Fonti dati" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Data sources" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Fuentes de datos" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Sources de données" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Datenquellen" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Fontes de dados" } }
+      }
+    },
+    "error.extensionDisabled" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Tocca «Apri Impostazioni» nella schermata principale: ti guidiamo passo passo per attivarlo." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tap «Open Settings» on the main screen: we'll guide you step by step to enable it." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Toca «Abrir Ajustes» en la pantalla principal: te guiamos paso a paso para activarlo." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Appuyez sur « Ouvrir les réglages » sur l'écran principal : nous vous guidons étape par étape pour l'activer." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Tippe auf der Hauptseite auf „Einstellungen öffnen“: Wir führen dich Schritt für Schritt durch die Aktivierung." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Toque em «Abrir Definições» no ecrã principal: nós guiamo-lo passo a passo para o ativar." } }
+      }
+    },
+    "error.noInternet" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessuna connessione Internet: controlla la connessione e riprova." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No Internet connection: check your connection and try again." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Sin conexión a Internet: comprueba tu conexión e inténtalo de nuevo." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Aucune connexion Internet : vérifiez votre connexion et réessayez." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Keine Internetverbindung: Überprüfe deine Verbindung und versuche es erneut." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Sem ligação à Internet: verifique a sua ligação e tente novamente." } }
+      }
+    },
+    "error.timeout" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "La richiesta ha impiegato troppo tempo: riprova più tardi." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The request took too long: please try again later." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "La solicitud ha tardado demasiado: inténtalo de nuevo más tarde." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "La requête a pris trop de temps : veuillez réessayer plus tard." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Die Anfrage hat zu lange gedauert: Bitte versuche es später erneut." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "O pedido demorou demasiado tempo: tente novamente mais tarde." } }
+      }
+    },
+    "error.invalidResponse" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Risposta non valida dal server. Riprova più tardi." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Invalid response from the server. Please try again later." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Respuesta no válida del servidor. Inténtalo de nuevo más tarde." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Réponse invalide du serveur. Veuillez réessayer plus tard." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Ungültige Antwort vom Server. Bitte versuche es später erneut." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Resposta inválida do servidor. Tente novamente mais tarde." } }
+      }
+    },
+    "error.serverUnavailable" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Il server non è raggiungibile al momento (codice %ld). Riprova più tardi." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "The server is currently unavailable (code %ld). Please try again later." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "El servidor no está disponible en este momento (código %ld). Inténtalo de nuevo más tarde." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Le serveur est actuellement indisponible (code %ld). Veuillez réessayer plus tard." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Der Server ist derzeit nicht erreichbar (Code %ld). Bitte versuche es später erneut." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "O servidor não está disponível neste momento (código %ld). Tente novamente mais tarde." } }
+      }
+    },
+    "category.spam" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Spam" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Spam" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Spam" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Spam" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Spam" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Spam" } }
+      }
+    },
+    "category.scam" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Truffa" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Scam" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Estafa" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Arnaque" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Betrug" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Burla" } }
+      }
+    },
+    "category.telemarketing" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Telemarketing" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Telemarketing" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Telemarketing" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Télémarketing" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Telemarketing" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Telemarketing" } }
+      }
+    },
+    "category.robocall" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Robocall" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Robocall" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Llamada automática" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Appel automatisé" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Robocall" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Chamada automática" } }
+      }
+    },
+    "category.other" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Altro" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Other" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Otro" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Autre" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Sonstiges" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Outro" } }
+      }
+    },
+    "status.callBlockingActive" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Blocco chiamate attivo." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Call blocking active." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Bloqueo de llamadas activo." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Blocage des appels actif." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Anrufblockierung aktiv." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Bloqueio de chamadas ativo." } }
+      }
+    },
+    "status.callBlockingDisabled" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Blocco chiamate disattivato. Tocca «Apri Impostazioni» qui sotto: ti guidiamo passo passo per attivarlo." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Call blocking disabled. Tap «Open Settings» below: we'll guide you step by step to enable it." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Bloqueo de llamadas desactivado. Toca «Abrir Ajustes» abajo: te guiamos paso a paso para activarlo." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Blocage des appels désactivé. Appuyez sur « Ouvrir les réglages » ci-dessous : nous vous guidons étape par étape pour l'activer." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Anrufblockierung deaktiviert. Tippe unten auf „Einstellungen öffnen“: Wir führen dich Schritt für Schritt durch die Aktivierung." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Bloqueio de chamadas desativado. Toque em «Abrir Definições» abaixo: nós guiamo-lo passo a passo para o ativar." } }
+      }
+    },
+    "status.callBlockingUnknown" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Stato blocco chiamate sconosciuto." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Call blocking status unknown." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Estado del bloqueo de llamadas desconocido." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "État du blocage des appels inconnu." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Status der Anrufblockierung unbekannt." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Estado do bloqueio de chamadas desconhecido." } }
+      }
+    },
+    "status.extensionReloadFailed" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Bloccato, ma l'estensione non si è ricaricata: %@" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Blocked, but the extension didn't reload: %@" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Bloqueado, pero la extensión no se recargó: %@" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Bloqué, mais l'extension n'a pas été rechargée : %@" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Blockiert, aber die Erweiterung wurde nicht neu geladen: %@" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Bloqueado, mas a extensão não foi recarregada: %@" } }
+      }
+    },
+    "status.blockedLocally" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Numero bloccato localmente." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Number blocked locally." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Número bloqueado localmente." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Numéro bloqué localement." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Nummer lokal blockiert." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Número bloqueado localmente." } }
+      }
+    },
+    "status.blockedAndReported" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Numero bloccato e segnalato alla community." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Number blocked and reported to the community." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Número bloqueado y denunciado a la comunidad." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Numéro bloqué et signalé à la communauté." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Nummer blockiert und an die Community gemeldet." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Número bloqueado e denunciado à comunidade." } }
+      }
+    },
+    "status.reportFailed" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Bloccato localmente, ma la segnalazione non è riuscita: %@" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Blocked locally, but the report failed: %@" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Bloqueado localmente, pero la denuncia no se pudo enviar: %@" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Bloqué localement, mais le signalement a échoué : %@" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Lokal blockiert, aber die Meldung ist fehlgeschlagen: %@" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Bloqueado localmente, mas a denúncia falhou: %@" } }
+      }
+    },
+    "status.syncSuccess" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Database aggiornato." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Database updated." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Base de datos actualizada." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Base de données mise à jour." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Datenbank aktualisiert." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Base de dados atualizada." } }
+      }
+    },
+    "status.syncSuccessButDisabled" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Database aggiornato. Per attivare il blocco, tocca «Apri Impostazioni» qui sopra e segui la guida." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Database updated. To enable blocking, tap «Open Settings» above and follow the guide." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Base de datos actualizada. Para activar el bloqueo, toca «Abrir Ajustes» arriba y sigue la guía." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Base de données mise à jour. Pour activer le blocage, appuyez sur « Ouvrir les réglages » ci-dessus et suivez le guide." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Datenbank aktualisiert. Um die Blockierung zu aktivieren, tippe oben auf „Einstellungen öffnen“ und folge der Anleitung." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Base de dados atualizada. Para ativar o bloqueio, toque em «Abrir Definições» acima e siga o guia." } }
+      }
+    },
+    "status.errorPrefix" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Errore: %@" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Error: %@" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Error: %@" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Erreur : %@" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Fehler: %@" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Erro: %@" } }
+      }
+    },
+    "main.smsFilterHint" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Per filtrare anche gli SMS spam, abilita NoSpam da Impostazioni > Messaggi > Filtraggio SMS sconosciuti." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "To also filter spam SMS, enable NoSpam from Settings > Messages > Unknown & Spam." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Para filtrar también los SMS spam, activa NoSpam desde Ajustes > Mensajes > Filtrado de SMS desconocidos." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Pour filtrer aussi les SMS indésirables, activez NoSpam depuis Réglages > Messages > Filtrage des SMS inconnus." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Um auch Spam-SMS zu filtern, aktiviere NoSpam unter Einstellungen > Nachrichten > Unbekannt & Spam filtern." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Para filtrar também SMS spam, ative o NoSpam em Definições > Mensagens > Filtragem de SMS desconhecidos." } }
+      }
+    },
+    "main.syncing" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Aggiornamento..." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Updating…" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Actualizando…" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Mise à jour…" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Wird aktualisiert…" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "A atualizar…" } }
+      }
+    },
+    "main.syncButton" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Aggiorna database spam" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Update spam database" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Actualizar base de datos de spam" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Mettre à jour la base de données spam" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Spam-Datenbank aktualisieren" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Atualizar base de dados de spam" } }
+      }
+    },
+    "onboarding.message" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Per bloccare automaticamente le chiamate spam, NoSpam deve essere abilitato da Impostazioni > Telefono > Blocco e identificazione chiamate. Ti guidiamo passo passo." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "To automatically block spam calls, NoSpam needs to be enabled from Settings > Phone > Call Blocking & Identification. We'll guide you step by step." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Para bloquear automáticamente las llamadas spam, NoSpam debe activarse desde Ajustes > Teléfono > Bloqueo e identificación de llamadas. Te guiamos paso a paso." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Pour bloquer automatiquement les appels indésirables, NoSpam doit être activé depuis Réglages > Téléphone > Blocage et identification des appels. Nous vous guidons étape par étape." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Um Spam-Anrufe automatisch zu blockieren, muss NoSpam unter Einstellungen > Telefon > Anrufe blockieren & identifizieren aktiviert werden. Wir führen dich Schritt für Schritt." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Para bloquear automaticamente chamadas spam, o NoSpam deve ser ativado em Definições > Telefone > Bloqueio e identificação de chamadas. Guiamo-lo passo a passo." } }
+      }
+    },
+    "settingsGuide.message" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Impostazioni si aprirà sulla pagina di NoSpam, non su quella giusta. Da lì:\n\n1. Torna alla schermata principale di Impostazioni (tocca « ‹ Impostazioni » in alto a sinistra)\n2. Tocca Telefono\n3. Tocca Blocco e identificazione chiamate\n4. Attiva l'interruttore NoSpam" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings will open on NoSpam's own page, not the right one. From there:\n\n1. Go back to the main Settings screen (tap « ‹ Settings » at the top left)\n2. Tap Phone\n3. Tap Call Blocking & Identification\n4. Turn on the NoSpam switch" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Ajustes se abrirá en la página de NoSpam, no en la correcta. Desde allí:\n\n1. Vuelve a la pantalla principal de Ajustes (toca « ‹ Ajustes » arriba a la izquierda)\n2. Toca Teléfono\n3. Toca Bloqueo e identificación de llamadas\n4. Activa el interruptor de NoSpam" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Réglages s'ouvrira sur la page de NoSpam, pas la bonne. À partir de là :\n\n1. Revenez à l'écran principal de Réglages (appuyez sur « ‹ Réglages » en haut à gauche)\n2. Appuyez sur Téléphone\n3. Appuyez sur Blocage et identification des appels\n4. Activez l'interrupteur NoSpam" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Einstellungen öffnet sich auf der Seite von NoSpam, nicht auf der richtigen. Von dort aus:\n\n1. Gehe zurück zum Hauptbildschirm der Einstellungen (tippe oben links auf „‹ Einstellungen“)\n2. Tippe auf Telefon\n3. Tippe auf Anrufe blockieren & identifizieren\n4. Aktiviere den NoSpam-Schalter" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "As Definições abrirão na página do NoSpam, não na correta. A partir daí:\n\n1. Volte ao ecrã principal das Definições (toque em «‹ Definições» no canto superior esquerdo)\n2. Toque em Telefone\n3. Toque em Bloqueio e identificação de chamadas\n4. Ative o interruptor do NoSpam" } }
+      }
+    },
+    "blocked.community" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Community" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Community" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Comunidad" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Communauté" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Community" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Comunidade" } }
+      }
+    },
+    "blocked.personal" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Personale" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Personal" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Personal" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Personnel" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Persönlich" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Pessoal" } }
+      }
+    },
+    "filter.all" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Tutti" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "All" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Todos" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Tous" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Alle" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Todos" } }
+      }
+    },
+    "filter.personal" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Personali" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Personal" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Personales" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Personnels" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Persönlich" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Pessoais" } }
+      }
+    },
+    "filter.title" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Filtro" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Filter" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Filtro" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Filtre" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Filter" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Filtro" } }
+      }
+    },
+    "blockedNumbers.searchPlaceholder" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Cerca numero (es. 0691 o +3933...)" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Search number (e.g. 0691 or +3933…)" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Buscar número (ej. 0691 o +3933…)" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Rechercher un numéro (ex. 0691 ou +3933…)" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Nummer suchen (z. B. 0691 oder +3933…)" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Procurar número (ex. 0691 ou +3933…)" } }
+      }
+    },
+    "blockedNumbers.empty" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Nessun numero trovato." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "No numbers found." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "No se encontraron números." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Aucun numéro trouvé." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Keine Nummern gefunden." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Nenhum número encontrado." } }
+      }
+    },
+    "blockedNumbers.unblock" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Sblocca" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Unblock" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Desbloquear" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Débloquer" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Entsperren" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Desbloquear" } }
+      }
+    },
+    "blockedNumbers.count" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Numeri bloccati (%ld)" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Blocked numbers (%ld)" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Números bloqueados (%ld)" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Numéros bloqués (%ld)" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Blockierte Nummern (%ld)" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Números bloqueados (%ld)" } }
+      }
+    },
+    "credits.license" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Licenza: %@" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "License: %@" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Licencia: %@" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Licence : %@" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Lizenz: %@" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Licença: %@" } }
+      }
+    },
+    "credits.openSource" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Apri fonte" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Open source" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Abrir fuente" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Ouvrir la source" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Quelle öffnen" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Abrir fonte" } }
+      }
+    },
+    "update.title" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Aggiornamento disponibile" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Update available" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Actualización disponible" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Mise à jour disponible" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Update verfügbar" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Atualização disponível" } }
+      }
+    },
+    "update.message" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "È disponibile una nuova versione di NoSpam con correzioni importanti. Aggiorna per continuare a usare l'app." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "A new version of NoSpam with important fixes is available. Update to keep using the app." } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Hay disponible una nueva versión de NoSpam con correcciones importantes. Actualiza para seguir usando la app." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Une nouvelle version de NoSpam avec des corrections importantes est disponible. Mettez à jour pour continuer à utiliser l'application." } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Eine neue Version von NoSpam mit wichtigen Korrekturen ist verfügbar. Aktualisiere die App, um sie weiterhin nutzen zu können." } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Está disponível uma nova versão do NoSpam com correções importantes. Atualize para continuar a usar a app." } }
+      }
+    },
+    "update.button" : {
+      "localizations" : {
+        "it" : { "stringUnit" : { "state" : "translated", "value" : "Aggiorna ora" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Update now" } },
+        "es" : { "stringUnit" : { "state" : "translated", "value" : "Actualizar ahora" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Mettre à jour maintenant" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Jetzt aktualisieren" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Atualizar agora" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -1,8 +1,15 @@
 import SwiftUI
 
-private enum SourceFilter: String, CaseIterable {
-    case all = "Tutti"
-    case personal = "Personali"
+private enum SourceFilter: CaseIterable {
+    case all
+    case personal
+
+    var label: String {
+        switch self {
+        case .all: return String(localized: "filter.all")
+        case .personal: return String(localized: "filter.personal")
+        }
+    }
 }
 
 struct BlockedNumbersView: View {
@@ -21,34 +28,38 @@ struct BlockedNumbersView: View {
         VStack(spacing: 0) {
             List {
                 Section {
-                    TextField("Cerca numero (es. 0691 o +3933...)", text: $searchText)
+                    TextField(String(localized: "blockedNumbers.searchPlaceholder"), text: $searchText)
                         .keyboardType(.phonePad)
                         .focused($isSearchFieldFocused)
 
-                    Picker("Filtro", selection: $sourceFilter) {
+                    Picker(String(localized: "filter.title"), selection: $sourceFilter) {
                         ForEach(SourceFilter.allCases, id: \.self) { filter in
-                            Text(filter.rawValue).tag(filter)
+                            Text(filter.label).tag(filter)
                         }
                     }
                     .pickerStyle(.segmented)
                 }
 
-                Section("Numeri bloccati (\(filteredEntries.count))") {
+                Section {
                     if filteredEntries.isEmpty {
-                        Text("Nessun numero trovato.")
+                        Text(String(localized: "blockedNumbers.empty"))
                             .foregroundStyle(.secondary)
                     }
                     ForEach(filteredEntries) { entry in
                         HStack {
                             VStack(alignment: .leading) {
                                 Text(entry.number)
-                                Text(entry.source == .community ? "Community" + (entry.category.map { " · \($0)" } ?? "") : "Personale")
+                                Text(
+                                    entry.source == .community
+                                        ? String(localized: "blocked.community") + (entry.category.map { " · \($0)" } ?? "")
+                                        : String(localized: "blocked.personal")
+                                )
                                     .font(.caption)
                                     .foregroundStyle(.secondary)
                             }
                             Spacer()
                             if entry.source == .personal {
-                                Button("Sblocca") {
+                                Button(String(localized: "blockedNumbers.unblock")) {
                                     deletePersonalEntry(entry)
                                 }
                                 .buttonStyle(.bordered)
@@ -56,6 +67,8 @@ struct BlockedNumbersView: View {
                             }
                         }
                     }
+                } header: {
+                    Text(String(format: String(localized: "blockedNumbers.count"), filteredEntries.count))
                 }
             }
             AdBannerView()

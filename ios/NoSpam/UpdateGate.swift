@@ -50,16 +50,13 @@ struct UpdateRequiredView: View {
             Image(systemName: "arrow.down.circle.fill")
                 .font(.system(size: 64))
                 .foregroundStyle(.tint)
-            Text("Aggiornamento disponibile")
+            Text(String(localized: "update.title"))
                 .font(.title2.bold())
-            Text(
-                "È disponibile una nuova versione di NoSpam con correzioni importanti. " +
-                "Aggiorna per continuare a usare l'app."
-            )
+            Text(String(localized: "update.message"))
             .multilineTextAlignment(.center)
             .foregroundStyle(.secondary)
             .padding(.horizontal, 32)
-            Button("Aggiorna ora") {
+            Button(String(localized: "update.button")) {
                 UIApplication.shared.open(UpdateGate.appStoreURL)
             }
             .buttonStyle(.borderedProminent)

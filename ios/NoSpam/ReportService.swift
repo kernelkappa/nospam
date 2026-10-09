@@ -2,6 +2,16 @@ import Foundation
 
 enum ReportCategory: String, CaseIterable {
     case spam, scam, telemarketing, robocall, other
+
+    var displayName: String {
+        switch self {
+        case .spam: return String(localized: "category.spam")
+        case .scam: return String(localized: "category.scam")
+        case .telemarketing: return String(localized: "category.telemarketing")
+        case .robocall: return String(localized: "category.robocall")
+        case .other: return String(localized: "category.other")
+        }
+    }
 }
 
 enum ReportError: LocalizedError {
@@ -11,9 +21,9 @@ enum ReportError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidResponse:
-            return "Risposta non valida dal server. Riprova più tardi."
+            return String(localized: "error.invalidResponse")
         case .server(let statusCode):
-            return "Il server non è raggiungibile al momento (codice \(statusCode)). Riprova più tardi."
+            return String(format: String(localized: "error.serverUnavailable"), statusCode)
         }
     }
 }

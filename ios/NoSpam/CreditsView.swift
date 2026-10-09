@@ -47,11 +47,11 @@ struct CreditsView: View {
                             .font(.subheadline)
                             .foregroundStyle(.secondary)
                         if let license = source.license {
-                            Text("Licenza: \(license)")
+                            Text(String(format: String(localized: "credits.license"), license))
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                         }
-                        Link("Apri fonte", destination: source.url)
+                        Link(String(localized: "credits.openSource"), destination: source.url)
                             .font(.caption)
                     }
                     .padding(.vertical, 4)

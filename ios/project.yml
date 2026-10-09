@@ -1,6 +1,8 @@
 name: NoSpam
 options:
   bundleIdPrefix: com.konrad
+  developmentLanguage: it
+  knownRegions: [Base, it, en, es, fr, de, pt]
 settings:
   base:
     DEVELOPMENT_TEAM: H7477F644K

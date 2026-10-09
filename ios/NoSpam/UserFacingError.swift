@@ -7,14 +7,14 @@ import Foundation
 enum UserFacingError {
     static func message(for error: Error) -> String {
         if CallDirectoryManager.isExtensionDisabledError(error) {
-            return "Tocca «Apri Impostazioni» nella schermata principale: ti guidiamo passo passo per attivarlo."
+            return String(localized: "error.extensionDisabled")
         }
         if let urlError = error as? URLError {
             switch urlError.code {
             case .notConnectedToInternet, .networkConnectionLost, .dataNotAllowed:
-                return "Nessuna connessione Internet: controlla la connessione e riprova."
+                return String(localized: "error.noInternet")
             case .timedOut:
-                return "La richiesta ha impiegato troppo tempo: riprova più tardi."
+                return String(localized: "error.timeout")
             default:
                 break
             }

@@ -4,6 +4,7 @@ import SwiftUI
 struct NoSpamApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
     @Environment(\.scenePhase) private var scenePhase
+    @StateObject private var appearance = AppearancePreference.shared
     @State private var updateRequired = false
 
     var body: some Scene {
@@ -15,6 +16,7 @@ struct NoSpamApp: App {
                     ContentView()
                 }
             }
+            .preferredColorScheme(appearance.mode.colorScheme)
             .task {
                 ConsentManager.shared.start()
                 updateRequired = await UpdateGate.isUpdateRequired()
