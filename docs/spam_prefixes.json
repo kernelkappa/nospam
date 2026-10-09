@@ -762,6 +762,24 @@
     "source": "wangiri-watchlist"
   },
   {
+    "prefix": "+55303",
+    "label": "Telemarketing (Anatel +55303)",
+    "mode": "identify",
+    "source": "anatel-telemarketing-prefix"
+  },
+  {
+    "prefix": "+91140",
+    "label": "Telemarketing (TRAI 140xx)",
+    "mode": "identify",
+    "source": "trai-telemarketing-prefix"
+  },
+  {
+    "prefix": "+911600",
+    "label": "Telemarketing (TRAI 1600)",
+    "mode": "identify",
+    "source": "trai-telemarketing-prefix"
+  },
+  {
     "prefix": "+93",
     "label": "Afghanistan",
     "mode": "identify",
