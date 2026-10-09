@@ -15,6 +15,6 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
         run: |
-          curl -s "$SUPABASE_URL/rest/v1/error_reports?select=created_at,platform,context,message,app_version,os_version&order=created_at.desc&limit=200" \
+          curl -s "$SUPABASE_URL/rest/v1/error_reports?select=*&order=id.desc&limit=200" \
             -H "apikey: $SUPABASE_SERVICE_KEY" \
             -H "Authorization: Bearer $SUPABASE_SERVICE_KEY" | python3 -m json.tool
