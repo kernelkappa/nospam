@@ -29,6 +29,7 @@
     <string name="sync_updating">更新中…</string>
     <string name="sync_button">迷惑電話データベースを更新</string>
     <string name="sync_success">データベースを更新しました。</string>
+    <string name="sync_stale_hint">スパムデータベースがしばらく更新されていません。手動で更新してください。</string>
 
     <string name="search_placeholder">番号を検索（例: 0691 または +3933…）</string>
     <string name="filter_all">すべて</string>

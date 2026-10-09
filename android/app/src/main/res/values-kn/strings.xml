@@ -29,6 +29,7 @@
     <string name="sync_updating">ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತಿದೆ…</string>
     <string name="sync_button">ಸ್ಪ್ಯಾಮ್ ಡೇಟಾಬೇಸ್ ಅಪ್‌ಡೇಟ್ ಮಾಡಿ</string>
     <string name="sync_success">ಡೇಟಾಬೇಸ್ ಅಪ್‌ಡೇಟ್ ಆಗಿದೆ.</string>
+    <string name="sync_stale_hint">ಸ್ಪ್ಯಾಮ್ ಡೇಟಾಬೇಸ್ ಸ್ವಲ್ಪ ಸಮಯದಿಂದ ನವೀಕರಣಗೊಂಡಿಲ್ಲ: ಅದನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ನವೀಕರಿಸಿ.</string>
 
     <string name="search_placeholder">ಸಂಖ್ಯೆ ಹುಡುಕಿ (ಉದಾ. 0691 ಅಥವಾ +3933…)</string>
     <string name="filter_all">ಎಲ್ಲಾ</string>

@@ -29,6 +29,7 @@
     <string name="sync_updating">Memperbarui…</string>
     <string name="sync_button">Perbarui database spam</string>
     <string name="sync_success">Database berhasil diperbarui.</string>
+    <string name="sync_stale_hint">Database spam belum diperbarui dalam beberapa waktu: perbarui secara manual.</string>
 
     <string name="search_placeholder">Cari nomor (mis. 0691 atau +3933…)</string>
     <string name="filter_all">Semua</string>

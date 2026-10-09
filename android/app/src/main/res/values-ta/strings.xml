@@ -29,6 +29,7 @@
     <string name="sync_updating">புதுப்பிக்கிறது…</string>
     <string name="sync_button">ஸ்பேம் தரவுத்தளத்தைப் புதுப்பிக்கவும்</string>
     <string name="sync_success">தரவுத்தளம் புதுப்பிக்கப்பட்டது.</string>
+    <string name="sync_stale_hint">ஸ்பாம் தரவுத்தளம் சிறிது நேரமாக புதுப்பிக்கப்படவில்லை: அதை கைமுறையாக புதுப்பிக்கவும்.</string>
 
     <string name="search_placeholder">எண்ணைத் தேடு (எ.கா. 0691 அல்லது +3933…)</string>
     <string name="filter_all">அனைத்தும்</string>

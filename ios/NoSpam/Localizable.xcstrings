@@ -16988,6 +16988,280 @@
           }
         }
       }
+    },
+    "main.staleHint": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il database spam non si aggiorna da un po': aggiornalo manualmente."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The spam database hasn't updated in a while: update it manually."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La base de datos de spam no se actualiza desde hace un tiempo: actualízala manualmente."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La base de données spam n'a pas été mise à jour depuis un moment : mettez-la à jour manuellement."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Spam-Datenbank wurde seit einiger Zeit nicht aktualisiert: Aktualisiere sie manuell."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A base de dados de spam não é atualizada há algum tempo: atualize-a manualmente."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O banco de dados de spam não é atualizado há um tempo: atualize-o manualmente."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قاعدة بيانات السبام لم تُحدَّث منذ فترة: حدّثها يدويًا."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "স্প্যাম ডেটাবেস কিছুক্ষণ ধরে আপডেট হয়নি: এটি ম্যানুয়ালি আপডেট করুন।"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La base de dades de spam no s'ha actualitzat des de fa temps: actualitza-la manualment."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "垃圾号码数据库已有一段时间未更新：请手动更新。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "垃圾號碼資料庫已有一段時間未更新：請手動更新。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baza podataka o neželjenim pozivima nije ažurirana neko vrijeme: ažurirajte je ručno."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Databáze spamu se už nějakou dobu neaktualizovala: aktualizujte ji manuálně."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spam-databasen er ikke blevet opdateret i et stykke tid: opdater den manuelt."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "De spamdatabase is al een tijdje niet bijgewerkt: werk deze handmatig bij."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Roskapuhelutietokantaa ei ole päivitetty viime aikoina: päivitä se manuaalisesti."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Η βάση δεδομένων ανεπιθύμητων κλήσεων δεν έχει ενημερωθεί εδώ και καιρό: ενημερώστε την χειροκίνητα."
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "સ્પામ ડેટાબેઝ થોડા સમયથી અપડેટ થયો નથી: તેને મેન્યુઅલી અપડેટ કરો."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מסד נתוני הספאם לא התעדכן כבר זמן מה: עדכן אותו באופן ידני."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "स्पैम डेटाबेस कुछ समय से अपडेट नहीं हुआ है: इसे मैन्युअल रूप से अपडेट करें।"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A spam adatbázis egy ideje nem frissült: frissítsd manuálisan."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Database spam belum diperbarui dalam beberapa waktu: perbarui secara manual."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スパムデータベースがしばらく更新されていません。手動で更新してください。"
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ಸ್ಪ್ಯಾಮ್ ಡೇಟಾಬೇಸ್ ಸ್ವಲ್ಪ ಸಮಯದಿಂದ ನವೀಕರಣಗೊಂಡಿಲ್ಲ: ಅದನ್ನು ಹಸ್ತಚಾಲಿತವಾಗಿ ನವೀಕರಿಸಿ."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "스팸 데이터베이스가 한동안 업데이트되지 않았습니다. 수동으로 업데이트하세요."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pangkalan data spam tidak dikemas kini sejak beberapa waktu: kemas kini secara manual."
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "സ്പാം ഡാറ്റാബേസ് കുറച്ചുകാലമായി അപ്‌ഡേറ്റ് ചെയ്തിട്ടില്ല: ഇത് സ്വമേധയാ അപ്‌ഡേറ്റ് ചെയ്യുക."
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "स्पॅम डेटाबेस काही वेळापासून अपडेट झालेला नाही: तो मॅन्युअली अपडेट करा."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spam-databasen har ikke blitt oppdatert på en stund: oppdater den manuelt."
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ସ୍ପାମ ଡାଟାବେସ୍ କିଛି ସମୟ ହେଲା ଅପଡେଟ୍ ହୋଇନାହିଁ: ଏହାକୁ ମାନୁଆଲ ଭାବରେ ଅପଡେଟ୍ କରନ୍ତୁ।"
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ਸਪੈਮ ਡੇਟਾਬੇਸ ਕੁਝ ਸਮੇਂ ਤੋਂ ਅੱਪਡੇਟ ਨਹੀਂ ਹੋਇਆ: ਇਸਨੂੰ ਖੁਦ ਅੱਪਡੇਟ ਕਰੋ।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baza danych spamu nie była aktualizowana od pewnego czasu: zaktualizuj ją ręcznie."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baza de date de spam nu a fost actualizată de o vreme: actualizeaz-o manual."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "База данных спама давно не обновлялась: обновите её вручную."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Databáza spamu sa už chvíľu neaktualizovala: aktualizujte ju manuálne."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Podatkovna baza neželenih klicev se že nekaj časa ni posodobila: posodobite jo ročno."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spam-databasen har inte uppdaterats på ett tag: uppdatera den manuellt."
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ஸ்பாம் தரவுத்தளம் சிறிது நேரமாக புதுப்பிக்கப்படவில்லை: அதை கைமுறையாக புதுப்பிக்கவும்."
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "స్పామ్ డేటాబేస్ కొంత సమయంగా అప్‌డేట్ కాలేదు: దానిని మాన్యువల్‌గా అప్‌డేట్ చేయండి."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ฐานข้อมูลสแปมไม่ได้รับการอัปเดตมาสักระยะแล้ว: โปรดอัปเดตด้วยตนเอง"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spam veritabanı bir süredir güncellenmedi: elle güncelleyin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Базу даних спаму давно не оновлювали: оновіть її вручну."
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اسپیم ڈیٹا بیس کچھ عرصے سے اپڈیٹ نہیں ہوا: اسے دستی طور پر اپڈیٹ کریں۔"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cơ sở dữ liệu spam đã lâu chưa được cập nhật: hãy cập nhật thủ công."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

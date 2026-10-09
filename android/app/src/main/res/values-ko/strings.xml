@@ -29,6 +29,7 @@
     <string name="sync_updating">업데이트 중…</string>
     <string name="sync_button">스팸 데이터베이스 업데이트</string>
     <string name="sync_success">데이터베이스가 업데이트되었습니다.</string>
+    <string name="sync_stale_hint">스팸 데이터베이스가 한동안 업데이트되지 않았습니다. 수동으로 업데이트하세요.</string>
 
     <string name="search_placeholder">번호 검색 (예: 0691 또는 +3933…)</string>
     <string name="filter_all">전체</string>

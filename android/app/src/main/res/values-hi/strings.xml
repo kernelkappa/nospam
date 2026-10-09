@@ -29,6 +29,7 @@
     <string name="sync_updating">अपडेट हो रहा है…</string>
     <string name="sync_button">स्पैम डेटाबेस अपडेट करें</string>
     <string name="sync_success">डेटाबेस अपडेट हो गया।</string>
+    <string name="sync_stale_hint">स्पैम डेटाबेस कुछ समय से अपडेट नहीं हुआ है: इसे मैन्युअल रूप से अपडेट करें।</string>
 
     <string name="search_placeholder">नंबर खोजें (उदा. 0691 या +3933…)</string>
     <string name="filter_all">सभी</string>

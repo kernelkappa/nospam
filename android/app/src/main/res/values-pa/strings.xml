@@ -29,6 +29,7 @@
     <string name="sync_updating">ਅੱਪਡੇਟ ਹੋ ਰਿਹਾ ਹੈ…</string>
     <string name="sync_button">ਸਪੈਮ ਡੇਟਾਬੇਸ ਅੱਪਡੇਟ ਕਰੋ</string>
     <string name="sync_success">ਡੇਟਾਬੇਸ ਅੱਪਡੇਟ ਹੋ ਗਿਆ।</string>
+    <string name="sync_stale_hint">ਸਪੈਮ ਡੇਟਾਬੇਸ ਕੁਝ ਸਮੇਂ ਤੋਂ ਅੱਪਡੇਟ ਨਹੀਂ ਹੋਇਆ: ਇਸਨੂੰ ਖੁਦ ਅੱਪਡੇਟ ਕਰੋ।</string>
 
     <string name="search_placeholder">ਨੰਬਰ ਖੋਜੋ (ਜਿਵੇਂ 0691 ਜਾਂ +3933…)</string>
     <string name="filter_all">ਸਾਰੇ</string>

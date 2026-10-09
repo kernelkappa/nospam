@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var isSyncing = false
     @State private var showOnboarding = false
     @State private var showSettingsGuide = false
+    @State private var isDatabaseStale = false
     @AppStorage("onboarding_shown") private var onboardingShown = false
     @FocusState private var isPhoneFieldFocused: Bool
 
@@ -100,6 +101,13 @@ struct ContentView: View {
                 }
                 .disabled(isSyncing)
 
+                if isDatabaseStale {
+                    Text(String(localized: "main.staleHint"))
+                        .font(.footnote)
+                        .foregroundStyle(.orange)
+                        .multilineTextAlignment(.center)
+                }
+
                 if let syncMessage {
                     Text(syncMessage)
                         .font(.footnote)
@@ -121,6 +129,7 @@ struct ContentView: View {
             }
         }
         .onAppear(perform: refreshEnabledStatus)
+        .onAppear { isDatabaseStale = SpamDatabaseSync.isStale() }
         .alert("Blocca le chiamate spam", isPresented: $showOnboarding) {
             Button("Continua") {
                 onboardingShown = true
@@ -228,6 +237,7 @@ struct ContentView: View {
                 }
             }
             isSyncing = false
+            isDatabaseStale = SpamDatabaseSync.isStale()
             refreshEnabledStatus()
         }
     }

@@ -29,6 +29,7 @@
     <string name="sync_updating">അപ്ഡേറ്റ് ചെയ്യുന്നു…</string>
     <string name="sync_button">സ്പാം ഡേറ്റാബേസ് അപ്ഡേറ്റ് ചെയ്യുക</string>
     <string name="sync_success">ഡേറ്റാബേസ് അപ്ഡേറ്റ് ചെയ്തു.</string>
+    <string name="sync_stale_hint">സ്പാം ഡാറ്റാബേസ് കുറച്ചുകാലമായി അപ്‌ഡേറ്റ് ചെയ്തിട്ടില്ല: ഇത് സ്വമേധയാ അപ്‌ഡേറ്റ് ചെയ്യുക.</string>
 
     <string name="search_placeholder">നമ്പർ തിരയുക (ഉദാ. 0691 അല്ലെങ്കിൽ +3933…)</string>
     <string name="filter_all">എല്ലാം</string>

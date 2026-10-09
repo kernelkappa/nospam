@@ -29,6 +29,7 @@
     <string name="sync_updating">Bijwerken…</string>
     <string name="sync_button">Spamdatabase bijwerken</string>
     <string name="sync_success">Database bijgewerkt.</string>
+    <string name="sync_stale_hint">De spamdatabase is al een tijdje niet bijgewerkt: werk deze handmatig bij.</string>
 
     <string name="search_placeholder">Zoek nummer (bijv. 0691 of +3933…)</string>
     <string name="filter_all">Alle</string>

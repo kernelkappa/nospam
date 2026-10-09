@@ -29,6 +29,7 @@
     <string name="sync_updating">Frissítés…</string>
     <string name="sync_button">Spam adatbázis frissítése</string>
     <string name="sync_success">Az adatbázis frissítve.</string>
+    <string name="sync_stale_hint">A spam adatbázis egy ideje nem frissült: frissítsd manuálisan.</string>
 
     <string name="search_placeholder">Szám keresése (pl. 0691 vagy +3933…)</string>
     <string name="filter_all">Összes</string>

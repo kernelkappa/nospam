@@ -29,6 +29,7 @@
     <string name="sync_updating">Ενημέρωση…</string>
     <string name="sync_button">Ενημέρωση βάσης δεδομένων spam</string>
     <string name="sync_success">Η βάση δεδομένων ενημερώθηκε.</string>
+    <string name="sync_stale_hint">Η βάση δεδομένων ανεπιθύμητων κλήσεων δεν έχει ενημερωθεί εδώ και καιρό: ενημερώστε την χειροκίνητα.</string>
 
     <string name="search_placeholder">Αναζήτηση αριθμού (π.χ. 0691 ή +3933…)</string>
     <string name="filter_all">Όλα</string>

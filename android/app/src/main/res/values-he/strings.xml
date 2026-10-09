@@ -29,6 +29,7 @@
     <string name="sync_updating">מתבצע עדכון…</string>
     <string name="sync_button">עדכן מסד נתוני ספאם</string>
     <string name="sync_success">מסד הנתונים עודכן.</string>
+    <string name="sync_stale_hint">מסד נתוני הספאם לא התעדכן כבר זמן מה: עדכן אותו באופן ידני.</string>
 
     <string name="search_placeholder">חיפוש מספר (למשל 0691 או +3933…)</string>
     <string name="filter_all">הכול</string>

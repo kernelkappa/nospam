@@ -29,6 +29,7 @@
     <string name="sync_updating">అప్‌డేట్ చేస్తోంది…</string>
     <string name="sync_button">స్పామ్ డేటాబేస్‌ను అప్‌డేట్ చేయండి</string>
     <string name="sync_success">డేటాబేస్ అప్‌డేట్ చేయబడింది.</string>
+    <string name="sync_stale_hint">స్పామ్ డేటాబేస్ కొంత సమయంగా అప్‌డేట్ కాలేదు: దానిని మాన్యువల్‌గా అప్‌డేట్ చేయండి.</string>
 
     <string name="search_placeholder">నంబర్‌ను శోధించండి (ఉదా. 0691 లేదా +3933…)</string>
     <string name="filter_all">అన్నీ</string>

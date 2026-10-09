@@ -29,6 +29,7 @@
     <string name="sync_updating">Mengemas kini…</string>
     <string name="sync_button">Kemas kini pangkalan data spam</string>
     <string name="sync_success">Pangkalan data dikemas kini.</string>
+    <string name="sync_stale_hint">Pangkalan data spam tidak dikemas kini sejak beberapa waktu: kemas kini secara manual.</string>
 
     <string name="search_placeholder">Cari nombor (cth. 0691 atau +3933…)</string>
     <string name="filter_all">Semua</string>

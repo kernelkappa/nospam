@@ -29,6 +29,7 @@
     <string name="sync_updating">अपडेट होत आहे…</string>
     <string name="sync_button">स्पॅम डेटाबेस अपडेट करा</string>
     <string name="sync_success">डेटाबेस अपडेट झाला.</string>
+    <string name="sync_stale_hint">स्पॅम डेटाबेस काही वेळापासून अपडेट झालेला नाही: तो मॅन्युअली अपडेट करा.</string>
 
     <string name="search_placeholder">नंबर शोधा (उदा. 0691 किंवा +3933…)</string>
     <string name="filter_all">सर्व</string>

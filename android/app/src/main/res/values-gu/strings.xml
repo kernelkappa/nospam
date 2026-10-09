@@ -29,6 +29,7 @@
     <string name="sync_updating">અપડેટ થઈ રહ્યું છે…</string>
     <string name="sync_button">સ્પામ ડેટાબેઝ અપડેટ કરો</string>
     <string name="sync_success">ડેટાબેઝ અપડેટ થયો.</string>
+    <string name="sync_stale_hint">સ્પામ ડેટાબેઝ થોડા સમયથી અપડેટ થયો નથી: તેને મેન્યુઅલી અપડેટ કરો.</string>
 
     <string name="search_placeholder">નંબર શોધો (દા.ત. 0691 અથવા +3933…)</string>
     <string name="filter_all">બધા</string>

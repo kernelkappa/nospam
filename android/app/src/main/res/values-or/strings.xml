@@ -29,6 +29,7 @@
     <string name="sync_updating">ଅପଡେଟ୍ ହେଉଛି…</string>
     <string name="sync_button">ସ୍ପାମ୍ ଡାଟାବେସ୍ ଅପଡେଟ୍ କରନ୍ତୁ</string>
     <string name="sync_success">ଡାଟାବେସ୍ ଅପଡେଟ୍ ହେଲା।</string>
+    <string name="sync_stale_hint">ସ୍ପାମ ଡାଟାବେସ୍ କିଛି ସମୟ ହେଲା ଅପଡେଟ୍ ହୋଇନାହିଁ: ଏହାକୁ ମାନୁଆଲ ଭାବରେ ଅପଡେଟ୍ କରନ୍ତୁ।</string>
 
     <string name="search_placeholder">ନମ୍ବର ଖୋଜନ୍ତୁ (ଯଥା 0691 କିମ୍ବା +3933…)</string>
     <string name="filter_all">ସମସ୍ତ</string>

@@ -29,6 +29,7 @@
     <string name="sync_updating">正在更新…</string>
     <string name="sync_button">更新垃圾号码数据库</string>
     <string name="sync_success">数据库已更新。</string>
+    <string name="sync_stale_hint">垃圾号码数据库已有一段时间未更新：请手动更新。</string>
 
     <string name="search_placeholder">搜索号码（例如 0691 或 +3933…）</string>
     <string name="filter_all">全部</string>

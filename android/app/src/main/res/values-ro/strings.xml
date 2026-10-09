@@ -29,6 +29,7 @@
     <string name="sync_updating">Se actualizează…</string>
     <string name="sync_button">Actualizează baza de date de spam</string>
     <string name="sync_success">Baza de date a fost actualizată.</string>
+    <string name="sync_stale_hint">Baza de date de spam nu a fost actualizată de o vreme: actualizeaz-o manual.</string>
 
     <string name="search_placeholder">Caută un număr (ex. 0691 sau +3933…)</string>
     <string name="filter_all">Toate</string>

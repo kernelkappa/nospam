@@ -29,6 +29,7 @@
     <string name="sync_updating">Оновлення…</string>
     <string name="sync_button">Оновити базу даних спаму</string>
     <string name="sync_success">Базу даних оновлено.</string>
+    <string name="sync_stale_hint">Базу даних спаму давно не оновлювали: оновіть її вручну.</string>
 
     <string name="search_placeholder">Пошук номера (напр. 0691 або +3933…)</string>
     <string name="filter_all">Усі</string>

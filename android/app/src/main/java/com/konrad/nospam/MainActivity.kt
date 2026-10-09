@@ -50,6 +50,7 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
@@ -163,6 +164,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
 
     var isSyncing by remember { mutableStateOf(false) }
     var syncMessage by remember { mutableStateOf<String?>(null) }
+    var isDatabaseStale by remember { mutableStateOf(SpamDatabaseSync.isStale(context)) }
 
     val roleManager = remember { context.getSystemService(RoleManager::class.java) }
     var isCallScreeningRoleHeld by remember {
@@ -345,11 +347,16 @@ fun MainScreen(modifier: Modifier = Modifier) {
                             syncMessage = context.getString(R.string.status_error_prefix, UserFacingError.message(context, e))
                         }
                         isSyncing = false
+                        isDatabaseStale = SpamDatabaseSync.isStale(context)
                     }
                 },
                 enabled = !isSyncing,
             ) {
                 Text(if (isSyncing) stringResource(R.string.sync_updating) else stringResource(R.string.sync_button))
+            }
+
+            if (isDatabaseStale) {
+                Text(text = stringResource(R.string.sync_stale_hint), color = Color(0xFFE65100))
             }
 
             syncMessage?.let { Text(text = it) }

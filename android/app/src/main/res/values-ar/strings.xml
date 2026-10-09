@@ -29,6 +29,7 @@
     <string name="sync_updating">جارٍ التحديث…</string>
     <string name="sync_button">تحديث قاعدة بيانات السبام</string>
     <string name="sync_success">تم تحديث قاعدة البيانات.</string>
+    <string name="sync_stale_hint">قاعدة بيانات السبام لم تُحدَّث منذ فترة: حدّثها يدويًا.</string>
 
     <string name="search_placeholder">ابحث عن رقم (مثال: 0691 أو +3933…)</string>
     <string name="filter_all">الكل</string>

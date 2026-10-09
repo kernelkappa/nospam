@@ -29,6 +29,7 @@
     <string name="sync_updating">Ažuriranje…</string>
     <string name="sync_button">Ažuriraj bazu spam brojeva</string>
     <string name="sync_success">Baza podataka je ažurirana.</string>
+    <string name="sync_stale_hint">Baza podataka o neželjenim pozivima nije ažurirana neko vrijeme: ažurirajte je ručno.</string>
 
     <string name="search_placeholder">Pretraži broj (npr. 0691 ili +3933…)</string>
     <string name="filter_all">Svi</string>

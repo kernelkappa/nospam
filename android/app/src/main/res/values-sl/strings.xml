@@ -29,6 +29,7 @@
     <string name="sync_updating">Posodabljanje…</string>
     <string name="sync_button">Posodobi zbirko podatkov neželenih klicev</string>
     <string name="sync_success">Zbirka podatkov je posodobljena.</string>
+    <string name="sync_stale_hint">Podatkovna baza neželenih klicev se že nekaj časa ni posodobila: posodobite jo ročno.</string>
 
     <string name="search_placeholder">Iskanje številke (npr. 0691 ali +3933…)</string>
     <string name="filter_all">Vse</string>

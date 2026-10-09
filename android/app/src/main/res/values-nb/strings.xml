@@ -29,6 +29,7 @@
     <string name="sync_updating">Oppdaterer…</string>
     <string name="sync_button">Oppdater spamdatabase</string>
     <string name="sync_success">Databasen er oppdatert.</string>
+    <string name="sync_stale_hint">Spam-databasen har ikke blitt oppdatert på en stund: oppdater den manuelt.</string>
 
     <string name="search_placeholder">Søk etter nummer (f.eks. 0691 eller +3933…)</string>
     <string name="filter_all">Alle</string>

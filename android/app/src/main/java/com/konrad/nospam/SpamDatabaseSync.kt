@@ -10,6 +10,24 @@ import java.net.URL
 object SpamDatabaseSync {
     private const val REMOTE_URL = "https://kernelkappa.github.io/nospam/spam_db.json"
     private const val PREFIX_REMOTE_URL = "https://kernelkappa.github.io/nospam/spam_prefixes.json"
+    private const val PREFS_NAME = "nospam_prefs"
+    private const val KEY_LAST_SYNC_MILLIS = "last_spam_db_sync_millis"
+
+    /** Ultimo sync riuscito, sia manuale che dal WorkManager periodico (24h):
+     * usato per avvisare l'utente se il database locale non si aggiorna da
+     * troppo tempo (es. Doze/ottimizzazione batteria ha ritardato il lavoro
+     * periodico). */
+    fun lastSyncMillis(context: Context): Long? {
+        val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+        val value = prefs.getLong(KEY_LAST_SYNC_MILLIS, -1L)
+        return if (value == -1L) null else value
+    }
+
+    fun isStale(context: Context, afterHours: Long = 12): Boolean {
+        val last = lastSyncMillis(context) ?: return true
+        val thresholdMillis = afterHours * 60 * 60 * 1000
+        return System.currentTimeMillis() - last > thresholdMillis
+    }
 
     suspend fun sync(context: Context) {
         val entities = withContext(Dispatchers.IO) { parseEntities(fetchBody(REMOTE_URL)) }
@@ -17,6 +35,11 @@ object SpamDatabaseSync {
 
         val prefixEntities = withContext(Dispatchers.IO) { parsePrefixEntities(fetchBody(PREFIX_REMOTE_URL)) }
         AppDatabase.getInstance(context).spamPrefixDao().replaceAll(prefixEntities)
+
+        context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+            .edit()
+            .putLong(KEY_LAST_SYNC_MILLIS, System.currentTimeMillis())
+            .apply()
     }
 
     private fun fetchBody(url: String): String {

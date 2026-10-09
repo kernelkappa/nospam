@@ -29,6 +29,7 @@
     <string name="sync_updating">Actualizando…</string>
     <string name="sync_button">Actualizar base de datos de spam</string>
     <string name="sync_success">Base de datos actualizada.</string>
+    <string name="sync_stale_hint">La base de datos de spam no se actualiza desde hace un tiempo: actualízala manualmente.</string>
 
     <string name="search_placeholder">Buscar número (ej. 0691 o +3933…)</string>
     <string name="filter_all">Todos</string>

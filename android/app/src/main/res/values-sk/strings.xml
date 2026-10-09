@@ -29,6 +29,7 @@
     <string name="sync_updating">Aktualizuje sa…</string>
     <string name="sync_button">Aktualizovať databázu spamu</string>
     <string name="sync_success">Databáza bola aktualizovaná.</string>
+    <string name="sync_stale_hint">Databáza spamu sa už chvíľu neaktualizovala: aktualizujte ju manuálne.</string>
 
     <string name="search_placeholder">Vyhľadať číslo (napr. 0691 alebo +3933…)</string>
     <string name="filter_all">Všetky</string>

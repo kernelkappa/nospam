@@ -29,6 +29,7 @@
     <string name="sync_updating">আপডেট হচ্ছে…</string>
     <string name="sync_button">স্প্যাম ডেটাবেস আপডেট করুন</string>
     <string name="sync_success">ডেটাবেস আপডেট হয়েছে।</string>
+    <string name="sync_stale_hint">স্প্যাম ডেটাবেস কিছুক্ষণ ধরে আপডেট হয়নি: এটি ম্যানুয়ালি আপডেট করুন।</string>
 
     <string name="search_placeholder">নম্বর খুঁজুন (যেমন 0691 বা +3933…)</string>
     <string name="filter_all">সব</string>
