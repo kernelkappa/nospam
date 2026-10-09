@@ -12,6 +12,7 @@ import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 
@@ -72,21 +73,21 @@ fun CreditsScreen(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize().padding(24.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp),
     ) {
-        Text(text = "Fonti dati", style = MaterialTheme.typography.titleMedium)
+        Text(text = stringResource(R.string.credits_data_sources_title), style = MaterialTheme.typography.titleMedium)
 
         dataSources.forEach { source ->
             Column {
                 Text(text = source.name, style = MaterialTheme.typography.titleSmall)
                 Text(text = source.description, style = MaterialTheme.typography.bodyMedium)
                 source.license?.let {
-                    Text(text = "Licenza: $it", style = MaterialTheme.typography.bodySmall)
+                    Text(text = stringResource(R.string.license_label, it), style = MaterialTheme.typography.bodySmall)
                 }
                 TextButton(
                     onClick = {
                         context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(source.url)))
                     },
                 ) {
-                    Text(text = "Apri fonte", textDecoration = TextDecoration.Underline)
+                    Text(text = stringResource(R.string.open_source_button), textDecoration = TextDecoration.Underline)
                 }
             }
         }

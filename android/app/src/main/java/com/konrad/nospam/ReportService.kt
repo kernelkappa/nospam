@@ -8,12 +8,12 @@ import java.io.OutputStreamWriter
 import java.net.HttpURLConnection
 import java.net.URL
 
-enum class ReportCategory(val apiValue: String) {
-    SPAM("spam"),
-    SCAM("scam"),
-    TELEMARKETING("telemarketing"),
-    ROBOCALL("robocall"),
-    OTHER("other"),
+enum class ReportCategory(val apiValue: String, val labelRes: Int) {
+    SPAM("spam", R.string.category_spam),
+    SCAM("scam", R.string.category_scam),
+    TELEMARKETING("telemarketing", R.string.category_telemarketing),
+    ROBOCALL("robocall", R.string.category_robocall),
+    OTHER("other", R.string.category_other),
 }
 
 class ReportSubmissionException(val statusCode: Int) : Exception("Supabase returned HTTP $statusCode")

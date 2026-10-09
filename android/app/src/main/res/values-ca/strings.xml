@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">NoSpam</string>
+    <string name="nav_back">‹ Enrere</string>
+    <string name="credits_title">Crèdits</string>
+    <string name="blocked_numbers_title">Números bloquejats</string>
+    <string name="settings_title">Configuració</string>
+
+    <string name="onboarding_title">Bloqueja les trucades brossa</string>
+    <string name="onboarding_message">Per bloquejar automàticament les trucades brossa, NoSpam ha de convertir-se en l\'app de bloqueig i identificació de trucades del teu telèfon. Pots canviar-ho en qualsevol moment des de la configuració del sistema.</string>
+    <string name="onboarding_activate">Activa ara</string>
+    <string name="onboarding_later">Més tard</string>
+
+    <string name="phone_number_placeholder">Número (ex. +393331234567)</string>
+    <string name="category_spam">Spam</string>
+    <string name="category_scam">Estafa</string>
+    <string name="category_telemarketing">Telemàrqueting</string>
+    <string name="category_robocall">Trucada automàtica</string>
+    <string name="category_other">Altres</string>
+    <string name="block_button">Bloqueja</string>
+    <string name="block_and_report_button">Bloqueja i denuncia</string>
+    <string name="sending">Enviant…</string>
+    <string name="status_blocked_locally">Número bloquejat localment.</string>
+    <string name="status_error_prefix">Error: %1$s</string>
+    <string name="status_blocked_and_reported">Número bloquejat i denunciat a la comunitat.</string>
+    <string name="status_report_failed_prefix">Bloquejat localment, però la denúncia ha fallat: %1$s</string>
+    <string name="call_blocking_active">Bloqueig de trucades actiu.</string>
+    <string name="call_blocking_inactive">NoSpam no és l\'app de bloqueig de trucades predeterminada.</string>
+    <string name="become_default_app">Converteix en app predeterminada</string>
+    <string name="sync_updating">Actualitzant…</string>
+    <string name="sync_button">Actualitza la base de dades de spam</string>
+    <string name="sync_success">Base de dades actualitzada.</string>
+
+    <string name="search_placeholder">Cerca número (ex. 0691 o +3933…)</string>
+    <string name="filter_all">Tots</string>
+    <string name="filter_personal">Personals</string>
+    <string name="blocked_numbers_count">Números bloquejats (%1$d)</string>
+    <string name="community_label">Comunitat</string>
+    <string name="personal_label">Personal</string>
+    <string name="unblock_button">Desbloqueja</string>
+
+    <string name="credits_data_sources_title">Fonts de dades</string>
+    <string name="open_source_button">Obre la font</string>
+    <string name="license_label">Llicència: %1$s</string>
+
+    <string name="settings_theme_title">Aparença</string>
+    <string name="settings_theme_system">Sistema</string>
+    <string name="settings_theme_light">Clar</string>
+    <string name="settings_theme_dark">Fosc</string>
+    <string name="settings_language_title">Idioma</string>
+    <string name="settings_language_description">Tria l\'idioma de l\'app, independentment del del telèfon.</string>
+    <string name="settings_language_automatic">Automàtic (idioma del telèfon)</string>
+
+    <string name="update_required_title">Actualització disponible</string>
+    <string name="update_required_message">Hi ha disponible una nova versió de NoSpam amb correccions importants. Actualitza per continuar utilitzant l\'app.</string>
+    <string name="update_required_button">Actualitza ara</string>
+
+    <string name="error_no_internet">Sense connexió a Internet: comprova la connexió i torna-ho a provar.</string>
+    <string name="error_timeout">La sol·licitud ha trigat massa: torna-ho a provar més tard.</string>
+    <string name="error_server_unavailable">El servidor no està disponible en aquest moment (codi %1$d). Torna-ho a provar més tard.</string>
+
+    <string name="settings_language_it">Italiano</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_es">Español</string>
+    <string name="settings_language_fr">Français</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_pt">Português</string>
+    <string name="settings_language_pt_br">Português (Brasil)</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_language_bn">বাংলা</string>
+    <string name="settings_language_ca">Català</string>
+    <string name="settings_language_zh_hans">中文(简体)</string>
+    <string name="settings_language_zh_hant">中文(繁體)</string>
+    <string name="settings_language_hr">Hrvatski</string>
+    <string name="settings_language_cs">Čeština</string>
+    <string name="settings_language_da">Dansk</string>
+    <string name="settings_language_nl">Nederlands</string>
+    <string name="settings_language_fi">Suomi</string>
+    <string name="settings_language_el">Ελληνικά</string>
+    <string name="settings_language_gu">ગુજરાતી</string>
+    <string name="settings_language_he">עברית</string>
+    <string name="settings_language_hi">हिन्दी</string>
+    <string name="settings_language_hu">Magyar</string>
+    <string name="settings_language_id">Bahasa Indonesia</string>
+    <string name="settings_language_ja">日本語</string>
+    <string name="settings_language_kn">ಕನ್ನಡ</string>
+    <string name="settings_language_ko">한국어</string>
+    <string name="settings_language_ms">Bahasa Melayu</string>
+    <string name="settings_language_ml">മലയാളം</string>
+    <string name="settings_language_mr">मराठी</string>
+    <string name="settings_language_nb">Norsk bokmål</string>
+    <string name="settings_language_or">ଓଡ଼ିଆ</string>
+    <string name="settings_language_pl">Polski</string>
+    <string name="settings_language_pa">ਪੰਜਾਬੀ</string>
+    <string name="settings_language_ro">Română</string>
+    <string name="settings_language_ru">Русский</string>
+    <string name="settings_language_sk">Slovenčina</string>
+    <string name="settings_language_sl">Slovenščina</string>
+    <string name="settings_language_sv">Svenska</string>
+    <string name="settings_language_ta">தமிழ்</string>
+    <string name="settings_language_te">తెలుగు</string>
+    <string name="settings_language_th">ไทย</string>
+    <string name="settings_language_tr">Türkçe</string>
+    <string name="settings_language_uk">Українська</string>
+    <string name="settings_language_ur">اردو</string>
+    <string name="settings_language_vi">Tiếng Việt</string>
+</resources>

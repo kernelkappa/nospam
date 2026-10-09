@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">NoSpam</string>
+    <string name="nav_back">‹ 뒤로</string>
+    <string name="credits_title">크레딧</string>
+    <string name="blocked_numbers_title">차단된 번호</string>
+    <string name="settings_title">설정</string>
+
+    <string name="onboarding_title">스팸 전화 차단</string>
+    <string name="onboarding_message">스팸 전화를 자동으로 차단하려면 NoSpam을 휴대폰의 전화 차단 및 식별 앱으로 설정해야 합니다. 이 설정은 시스템 설정에서 언제든지 변경할 수 있습니다.</string>
+    <string name="onboarding_activate">지금 활성화</string>
+    <string name="onboarding_later">나중에</string>
+
+    <string name="phone_number_placeholder">번호 (예: +393331234567)</string>
+    <string name="category_spam">스팸</string>
+    <string name="category_scam">사기</string>
+    <string name="category_telemarketing">텔레마케팅</string>
+    <string name="category_robocall">자동 음성 전화</string>
+    <string name="category_other">기타</string>
+    <string name="block_button">차단</string>
+    <string name="block_and_report_button">차단 및 신고</string>
+    <string name="sending">전송 중…</string>
+    <string name="status_blocked_locally">번호가 로컬에서 차단되었습니다.</string>
+    <string name="status_error_prefix">오류: %1$s</string>
+    <string name="status_blocked_and_reported">번호가 차단되고 커뮤니티에 신고되었습니다.</string>
+    <string name="status_report_failed_prefix">로컬에서 차단되었지만 신고에 실패했습니다: %1$s</string>
+    <string name="call_blocking_active">전화 차단이 활성화되어 있습니다.</string>
+    <string name="call_blocking_inactive">NoSpam은 기본 전화 차단 앱이 아닙니다.</string>
+    <string name="become_default_app">기본 앱으로 설정</string>
+    <string name="sync_updating">업데이트 중…</string>
+    <string name="sync_button">스팸 데이터베이스 업데이트</string>
+    <string name="sync_success">데이터베이스가 업데이트되었습니다.</string>
+
+    <string name="search_placeholder">번호 검색 (예: 0691 또는 +3933…)</string>
+    <string name="filter_all">전체</string>
+    <string name="filter_personal">개인</string>
+    <string name="blocked_numbers_count">차단된 번호 (%1$d개)</string>
+    <string name="community_label">커뮤니티</string>
+    <string name="personal_label">개인</string>
+    <string name="unblock_button">차단 해제</string>
+
+    <string name="credits_data_sources_title">데이터 소스</string>
+    <string name="open_source_button">소스 열기</string>
+    <string name="license_label">라이선스: %1$s</string>
+
+    <string name="settings_theme_title">테마</string>
+    <string name="settings_theme_system">시스템</string>
+    <string name="settings_theme_light">라이트</string>
+    <string name="settings_theme_dark">다크</string>
+    <string name="settings_language_title">언어</string>
+    <string name="settings_language_description">휴대폰 언어와 관계없이 앱의 언어를 선택하세요.</string>
+    <string name="settings_language_automatic">자동 (휴대폰 언어)</string>
+
+    <string name="update_required_title">업데이트 사용 가능</string>
+    <string name="update_required_message">중요한 수정 사항이 포함된 NoSpam의 새 버전을 사용할 수 있습니다. 앱을 계속 사용하려면 업데이트하세요.</string>
+    <string name="update_required_button">지금 업데이트</string>
+
+    <string name="error_no_internet">인터넷 연결이 없습니다. 연결을 확인하고 다시 시도하세요.</string>
+    <string name="error_timeout">요청 시간이 너무 오래 걸렸습니다. 나중에 다시 시도하세요.</string>
+    <string name="error_server_unavailable">서버를 현재 사용할 수 없습니다 (코드 %1$d). 나중에 다시 시도하세요.</string>
+
+    <string name="settings_language_it">Italiano</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_es">Español</string>
+    <string name="settings_language_fr">Français</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_pt">Português</string>
+    <string name="settings_language_pt_br">Português (Brasil)</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_language_bn">বাংলা</string>
+    <string name="settings_language_ca">Català</string>
+    <string name="settings_language_zh_hans">中文(简体)</string>
+    <string name="settings_language_zh_hant">中文(繁體)</string>
+    <string name="settings_language_hr">Hrvatski</string>
+    <string name="settings_language_cs">Čeština</string>
+    <string name="settings_language_da">Dansk</string>
+    <string name="settings_language_nl">Nederlands</string>
+    <string name="settings_language_fi">Suomi</string>
+    <string name="settings_language_el">Ελληνικά</string>
+    <string name="settings_language_gu">ગુજરાતી</string>
+    <string name="settings_language_he">עברית</string>
+    <string name="settings_language_hi">हिन्दी</string>
+    <string name="settings_language_hu">Magyar</string>
+    <string name="settings_language_id">Bahasa Indonesia</string>
+    <string name="settings_language_ja">日本語</string>
+    <string name="settings_language_kn">ಕನ್ನಡ</string>
+    <string name="settings_language_ko">한국어</string>
+    <string name="settings_language_ms">Bahasa Melayu</string>
+    <string name="settings_language_ml">മലയാളം</string>
+    <string name="settings_language_mr">मराठी</string>
+    <string name="settings_language_nb">Norsk bokmål</string>
+    <string name="settings_language_or">ଓଡ଼ିଆ</string>
+    <string name="settings_language_pl">Polski</string>
+    <string name="settings_language_pa">ਪੰਜਾਬੀ</string>
+    <string name="settings_language_ro">Română</string>
+    <string name="settings_language_ru">Русский</string>
+    <string name="settings_language_sk">Slovenčina</string>
+    <string name="settings_language_sl">Slovenščina</string>
+    <string name="settings_language_sv">Svenska</string>
+    <string name="settings_language_ta">தமிழ்</string>
+    <string name="settings_language_te">తెలుగు</string>
+    <string name="settings_language_th">ไทย</string>
+    <string name="settings_language_tr">Türkçe</string>
+    <string name="settings_language_uk">Українська</string>
+    <string name="settings_language_ur">اردو</string>
+    <string name="settings_language_vi">Tiếng Việt</string>
+</resources>

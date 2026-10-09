@@ -1,5 +1,6 @@
 package com.konrad.nospam
 
+import android.content.Context
 import java.io.IOException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
@@ -11,13 +12,13 @@ import java.net.UnknownHostException
  * tecnica grezza.
  */
 object UserFacingError {
-    fun message(error: Throwable): String =
+    fun message(context: Context, error: Throwable): String =
         when (error) {
-            is UnknownHostException -> "Nessuna connessione Internet: controlla la connessione e riprova."
-            is SocketTimeoutException -> "La richiesta ha impiegato troppo tempo: riprova più tardi."
-            is HttpStatusException -> "Il server non è raggiungibile al momento (codice ${error.statusCode}). Riprova più tardi."
-            is ReportSubmissionException -> "Il server non è raggiungibile al momento (codice ${error.statusCode}). Riprova più tardi."
-            is IOException -> "Nessuna connessione Internet: controlla la connessione e riprova."
+            is UnknownHostException -> context.getString(R.string.error_no_internet)
+            is SocketTimeoutException -> context.getString(R.string.error_timeout)
+            is HttpStatusException -> context.getString(R.string.error_server_unavailable, error.statusCode)
+            is ReportSubmissionException -> context.getString(R.string.error_server_unavailable, error.statusCode)
+            is IOException -> context.getString(R.string.error_no_internet)
             else -> error.message ?: error.toString()
         }
 }

@@ -32,14 +32,15 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 
-private enum class SourceFilter(val label: String) {
-    ALL("Tutti"),
-    PERSONAL("Personali"),
+private enum class SourceFilter(val labelRes: Int) {
+    ALL(R.string.filter_all),
+    PERSONAL(R.string.filter_personal),
 }
 
 @Composable
@@ -74,7 +75,7 @@ fun BlockedNumbersScreen(modifier: Modifier = Modifier) {
             OutlinedTextField(
                 value = searchText,
                 onValueChange = { searchText = it },
-                label = { Text("Cerca numero (es. 0691 o +3933...)") },
+                label = { Text(stringResource(R.string.search_placeholder)) },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone, imeAction = ImeAction.Done),
                 keyboardActions = KeyboardActions(onDone = {
                     focusManager.clearFocus()
@@ -90,13 +91,13 @@ fun BlockedNumbersScreen(modifier: Modifier = Modifier) {
                         onClick = { sourceFilter = filter },
                         shape = SegmentedButtonDefaults.itemShape(index = index, count = SourceFilter.entries.size),
                     ) {
-                        Text(filter.label)
+                        Text(stringResource(filter.labelRes))
                     }
                 }
             }
 
             Text(
-                text = "Numeri bloccati (${entries.size})",
+                text = stringResource(R.string.blocked_numbers_count, entries.size),
                 style = MaterialTheme.typography.titleMedium,
                 modifier = Modifier.padding(top = 16.dp, bottom = 8.dp),
             )
@@ -111,9 +112,9 @@ fun BlockedNumbersScreen(modifier: Modifier = Modifier) {
                             Text(entry.phoneNumber)
                             Text(
                                 text = if (entry.source == NumberSource.COMMUNITY) {
-                                    "Community · ${entry.category}"
+                                    "${stringResource(R.string.community_label)} · ${entry.category}"
                                 } else {
-                                    "Personale"
+                                    stringResource(R.string.personal_label)
                                 },
                                 style = MaterialTheme.typography.bodySmall,
                             )
@@ -122,7 +123,7 @@ fun BlockedNumbersScreen(modifier: Modifier = Modifier) {
                             TextButton(onClick = {
                                 scope.launch { PersonalBlocklist.remove(context, entry.phoneNumber) }
                             }) {
-                                Text("Sblocca")
+                                Text(stringResource(R.string.unblock_button))
                             }
                         }
                     }

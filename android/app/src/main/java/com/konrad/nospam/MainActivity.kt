@@ -23,10 +23,14 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.MaterialTheme
@@ -46,12 +50,13 @@ import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
 
-private enum class NospamScreen { MAIN, BLOCKED_NUMBERS, CREDITS }
+private enum class NospamScreen { MAIN, BLOCKED_NUMBERS, CREDITS, SETTINGS }
 
 class MainActivity : ComponentActivity() {
     @OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
@@ -60,9 +65,24 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         ConsentManager.start(this)
         setContent {
-            MaterialTheme {
+            val context = LocalContext.current
+            val themeMode = rememberThemeMode(context)
+            androidx.appcompat.app.AppCompatDelegate.setDefaultNightMode(
+                when (themeMode.value) {
+                    ThemeMode.LIGHT -> androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
+                    ThemeMode.DARK -> androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
+                    ThemeMode.SYSTEM -> androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+                },
+            )
+
+            MaterialTheme(
+                colorScheme = if (androidx.compose.foundation.isSystemInDarkTheme()) {
+                    androidx.compose.material3.darkColorScheme()
+                } else {
+                    androidx.compose.material3.lightColorScheme()
+                },
+            ) {
                 Surface(modifier = Modifier.fillMaxSize()) {
-                    val context = LocalContext.current
                     var updateRequired by remember { mutableStateOf(false) }
                     LaunchedEffect(Unit) {
                         updateRequired = UpdateGate.isUpdateRequired(context)
@@ -81,26 +101,31 @@ class MainActivity : ComponentActivity() {
                                 title = {
                                     Text(
                                         when (screen) {
-                                            NospamScreen.MAIN -> "NoSpam"
-                                            NospamScreen.BLOCKED_NUMBERS -> "Numeri bloccati"
-                                            NospamScreen.CREDITS -> "Crediti"
+                                            NospamScreen.MAIN -> stringResource(R.string.app_name)
+                                            NospamScreen.BLOCKED_NUMBERS -> stringResource(R.string.blocked_numbers_title)
+                                            NospamScreen.CREDITS -> stringResource(R.string.credits_title)
+                                            NospamScreen.SETTINGS -> stringResource(R.string.settings_title)
                                         },
                                     )
                                 },
                                 navigationIcon = {
-                                    if (screen != NospamScreen.MAIN) {
+                                    if (screen == NospamScreen.CREDITS) {
+                                        TextButton(onClick = { screen = NospamScreen.SETTINGS }) {
+                                            Text(stringResource(R.string.nav_back))
+                                        }
+                                    } else if (screen != NospamScreen.MAIN) {
                                         TextButton(onClick = { screen = NospamScreen.MAIN }) {
-                                            Text("‹ Indietro")
+                                            Text(stringResource(R.string.nav_back))
                                         }
                                     }
                                 },
                                 actions = {
                                     if (screen == NospamScreen.MAIN) {
-                                        TextButton(onClick = { screen = NospamScreen.CREDITS }) {
-                                            Text("Crediti")
+                                        IconButton(onClick = { screen = NospamScreen.SETTINGS }) {
+                                            Icon(Icons.Default.Settings, contentDescription = stringResource(R.string.settings_title))
                                         }
                                         TextButton(onClick = { screen = NospamScreen.BLOCKED_NUMBERS }) {
-                                            Text("Numeri bloccati")
+                                            Text(stringResource(R.string.blocked_numbers_title))
                                         }
                                     }
                                 },
@@ -111,6 +136,11 @@ class MainActivity : ComponentActivity() {
                             NospamScreen.MAIN -> MainScreen(modifier = Modifier.padding(innerPadding))
                             NospamScreen.BLOCKED_NUMBERS -> BlockedNumbersScreen(modifier = Modifier.padding(innerPadding))
                             NospamScreen.CREDITS -> CreditsScreen(modifier = Modifier.padding(innerPadding))
+                            NospamScreen.SETTINGS -> SettingsScreen(
+                                themeMode = themeMode,
+                                onOpenCredits = { screen = NospamScreen.CREDITS },
+                                modifier = Modifier.padding(innerPadding),
+                            )
                         }
                     }
                 }
@@ -169,14 +199,8 @@ fun MainScreen(modifier: Modifier = Modifier) {
                 prefs.edit().putBoolean("onboarding_shown", true).apply()
                 showOnboarding = false
             },
-            title = { Text("Blocca le chiamate spam") },
-            text = {
-                Text(
-                    "Per bloccare automaticamente le chiamate spam, NoSpam deve diventare " +
-                        "l'app di blocco e identificazione chiamate del telefono. Puoi cambiarla " +
-                        "in qualsiasi momento dalle impostazioni di sistema.",
-                )
-            },
+            title = { Text(stringResource(R.string.onboarding_title)) },
+            text = { Text(stringResource(R.string.onboarding_message)) },
             confirmButton = {
                 TextButton(onClick = {
                     prefs.edit().putBoolean("onboarding_shown", true).apply()
@@ -185,7 +209,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
                         roleRequestLauncher.launch(it.createRequestRoleIntent(RoleManager.ROLE_CALL_SCREENING))
                     }
                 }) {
-                    Text("Attiva ora")
+                    Text(stringResource(R.string.onboarding_activate))
                 }
             },
             dismissButton = {
@@ -193,7 +217,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
                     prefs.edit().putBoolean("onboarding_shown", true).apply()
                     showOnboarding = false
                 }) {
-                    Text("Più tardi")
+                    Text(stringResource(R.string.onboarding_later))
                 }
             },
         )
@@ -213,12 +237,12 @@ fun MainScreen(modifier: Modifier = Modifier) {
                 .padding(24.dp),
             verticalArrangement = Arrangement.spacedBy(16.dp),
         ) {
-            Text(text = "NoSpam", style = MaterialTheme.typography.headlineLarge)
+            Text(text = stringResource(R.string.app_name), style = MaterialTheme.typography.headlineLarge)
 
             OutlinedTextField(
                 value = phoneNumber,
                 onValueChange = { phoneNumber = it },
-                label = { Text("Numero (es. +393331234567)") },
+                label = { Text(stringResource(R.string.phone_number_placeholder)) },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone, imeAction = ImeAction.Done),
                 keyboardActions = KeyboardActions(onDone = {
                     focusManager.clearFocus()
@@ -237,7 +261,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
                     FilterChip(
                         selected = category == option,
                         onClick = { category = option },
-                        label = { Text(option.apiValue) },
+                        label = { Text(stringResource(option.labelRes)) },
                     )
                 }
             }
@@ -250,18 +274,18 @@ fun MainScreen(modifier: Modifier = Modifier) {
                         scope.launch {
                             try {
                                 PersonalBlocklist.add(context, phoneNumber, category.apiValue)
-                                statusMessage = "Numero bloccato localmente."
+                                statusMessage = context.getString(R.string.status_blocked_locally)
                                 phoneNumber = ""
                             } catch (e: Exception) {
                                 ErrorReporter.report(context, e, "blockOnly")
-                                statusMessage = "Errore: ${UserFacingError.message(e)}"
+                                statusMessage = context.getString(R.string.status_error_prefix, UserFacingError.message(context, e))
                             }
                             isSubmitting = false
                         }
                     },
                     enabled = phoneNumber.isNotBlank() && !isSubmitting,
                 ) {
-                    Text("Blocca")
+    Text(stringResource(R.string.block_button))
                 }
 
                 Button(
@@ -273,10 +297,10 @@ fun MainScreen(modifier: Modifier = Modifier) {
                                 val normalized = PersonalBlocklist.normalize(phoneNumber)
                                 PersonalBlocklist.add(context, phoneNumber, category.apiValue)
                                 ReportService.submit(context, normalized, category)
-                                statusMessage = "Numero bloccato e segnalato alla community."
+                                statusMessage = context.getString(R.string.status_blocked_and_reported)
                             } catch (e: Exception) {
                                 ErrorReporter.report(context, e, "blockAndReport")
-                                statusMessage = "Bloccato localmente, ma la segnalazione non è riuscita: ${UserFacingError.message(e)}"
+                                statusMessage = context.getString(R.string.status_report_failed_prefix, UserFacingError.message(context, e))
                             }
                             phoneNumber = ""
                             isSubmitting = false
@@ -284,7 +308,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
                     },
                     enabled = phoneNumber.isNotBlank() && !isSubmitting,
                 ) {
-                    Text(if (isSubmitting) "Invio..." else "Blocca e segnala")
+                    Text(if (isSubmitting) stringResource(R.string.sending) else stringResource(R.string.block_and_report_button))
                 }
             }
 
@@ -294,9 +318,9 @@ fun MainScreen(modifier: Modifier = Modifier) {
 
             Text(
                 text = if (isCallScreeningRoleHeld) {
-                    "Blocco chiamate attivo."
+                    stringResource(R.string.call_blocking_active)
                 } else {
-                    "NoSpam non è l'app di blocco chiamate predefinita."
+                    stringResource(R.string.call_blocking_inactive)
                 },
             )
 
@@ -304,7 +328,7 @@ fun MainScreen(modifier: Modifier = Modifier) {
                 Button(onClick = {
                     roleRequestLauncher.launch(roleManager.createRequestRoleIntent(RoleManager.ROLE_CALL_SCREENING))
                 }) {
-                    Text("Diventa app predefinita")
+                    Text(stringResource(R.string.become_default_app))
                 }
             }
 
@@ -315,17 +339,17 @@ fun MainScreen(modifier: Modifier = Modifier) {
                     scope.launch {
                         try {
                             SpamDatabaseSync.sync(context)
-                            syncMessage = "Database aggiornato."
+                            syncMessage = context.getString(R.string.sync_success)
                         } catch (e: Exception) {
                             ErrorReporter.report(context, e, "syncDatabase")
-                            syncMessage = "Errore: ${UserFacingError.message(e)}"
+                            syncMessage = context.getString(R.string.status_error_prefix, UserFacingError.message(context, e))
                         }
                         isSyncing = false
                     }
                 },
                 enabled = !isSyncing,
             ) {
-                Text(if (isSyncing) "Aggiornamento..." else "Aggiorna database spam")
+                Text(if (isSyncing) stringResource(R.string.sync_updating) else stringResource(R.string.sync_button))
             }
 
             syncMessage?.let { Text(text = it) }

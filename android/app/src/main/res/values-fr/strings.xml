@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">NoSpam</string>
+    <string name="nav_back">‹ Retour</string>
+    <string name="credits_title">Crédits</string>
+    <string name="blocked_numbers_title">Numéros bloqués</string>
+    <string name="settings_title">Paramètres</string>
+
+    <string name="onboarding_title">Bloquez les appels indésirables</string>
+    <string name="onboarding_message">Pour bloquer automatiquement les appels indésirables, NoSpam doit devenir l\'application de blocage et d\'identification des appels de votre téléphone. Vous pouvez le modifier à tout moment depuis les paramètres système.</string>
+    <string name="onboarding_activate">Activer maintenant</string>
+    <string name="onboarding_later">Plus tard</string>
+
+    <string name="phone_number_placeholder">Numéro (ex. +393331234567)</string>
+    <string name="category_spam">Spam</string>
+    <string name="category_scam">Arnaque</string>
+    <string name="category_telemarketing">Télémarketing</string>
+    <string name="category_robocall">Appel automatisé</string>
+    <string name="category_other">Autre</string>
+    <string name="block_button">Bloquer</string>
+    <string name="block_and_report_button">Bloquer et signaler</string>
+    <string name="sending">Envoi…</string>
+    <string name="status_blocked_locally">Numéro bloqué localement.</string>
+    <string name="status_error_prefix">Erreur : %1$s</string>
+    <string name="status_blocked_and_reported">Numéro bloqué et signalé à la communauté.</string>
+    <string name="status_report_failed_prefix">Bloqué localement, mais le signalement a échoué : %1$s</string>
+    <string name="call_blocking_active">Blocage des appels actif.</string>
+    <string name="call_blocking_inactive">NoSpam n\'est pas l\'application de blocage d\'appels par défaut.</string>
+    <string name="become_default_app">Définir comme application par défaut</string>
+    <string name="sync_updating">Mise à jour…</string>
+    <string name="sync_button">Mettre à jour la base de données spam</string>
+    <string name="sync_success">Base de données mise à jour.</string>
+
+    <string name="search_placeholder">Rechercher un numéro (ex. 0691 ou +3933…)</string>
+    <string name="filter_all">Tous</string>
+    <string name="filter_personal">Personnels</string>
+    <string name="blocked_numbers_count">Numéros bloqués (%1$d)</string>
+    <string name="community_label">Communauté</string>
+    <string name="personal_label">Personnel</string>
+    <string name="unblock_button">Débloquer</string>
+
+    <string name="credits_data_sources_title">Sources de données</string>
+    <string name="open_source_button">Ouvrir la source</string>
+    <string name="license_label">Licence : %1$s</string>
+
+    <string name="settings_theme_title">Apparence</string>
+    <string name="settings_theme_system">Système</string>
+    <string name="settings_theme_light">Clair</string>
+    <string name="settings_theme_dark">Sombre</string>
+    <string name="settings_language_title">Langue</string>
+    <string name="settings_language_description">Choisissez la langue de l\'application, indépendamment de celle du téléphone.</string>
+    <string name="settings_language_automatic">Automatique (langue du téléphone)</string>
+    <string name="settings_language_it">Italiano</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_es">Español</string>
+    <string name="settings_language_fr">Français</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_pt">Português</string>
+    <string name="settings_language_pt_br">Português (Brasil)</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_language_bn">বাংলা</string>
+    <string name="settings_language_ca">Català</string>
+    <string name="settings_language_zh_hans">中文(简体)</string>
+    <string name="settings_language_zh_hant">中文(繁體)</string>
+    <string name="settings_language_hr">Hrvatski</string>
+    <string name="settings_language_cs">Čeština</string>
+    <string name="settings_language_da">Dansk</string>
+    <string name="settings_language_nl">Nederlands</string>
+    <string name="settings_language_fi">Suomi</string>
+    <string name="settings_language_el">Ελληνικά</string>
+    <string name="settings_language_gu">ગુજરાતી</string>
+    <string name="settings_language_he">עברית</string>
+    <string name="settings_language_hi">हिन्दी</string>
+    <string name="settings_language_hu">Magyar</string>
+    <string name="settings_language_id">Bahasa Indonesia</string>
+    <string name="settings_language_ja">日本語</string>
+    <string name="settings_language_kn">ಕನ್ನಡ</string>
+    <string name="settings_language_ko">한국어</string>
+    <string name="settings_language_ms">Bahasa Melayu</string>
+    <string name="settings_language_ml">മലയാളം</string>
+    <string name="settings_language_mr">मराठी</string>
+    <string name="settings_language_nb">Norsk bokmål</string>
+    <string name="settings_language_or">ଓଡ଼ିଆ</string>
+    <string name="settings_language_pl">Polski</string>
+    <string name="settings_language_pa">ਪੰਜਾਬੀ</string>
+    <string name="settings_language_ro">Română</string>
+    <string name="settings_language_ru">Русский</string>
+    <string name="settings_language_sk">Slovenčina</string>
+    <string name="settings_language_sl">Slovenščina</string>
+    <string name="settings_language_sv">Svenska</string>
+    <string name="settings_language_ta">தமிழ்</string>
+    <string name="settings_language_te">తెలుగు</string>
+    <string name="settings_language_th">ไทย</string>
+    <string name="settings_language_tr">Türkçe</string>
+    <string name="settings_language_uk">Українська</string>
+    <string name="settings_language_ur">اردو</string>
+    <string name="settings_language_vi">Tiếng Việt</string>
+
+    <string name="update_required_title">Mise à jour disponible</string>
+    <string name="update_required_message">Une nouvelle version de NoSpam avec des corrections importantes est disponible. Mettez à jour pour continuer à utiliser l\'application.</string>
+    <string name="update_required_button">Mettre à jour maintenant</string>
+
+    <string name="error_no_internet">Aucune connexion Internet : vérifiez votre connexion et réessayez.</string>
+    <string name="error_timeout">La requête a pris trop de temps : veuillez réessayer plus tard.</string>
+    <string name="error_server_unavailable">Le serveur est actuellement indisponible (code %1$d). Veuillez réessayer plus tard.</string>
+</resources>

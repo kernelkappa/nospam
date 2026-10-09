@@ -18,6 +18,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.Dispatchers
@@ -90,16 +91,15 @@ fun UpdateRequiredScreen(modifier: Modifier = Modifier) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center,
     ) {
-        Text("Aggiornamento disponibile", style = MaterialTheme.typography.headlineSmall)
+        Text(stringResource(R.string.update_required_title), style = MaterialTheme.typography.headlineSmall)
         Spacer(modifier = Modifier.height(16.dp))
         Text(
-            "È disponibile una nuova versione di NoSpam con correzioni importanti. " +
-                "Aggiorna per continuare a usare l'app.",
+            stringResource(R.string.update_required_message),
             textAlign = TextAlign.Center,
         )
         Spacer(modifier = Modifier.height(24.dp))
         Button(onClick = { UpdateGate.openStoreListing(context) }) {
-            Text("Aggiorna ora")
+            Text(stringResource(R.string.update_required_button))
         }
     }
 }

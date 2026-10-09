@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">NoSpam</string>
+    <string name="nav_back">‹ തിരികെ</string>
+    <string name="credits_title">ക്രെഡിറ്റുകൾ</string>
+    <string name="blocked_numbers_title">ബ്ലോക്ക് ചെയ്ത നമ്പറുകൾ</string>
+    <string name="settings_title">ക്രമീകരണങ്ങൾ</string>
+
+    <string name="onboarding_title">സ്പാം കോളുകൾ ബ്ലോക്ക് ചെയ്യുക</string>
+    <string name="onboarding_message">സ്പാം കോളുകൾ സ്വയമേവ ബ്ലോക്ക് ചെയ്യുന്നതിന്, NoSpam നിങ്ങളുടെ ഫോണിന്റെ കോൾ ബ്ലോക്കിംഗ്, ഐഡന്റിഫിക്കേഷൻ ആപ്പ് ആകേണ്ടതുണ്ട്. സിസ്റ്റം ക്രമീകരണങ്ങളിൽ നിന്ന് നിങ്ങൾക്ക് ഇത് എപ്പോൾ വേണമെങ്കിലും മാറ്റാം.</string>
+    <string name="onboarding_activate">ഇപ്പോൾ സജീവമാക്കുക</string>
+    <string name="onboarding_later">പിന്നീട്</string>
+
+    <string name="phone_number_placeholder">നമ്പർ (ഉദാ. +393331234567)</string>
+    <string name="category_spam">സ്പാം</string>
+    <string name="category_scam">തട്ടിപ്പ്</string>
+    <string name="category_telemarketing">ടെലിമാർക്കറ്റിംഗ്</string>
+    <string name="category_robocall">റോബോകോൾ</string>
+    <string name="category_other">മറ്റുള്ളവ</string>
+    <string name="block_button">ബ്ലോക്ക് ചെയ്യുക</string>
+    <string name="block_and_report_button">ബ്ലോക്ക് ചെയ്ത് റിപ്പോർട്ട് ചെയ്യുക</string>
+    <string name="sending">അയയ്ക്കുന്നു…</string>
+    <string name="status_blocked_locally">നമ്പർ പ്രാദേശികമായി ബ്ലോക്ക് ചെയ്തു.</string>
+    <string name="status_error_prefix">പിശക്: %1$s</string>
+    <string name="status_blocked_and_reported">നമ്പർ ബ്ലോക്ക് ചെയ്ത് സമൂഹത്തിന് റിപ്പോർട്ട് ചെയ്തു.</string>
+    <string name="status_report_failed_prefix">പ്രാദേശികമായി ബ്ലോക്ക് ചെയ്തു, പക്ഷേ റിപ്പോർട്ട് ചെയ്യുന്നതിൽ പരാജയപ്പെട്ടു: %1$s</string>
+    <string name="call_blocking_active">കോൾ ബ്ലോക്കിംഗ് സജീവമാണ്.</string>
+    <string name="call_blocking_inactive">NoSpam ഡിഫോൾട്ട് കോൾ ബ്ലോക്കിംഗ് ആപ്പ് അല്ല.</string>
+    <string name="become_default_app">ഡിഫോൾട്ട് ആപ്പ് ആക്കുക</string>
+    <string name="sync_updating">അപ്ഡേറ്റ് ചെയ്യുന്നു…</string>
+    <string name="sync_button">സ്പാം ഡേറ്റാബേസ് അപ്ഡേറ്റ് ചെയ്യുക</string>
+    <string name="sync_success">ഡേറ്റാബേസ് അപ്ഡേറ്റ് ചെയ്തു.</string>
+
+    <string name="search_placeholder">നമ്പർ തിരയുക (ഉദാ. 0691 അല്ലെങ്കിൽ +3933…)</string>
+    <string name="filter_all">എല്ലാം</string>
+    <string name="filter_personal">വ്യക്തിപരം</string>
+    <string name="blocked_numbers_count">ബ്ലോക്ക് ചെയ്ത നമ്പറുകൾ (%1$d)</string>
+    <string name="community_label">സമൂഹം</string>
+    <string name="personal_label">വ്യക്തിപരം</string>
+    <string name="unblock_button">അൺബ്ലോക്ക് ചെയ്യുക</string>
+
+    <string name="credits_data_sources_title">ഡേറ്റ ഉറവിടങ്ങൾ</string>
+    <string name="open_source_button">ഉറവിടം തുറക്കുക</string>
+    <string name="license_label">ലൈസൻസ്: %1$s</string>
+
+    <string name="settings_theme_title">രൂപഭാവം</string>
+    <string name="settings_theme_system">സിസ്റ്റം</string>
+    <string name="settings_theme_light">ലൈറ്റ്</string>
+    <string name="settings_theme_dark">ഡാർക്ക്</string>
+    <string name="settings_language_title">ഭാഷ</string>
+    <string name="settings_language_description">ഫോണിന്റെ ഭാഷയിൽ നിന്ന് സ്വതന്ത്രമായി, ആപ്പിന്റെ ഭാഷ തിരഞ്ഞെടുക്കുക.</string>
+    <string name="settings_language_automatic">ഓട്ടോമാറ്റിക് (ഫോണിന്റെ ഭാഷ)</string>
+
+    <string name="update_required_title">അപ്ഡേറ്റ് ലഭ്യമാണ്</string>
+    <string name="update_required_message">പ്രധാന പരിഹാരങ്ങളുള്ള NoSpam-ന്റെ പുതിയ പതിപ്പ് ലഭ്യമാണ്. ആപ്പ് ഉപയോഗിക്കുന്നത് തുടരാൻ അപ്ഡേറ്റ് ചെയ്യുക.</string>
+    <string name="update_required_button">ഇപ്പോൾ അപ്ഡേറ്റ് ചെയ്യുക</string>
+
+    <string name="error_no_internet">ഇന്റർനെറ്റ് കണക്ഷൻ ഇല്ല: നിങ്ങളുടെ കണക്ഷൻ പരിശോധിച്ച് വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="error_timeout">അഭ്യർത്ഥന വളരെയധികം സമയം എടുത്തു: പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</string>
+    <string name="error_server_unavailable">സെർവർ ഇപ്പോൾ ലഭ്യമല്ല (കോഡ് %1$d). പിന്നീട് വീണ്ടും ശ്രമിക്കുക.</string>
+
+    <string name="settings_language_it">Italiano</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_es">Español</string>
+    <string name="settings_language_fr">Français</string>
+    <string name="settings_language_de">Deutsch</string>
+    <string name="settings_language_pt">Português</string>
+    <string name="settings_language_pt_br">Português (Brasil)</string>
+    <string name="settings_language_ar">العربية</string>
+    <string name="settings_language_bn">বাংলা</string>
+    <string name="settings_language_ca">Català</string>
+    <string name="settings_language_zh_hans">中文(简体)</string>
+    <string name="settings_language_zh_hant">中文(繁體)</string>
+    <string name="settings_language_hr">Hrvatski</string>
+    <string name="settings_language_cs">Čeština</string>
+    <string name="settings_language_da">Dansk</string>
+    <string name="settings_language_nl">Nederlands</string>
+    <string name="settings_language_fi">Suomi</string>
+    <string name="settings_language_el">Ελληνικά</string>
+    <string name="settings_language_gu">ગુજરાતી</string>
+    <string name="settings_language_he">עברית</string>
+    <string name="settings_language_hi">हिन्दी</string>
+    <string name="settings_language_hu">Magyar</string>
+    <string name="settings_language_id">Bahasa Indonesia</string>
+    <string name="settings_language_ja">日本語</string>
+    <string name="settings_language_kn">ಕನ್ನಡ</string>
+    <string name="settings_language_ko">한국어</string>
+    <string name="settings_language_ms">Bahasa Melayu</string>
+    <string name="settings_language_ml">മലയാളം</string>
+    <string name="settings_language_mr">मराठी</string>
+    <string name="settings_language_nb">Norsk bokmål</string>
+    <string name="settings_language_or">ଓଡ଼ିଆ</string>
+    <string name="settings_language_pl">Polski</string>
+    <string name="settings_language_pa">ਪੰਜਾਬੀ</string>
+    <string name="settings_language_ro">Română</string>
+    <string name="settings_language_ru">Русский</string>
+    <string name="settings_language_sk">Slovenčina</string>
+    <string name="settings_language_sl">Slovenščina</string>
+    <string name="settings_language_sv">Svenska</string>
+    <string name="settings_language_ta">தமிழ்</string>
+    <string name="settings_language_te">తెలుగు</string>
+    <string name="settings_language_th">ไทย</string>
+    <string name="settings_language_tr">Türkçe</string>
+    <string name="settings_language_uk">Українська</string>
+    <string name="settings_language_ur">اردو</string>
+    <string name="settings_language_vi">Tiếng Việt</string>
+</resources>
