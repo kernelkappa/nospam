@@ -21,7 +21,7 @@ jobs:
             -H "Authorization: Bearer $SUPABASE_SERVICE_KEY" \
             -H "Content-Type: application/json" \
             -H "Prefer: return=representation" \
-            -d '{"platform":"ci","context":"tmp-verify-migration","message":"test","app_version":"0","os_version":"ci","level":"info"}')
+            -d '{"platform":"ios","context":"tmp-verify-migration","message":"test","app_version":"0","os_version":"ci","level":"info"}')
           BODY=$(echo "$INSERT_RESPONSE" | head -n -1)
           STATUS=$(echo "$INSERT_RESPONSE" | tail -n1)
           echo "HTTP status: $STATUS"
