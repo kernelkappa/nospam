@@ -29,6 +29,7 @@ jobs:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
           RETENTION_DAYS: "30"
+          GITHUB_RETENTION_DAYS: "60"
         run: |
           max_attempts=5
           for attempt in $(seq 1 "$max_attempts"); do
