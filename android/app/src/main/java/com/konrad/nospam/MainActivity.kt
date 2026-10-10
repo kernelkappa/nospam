@@ -55,6 +55,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.launch
 
 private enum class NospamScreen { MAIN, BLOCKED_NUMBERS, CREDITS, SETTINGS }
@@ -278,6 +279,12 @@ fun MainScreen(modifier: Modifier = Modifier) {
                                 PersonalBlocklist.add(context, phoneNumber, category.apiValue)
                                 statusMessage = context.getString(R.string.status_blocked_locally)
                                 phoneNumber = ""
+                            } catch (e: CancellationException) {
+                                // L'utente ha lasciato la schermata: rilanciarla
+                                // e basta, non e' un errore da segnalare, e
+                                // scrivere sullo stato qui sotto fallirebbe
+                                // comunque (composizione gia' dimenticata).
+                                throw e
                             } catch (e: Exception) {
                                 ErrorReporter.report(context, e, "blockOnly")
                                 statusMessage = context.getString(R.string.status_error_prefix, UserFacingError.message(context, e))
@@ -300,6 +307,8 @@ fun MainScreen(modifier: Modifier = Modifier) {
                                 PersonalBlocklist.add(context, phoneNumber, category.apiValue)
                                 ReportService.submit(context, normalized, category)
                                 statusMessage = context.getString(R.string.status_blocked_and_reported)
+                            } catch (e: CancellationException) {
+                                throw e
                             } catch (e: Exception) {
                                 ErrorReporter.report(context, e, "blockAndReport")
                                 statusMessage = context.getString(R.string.status_report_failed_prefix, UserFacingError.message(context, e))
@@ -342,6 +351,8 @@ fun MainScreen(modifier: Modifier = Modifier) {
                         try {
                             SpamDatabaseSync.sync(context)
                             syncMessage = context.getString(R.string.sync_success)
+                        } catch (e: CancellationException) {
+                            throw e
                         } catch (e: Exception) {
                             ErrorReporter.report(context, e, "syncDatabase")
                             syncMessage = context.getString(R.string.status_error_prefix, UserFacingError.message(context, e))
