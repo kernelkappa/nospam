@@ -27,7 +27,8 @@ enum BGTaskManager {
                 try await SpamDatabaseSync.sync()
                 task.setTaskCompleted(success: true)
             } catch {
-                ErrorReporter.report(error, context: "BGTaskManager.handleRefresh")
+                let level: ErrorReporter.Level = CallDirectoryManager.isExtensionDisabledError(error) ? .info : .error
+                ErrorReporter.report(error, context: "BGTaskManager.handleRefresh", level: level)
                 task.setTaskCompleted(success: false)
             }
         }

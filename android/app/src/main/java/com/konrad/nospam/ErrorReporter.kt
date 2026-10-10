@@ -16,7 +16,8 @@ import java.net.URL
  * interrompere il flusso che lo ha generato: fallisce in silenzio.
  */
 object ErrorReporter {
-    fun report(context: Context, error: Throwable, errorContext: String) {
+    /** "info" per stati noti/previsti (non da investigare), "error" per i problemi veri. */
+    fun report(context: Context, error: Throwable, errorContext: String, level: String = "error") {
         val appVersion = try {
             context.packageManager.getPackageInfo(context.packageName, 0).versionName
         } catch (e: Exception) {
@@ -34,12 +35,14 @@ object ErrorReporter {
                     connection.setRequestProperty("Prefer", "return=minimal")
                     connection.doOutput = true
 
+                    val stackTrace = error.stackTraceToString().take(2000)
                     val payload = JSONObject().apply {
                         put("platform", "android")
                         put("context", errorContext)
-                        put("message", error.toString())
+                        put("message", "$error\n$stackTrace")
                         put("app_version", appVersion)
                         put("os_version", "Android ${Build.VERSION.RELEASE} (SDK ${Build.VERSION.SDK_INT})")
+                        put("level", level)
                     }
                     OutputStreamWriter(connection.outputStream, Charsets.UTF_8).use { it.write(payload.toString()) }
                     connection.responseCode
