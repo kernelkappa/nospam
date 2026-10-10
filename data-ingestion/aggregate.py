@@ -72,6 +72,13 @@ MIN_REPORTS = int(os.environ.get("MIN_REPORTS", "5"))
 DEFAULT_REGION = os.environ.get("DEFAULT_REGION", "IT")
 OUTPUT_PATH = Path(os.environ.get("OUTPUT_PATH", "docs/spam_db.json"))
 PREFIX_OUTPUT_PATH = Path(os.environ.get("PREFIX_OUTPUT_PATH", "docs/spam_prefixes.json"))
+# Formato leggero (CSV minimale, non JSON) solo per l'estensione
+# CXCallDirectoryProvider su iOS: decodificare l'intero spam_db.json con
+# JSONDecoder dentro l'estensione fa superare il budget di memoria che il
+# sistema le concede (osservato a ~33k voci), interrompendo il caricamento
+# (com.apple.CallKit.error.calldirectorymanager code 2). Un parsing a riga
+# di testo grezzo evita del tutto l'albero JSON intermedio.
+LITE_OUTPUT_PATH = Path(os.environ.get("LITE_OUTPUT_PATH", "docs/spam_numbers_lite.txt"))
 PAGE_SIZE = 1000
 
 
@@ -197,6 +204,12 @@ def main() -> None:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT_PATH.write_text(json.dumps(sorted_entries, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    lite_lines = [
+        f"{entry['number'].lstrip('+')},{entry['report_count']}" for entry in sorted_entries
+    ]
+    LITE_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    LITE_OUTPUT_PATH.write_text("\n".join(lite_lines), encoding="utf-8")
+
     prefix_entries = build_prefix_db()
     PREFIX_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     PREFIX_OUTPUT_PATH.write_text(json.dumps(prefix_entries, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -206,6 +219,7 @@ def main() -> None:
     print(f"Numeri da fonti esterne (totale grezzo): {external_total}", file=sys.stderr)
     print(f"Numeri pubblicati totali (uniti, deduplicati): {len(sorted_entries)}", file=sys.stderr)
     print(f"Output numeri: {OUTPUT_PATH}", file=sys.stderr)
+    print(f"Output numeri (lite): {LITE_OUTPUT_PATH}", file=sys.stderr)
     print(f"Prefissi pubblicati totali: {len(prefix_entries)}", file=sys.stderr)
     print(f"Output prefissi: {PREFIX_OUTPUT_PATH}", file=sys.stderr)
 

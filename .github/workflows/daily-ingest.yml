@@ -50,7 +50,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/spam_db.json docs/spam_prefixes.json
+          git add docs/spam_db.json docs/spam_prefixes.json docs/spam_numbers_lite.txt
           git diff --cached --quiet && { echo "pushed=false" >> "$GITHUB_OUTPUT"; exit 0; }
           git commit -m "chore: aggiorna spam_db.json e spam_prefixes.json"
           git push

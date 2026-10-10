@@ -3,6 +3,7 @@ import os
 
 enum SpamDatabaseSync {
     static let remoteURL = URL(string: "https://kernelkappa.github.io/nospam/spam_db.json")!
+    static let liteRemoteURL = URL(string: "https://kernelkappa.github.io/nospam/spam_numbers_lite.txt")!
     private static let lastSyncDateKey = "last_spam_db_sync_date"
 
     /// Ultimo sync riuscito, sia manuale che in background (BGTaskManager):
@@ -23,7 +24,7 @@ enum SpamDatabaseSync {
         guard let httpResponse = response as? HTTPURLResponse, (200..<300).contains(httpResponse.statusCode) else {
             throw URLError(.badServerResponse)
         }
-        guard let destination = SpamNumberStore.localFileURL else {
+        guard let destination = SpamNumberStore.localFileURL, let liteDestination = SpamNumberStore.liteFileURL else {
             throw NSError(
                 domain: "com.konrad.nospam",
                 code: 2,
@@ -31,6 +32,17 @@ enum SpamDatabaseSync {
             )
         }
         try data.write(to: destination, options: .atomic)
+
+        // File leggero dedicato all'estensione CXCallDirectoryProvider (vedi
+        // SpamNumberStore.liteFileName): se questa seconda richiesta fallisce
+        // non blocchiamo il sync del file principale, l'estensione terra'
+        // semplicemente la copia precedente finche' non riprova.
+        if let (liteData, liteResponse) = try? await URLSession.shared.data(from: liteRemoteURL),
+           let liteHttpResponse = liteResponse as? HTTPURLResponse,
+           (200..<300).contains(liteHttpResponse.statusCode) {
+            try? liteData.write(to: liteDestination, options: .atomic)
+        }
+
         // Il dato locale e' aggiornato da qui in poi: segnamo il sync come
         // fresco anche se il reload dell'estensione sotto fallisse perche'
         // disabilitata, altrimenti chi ha il blocco disattivato vedrebbe
