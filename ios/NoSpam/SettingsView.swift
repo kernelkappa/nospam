@@ -2,6 +2,7 @@ import SwiftUI
 
 struct SettingsView: View {
     @ObservedObject private var appearance = AppearancePreference.shared
+    @ObservedObject private var language = LanguagePreference.shared
 
     var body: some View {
         Form {
@@ -15,12 +16,13 @@ struct SettingsView: View {
             }
 
             Section("Lingua") {
-                Text("Scegli la lingua dell'app dalle Impostazioni di sistema, indipendentemente da quella del telefono.")
+                Text(language.string("settings.language.description"))
                     .font(.footnote)
                     .foregroundStyle(.secondary)
-                Button("Apri Impostazioni") {
-                    if let url = URL(string: UIApplication.openSettingsURLString) {
-                        UIApplication.shared.open(url)
+                Picker("Lingua", selection: $language.language) {
+                    Text(language.string("settings.language.automatic")).tag(AppLanguage?.none)
+                    ForEach(AppLanguage.allCases) { lang in
+                        Text(lang.nativeName).tag(AppLanguage?.some(lang))
                     }
                 }
             }

@@ -103,4 +103,14 @@
     <string name="error_no_internet">Nessuna connessione Internet: controlla la connessione e riprova.</string>
     <string name="error_timeout">La richiesta ha impiegato troppo tempo: riprova più tardi.</string>
     <string name="error_server_unavailable">Il server non è raggiungibile al momento (codice %1$d). Riprova più tardi.</string>
+    <string name="credits_source_community_desc">Numeri segnalati direttamente dalla community di NoSpam (almeno 5 segnalazioni da utenti diversi).</string>
+    <string name="credits_source_shopsicuro_desc">Progetto MIMIT &quot;Squadra Antifrode&quot; · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Lista aperta e mantenuta dalla community, a cura di thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Lista di numeri spam spagnoli, a cura di mv12star.</string>
+    <string name="credits_source_callavert_desc">Numeri spam statunitensi compilati dai dati pubblici &quot;Do Not Call&quot; della FTC, a cura del progetto Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">Intervalli di prefissi telemarketing francesi, a cura di jeromerobert (fonte dati anche dell\'app open source NoPhoneSpam). Nessuna licenza esplicita dichiarata dall\'autore.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Prefissi riservati per norma al telemarketing da TRAI (India, serie 140xx/1600) e Anatel (Brasile, +55303). Solo avviso: identificano tutte le chiamate di telemarketing conforme, non solo quelle abusive.</string>
+    <string name="credits_source_wangiri_desc">Prefissi internazionali spesso citati in segnalazioni di truffe &quot;wangiri&quot; (uno squillo per indurre a richiamare un numero a tariffazione speciale). Solo avviso, le chiamate non vengono bloccate perché sono interi paesi con tante chiamate legittime.</string>
+    <string name="credits_public_domain_note">(dominio pubblico)</string>
+    <string name="credits_source_community_name">Segnalazioni utenti NoSpam</string>
 </resources>

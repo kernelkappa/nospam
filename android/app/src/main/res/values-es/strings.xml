@@ -103,4 +103,14 @@
     <string name="error_no_internet">Sin conexión a Internet: comprueba tu conexión e inténtalo de nuevo.</string>
     <string name="error_timeout">La solicitud ha tardado demasiado: inténtalo de nuevo más tarde.</string>
     <string name="error_server_unavailable">El servidor no está disponible en este momento (código %1$d). Inténtalo de nuevo más tarde.</string>
+    <string name="credits_source_community_desc">Números señalados directamente por la comunidad de NoSpam (al menos 5 denuncias de usuarios distintos).</string>
+    <string name="credits_source_shopsicuro_desc">Proyecto MIMIT &quot;Equipo Antifraude&quot; · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Lista abierta mantenida por la comunidad, a cargo de thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Lista de números spam españoles, a cargo de mv12star.</string>
+    <string name="credits_source_callavert_desc">Números spam estadounidenses compilados a partir de los datos públicos &quot;Do Not Call&quot; de la FTC, a cargo del proyecto Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">Rangos de prefijos de telemarketing franceses, a cargo de jeromerobert (también fuente de datos de la app de código abierto NoPhoneSpam). El autor no declara ninguna licencia explícita.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Prefijos reservados por normativa para telemarketing por parte de TRAI (India, serie 140xx/1600) y Anatel (Brasil, +55303). Solo aviso: identifican todas las llamadas de telemarketing conforme, no solo las abusivas.</string>
+    <string name="credits_source_wangiri_desc">Prefijos internacionales a menudo citados en denuncias de estafas &quot;wangiri&quot; (un timbre para inducir a devolver la llamada a un número de tarificación especial). Solo aviso, las llamadas no se bloquean porque son países enteros con muchas llamadas legítimas.</string>
+    <string name="credits_public_domain_note">(dominio público)</string>
+    <string name="credits_source_community_name">Denuncias de usuarios de NoSpam</string>
 </resources>

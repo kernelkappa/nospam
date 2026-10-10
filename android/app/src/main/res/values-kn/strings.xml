@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">NoSpam ಸಮುದಾಯವು ನೇರವಾಗಿ ವರದಿ ಮಾಡಿದ ಸಂಖ್ಯೆಗಳು (ಕನಿಷ್ಠ 5 ವಿಭಿನ್ನ ಬಳಕೆದಾರರಿಂದ ವರದಿಗಳು).</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT &quot;ವಂಚನೆ ವಿರೋಧಿ ತಂಡ&quot; ಯೋಜನೆ · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">ಸಮುದಾಯದಿಂದ ನಿರ್ವಹಿಸಲ್ಪಡುವ ಮುಕ್ತ ಪಟ್ಟಿ, thesqual87 / Kallm ಇವರಿಂದ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ.</string>
+    <string name="credits_source_lista_es_desc">ಸ್ಪ್ಯಾನಿಷ್ ಸ್ಪ್ಯಾಮ್ ಸಂಖ್ಯೆಗಳ ಪಟ್ಟಿ, mv12star ಇವರಿಂದ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ.</string>
+    <string name="credits_source_callavert_desc">FTC ಯ ಸಾರ್ವಜನಿಕ &quot;Do Not Call&quot; ಡೇಟಾದಿಂದ ಸಂಗ್ರಹಿಸಲಾದ US ಸ್ಪ್ಯಾಮ್ ಸಂಖ್ಯೆಗಳು, Call Avert ಯೋಜನೆಯಿಂದ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ.</string>
+    <string name="credits_source_nophonespam_fr_desc">ಫ್ರೆಂಚ್ ಟೆಲಿಮಾರ್ಕೆಟಿಂಗ್ ಪ್ರಿಫಿಕ್ಸ್ ಶ್ರೇಣಿಗಳು, jeromerobert ಇವರಿಂದ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ (ಇದು ಓಪನ್ ಸೋರ್ಸ್ NoPhoneSpam ಅಪ್ಲಿಕೇಶನ್‌ನ ಡೇಟಾ ಮೂಲವೂ ಆಗಿದೆ). ಲೇಖಕರು ಯಾವುದೇ ಸ್ಪಷ್ಟ ಪರವಾನಗಿಯನ್ನು ಘೋಷಿಸಿಲ್ಲ.</string>
+    <string name="credits_source_regulatory_prefixes_desc">TRAI (ಭಾರತ, 140xx/1600 ಸರಣಿ) ಮತ್ತು Anatel (ಬ್ರೆಜಿಲ್, +55303) ಇವರಿಂದ ಕಾನೂನುಬದ್ಧವಾಗಿ ಟೆಲಿಮಾರ್ಕೆಟಿಂಗ್‌ಗಾಗಿ ಕಾಯ್ದಿರಿಸಲಾದ ಪ್ರಿಫಿಕ್ಸ್‌ಗಳು. ಕೇವಲ ಗುರುತಿಸುವಿಕೆ: ಇವು ಎಲ್ಲಾ ಅನುಸರಣೆಯ ಟೆಲಿಮಾರ್ಕೆಟಿಂಗ್ ಕರೆಗಳನ್ನು ಗುರುತಿಸುತ್ತವೆ, ದುರ್ಬಳಕೆಯಾಗುವವುಗಳನ್ನು ಮಾತ್ರವಲ್ಲ.</string>
+    <string name="credits_source_wangiri_desc">&quot;ವಾಂಗಿರಿ&quot; ವಂಚನೆ ವರದಿಗಳಲ್ಲಿ ಹೆಚ್ಚಾಗಿ ಉಲ್ಲೇಖಿಸಲಾದ ಅಂತರರಾಷ್ಟ್ರೀಯ ಪ್ರಿಫಿಕ್ಸ್‌ಗಳು (ಪ್ರೀಮಿಯಂ-ದರದ ಸಂಖ್ಯೆಗೆ ಮರಳಿ ಕರೆ ಮಾಡಲು ಪ್ರಚೋದಿಸುವ ಒಂದು ರಿಂಗ್). ಕೇವಲ ಗುರುತಿಸುವಿಕೆ, ಕರೆಗಳನ್ನು ನಿರ್ಬಂಧಿಸಲಾಗುವುದಿಲ್ಲ ಏಕೆಂದರೆ ಇವು ಅನೇಕ ಕಾನೂನುಬದ್ಧ ಕರೆಗಳನ್ನು ಹೊಂದಿರುವ ಸಂಪೂರ್ಣ ದೇಶಗಳಾಗಿವೆ.</string>
+    <string name="credits_public_domain_note">(ಸಾರ್ವಜನಿಕ ಡೊಮೇನ್)</string>
+    <string name="credits_source_community_name">NoSpam ಬಳಕೆದಾರರ ವರದಿಗಳು</string>
 </resources>

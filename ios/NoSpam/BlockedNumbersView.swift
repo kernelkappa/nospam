@@ -6,8 +6,8 @@ private enum SourceFilter: CaseIterable {
 
     var label: String {
         switch self {
-        case .all: return String(localized: "filter.all")
-        case .personal: return String(localized: "filter.personal")
+        case .all: return LanguagePreference.shared.string("filter.all")
+        case .personal: return LanguagePreference.shared.string("filter.personal")
         }
     }
 }
@@ -28,11 +28,11 @@ struct BlockedNumbersView: View {
         VStack(spacing: 0) {
             List {
                 Section {
-                    TextField(String(localized: "blockedNumbers.searchPlaceholder"), text: $searchText)
+                    TextField(LanguagePreference.shared.string("blockedNumbers.searchPlaceholder"), text: $searchText)
                         .keyboardType(.phonePad)
                         .focused($isSearchFieldFocused)
 
-                    Picker(String(localized: "filter.title"), selection: $sourceFilter) {
+                    Picker(LanguagePreference.shared.string("filter.title"), selection: $sourceFilter) {
                         ForEach(SourceFilter.allCases, id: \.self) { filter in
                             Text(filter.label).tag(filter)
                         }
@@ -42,7 +42,7 @@ struct BlockedNumbersView: View {
 
                 Section {
                     if filteredEntries.isEmpty {
-                        Text(String(localized: "blockedNumbers.empty"))
+                        Text(LanguagePreference.shared.string("blockedNumbers.empty"))
                             .foregroundStyle(.secondary)
                     }
                     ForEach(filteredEntries) { entry in
@@ -51,15 +51,15 @@ struct BlockedNumbersView: View {
                                 Text(entry.number)
                                 Text(
                                     entry.source == .community
-                                        ? String(localized: "blocked.community") + (entry.category.map { " · \($0)" } ?? "")
-                                        : String(localized: "blocked.personal")
+                                        ? LanguagePreference.shared.string("blocked.community") + (entry.category.map { " · \($0)" } ?? "")
+                                        : LanguagePreference.shared.string("blocked.personal")
                                 )
                                     .font(.caption)
                                     .foregroundStyle(.secondary)
                             }
                             Spacer()
                             if entry.source == .personal {
-                                Button(String(localized: "blockedNumbers.unblock")) {
+                                Button(LanguagePreference.shared.string("blockedNumbers.unblock")) {
                                     deletePersonalEntry(entry)
                                 }
                                 .buttonStyle(.bordered)
@@ -68,7 +68,7 @@ struct BlockedNumbersView: View {
                         }
                     }
                 } header: {
-                    Text(String(format: String(localized: "blockedNumbers.count"), filteredEntries.count))
+                    Text(String(format: LanguagePreference.shared.string("blockedNumbers.count"), filteredEntries.count))
                 }
             }
             AdBannerView()

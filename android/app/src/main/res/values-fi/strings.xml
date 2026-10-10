@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">NoSpam-yhteisön suoraan ilmoittamat numerot (vähintään 5 ilmoitusta eri käyttäjiltä).</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT &quot;Petostentorjuntaryhmä&quot; -hanke · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Yhteisön ylläpitämä avoin luettelo, kuratoinut thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Luettelo espanjalaisista roskapuhelunumeroista, kuratoinut mv12star.</string>
+    <string name="credits_source_callavert_desc">Yhdysvaltalaiset roskapuhelunumerot koottu FTC:n julkisista &quot;Do Not Call&quot; -tiedoista, kuratoinut Call Avert -hanke.</string>
+    <string name="credits_source_nophonespam_fr_desc">Ranskalaisten puhelinmyynnin suuntanumeroalueet, kuratoinut jeromerobert (myös avoimen lähdekoodin NoPhoneSpam-sovelluksen tietolähde). Tekijä ei ole ilmoittanut nimenomaista lisenssiä.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Suuntanumerot, jotka TRAI (Intia, 140xx/1600-sarja) ja Anatel (Brasilia, +55303) ovat laillisesti varanneet puhelinmyynnille. Vain tunnistus: ne merkitsevät kaikki säännönmukaiset puhelinmyyntipuhelut, ei vain väärinkäyttäviä.</string>
+    <string name="credits_source_wangiri_desc">Kansainväliset suuntanumerot, jotka mainitaan usein &quot;wangiri&quot;-huijausilmoituksissa (yksi soitto, joka houkuttelee soittamaan takaisin erikoismaksulliseen numeroon). Vain tunnistus, puheluita ei estetä, koska kyseessä ovat kokonaiset maat, joista tulee paljon laillisiakin puheluita.</string>
+    <string name="credits_public_domain_note">(julkinen käyttö)</string>
+    <string name="credits_source_community_name">NoSpam-käyttäjien ilmoitukset</string>
 </resources>

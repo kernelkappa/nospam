@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">Nummers die rechtstreeks zijn gemeld door de NoSpam-community (minstens 5 meldingen van verschillende gebruikers).</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT-project &quot;Anti-fraudeteam&quot; · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Open lijst onderhouden door de community, samengesteld door thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Lijst met Spaanse spamnummers, samengesteld door mv12star.</string>
+    <string name="credits_source_callavert_desc">Amerikaanse spamnummers samengesteld uit de openbare &quot;Do Not Call&quot;-gegevens van de FTC, samengesteld door het Call Avert-project.</string>
+    <string name="credits_source_nophonespam_fr_desc">Reeksen Franse telemarketingprefixen, samengesteld door jeromerobert (ook databron van de open source-app NoPhoneSpam). Geen expliciete licentie vermeld door de auteur.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Voorkeuzenummers die wettelijk zijn gereserveerd voor telemarketing door TRAI (India, 140xx/1600-serie) en Anatel (Brazilië, +55303). Alleen identificatie: ze markeren alle conforme telemarketingoproepen, niet alleen misbruikende.</string>
+    <string name="credits_source_wangiri_desc">Internationale voorkeuzenummers die vaak worden genoemd in meldingen van &quot;wangiri&quot;-fraude (één keer overgaan om je te verleiden terug te bellen naar een premiumnummer). Alleen identificatie, oproepen worden niet geblokkeerd omdat het hele landen zijn met ook veel legitieme oproepen.</string>
+    <string name="credits_public_domain_note">(publiek domein)</string>
+    <string name="credits_source_community_name">NoSpam-gebruikersmeldingen</string>
 </resources>

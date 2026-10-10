@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">由 NoSpam 社群直接檢舉的號碼（至少來自 5 位不同使用者的檢舉）。</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT「反詐騙小組」計畫 · Federazione iConsumatori。</string>
+    <string name="credits_source_blocklist_it_desc">由社群維護的開放清單，由 thesqual87 / Kallm 策劃。</string>
+    <string name="credits_source_lista_es_desc">西班牙垃圾號碼清單，由 mv12star 策劃。</string>
+    <string name="credits_source_callavert_desc">根據美國聯邦貿易委員會（FTC）公開的「請勿來電」資料彙編的美國垃圾號碼，由 Call Avert 計畫策劃。</string>
+    <string name="credits_source_nophonespam_fr_desc">法國電話行銷前綴區間，由 jeromerobert 策劃（也是開源應用程式 NoPhoneSpam 的資料來源）。作者未聲明明確的授權條款。</string>
+    <string name="credits_source_regulatory_prefixes_desc">根據印度 TRAI（140xx/1600 系列）和巴西 Anatel（+55303）規定專用於電話行銷的號段。僅作標示：標記所有合規的電話行銷來電，不僅僅是濫用的來電。</string>
+    <string name="credits_source_wangiri_desc">常見於「挂機詐騙」（響一聲誘導回撥高額付費號碼）檢舉中的國際號碼前綴。僅作標示，由於涉及整個國家且其中也有大量合法來電，因此不會被封鎖。</string>
+    <string name="credits_public_domain_note">（公眾領域）</string>
+    <string name="credits_source_community_name">NoSpam 使用者檢舉</string>
 </resources>

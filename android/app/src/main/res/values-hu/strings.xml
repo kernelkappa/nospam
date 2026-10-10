@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">A NoSpam közössége által közvetlenül jelentett számok (legalább 5 jelentés különböző felhasználóktól).</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT „Csalásellenes csoport” projekt · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">A közösség által fenntartott nyílt lista, thesqual87 / Kallm szerkesztésében.</string>
+    <string name="credits_source_lista_es_desc">Spanyol spam számok listája, mv12star szerkesztésében.</string>
+    <string name="credits_source_callavert_desc">Az FTC nyilvános „Do Not Call” adataiból összeállított amerikai spam számok, a Call Avert projekt szerkesztésében.</string>
+    <string name="credits_source_nophonespam_fr_desc">Francia telemarketing előhívószám-tartományok, jeromerobert szerkesztésében (az NoPhoneSpam nyílt forráskódú alkalmazás adatforrása is). A szerző nem nyilatkozott kifejezett licencről.</string>
+    <string name="credits_source_regulatory_prefixes_desc">A TRAI (India, 140xx/1600-as sorozat) és az Anatel (Brazília, +55303) által jogszabály szerint telemarketingnek fenntartott előhívószámok. Csak azonosítás: minden szabályos telemarketing hívást jeleznek, nem csak a visszaélésszerűeket.</string>
+    <string name="credits_source_wangiri_desc">A &quot;wangiri&quot; csalásjelentésekben gyakran említett nemzetközi előhívószámok (egy csörgés, amely visszahívásra csábít egy emelt díjas számra). Csak azonosítás, a hívásokat nem blokkoljuk, mivel egész országokról van szó, ahonnan sok jogos hívás is érkezik.</string>
+    <string name="credits_public_domain_note">(közkincs)</string>
+    <string name="credits_source_community_name">NoSpam felhasználói jelentések</string>
 </resources>

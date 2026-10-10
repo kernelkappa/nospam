@@ -17,63 +17,66 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.unit.dp
 
 private data class DataSource(
+    /** Letterale per i nomi propri di progetti/nickname esterni (citazione,
+     * non si traducono); [nameRes] per le nostre etichette, tradotte. */
     val name: String,
-    val description: String,
+    val nameRes: Int? = null,
+    val descriptionRes: Int,
     val license: String?,
     val url: String,
+    /** Vero solo per licenze equivalenti al pubblico dominio, per aggiungere
+     * la nota tradotta "(dominio pubblico)" dopo il nome della licenza. */
+    val isPublicDomain: Boolean = false,
 )
 
 private val dataSources = listOf(
     DataSource(
         name = "Segnalazioni utenti NoSpam",
-        description = "Numeri segnalati direttamente dalla community di NoSpam (almeno 5 segnalazioni da utenti diversi).",
+        nameRes = R.string.credits_source_community_name,
+        descriptionRes = R.string.credits_source_community_desc,
         license = null,
         url = "https://github.com/kernelkappa/nospam",
     ),
     DataSource(
         name = "ShopSicuro",
-        description = "Progetto MIMIT \"Squadra Antifrode\" · Federazione iConsumatori.",
+        descriptionRes = R.string.credits_source_shopsicuro_desc,
         license = null,
         url = "https://www.shopsicuro.it/numeri-spam",
     ),
     DataSource(
         name = "blocklist-telefonica-italia",
-        description = "Lista aperta e mantenuta dalla community, a cura di thesqual87 / Kallm.",
+        descriptionRes = R.string.credits_source_blocklist_it_desc,
         license = "CC BY-SA 4.0",
         url = "https://github.com/thesqual87/blocklist-telefonica-italia",
     ),
     DataSource(
         name = "lista-telefonos-spam",
-        description = "Lista di numeri spam spagnoli, a cura di mv12star.",
-        license = "Unlicense (pubblico dominio)",
+        descriptionRes = R.string.credits_source_lista_es_desc,
+        license = "Unlicense",
         url = "https://github.com/mv12star/lista-telefonos-spam",
+        isPublicDomain = true,
     ),
     DataSource(
         name = "callavert-spam-list",
-        description = "Numeri spam statunitensi compilati dai dati pubblici \"Do Not Call\" della FTC, a cura del progetto Call Avert.",
+        descriptionRes = R.string.credits_source_callavert_desc,
         license = "CC0 1.0",
         url = "https://github.com/Call-Avert/callavert-spam-list",
     ),
     DataSource(
         name = "nophonespam-fr",
-        description = "Intervalli di prefissi telemarketing francesi, a cura di jeromerobert (fonte dati " +
-            "anche dell'app open source NoPhoneSpam). Nessuna licenza esplicita dichiarata dall'autore.",
+        descriptionRes = R.string.credits_source_nophonespam_fr_desc,
         license = null,
         url = "https://github.com/jeromerobert/nophonespam-fr",
     ),
     DataSource(
         name = "Prefissi telemarketing regolamentati",
-        description = "Prefissi riservati per norma al telemarketing da TRAI (India, serie 140xx/1600) e " +
-            "Anatel (Brasile, +55303). Solo avviso: identificano tutte le chiamate di telemarketing " +
-            "conforme, non solo quelle abusive.",
+        descriptionRes = R.string.credits_source_regulatory_prefixes_desc,
         license = null,
         url = "https://www.trai.gov.in/",
     ),
     DataSource(
         name = "Watchlist wangiri",
-        description = "Prefissi internazionali spesso citati in segnalazioni di truffe \"wangiri\" (uno " +
-            "squillo per indurre a richiamare un numero a tariffazione speciale). Solo avviso, le chiamate " +
-            "non vengono bloccate perché sono interi paesi con tante chiamate legittime.",
+        descriptionRes = R.string.credits_source_wangiri_desc,
         license = null,
         url = "https://www.europol.europa.eu/publications-events/publications/wangiri-%E2%80%93-telephone-scam",
     ),
@@ -91,10 +94,16 @@ fun CreditsScreen(modifier: Modifier = Modifier) {
 
         dataSources.forEach { source ->
             Column {
-                Text(text = source.name, style = MaterialTheme.typography.titleSmall)
-                Text(text = source.description, style = MaterialTheme.typography.bodyMedium)
+                val displayName = source.nameRes?.let { stringResource(it) } ?: source.name
+                Text(text = displayName, style = MaterialTheme.typography.titleSmall)
+                Text(text = stringResource(source.descriptionRes), style = MaterialTheme.typography.bodyMedium)
                 source.license?.let {
-                    Text(text = stringResource(R.string.license_label, it), style = MaterialTheme.typography.bodySmall)
+                    val licenseText = if (source.isPublicDomain) {
+                        "$it ${stringResource(R.string.credits_public_domain_note)}"
+                    } else {
+                        it
+                    }
+                    Text(text = stringResource(R.string.license_label, licenseText), style = MaterialTheme.typography.bodySmall)
                 }
                 TextButton(
                     onClick = {

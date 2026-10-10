@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">Numery zgłoszone bezpośrednio przez społeczność NoSpam (co najmniej 5 zgłoszeń od różnych użytkowników).</string>
+    <string name="credits_source_shopsicuro_desc">Projekt MIMIT „Zespół antyoszustwowy” · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Otwarta lista prowadzona przez społeczność, pod kuratelą thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Lista hiszpańskich numerów spamowych, pod kuratelą mv12star.</string>
+    <string name="credits_source_callavert_desc">Amerykańskie numery spamowe zestawione z publicznych danych FTC „Do Not Call”, pod kuratelą projektu Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">Zakresy francuskich prefiksów telemarketingowych, pod kuratelą jeromerobert (również źródło danych dla aplikacji open source NoPhoneSpam). Autor nie zadeklarował żadnej wyraźnej licencji.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Prefiksy zarezerwowane z mocy prawa dla telemarketingu przez TRAI (Indie, seria 140xx/1600) i Anatel (Brazylia, +55303). Tylko identyfikacja: oznaczają wszystkie zgodne połączenia telemarketingowe, nie tylko te stanowiące nadużycie.</string>
+    <string name="credits_source_wangiri_desc">Międzynarodowe prefiksy często wymieniane w zgłoszeniach oszustw &quot;wangiri&quot; (jeden sygnał, aby zachęcić do oddzwonienia na numer o podwyższonej opłacie). Tylko identyfikacja, połączenia nie są blokowane, ponieważ są to całe kraje, z których pochodzi też wiele legalnych połączeń.</string>
+    <string name="credits_public_domain_note">(domena publiczna)</string>
+    <string name="credits_source_community_name">Zgłoszenia użytkowników NoSpam</string>
 </resources>

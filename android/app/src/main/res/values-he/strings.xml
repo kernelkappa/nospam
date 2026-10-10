@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">מספרים שדווחו ישירות על ידי קהילת NoSpam (לפחות 5 דיווחים ממשתמשים שונים).</string>
+    <string name="credits_source_shopsicuro_desc">פרויקט MIMIT &quot;יחידת מניעת הונאות&quot; · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">רשימה פתוחה המתוחזקת על ידי הקהילה, בעריכת thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">רשימת מספרי ספאם ספרדיים, בעריכת mv12star.</string>
+    <string name="credits_source_callavert_desc">מספרי ספאם אמריקאיים שנאספו מנתוני &quot;Do Not Call&quot; הציבוריים של ה-FTC, בעריכת פרויקט Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">טווחי קידומות טלמרקטינג צרפתיות, בעריכת jeromerobert (גם מקור הנתונים של אפליקציית הקוד הפתוח NoPhoneSpam). המחבר לא הצהיר על רישיון מפורש.</string>
+    <string name="credits_source_regulatory_prefixes_desc">קידומות השמורות על פי חוק לטלמרקטינג על ידי TRAI (הודו, סדרת 140xx/1600) ו-Anatel (ברזיל, +55303). זיהוי בלבד: הן מסמנות את כל שיחות הטלמרקטינג התקינות, לא רק את המתעללות.</string>
+    <string name="credits_source_wangiri_desc">קידומות בינלאומיות המוזכרות לעיתים קרובות בדיווחים על הונאות &quot;וואנגירי&quot; (צלצול אחד שמטרתו לפתות אותך להתקשר בחזרה למספר בתעריף מיוחד). זיהוי בלבד, השיחות אינן נחסמות מכיוון שאלו מדינות שלמות עם הרבה שיחות לגיטימיות גם כן.</string>
+    <string name="credits_public_domain_note">(נחלת הכלל)</string>
+    <string name="credits_source_community_name">דיווחי משתמשי NoSpam</string>
 </resources>

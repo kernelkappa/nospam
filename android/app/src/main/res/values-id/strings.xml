@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">Nomor yang dilaporkan langsung oleh komunitas NoSpam (setidaknya 5 laporan dari pengguna berbeda).</string>
+    <string name="credits_source_shopsicuro_desc">Proyek MIMIT &quot;Tim Anti-Penipuan&quot; · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Daftar terbuka yang dikelola oleh komunitas, dikurasi oleh thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Daftar nomor spam Spanyol, dikurasi oleh mv12star.</string>
+    <string name="credits_source_callavert_desc">Nomor spam AS yang dikompilasi dari data publik &quot;Do Not Call&quot; FTC, dikurasi oleh proyek Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">Rentang prefiks telemarketing Prancis, dikurasi oleh jeromerobert (juga sumber data untuk aplikasi open source NoPhoneSpam). Tidak ada lisensi eksplisit yang dinyatakan oleh penulis.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Prefiks yang secara hukum dicadangkan untuk telemarketing oleh TRAI (India, seri 140xx/1600) dan Anatel (Brasil, +55303). Hanya identifikasi: menandai semua panggilan telemarketing yang sesuai, bukan hanya yang menyalahgunakan.</string>
+    <string name="credits_source_wangiri_desc">Prefiks internasional yang sering disebut dalam laporan penipuan &quot;wangiri&quot; (satu dering untuk memancing Anda menelepon balik ke nomor bertarif premium). Hanya identifikasi, panggilan tidak diblokir karena ini adalah seluruh negara dengan banyak panggilan sah juga.</string>
+    <string name="credits_public_domain_note">(domain publik)</string>
+    <string name="credits_source_community_name">Laporan pengguna NoSpam</string>
 </resources>

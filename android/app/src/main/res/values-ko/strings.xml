@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">NoSpam 커뮤니티가 직접 신고한 번호(다른 사용자로부터 최소 5건의 신고).</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT &quot;반사기 전담팀&quot; 프로젝트 · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">커뮤니티가 관리하는 공개 목록, thesqual87 / Kallm이 큐레이션.</string>
+    <string name="credits_source_lista_es_desc">스페인 스팸 번호 목록, mv12star가 큐레이션.</string>
+    <string name="credits_source_callavert_desc">FTC의 공개 &quot;Do Not Call&quot; 데이터에서 수집한 미국 스팸 번호, Call Avert 프로젝트가 큐레이션.</string>
+    <string name="credits_source_nophonespam_fr_desc">프랑스 텔레마케팅 접두사 범위, jeromerobert가 큐레이션(오픈소스 NoPhoneSpam 앱의 데이터 소스이기도 함). 저작자가 명시적 라이선스를 선언하지 않음.</string>
+    <string name="credits_source_regulatory_prefixes_desc">TRAI(인도, 140xx/1600 시리즈)와 Anatel(브라질, +55303)이 법적으로 텔레마케팅용으로 예약한 접두사. 식별 전용: 남용된 통화뿐 아니라 규정을 준수하는 모든 텔레마케팅 통화를 표시합니다.</string>
+    <string name="credits_source_wangiri_desc">&quot;왕기리&quot; 사기 신고에서 자주 언급되는 국제 접두사(프리미엄 요금 번호로 다시 전화하도록 유도하는 한 번의 벨소리). 식별 전용이며, 많은 정상적인 통화도 포함된 국가 전체이기 때문에 통화는 차단되지 않습니다.</string>
+    <string name="credits_public_domain_note">(퍼블릭 도메인)</string>
+    <string name="credits_source_community_name">NoSpam 사용자 신고</string>
 </resources>

@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">NoSpam ਕਮਿਊਨਿਟੀ ਦੁਆਰਾ ਸਿੱਧੇ ਰਿਪੋਰਟ ਕੀਤੇ ਨੰਬਰ (ਘੱਟੋ-ਘੱਟ 5 ਵੱਖ-ਵੱਖ ਵਰਤੋਂਕਾਰਾਂ ਤੋਂ ਰਿਪੋਰਟਾਂ)।</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT &quot;ਐਂਟੀ-ਫ੍ਰਾਡ ਸਕਵਾਡ&quot; ਪ੍ਰੋਜੈਕਟ · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">ਕਮਿਊਨਿਟੀ ਦੁਆਰਾ ਬਣਾਈ ਰੱਖੀ ਗਈ ਖੁੱਲ੍ਹੀ ਸੂਚੀ, thesqual87 / Kallm ਦੁਆਰਾ ਕਿਊਰੇਟ ਕੀਤੀ ਗਈ।</string>
+    <string name="credits_source_lista_es_desc">ਸਪੈਨਿਸ਼ ਸਪੈਮ ਨੰਬਰਾਂ ਦੀ ਸੂਚੀ, mv12star ਦੁਆਰਾ ਕਿਊਰੇਟ ਕੀਤੀ ਗਈ।</string>
+    <string name="credits_source_callavert_desc">FTC ਦੇ ਜਨਤਕ &quot;Do Not Call&quot; ਡੇਟਾ ਤੋਂ ਸੰਕਲਿਤ ਅਮਰੀਕੀ ਸਪੈਮ ਨੰਬਰ, Call Avert ਪ੍ਰੋਜੈਕਟ ਦੁਆਰਾ ਕਿਊਰੇਟ ਕੀਤੇ ਗਏ।</string>
+    <string name="credits_source_nophonespam_fr_desc">ਫ੍ਰੈਂਚ ਟੈਲੀਮਾਰਕੀਟਿੰਗ ਪ੍ਰੀਫਿਕਸ ਰੇਂਜਾਂ, jeromerobert ਦੁਆਰਾ ਕਿਊਰੇਟ ਕੀਤੀਆਂ (ਇਹ ਓਪਨ-ਸੋਰਸ NoPhoneSpam ਐਪ ਦਾ ਡੇਟਾ ਸਰੋਤ ਵੀ ਹੈ)। ਲੇਖਕ ਨੇ ਕੋਈ ਸਪਸ਼ਟ ਲਾਇਸੰਸ ਘੋਸ਼ਿਤ ਨਹੀਂ ਕੀਤਾ।</string>
+    <string name="credits_source_regulatory_prefixes_desc">TRAI (ਭਾਰਤ, 140xx/1600 ਸੀਰੀਜ਼) ਅਤੇ Anatel (ਬ੍ਰਾਜ़ੀਲ, +55303) ਦੁਆਰਾ ਕਾਨੂੰਨੀ ਤੌਰ \'ਤੇ ਟੈਲੀਮਾਰਕੀਟਿੰਗ ਲਈ ਰਾਖਵੇਂ ਪ੍ਰੀਫਿਕਸ। ਸਿਰਫ਼ ਪਛਾਣ: ਇਹ ਸਾਰੀਆਂ ਪਾਲਣਾ ਵਾਲੀਆਂ ਟੈਲੀਮਾਰਕੀਟਿੰਗ ਕਾਲਾਂ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ, ਸਿਰਫ਼ ਦੁਰਵਿਵਹਾਰ ਵਾਲੀਆਂ ਨੂੰ ਨਹੀਂ।</string>
+    <string name="credits_source_wangiri_desc">&quot;ਵਾਂਗਿਰੀ&quot; ਧੋਖਾਧੜੀ ਰਿਪੋਰਟਾਂ ਵਿੱਚ ਅਕਸਰ ਜ਼ਿਕਰ ਕੀਤੇ ਅੰਤਰਰਾਸ਼ਟਰੀ ਪ੍ਰੀਫਿਕਸ (ਇੱਕ ਘੰਟੀ ਜੋ ਤੁਹਾਨੂੰ ਪ੍ਰੀਮੀਅਮ-ਰੇਟ ਨੰਬਰ \'ਤੇ ਵਾਪਸ ਕਾਲ ਕਰਨ ਲਈ ਲੁਭਾਉਂਦੀ ਹੈ)। ਸਿਰਫ਼ ਪਛਾਣ, ਕਾਲਾਂ ਬਲੌਕ ਨਹੀਂ ਕੀਤੀਆਂ ਜਾਂਦੀਆਂ ਕਿਉਂਕਿ ਇਹ ਪੂਰੇ ਦੇਸ਼ ਹਨ ਜਿੱਥੋਂ ਬਹੁਤ ਸਾਰੀਆਂ ਜਾਇਜ਼ ਕਾਲਾਂ ਵੀ ਆਉਂਦੀਆਂ ਹਨ।</string>
+    <string name="credits_public_domain_note">(ਪਬਲਿਕ ਡੋਮੇਨ)</string>
+    <string name="credits_source_community_name">NoSpam ਵਰਤੋਂਕਾਰ ਰਿਪੋਰਟਾਂ</string>
 </resources>

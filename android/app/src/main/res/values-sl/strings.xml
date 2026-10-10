@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">Številke, ki jih je neposredno prijavila skupnost NoSpam (vsaj 5 prijav različnih uporabnikov).</string>
+    <string name="credits_source_shopsicuro_desc">Projekt MIMIT &quot;Skupina proti goljufijam&quot; · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Odprt seznam, ki ga vzdržuje skupnost, uredila thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Seznam španskih številk za neželene klice, uredil mv12star.</string>
+    <string name="credits_source_callavert_desc">Ameriške številke neželenih klicev, zbrane iz javnih podatkov FTC &quot;Do Not Call&quot;, uredil projekt Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">Razponi francoskih telemarketinških predpon, uredil jeromerobert (prav tako vir podatkov za odprtokodno aplikacijo NoPhoneSpam). Avtor ni navedel izrecne licence.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Predpone, ki so po zakonu rezervirane za telemarketing s strani TRAI (Indija, serija 140xx/1600) in Anatel (Brazilija, +55303). Samo identifikacija: označujejo vse skladne klice za telemarketing, ne le zlorabljajoče.</string>
+    <string name="credits_source_wangiri_desc">Mednarodne predpone, ki so pogosto omenjene v poročilih o goljufijah &quot;wangiri&quot; (en zvonjenje, ki vas zvabi, da pokličete nazaj na številko s posebno tarifo). Samo identifikacija, klici niso blokirani, ker gre za cele države s številnimi zakonitimi klici.</string>
+    <string name="credits_public_domain_note">(javna domena)</string>
+    <string name="credits_source_community_name">Prijave uporabnikov NoSpam</string>
 </resources>

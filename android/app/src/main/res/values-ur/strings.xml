@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">NoSpam کمیونٹی کی طرف سے براہ راست رپورٹ کیے گئے نمبرز (مختلف صارفین کی طرف سے کم از کم 5 رپورٹس)۔</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT &quot;اینٹی فراڈ سکواڈ&quot; پراجیکٹ · Federazione iConsumatori۔</string>
+    <string name="credits_source_blocklist_it_desc">کمیونٹی کی طرف سے برقرار رکھی گئی اوپن لسٹ، thesqual87 / Kallm کی کیوریشن۔</string>
+    <string name="credits_source_lista_es_desc">ہسپانوی اسپیم نمبرز کی فہرست، mv12star کی کیوریشن۔</string>
+    <string name="credits_source_callavert_desc">FTC کے عوامی &quot;Do Not Call&quot; ڈیٹا سے مرتب کردہ امریکی اسپیم نمبرز، Call Avert پراجیکٹ کی کیوریشن۔</string>
+    <string name="credits_source_nophonespam_fr_desc">فرانسیسی ٹیلی مارکیٹنگ پریفکس رینجز، jeromerobert کی کیوریشن (یہ اوپن سورس NoPhoneSpam ایپ کا ڈیٹا ماخذ بھی ہے)۔ مصنف نے کوئی واضح لائسنس اعلان نہیں کیا۔</string>
+    <string name="credits_source_regulatory_prefixes_desc">TRAI (بھارت، سیریز 140xx/1600) اور Anatel (برازیل، +55303) کی طرف سے قانونی طور پر ٹیلی مارکیٹنگ کے لیے مخصوص پریفکسز۔ صرف شناخت: یہ تمام قانون کے مطابق ٹیلی مارکیٹنگ کالز کی نشاندہی کرتا ہے، نہ صرف بدسلوکی والی کالز کی۔</string>
+    <string name="credits_source_wangiri_desc">&quot;وانگیری&quot; فراڈ رپورٹس میں اکثر ذکر کردہ بین الاقوامی پریفکسز (ایک گھنٹی جو آپ کو پریمیم ریٹ نمبر پر کال بیک کرنے کے لیے للچاتی ہے)۔ صرف شناخت، کالز بلاک نہیں کی جاتیں کیونکہ یہ پوری قومیں ہیں جہاں سے بہت سی جائز کالز بھی آتی ہیں۔</string>
+    <string name="credits_public_domain_note">(پبلک ڈومین)</string>
+    <string name="credits_source_community_name">NoSpam صارف رپورٹس</string>
 </resources>

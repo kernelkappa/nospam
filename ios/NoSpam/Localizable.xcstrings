@@ -17262,6 +17262,2472 @@
           }
         }
       }
+    },
+    "settings.language.description": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Scegli la lingua dell'app, indipendentemente da quella del telefono."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choose the app's language, independently of your phone's."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Elige el idioma de la app, independientemente del de tu teléfono."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Choisissez la langue de l'application, indépendamment de celle du téléphone."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wähle die Sprache der App, unabhängig von der deines Telefons."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolha o idioma da app, independentemente do idioma do telefone."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Escolha o idioma do app, independentemente do idioma do celular."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اختر لغة التطبيق، بشكل مستقل عن لغة هاتفك."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ফোনের ভাষা থেকে স্বতন্ত্রভাবে অ্যাপের ভাষা বেছে নিন।"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tria l'idioma de l'app, independentment del del telèfon."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "选择应用的语言，与手机语言无关。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "選擇應用程式的語言，與手機語言無關。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odaberite jezik aplikacije, nezavisno od jezika telefona."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyberte jazyk aplikace nezávisle na jazyku telefonu."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vælg appens sprog, uafhængigt af telefonens."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kies de taal van de app, onafhankelijk van die van je telefoon."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Valitse sovelluksen kieli puhelimen kielestä riippumatta."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Επιλέξτε τη γλώσσα της εφαρμογής, ανεξάρτητα από αυτή του τηλεφώνου σας."
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ફોનની ભાષાથી સ્વતંત્ર રીતે, એપની ભાષા પસંદ કરો."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "בחר את שפת האפליקציה, ללא קשר לשפת הטלפון."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "फ़ोन की भाषा से स्वतंत्र, ऐप की भाषा चुनें।"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Válassza ki az alkalmazás nyelvét, a telefon nyelvétől függetlenül."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pilih bahasa aplikasi, terlepas dari bahasa ponsel Anda."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "端末の言語に関係なく、アプリの言語を選択します。"
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ಫೋನ್‌ನ ಭಾಷೆಯಿಂದ ಸ್ವತಂತ್ರವಾಗಿ, ಅಪ್ಲಿಕೇಶನ್‌ನ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "휴대폰 언어와 관계없이 앱의 언어를 선택하세요."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pilih bahasa aplikasi, tanpa mengira bahasa telefon anda."
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ഫോണിന്റെ ഭാഷയിൽ നിന്ന് സ്വതന്ത്രമായി, ആപ്പിന്റെ ഭാഷ തിരഞ്ഞെടുക്കുക."
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "फोनच्या भाषेपासून स्वतंत्रपणे, अ‍ॅपची भाषा निवडा."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Velg appens språk, uavhengig av telefonens."
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ଫୋନ୍‌ର ଭାଷାରୁ ସ୍ୱତନ୍ତ୍ର ଭାବରେ, ଆପ୍‌ର ଭାଷା ଚୟନ କରନ୍ତୁ।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wybierz język aplikacji, niezależnie od języka telefonu."
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ਫ਼ੋਨ ਦੀ ਭਾਸ਼ਾ ਤੋਂ ਸੁਤੰਤਰ, ਐਪ ਦੀ ਭਾਸ਼ਾ ਚੁਣੋ।"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alegeți limba aplicației, independent de cea a telefonului."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Выберите язык приложения независимо от языка телефона."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vyberte jazyk aplikácie nezávisle od jazyka telefónu."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Izberite jezik aplikacije, ne glede na jezik telefona."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Välj appens språk, oberoende av telefonens."
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "தொலைபேசியின் மொழியைப் பொருட்படுத்தாமல், பயன்பாட்டின் மொழியைத் தேர்ந்தெடுக்கவும்."
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ఫోన్ భాషతో సంబంధం లేకుండా, యాప్ భాషను ఎంచుకోండి."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เลือกภาษาของแอป โดยไม่ขึ้นกับภาษาของโทรศัพท์"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Telefonun dilinden bağımsız olarak uygulamanın dilini seçin."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Виберіть мову програми незалежно від мови телефону."
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "فون کی زبان سے قطع نظر، ایپ کی زبان منتخب کریں۔"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chọn ngôn ngữ của ứng dụng, độc lập với ngôn ngữ của điện thoại."
+          }
+        }
+      }
+    },
+    "settings.language.automatic": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatica (lingua del telefono)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatic (phone language)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automático (idioma del teléfono)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatique (langue du téléphone)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatisch (Telefonsprache)"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automático (idioma do telefone)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automático (idioma do celular)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تلقائي (لغة الهاتف)"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "স্বয়ংক্রিয় (ফোনের ভাষা)"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automàtic (idioma del telèfon)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自动（手机语言）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動（手機語言）"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatski (jezik telefona)"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticky (jazyk telefonu)"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatisk (telefonens sprog)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatisch (taal van telefoon)"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaattinen (puhelimen kieli)"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αυτόματα (γλώσσα τηλεφώνου)"
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "સ્વચાલિત (ફોનની ભાષા)"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "אוטומטי (שפת הטלפון)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "स्वचालित (फ़ोन की भाषा)"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatikus (telefon nyelve)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otomatis (bahasa ponsel)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "自動（端末の言語）"
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ಸ್ವಯಂಚಾಲಿತ (ಫೋನ್‌ನ ಭಾಷೆ)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 (휴대폰 언어)"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatik (bahasa telefon)"
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ഓട്ടോമാറ്റിക് (ഫോണിന്റെ ഭാഷ)"
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "स्वयंचलित (फोनची भाषा)"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatisk (telefonens språk)"
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ସ୍ୱୟଂଚାଳିତ (ଫୋନ୍‌ର ଭାଷା)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatyczny (język telefonu)"
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ਆਟੋਮੈਟਿਕ (ਫ਼ੋਨ ਦੀ ਭਾਸ਼ਾ)"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automat (limba telefonului)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматически (язык телефона)"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automaticky (jazyk telefónu)"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Samodejno (jezik telefona)"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Automatiskt (telefonens språk)"
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "தானியங்கி (தொலைபேசியின் மொழி)"
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "స్వయంచాలకం (ఫోన్ భాష)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "อัตโนมัติ (ภาษาของโทรศัพท์)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otomatik (telefon dili)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Автоматично (мова телефону)"
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "خودکار (فون کی زبان)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tự động (ngôn ngữ của điện thoại)"
+          }
+        }
+      }
+    },
+    "credits.source.community.description": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numeri segnalati direttamente dalla community di NoSpam (almeno 5 segnalazioni da utenti diversi)."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numbers reported directly by the NoSpam community (at least 5 reports from different users)."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Números señalados directamente por la comunidad de NoSpam (al menos 5 denuncias de usuarios distintos)."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numéros signalés directement par la communauté NoSpam (au moins 5 signalements d'utilisateurs différents)."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Von der NoSpam-Community direkt gemeldete Nummern (mindestens 5 Meldungen von verschiedenen Nutzern)."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Números comunicados diretamente pela comunidade NoSpam (pelo menos 5 denúncias de utilizadores diferentes)."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Números reportados diretamente pela comunidade NoSpam (pelo menos 5 denúncias de usuários diferentes)."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أرقام أبلغت عنها مباشرة مجتمع NoSpam (5 بلاغات على الأقل من مستخدمين مختلفين)."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam কমিউনিটি দ্বারা সরাসরি রিপোর্ট করা নম্বর (বিভিন্ন ব্যবহারকারীর কাছ থেকে কমপক্ষে ৫টি রিপোর্ট)।"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Números denunciats directament per la comunitat de NoSpam (almenys 5 denúncies d'usuaris diferents)."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "由 NoSpam 社区直接举报的号码（至少来自 5 个不同用户的举报）。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "由 NoSpam 社群直接檢舉的號碼（至少來自 5 位不同使用者的檢舉）。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Brojevi koje je izravno prijavila zajednica NoSpam (najmanje 5 prijava različitih korisnika)."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čísla nahlášená přímo komunitou NoSpam (alespoň 5 nahlášení od různých uživatelů)."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numre rapporteret direkte af NoSpam-fællesskabet (mindst 5 rapporter fra forskellige brugere)."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nummers die rechtstreeks zijn gemeld door de NoSpam-community (minstens 5 meldingen van verschillende gebruikers)."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam-yhteisön suoraan ilmoittamat numerot (vähintään 5 ilmoitusta eri käyttäjiltä)."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αριθμοί που αναφέρθηκαν απευθείας από την κοινότητα του NoSpam (τουλάχιστον 5 αναφορές από διαφορετικούς χρήστες)."
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam સમુદાય દ્વારા સીધા જ રિપોર્ટ કરાયેલા નંબરો (ઓછામાં ઓછા 5 અલગ-અલગ વપરાશકર્તાઓ તરફથી રિપોર્ટ)."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מספרים שדווחו ישירות על ידי קהילת NoSpam (לפחות 5 דיווחים ממשתמשים שונים)."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam समुदाय द्वारा सीधे रिपोर्ट किए गए नंबर (कम से कम 5 अलग-अलग उपयोगकर्ताओं से रिपोर्ट)।"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A NoSpam közössége által közvetlenül jelentett számok (legalább 5 jelentés különböző felhasználóktól)."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nomor yang dilaporkan langsung oleh komunitas NoSpam (setidaknya 5 laporan dari pengguna berbeda)."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpamコミュニティが直接報告した番号（異なるユーザーから少なくとも5件の報告）。"
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam ಸಮುದಾಯವು ನೇರವಾಗಿ ವರದಿ ಮಾಡಿದ ಸಂಖ್ಯೆಗಳು (ಕನಿಷ್ಠ 5 ವಿಭಿನ್ನ ಬಳಕೆದಾರರಿಂದ ವರದಿಗಳು)."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam 커뮤니티가 직접 신고한 번호(다른 사용자로부터 최소 5건의 신고)."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombor yang dilaporkan terus oleh komuniti NoSpam (sekurang-kurangnya 5 laporan daripada pengguna berbeza)."
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam കമ്മ്യൂണിറ്റി നേരിട്ട് റിപ്പോർട്ട് ചെയ്ത നമ്പറുകൾ (വ്യത്യസ്ത ഉപയോക്താക്കളിൽ നിന്ന് കുറഞ്ഞത് 5 റിപ്പോർട്ടുകൾ)."
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam समुदायाने थेट नोंदवलेले क्रमांक (किमान ५ वेगवेगळ्या वापरकर्त्यांकडून तक्रारी)."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numre rapportert direkte av NoSpam-fellesskapet (minst 5 rapporter fra forskjellige brukere)."
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam ସମ୍ପ୍ରଦାୟ ଦ୍ୱାରା ସିଧାସଳଖ ରିପୋର୍ଟ କରାଯାଇଥିବା ନମ୍ବରଗୁଡ଼ିକ (ଅତି କମରେ 5ଟି ଭିନ୍ନ ଉପଯୋଗକର୍ତ୍ତାଙ୍କ ରିପୋର୍ଟ)।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numery zgłoszone bezpośrednio przez społeczność NoSpam (co najmniej 5 zgłoszeń od różnych użytkowników)."
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam ਕਮਿਊਨਿਟੀ ਦੁਆਰਾ ਸਿੱਧੇ ਰਿਪੋਰਟ ਕੀਤੇ ਨੰਬਰ (ਘੱਟੋ-ਘੱਟ 5 ਵੱਖ-ਵੱਖ ਵਰਤੋਂਕਾਰਾਂ ਤੋਂ ਰਿਪੋਰਟਾਂ)।"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numere raportate direct de comunitatea NoSpam (cel puțin 5 raportări de la utilizatori diferiți)."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Номера, напрямую сообщённые сообществом NoSpam (не менее 5 жалоб от разных пользователей)."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Čísla nahlásené priamo komunitou NoSpam (aspoň 5 nahlásení od rôznych používateľov)."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Številke, ki jih je neposredno prijavila skupnost NoSpam (vsaj 5 prijav različnih uporabnikov)."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nummer rapporterade direkt av NoSpam-communityn (minst 5 rapporter från olika användare)."
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam சமூகத்தால் நேரடியாக புகாரளிக்கப்பட்ட எண்கள் (வெவ்வேறு பயனர்களிடமிருந்து குறைந்தது 5 புகார்கள்)."
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam కమ్యూనిటీ ద్వారా నేరుగా నివేదించబడిన నంబర్లు (వేర్వేరు వినియోగదారుల నుండి కనీసం 5 నివేదికలు)."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "หมายเลขที่รายงานโดยตรงจากชุมชน NoSpam (รายงานอย่างน้อย 5 ครั้งจากผู้ใช้ที่แตกต่างกัน)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam topluluğu tarafından doğrudan bildirilen numaralar (farklı kullanıcılardan en az 5 bildirim)."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Номери, про які напряму повідомила спільнота NoSpam (щонайменше 5 повідомлень від різних користувачів)."
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam کمیونٹی کی طرف سے براہ راست رپورٹ کیے گئے نمبرز (مختلف صارفین کی طرف سے کم از کم 5 رپورٹس)۔"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Số điện thoại được cộng đồng NoSpam báo cáo trực tiếp (ít nhất 5 báo cáo từ người dùng khác nhau)."
+          }
+        }
+      }
+    },
+    "credits.source.shopsicuro.description": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Progetto MIMIT \"Squadra Antifrode\" · Federazione iConsumatori."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"Anti-Fraud Squad\" project · Federazione iConsumatori."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proyecto MIMIT \"Equipo Antifraude\" · Federazione iConsumatori."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projet MIMIT « Équipe antifraude » · Federazione iConsumatori."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT-Projekt „Betrugsbekämpfungsteam“ · Federazione iConsumatori."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projeto MIMIT \"Equipa Antifraude\" · Federazione iConsumatori."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projeto MIMIT \"Equipe Antifraude\" · Federazione iConsumatori."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "مشروع MIMIT \"فرقة مكافحة الاحتيال\" · Federazione iConsumatori."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"অ্যান্টি-ফ্রড স্কোয়াড\" প্রকল্প · Federazione iConsumatori."
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projecte MIMIT \"Equip Antifrau\" · Federazione iConsumatori."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT「反欺诈小组」项目 · Federazione iConsumatori。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT「反詐騙小組」計畫 · Federazione iConsumatori。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projekt MIMIT \"Tim protiv prijevara\" · Federazione iConsumatori."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projekt MIMIT „Protipodvodný tým“ · Federazione iConsumatori."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT-projektet \"Anti-svindel-hold\" · Federazione iConsumatori."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT-project \"Anti-fraudeteam\" · Federazione iConsumatori."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"Petostentorjuntaryhmä\" -hanke · Federazione iConsumatori."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Έργο MIMIT «Ομάδα κατά της απάτης» · Federazione iConsumatori."
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"એન્ટી-ફ્રોડ સ્ક્વોડ\" પ્રોજેક્ટ · Federazione iConsumatori."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "פרויקט MIMIT \"יחידת מניעת הונאות\" · Federazione iConsumatori."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"एंटी-फ्रॉड स्क्वाड\" परियोजना · Federazione iConsumatori."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT „Csalásellenes csoport” projekt · Federazione iConsumatori."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proyek MIMIT \"Tim Anti-Penipuan\" · Federazione iConsumatori."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT「詐欺対策チーム」プロジェクト · Federazione iConsumatori。"
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"ವಂಚನೆ ವಿರೋಧಿ ತಂಡ\" ಯೋಜನೆ · Federazione iConsumatori."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"반사기 전담팀\" 프로젝트 · Federazione iConsumatori."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projek MIMIT \"Skuad Anti-Penipuan\" · Federazione iConsumatori."
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"ആന്റി-ഫ്രോഡ് സ്ക്വാഡ്\" പ്രോജക്റ്റ് · Federazione iConsumatori."
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"अँटी-फ्रॉड स्क्वॉड\" प्रकल्प · Federazione iConsumatori."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT-prosjektet \"Anti-svindel-teamet\" · Federazione iConsumatori."
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"ଆଣ୍ଟି-ଫ୍ରଡ୍ ସ୍କ୍ୱାଡ୍\" ପ୍ରୋଜେକ୍ଟ · Federazione iConsumatori।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projekt MIMIT „Zespół antyoszustwowy” · Federazione iConsumatori."
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"ਐਂਟੀ-ਫ੍ਰਾਡ ਸਕਵਾਡ\" ਪ੍ਰੋਜੈਕਟ · Federazione iConsumatori."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Proiectul MIMIT „Echipa anti-fraudă” · Federazione iConsumatori."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проект MIMIT «Группа по борьбе с мошенничеством» · Federazione iConsumatori."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projekt MIMIT „Protipodvodný tím“ · Federazione iConsumatori."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Projekt MIMIT \"Skupina proti goljufijam\" · Federazione iConsumatori."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT-projektet \"Anti-bedrägeriteamet\" · Federazione iConsumatori."
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"மோசடி எதிர்ப்பு குழு\" திட்டம் · Federazione iConsumatori."
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"మోసం నిరోధక బృందం\" ప్రాజెక్ట్ · Federazione iConsumatori."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "โครงการ MIMIT \"ทีมต่อต้านการฉ้อโกง\" · Federazione iConsumatori"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"Dolandırıcılıkla Mücadele Ekibi\" projesi · Federazione iConsumatori."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Проєкт MIMIT «Команда проти шахрайства» · Federazione iConsumatori."
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "MIMIT \"اینٹی فراڈ سکواڈ\" پراجیکٹ · Federazione iConsumatori۔"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dự án MIMIT \"Đội chống lừa đảo\" · Federazione iConsumatori."
+          }
+        }
+      }
+    },
+    "credits.source.blocklistIt.description": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lista aperta e mantenuta dalla community, a cura di thesqual87 / Kallm."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open list maintained by the community, curated by thesqual87 / Kallm."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lista abierta mantenida por la comunidad, a cargo de thesqual87 / Kallm."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste ouverte maintenue par la communauté, gérée par thesqual87 / Kallm."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Offene, von der Community gepflegte Liste, kuratiert von thesqual87 / Kallm."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lista aberta mantida pela comunidade, com curadoria de thesqual87 / Kallm."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lista aberta mantida pela comunidade, com curadoria de thesqual87 / Kallm."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قائمة مفتوحة يحافظ عليها المجتمع، من إعداد thesqual87 / Kallm."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "কমিউনিটি দ্বারা পরিচালিত উন্মুক্ত তালিকা, কিউরেট করেছেন thesqual87 / Kallm।"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Llista oberta mantinguda per la comunitat, a cura de thesqual87 / Kallm."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "由社区维护的开放列表，由 thesqual87 / Kallm 策划。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "由社群維護的開放清單，由 thesqual87 / Kallm 策劃。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otvoreni popis koji održava zajednica, uređuju thesqual87 / Kallm."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otevřený seznam udržovaný komunitou, kurátoři thesqual87 / Kallm."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Åben liste vedligeholdt af fællesskabet, kurateret af thesqual87 / Kallm."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open lijst onderhouden door de community, samengesteld door thesqual87 / Kallm."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yhteisön ylläpitämä avoin luettelo, kuratoinut thesqual87 / Kallm."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ανοιχτή λίστα που συντηρείται από την κοινότητα, επιμέλεια thesqual87 / Kallm."
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "સમુદાય દ્વારા જાળવવામાં આવેલી ઓપન લિસ્ટ, thesqual87 / Kallm દ્વારા ક્યુરેટેડ."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "רשימה פתוחה המתוחזקת על ידי הקהילה, בעריכת thesqual87 / Kallm."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "समुदाय द्वारा बनाई रखी गई ओपन लिस्ट, thesqual87 / Kallm द्वारा क्यूरेट की गई।"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A közösség által fenntartott nyílt lista, thesqual87 / Kallm szerkesztésében."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daftar terbuka yang dikelola oleh komunitas, dikurasi oleh thesqual87 / Kallm."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "コミュニティによって維持されているオープンリスト。thesqual87 / Kallmによるキュレーション。"
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ಸಮುದಾಯದಿಂದ ನಿರ್ವಹಿಸಲ್ಪಡುವ ಮುಕ್ತ ಪಟ್ಟಿ, thesqual87 / Kallm ಇವರಿಂದ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "커뮤니티가 관리하는 공개 목록, thesqual87 / Kallm이 큐레이션."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Senarai terbuka yang diselenggara oleh komuniti, dikuratori oleh thesqual87 / Kallm."
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "കമ്മ്യൂണിറ്റി പരിപാലിക്കുന്ന ഓപ്പൺ ലിസ്റ്റ്, thesqual87 / Kallm ക്യൂറേറ്റ് ചെയ്തത്."
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "समुदायाने सांभाळलेली खुली यादी, thesqual87 / Kallm यांनी क्युरेट केलेली."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Åpen liste vedlikeholdt av fellesskapet, kuratert av thesqual87 / Kallm."
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ସମ୍ପ୍ରଦାୟ ଦ୍ୱାରା ପରିଚାଳିତ ମୁକ୍ତ ତାଲିକା, thesqual87 / Kallm ଦ୍ୱାରା କ୍ୟୁରେଟ୍ କରାଯାଇଛି।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otwarta lista prowadzona przez społeczność, pod kuratelą thesqual87 / Kallm."
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ਕਮਿਊਨਿਟੀ ਦੁਆਰਾ ਬਣਾਈ ਰੱਖੀ ਗਈ ਖੁੱਲ੍ਹੀ ਸੂਚੀ, thesqual87 / Kallm ਦੁਆਰਾ ਕਿਊਰੇਟ ਕੀਤੀ ਗਈ।"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listă deschisă întreținută de comunitate, curatoriată de thesqual87 / Kallm."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открытый список, поддерживаемый сообществом, курируется thesqual87 / Kallm."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otvorený zoznam udržiavaný komunitou, kurátori thesqual87 / Kallm."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odprt seznam, ki ga vzdržuje skupnost, uredila thesqual87 / Kallm."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öppen lista som underhålls av communityn, kurerad av thesqual87 / Kallm."
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "சமூகத்தால் பராமரிக்கப்படும் திறந்த பட்டியல், thesqual87 / Kallm ஆல் தொகுக்கப்பட்டது."
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "కమ్యూనిటీ నిర్వహించే ఓపెన్ లిస్ట్, thesqual87 / Kallm క్యురేట్ చేశారు."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "รายการแบบเปิดที่ดูแลโดยชุมชน จัดทำโดย thesqual87 / Kallm"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Topluluk tarafından sürdürülen açık liste, thesqual87 / Kallm tarafından düzenlenmiştir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Відкритий список, який підтримує спільнота, курує thesqual87 / Kallm."
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "کمیونٹی کی طرف سے برقرار رکھی گئی اوپن لسٹ، thesqual87 / Kallm کی کیوریشن۔"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Danh sách mở do cộng đồng duy trì, biên tập bởi thesqual87 / Kallm."
+          }
+        }
+      }
+    },
+    "credits.source.listaEs.description": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lista di numeri spam spagnoli, a cura di mv12star."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "List of Spanish spam numbers, curated by mv12star."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lista de números spam españoles, a cargo de mv12star."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste de numéros indésirables espagnols, gérée par mv12star."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste spanischer Spam-Nummern, kuratiert von mv12star."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lista de números de spam espanhóis, com curadoria de mv12star."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lista de números de spam espanhóis, com curadoria de mv12star."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "قائمة أرقام السبام الإسبانية، من إعداد mv12star."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "স্প্যানিশ স্প্যাম নম্বরের তালিকা, কিউরেট করেছেন mv12star।"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Llista de números de spam espanyols, a cura de mv12star."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "西班牙垃圾号码列表，由 mv12star 策划。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "西班牙垃圾號碼清單，由 mv12star 策劃。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Popis španjolskih spam brojeva, uređuje mv12star."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seznam španělských spamových čísel, kurátor mv12star."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste over spanske spam-numre, kurateret af mv12star."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lijst met Spaanse spamnummers, samengesteld door mv12star."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Luettelo espanjalaisista roskapuhelunumeroista, kuratoinut mv12star."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Λίστα ισπανικών αριθμών ανεπιθύμητων κλήσεων, επιμέλεια mv12star."
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "સ્પેનિશ સ્પામ નંબરોની સૂચિ, mv12star દ્વારા ક્યુરેટેડ."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "רשימת מספרי ספאם ספרדיים, בעריכת mv12star."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "स्पेनिश स्पैम नंबरों की सूची, mv12star द्वारा क्यूरेट की गई।"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spanyol spam számok listája, mv12star szerkesztésében."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Daftar nomor spam Spanyol, dikurasi oleh mv12star."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "スペインのスパム番号リスト。mv12starによるキュレーション。"
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ಸ್ಪ್ಯಾನಿಷ್ ಸ್ಪ್ಯಾಮ್ ಸಂಖ್ಯೆಗಳ ಪಟ್ಟಿ, mv12star ಇವರಿಂದ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "스페인 스팸 번호 목록, mv12star가 큐레이션."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Senarai nombor spam Sepanyol, dikuratori oleh mv12star."
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "സ്പാനിഷ് സ്പാം നമ്പറുകളുടെ ലിസ്റ്റ്, mv12star ക്യൂറേറ്റ് ചെയ്തത്."
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "स्पॅनिश स्पॅम क्रमांकांची यादी, mv12star यांनी क्युरेट केलेली."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Liste over spanske spam-numre, kuratert av mv12star."
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ସ୍ପାନିସ୍ ସ୍ପାମ ନମ୍ବରଗୁଡ଼ିକର ତାଲିକା, mv12star ଦ୍ୱାରା କ୍ୟୁରେଟ୍ କରାଯାଇଛି।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lista hiszpańskich numerów spamowych, pod kuratelą mv12star."
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ਸਪੈਨਿਸ਼ ਸਪੈਮ ਨੰਬਰਾਂ ਦੀ ਸੂਚੀ, mv12star ਦੁਆਰਾ ਕਿਊਰੇਟ ਕੀਤੀ ਗਈ।"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Listă de numere de spam spaniole, curatoriată de mv12star."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Список испанских спам-номеров, курируется mv12star."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zoznam španielskych spamových čísel, kurátor mv12star."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seznam španskih številk za neželene klice, uredil mv12star."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lista över spanska spamnummer, kurerad av mv12star."
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ஸ்பானிஷ் ஸ்பாம் எண்களின் பட்டியல், mv12star ஆல் தொகுக்கப்பட்டது."
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "స్పానిష్ స్పామ్ నంబర్ల జాబితా, mv12star క్యురేట్ చేశారు."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "รายการหมายเลขสแปมของสเปน จัดทำโดย mv12star"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İspanyol spam numaraları listesi, mv12star tarafından düzenlenmiştir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Список іспанських спам-номерів, курує mv12star."
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ہسپانوی اسپیم نمبرز کی فہرست، mv12star کی کیوریشن۔"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Danh sách số spam Tây Ban Nha, biên tập bởi mv12star."
+          }
+        }
+      }
+    },
+    "credits.source.callavert.description": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numeri spam statunitensi compilati dai dati pubblici \"Do Not Call\" della FTC, a cura del progetto Call Avert."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "US spam numbers compiled from the FTC's public \"Do Not Call\" data, curated by the Call Avert project."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Números spam estadounidenses compilados a partir de los datos públicos \"Do Not Call\" de la FTC, a cargo del proyecto Call Avert."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numéros indésirables américains compilés à partir des données publiques « Do Not Call » de la FTC, gérés par le projet Call Avert."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "US-Spam-Nummern, zusammengestellt aus den öffentlichen „Do Not Call“-Daten der FTC, kuratiert vom Call-Avert-Projekt."
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Números de spam dos EUA compilados a partir dos dados públicos \"Do Not Call\" da FTC, com curadoria do projeto Call Avert."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Números de spam dos EUA compilados a partir dos dados públicos \"Do Not Call\" da FTC, com curadoria do projeto Call Avert."
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "أرقام سبام أمريكية مُجمَّعة من بيانات \"عدم الاتصال\" العامة الصادرة عن FTC، من إعداد مشروع Call Avert."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC-এর সরকারি \"Do Not Call\" ডেটা থেকে সংকলিত মার্কিন স্প্যাম নম্বর, Call Avert প্রকল্প দ্বারা কিউরেট করা।"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Números de spam dels EUA compilats a partir de les dades públiques \"Do Not Call\" de la FTC, a cura del projecte Call Avert."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "根据美国联邦贸易委员会（FTC）公开的「请勿致电」数据汇编的美国垃圾号码，由 Call Avert 项目策划。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "根據美國聯邦貿易委員會（FTC）公開的「請勿來電」資料彙編的美國垃圾號碼，由 Call Avert 計畫策劃。"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Američki spam brojevi prikupljeni iz javnih podataka \"Do Not Call\" FTC-a, uređuje projekt Call Avert."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Americká spamová čísla sestavená z veřejných dat FTC „Do Not Call“, kurátor projektu Call Avert."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amerikanske spam-numre udarbejdet fra FTC's offentlige \"Do Not Call\"-data, kurateret af Call Avert-projektet."
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amerikaanse spamnummers samengesteld uit de openbare \"Do Not Call\"-gegevens van de FTC, samengesteld door het Call Avert-project."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yhdysvaltalaiset roskapuhelunumerot koottu FTC:n julkisista \"Do Not Call\" -tiedoista, kuratoinut Call Avert -hanke."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αμερικανικοί αριθμοί ανεπιθύμητων κλήσεων που συγκεντρώθηκαν από τα δημόσια δεδομένα «Do Not Call» της FTC, επιμέλεια του έργου Call Avert."
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC ના જાહેર \"Do Not Call\" ડેટા પરથી સંકલિત યુએસ સ્પામ નંબરો, Call Avert પ્રોજેક્ટ દ્વારા ક્યુરેટેડ."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "מספרי ספאם אמריקאיים שנאספו מנתוני \"Do Not Call\" הציבוריים של ה-FTC, בעריכת פרויקט Call Avert."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC के सार्वजनिक \"Do Not Call\" डेटा से संकलित अमेरिकी स्पैम नंबर, Call Avert परियोजना द्वारा क्यूरेट किए गए।"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az FTC nyilvános „Do Not Call” adataiból összeállított amerikai spam számok, a Call Avert projekt szerkesztésében."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nomor spam AS yang dikompilasi dari data publik \"Do Not Call\" FTC, dikurasi oleh proyek Call Avert."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTCの公開「Do Not Call」データから編集された米国のスパム番号。Call Avertプロジェクトによるキュレーション。"
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC ಯ ಸಾರ್ವಜನಿಕ \"Do Not Call\" ಡೇಟಾದಿಂದ ಸಂಗ್ರಹಿಸಲಾದ US ಸ್ಪ್ಯಾಮ್ ಸಂಖ್ಯೆಗಳು, Call Avert ಯೋಜನೆಯಿಂದ ಸಂಗ್ರಹಿಸಲಾಗಿದೆ."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC의 공개 \"Do Not Call\" 데이터에서 수집한 미국 스팸 번호, Call Avert 프로젝트가 큐레이션."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nombor spam AS yang dikumpulkan daripada data awam \"Do Not Call\" FTC, dikuratori oleh projek Call Avert."
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC യുടെ പൊതു \"Do Not Call\" ഡാറ്റയിൽ നിന്ന് സമാഹരിച്ച യുഎസ് സ്പാം നമ്പറുകൾ, Call Avert പ്രോജക്റ്റ് ക്യൂറേറ്റ് ചെയ്തത്."
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC च्या सार्वजनिक \"Do Not Call\" डेटावरून संकलित केलेले अमेरिकी स्पॅम क्रमांक, Call Avert प्रकल्पाने क्युरेट केलेले."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amerikanske spam-numre samlet fra FTCs offentlige \"Do Not Call\"-data, kuratert av Call Avert-prosjektet."
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC ର ସାର୍ବଜନୀନ \"Do Not Call\" ତଥ୍ୟରୁ ସଂକଳିତ ଆମେରିକୀୟ ସ୍ପାମ ନମ୍ବରଗୁଡ଼ିକ, Call Avert ପ୍ରୋଜେକ୍ଟ ଦ୍ୱାରା କ୍ୟୁରେଟ୍ କରାଯାଇଛି।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amerykańskie numery spamowe zestawione z publicznych danych FTC „Do Not Call”, pod kuratelą projektu Call Avert."
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC ਦੇ ਜਨਤਕ \"Do Not Call\" ਡੇਟਾ ਤੋਂ ਸੰਕਲਿਤ ਅਮਰੀਕੀ ਸਪੈਮ ਨੰਬਰ, Call Avert ਪ੍ਰੋਜੈਕਟ ਦੁਆਰਾ ਕਿਊਰੇਟ ਕੀਤੇ ਗਏ।"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Numere de spam din SUA compilate din datele publice „Do Not Call” ale FTC, curatoriate de proiectul Call Avert."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Американские спам-номера, составленные из публичных данных FTC «Do Not Call», курируется проектом Call Avert."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Americké spamové čísla zostavené z verejných údajov FTC „Do Not Call“, kurátor projektu Call Avert."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ameriške številke neželenih klicev, zbrane iz javnih podatkov FTC \"Do Not Call\", uredil projekt Call Avert."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Amerikanska spamnummer sammanställda från FTC:s offentliga \"Do Not Call\"-data, kurerad av Call Avert-projektet."
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC இன் பொது \"Do Not Call\" தரவிலிருந்து தொகுக்கப்பட்ட அமெரிக்க ஸ்பாம் எண்கள், Call Avert திட்டத்தால் தொகுக்கப்பட்டது."
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC పబ్లిక్ \"Do Not Call\" డేటా నుండి సంకలనం చేసిన US స్పామ్ నంబర్లు, Call Avert ప్రాజెక్ట్ క్యురేట్ చేసింది."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "หมายเลขสแปมของสหรัฐฯ ที่รวบรวมจากข้อมูลสาธารณะ \"Do Not Call\" ของ FTC จัดทำโดยโครงการ Call Avert"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC'nin kamuya açık \"Do Not Call\" verilerinden derlenen ABD spam numaraları, Call Avert projesi tarafından düzenlenmiştir."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Американські спам-номери, зібрані з публічних даних FTC «Do Not Call», курує проєкт Call Avert."
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "FTC کے عوامی \"Do Not Call\" ڈیٹا سے مرتب کردہ امریکی اسپیم نمبرز، Call Avert پراجیکٹ کی کیوریشن۔"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Số spam Mỹ được tổng hợp từ dữ liệu công khai \"Do Not Call\" của FTC, biên tập bởi dự án Call Avert."
+          }
+        }
+      }
+    },
+    "credits.publicDomainNote": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(dominio pubblico)"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(public domain)"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(dominio público)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(domaine public)"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(gemeinfrei)"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(domínio público)"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(domínio público)"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(ملكية عامة)"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(পাবলিক ডোমেইন)"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(domini públic)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "（公共领域）"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "（公眾領域）"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(javna domena)"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(veřejná doména)"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(offentligt domæne)"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(publiek domein)"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(julkinen käyttö)"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(δημόσιος τομέας)"
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(પબ્લિક ડોમેન)"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(נחלת הכלל)"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(पब्लिक डोमेन)"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(közkincs)"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(domain publik)"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "（パブリックドメイン）"
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(ಸಾರ್ವಜನಿಕ ಡೊಮೇನ್)"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(퍼블릭 도메인)"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(domain awam)"
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(പബ്ലിക് ഡൊമൈൻ)"
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(सार्वजनिक डोमेन)"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(offentlig eiendom)"
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(ସାର୍ବଜନୀନ ଡୋମେନ୍)"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(domena publiczna)"
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(ਪਬਲਿਕ ਡੋਮੇਨ)"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(domeniu public)"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(общественное достояние)"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(verejná doména)"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(javna domena)"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(allmän egendom)"
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(பொது உரிமை)"
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(పబ్లిక్ డొమైన్)"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(สาธารณสมบัติ)"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(kamu malı)"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(суспільне надбання)"
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(پبلک ڈومین)"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "(miền công cộng)"
+          }
+        }
+      }
+    },
+    "credits.source.community.name": {
+      "localizations": {
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Segnalazioni utenti NoSpam"
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam user reports"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denuncias de usuarios de NoSpam"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Signalements des utilisateurs NoSpam"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam-Nutzermeldungen"
+          }
+        },
+        "pt": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denúncias de utilizadores do NoSpam"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denúncias de usuários do NoSpam"
+          }
+        },
+        "ar": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "بلاغات مستخدمي NoSpam"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam ব্যবহারকারীদের রিপোর্ট"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Denúncies d'usuaris de NoSpam"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam 用户举报"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam 使用者檢舉"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prijave korisnika NoSpam"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nahlášení uživatelů NoSpam"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam-brugerrapporter"
+          }
+        },
+        "nl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam-gebruikersmeldingen"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam-käyttäjien ilmoitukset"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Αναφορές χρηστών NoSpam"
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam વપરાશકર્તા રિપોર્ટ્સ"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "דיווחי משתמשי NoSpam"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam उपयोगकर्ता रिपोर्ट"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam felhasználói jelentések"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laporan pengguna NoSpam"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpamユーザーの報告"
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam ಬಳಕೆದಾರರ ವರದಿಗಳು"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam 사용자 신고"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Laporan pengguna NoSpam"
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam ഉപയോക്തൃ റിപ്പോർട്ടുകൾ"
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam वापरकर्ता तक्रारी"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam-brukerrapporter"
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam ଉପଯୋଗକର୍ତ୍ତା ରିପୋର୍ଟ"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zgłoszenia użytkowników NoSpam"
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam ਵਰਤੋਂਕਾਰ ਰਿਪੋਰਟਾਂ"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Raportări ale utilizatorilor NoSpam"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Жалобы пользователей NoSpam"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nahlásenia používateľov NoSpam"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prijave uporabnikov NoSpam"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam-användarrapporter"
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam பயனர் புகார்கள்"
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam వినియోగదారు నివేదికలు"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "รายงานจากผู้ใช้ NoSpam"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam kullanıcı bildirimleri"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Повідомлення користувачів NoSpam"
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NoSpam صارف رپورٹس"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Báo cáo từ người dùng NoSpam"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">Brojevi koje je izravno prijavila zajednica NoSpam (najmanje 5 prijava različitih korisnika).</string>
+    <string name="credits_source_shopsicuro_desc">Projekt MIMIT &quot;Tim protiv prijevara&quot; · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Otvoreni popis koji održava zajednica, uređuju thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Popis španjolskih spam brojeva, uređuje mv12star.</string>
+    <string name="credits_source_callavert_desc">Američki spam brojevi prikupljeni iz javnih podataka &quot;Do Not Call&quot; FTC-a, uređuje projekt Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">Raspon francuskih telemarketing prefiksa, uređuje jeromerobert (također izvor podataka za open source aplikaciju NoPhoneSpam). Autor ne navodi izričitu licencu.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Prefiksi zakonski rezervirani za telemarketing od strane TRAI (Indija, serija 140xx/1600) i Anatel (Brazil, +55303). Samo identifikacija: označavaju sve usklađene telemarketing pozive, ne samo zlouporabne.</string>
+    <string name="credits_source_wangiri_desc">Međunarodni prefiksi često spomenuti u prijavama prijevara &quot;wangiri&quot; (jedan zvuk koji navodi na uzvratni pozivanje broja s posebnom tarifom). Samo identifikacija, pozivi se ne blokiraju jer su to cijele zemlje s mnogo legitimnih poziva.</string>
+    <string name="credits_public_domain_note">(javna domena)</string>
+    <string name="credits_source_community_name">Prijave korisnika NoSpam</string>
 </resources>

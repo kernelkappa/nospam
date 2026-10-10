@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">Номери, про які напряму повідомила спільнота NoSpam (щонайменше 5 повідомлень від різних користувачів).</string>
+    <string name="credits_source_shopsicuro_desc">Проєкт MIMIT «Команда проти шахрайства» · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Відкритий список, який підтримує спільнота, курує thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Список іспанських спам-номерів, курує mv12star.</string>
+    <string name="credits_source_callavert_desc">Американські спам-номери, зібрані з публічних даних FTC «Do Not Call», курує проєкт Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">Діапазони французьких префіксів телемаркетингу, курує jeromerobert (також джерело даних для застосунку NoPhoneSpam з відкритим кодом). Автор не заявив явної ліцензії.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Префікси, законно зарезервовані для телемаркетингу TRAI (Індія, серія 140xx/1600) та Anatel (Бразилія, +55303). Лише ідентифікація: позначають усі законні дзвінки телемаркетингу, а не лише зловживання.</string>
+    <string name="credits_source_wangiri_desc">Міжнародні префікси, часто згадувані в повідомленнях про шахрайство «вангірі» (один дзвінок, щоб спонукати вас перетелефонувати на номер із підвищеним тарифом). Лише ідентифікація, дзвінки не блокуються, оскільки це цілі країни з багатьма законними дзвінками також.</string>
+    <string name="credits_public_domain_note">(суспільне надбання)</string>
+    <string name="credits_source_community_name">Повідомлення користувачів NoSpam</string>
 </resources>

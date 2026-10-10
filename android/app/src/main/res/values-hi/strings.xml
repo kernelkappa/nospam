@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">NoSpam समुदाय द्वारा सीधे रिपोर्ट किए गए नंबर (कम से कम 5 अलग-अलग उपयोगकर्ताओं से रिपोर्ट)।</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT &quot;एंटी-फ्रॉड स्क्वाड&quot; परियोजना · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">समुदाय द्वारा बनाई रखी गई ओपन लिस्ट, thesqual87 / Kallm द्वारा क्यूरेट की गई।</string>
+    <string name="credits_source_lista_es_desc">स्पेनिश स्पैम नंबरों की सूची, mv12star द्वारा क्यूरेट की गई।</string>
+    <string name="credits_source_callavert_desc">FTC के सार्वजनिक &quot;Do Not Call&quot; डेटा से संकलित अमेरिकी स्पैम नंबर, Call Avert परियोजना द्वारा क्यूरेट किए गए।</string>
+    <string name="credits_source_nophonespam_fr_desc">फ्रेंच टेलीमार्केटिंग प्रीफिक्स रेंज, jeromerobert द्वारा क्यूरेट की गई (यह ओपन-सोर्स NoPhoneSpam ऐप का डेटा स्रोत भी है)। लेखक ने कोई स्पष्ट लाइसेंस घोषित नहीं किया है।</string>
+    <string name="credits_source_regulatory_prefixes_desc">TRAI (भारत, 140xx/1600 श्रेणी) और Anatel (ब्राज़ील, +55303) द्वारा कानूनी रूप से टेलीमार्केटिंग के लिए आरक्षित प्रीफिक्स। केवल पहचान: यह सभी अनुपालन वाली टेलीमार्केटिंग कॉलों को चिह्नित करता है, न कि केवल दुरुपयोग वाली कॉलों को।</string>
+    <string name="credits_source_wangiri_desc">&quot;वांगिरी&quot; धोखाधड़ी रिपोर्टों में अक्सर उल्लिखित अंतरराष्ट्रीय प्रीफिक्स (एक घंटी जो आपको प्रीमियम-रेट नंबर पर कॉलबैक करने के लिए लुभाती है)। केवल पहचान, कॉल ब्लॉक नहीं की जाती क्योंकि ये पूरे देश हैं जिनमें कई वैध कॉल भी होती हैं।</string>
+    <string name="credits_public_domain_note">(पब्लिक डोमेन)</string>
+    <string name="credits_source_community_name">NoSpam उपयोगकर्ता रिपोर्ट</string>
 </resources>

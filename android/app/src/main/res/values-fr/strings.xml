@@ -103,4 +103,14 @@
     <string name="error_no_internet">Aucune connexion Internet : vérifiez votre connexion et réessayez.</string>
     <string name="error_timeout">La requête a pris trop de temps : veuillez réessayer plus tard.</string>
     <string name="error_server_unavailable">Le serveur est actuellement indisponible (code %1$d). Veuillez réessayer plus tard.</string>
+    <string name="credits_source_community_desc">Numéros signalés directement par la communauté NoSpam (au moins 5 signalements d\'utilisateurs différents).</string>
+    <string name="credits_source_shopsicuro_desc">Projet MIMIT « Équipe antifraude » · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Liste ouverte maintenue par la communauté, gérée par thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Liste de numéros indésirables espagnols, gérée par mv12star.</string>
+    <string name="credits_source_callavert_desc">Numéros indésirables américains compilés à partir des données publiques « Do Not Call » de la FTC, gérés par le projet Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">Plages de préfixes de télémarketing français, gérées par jeromerobert (également source de données de l\'application open source NoPhoneSpam). Aucune licence explicite déclarée par l\'auteur.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Préfixes réservés par la réglementation au télémarketing par TRAI (Inde, série 140xx/1600) et Anatel (Brésil, +55303). Avis uniquement : ils identifient tous les appels de télémarketing conformes, pas seulement les abusifs.</string>
+    <string name="credits_source_wangiri_desc">Préfixes internationaux souvent cités dans les signalements d\'escroqueries « wangiri » (une sonnerie pour inciter à rappeler un numéro à tarification spéciale). Avis uniquement, les appels ne sont pas bloqués car ce sont des pays entiers avec de nombreux appels légitimes.</string>
+    <string name="credits_public_domain_note">(domaine public)</string>
+    <string name="credits_source_community_name">Signalements des utilisateurs NoSpam</string>
 </resources>

@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">Čísla nahlásené priamo komunitou NoSpam (aspoň 5 nahlásení od rôznych používateľov).</string>
+    <string name="credits_source_shopsicuro_desc">Projekt MIMIT „Protipodvodný tím“ · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Otvorený zoznam udržiavaný komunitou, kurátori thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Zoznam španielskych spamových čísel, kurátor mv12star.</string>
+    <string name="credits_source_callavert_desc">Americké spamové čísla zostavené z verejných údajov FTC „Do Not Call“, kurátor projektu Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">Rozsahy francúzskych telemarketingových predvolieb, kurátor jeromerobert (zároveň zdroj dát open source aplikácie NoPhoneSpam). Autor neuviedol žiadnu explicitnú licenciu.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Predvoľby zákonne vyhradené pre telemarketing úradom TRAI (India, séria 140xx/1600) a Anatel (Brazília, +55303). Len identifikácia: označujú všetky legitímne telemarketingové hovory, nielen zneužívajúce.</string>
+    <string name="credits_source_wangiri_desc">Medzinárodné predvoľby, ktoré sa často spomínajú v hláseniach podvodov „wangiri“ (jedno zazvonenie, ktoré vás naláka na spätné volanie na číslo so špeciálnou tarifikáciou). Len identifikácia, hovory sa neblokujú, pretože ide o celé krajiny s mnohými legitímnymi hovormi.</string>
+    <string name="credits_public_domain_note">(verejná doména)</string>
+    <string name="credits_source_community_name">Nahlásenia používateľov NoSpam</string>
 </resources>

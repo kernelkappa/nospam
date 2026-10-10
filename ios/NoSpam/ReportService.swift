@@ -5,11 +5,11 @@ enum ReportCategory: String, CaseIterable {
 
     var displayName: String {
         switch self {
-        case .spam: return String(localized: "category.spam")
-        case .scam: return String(localized: "category.scam")
-        case .telemarketing: return String(localized: "category.telemarketing")
-        case .robocall: return String(localized: "category.robocall")
-        case .other: return String(localized: "category.other")
+        case .spam: return LanguagePreference.shared.string("category.spam")
+        case .scam: return LanguagePreference.shared.string("category.scam")
+        case .telemarketing: return LanguagePreference.shared.string("category.telemarketing")
+        case .robocall: return LanguagePreference.shared.string("category.robocall")
+        case .other: return LanguagePreference.shared.string("category.other")
         }
     }
 }
@@ -21,9 +21,9 @@ enum ReportError: LocalizedError {
     var errorDescription: String? {
         switch self {
         case .invalidResponse:
-            return String(localized: "error.invalidResponse")
+            return LanguagePreference.shared.string("error.invalidResponse")
         case .server(let statusCode):
-            return String(format: String(localized: "error.serverUnavailable"), statusCode)
+            return String(format: LanguagePreference.shared.string("error.serverUnavailable"), statusCode)
         }
     }
 }

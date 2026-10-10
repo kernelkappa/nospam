@@ -91,18 +91,18 @@ struct ContentView: View {
                     showSettingsGuide = true
                 }
 
-                Text(String(localized: "main.smsFilterHint"))
+                Text(LanguagePreference.shared.string("main.smsFilterHint"))
                 .font(.footnote)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
 
-                Button(isSyncing ? String(localized: "main.syncing") : String(localized: "main.syncButton")) {
+                Button(isSyncing ? LanguagePreference.shared.string("main.syncing") : LanguagePreference.shared.string("main.syncButton")) {
                     syncDatabase()
                 }
                 .disabled(isSyncing)
 
                 if isDatabaseStale {
-                    Text(String(localized: "main.staleHint"))
+                    Text(LanguagePreference.shared.string("main.staleHint"))
                         .font(.footnote)
                         .foregroundStyle(.orange)
                         .multilineTextAlignment(.center)
@@ -139,7 +139,7 @@ struct ContentView: View {
                 onboardingShown = true
             }
         } message: {
-            Text(String(localized: "onboarding.message"))
+            Text(LanguagePreference.shared.string("onboarding.message"))
         }
         .alert("Attiva il blocco chiamate", isPresented: $showSettingsGuide) {
             Button("Vai su Impostazioni") {
@@ -149,18 +149,18 @@ struct ContentView: View {
             }
             Button("Annulla", role: .cancel) {}
         } message: {
-            Text(String(localized: "settingsGuide.message"))
+            Text(LanguagePreference.shared.string("settingsGuide.message"))
         }
     }
 
     private var blockingStatusDescription: String {
         switch enabledStatus {
         case .enabled:
-            return String(localized: "status.callBlockingActive")
+            return LanguagePreference.shared.string("status.callBlockingActive")
         case .disabled:
-            return String(localized: "status.callBlockingDisabled")
+            return LanguagePreference.shared.string("status.callBlockingDisabled")
         default:
-            return String(localized: "status.callBlockingUnknown")
+            return LanguagePreference.shared.string("status.callBlockingUnknown")
         }
     }
 
@@ -186,11 +186,11 @@ struct ContentView: View {
             DispatchQueue.main.async {
                 if let error, !CallDirectoryManager.isExtensionDisabledError(error) {
                     statusMessage = String(
-                        format: String(localized: "status.extensionReloadFailed"),
+                        format: LanguagePreference.shared.string("status.extensionReloadFailed"),
                         UserFacingError.message(for: error)
                     )
                 } else {
-                    statusMessage = String(localized: "status.blockedLocally")
+                    statusMessage = LanguagePreference.shared.string("status.blockedLocally")
                 }
             }
         }
@@ -204,11 +204,11 @@ struct ContentView: View {
         Task {
             do {
                 try await ReportService.submit(phoneNumberE164: normalized, category: category)
-                statusMessage = String(localized: "status.blockedAndReported")
+                statusMessage = LanguagePreference.shared.string("status.blockedAndReported")
             } catch {
                 ErrorReporter.report(error, context: "blockAndReport")
                 statusMessage = String(
-                    format: String(localized: "status.reportFailed"),
+                    format: LanguagePreference.shared.string("status.reportFailed"),
                     UserFacingError.message(for: error)
                 )
             }
@@ -224,14 +224,14 @@ struct ContentView: View {
         Task {
             do {
                 try await SpamDatabaseSync.sync()
-                syncMessage = String(localized: "status.syncSuccess")
+                syncMessage = LanguagePreference.shared.string("status.syncSuccess")
             } catch {
                 if CallDirectoryManager.isExtensionDisabledError(error) {
-                    syncMessage = String(localized: "status.syncSuccessButDisabled")
+                    syncMessage = LanguagePreference.shared.string("status.syncSuccessButDisabled")
                 } else {
                     ErrorReporter.report(error, context: "syncDatabase")
                     syncMessage = String(
-                        format: String(localized: "status.errorPrefix"),
+                        format: LanguagePreference.shared.string("status.errorPrefix"),
                         UserFacingError.message(for: error)
                     )
                 }

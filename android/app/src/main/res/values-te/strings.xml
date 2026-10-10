@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">NoSpam కమ్యూనిటీ ద్వారా నేరుగా నివేదించబడిన నంబర్లు (వేర్వేరు వినియోగదారుల నుండి కనీసం 5 నివేదికలు).</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT &quot;మోసం నిరోధక బృందం&quot; ప్రాజెక్ట్ · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">కమ్యూనిటీ నిర్వహించే ఓపెన్ లిస్ట్, thesqual87 / Kallm క్యురేట్ చేశారు.</string>
+    <string name="credits_source_lista_es_desc">స్పానిష్ స్పామ్ నంబర్ల జాబితా, mv12star క్యురేట్ చేశారు.</string>
+    <string name="credits_source_callavert_desc">FTC పబ్లిక్ &quot;Do Not Call&quot; డేటా నుండి సంకలనం చేసిన US స్పామ్ నంబర్లు, Call Avert ప్రాజెక్ట్ క్యురేట్ చేసింది.</string>
+    <string name="credits_source_nophonespam_fr_desc">ఫ్రెంచ్ టెలీమార్కెటింగ్ ప్రిఫిక్స్ శ్రేణులు, jeromerobert క్యురేట్ చేశారు (ఓపెన్ సోర్స్ NoPhoneSpam యాప్ యొక్క డేటా మూలం కూడా). రచయిత స్పష్టమైన లైసెన్స్ ప్రకటించలేదు.</string>
+    <string name="credits_source_regulatory_prefixes_desc">TRAI (భారతదేశం, 140xx/1600 సిరీస్) మరియు Anatel (బ్రెజిల్, +55303) ద్వారా టెలీమార్కెటింగ్ కోసం చట్టబద్ధంగా రిజర్వ్ చేయబడిన ప్రిఫిక్స్‌లు. కేవలం గుర్తింపు మాత్రమే: ఇది దుర్వినియోగం చేసే కాల్స్ మాత్రమే కాకుండా, అన్ని నిబంధనలకు కట్టుబడిన టెలీమార్కెటింగ్ కాల్స్‌ను సూచిస్తుంది.</string>
+    <string name="credits_source_wangiri_desc">&quot;వాంగిరి&quot; మోసం నివేదికలలో తరచుగా ప్రస్తావించబడే అంతర్జాతీయ ప్రిఫిక్స్‌లు (ప్రీమియం-రేట్ నంబర్‌కు తిరిగి కాల్ చేయడానికి ప్రేరేపించే ఒక రింగ్). గుర్తింపు మాత్రమే, అనేక చట్టబద్ధమైన కాల్స్ కూడా ఉన్న పూర్తి దేశాలు కాబట్టి కాల్స్ బ్లాక్ చేయబడవు.</string>
+    <string name="credits_public_domain_note">(పబ్లిక్ డొమైన్)</string>
+    <string name="credits_source_community_name">NoSpam వినియోగదారు నివేదికలు</string>
 </resources>

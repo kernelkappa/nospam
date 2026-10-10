@@ -50,13 +50,13 @@ struct UpdateRequiredView: View {
             Image(systemName: "arrow.down.circle.fill")
                 .font(.system(size: 64))
                 .foregroundStyle(.tint)
-            Text(String(localized: "update.title"))
+            Text(LanguagePreference.shared.string("update.title"))
                 .font(.title2.bold())
-            Text(String(localized: "update.message"))
+            Text(LanguagePreference.shared.string("update.message"))
             .multilineTextAlignment(.center)
             .foregroundStyle(.secondary)
             .padding(.horizontal, 32)
-            Button(String(localized: "update.button")) {
+            Button(LanguagePreference.shared.string("update.button")) {
                 UIApplication.shared.open(UpdateGate.appStoreURL)
             }
             .buttonStyle(.borderedProminent)

@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">หมายเลขที่รายงานโดยตรงจากชุมชน NoSpam (รายงานอย่างน้อย 5 ครั้งจากผู้ใช้ที่แตกต่างกัน)</string>
+    <string name="credits_source_shopsicuro_desc">โครงการ MIMIT &quot;ทีมต่อต้านการฉ้อโกง&quot; · Federazione iConsumatori</string>
+    <string name="credits_source_blocklist_it_desc">รายการแบบเปิดที่ดูแลโดยชุมชน จัดทำโดย thesqual87 / Kallm</string>
+    <string name="credits_source_lista_es_desc">รายการหมายเลขสแปมของสเปน จัดทำโดย mv12star</string>
+    <string name="credits_source_callavert_desc">หมายเลขสแปมของสหรัฐฯ ที่รวบรวมจากข้อมูลสาธารณะ &quot;Do Not Call&quot; ของ FTC จัดทำโดยโครงการ Call Avert</string>
+    <string name="credits_source_nophonespam_fr_desc">ช่วงรหัสนำหน้าเทเลมาร์เก็ตติ้งของฝรั่งเศส จัดทำโดย jeromerobert (ยังเป็นแหล่งข้อมูลของแอปโอเพนซอร์ส NoPhoneSpam) ผู้เขียนไม่ได้ประกาศสัญญาอนุญาตที่ชัดเจน</string>
+    <string name="credits_source_regulatory_prefixes_desc">รหัสนำหน้าที่สงวนไว้ตามกฎหมายสำหรับเทเลมาร์เก็ตติ้งโดย TRAI (อินเดีย ชุด 140xx/1600) และ Anatel (บราซิล +55303) ใช้เพื่อระบุเท่านั้น: ระบุสายเทเลมาร์เก็ตติ้งที่เป็นไปตามกฎทั้งหมด ไม่ใช่แค่สายที่ละเมิด</string>
+    <string name="credits_source_wangiri_desc">รหัสนำหน้าระดับนานาชาติที่มักถูกอ้างถึงในรายงานการฉ้อโกง &quot;wangiri&quot; (โทรเข้าหนึ่งครั้งเพื่อหลอกให้คุณโทรกลับไปยังหมายเลขที่มีค่าบริการพิเศษ) ใช้เพื่อระบุเท่านั้น ไม่มีการบล็อกสาย เนื่องจากเป็นประเทศทั้งประเทศที่มีสายที่ถูกต้องตามกฎหมายจำนวนมากด้วย</string>
+    <string name="credits_public_domain_note">(สาธารณสมบัติ)</string>
+    <string name="credits_source_community_name">รายงานจากผู้ใช้ NoSpam</string>
 </resources>

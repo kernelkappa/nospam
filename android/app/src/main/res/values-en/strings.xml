@@ -103,4 +103,14 @@
     <string name="error_no_internet">No Internet connection: check your connection and try again.</string>
     <string name="error_timeout">The request took too long: please try again later.</string>
     <string name="error_server_unavailable">The server is currently unavailable (code %1$d). Please try again later.</string>
+    <string name="credits_source_community_desc">Numbers reported directly by the NoSpam community (at least 5 reports from different users).</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT &quot;Anti-Fraud Squad&quot; project · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Open list maintained by the community, curated by thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">List of Spanish spam numbers, curated by mv12star.</string>
+    <string name="credits_source_callavert_desc">US spam numbers compiled from the FTC\'s public &quot;Do Not Call&quot; data, curated by the Call Avert project.</string>
+    <string name="credits_source_nophonespam_fr_desc">French telemarketing prefix ranges, curated by jeromerobert (also the data source for the open-source NoPhoneSpam app). No explicit license stated by the author.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Prefixes legally reserved for telemarketing by TRAI (India, 140xx/1600 series) and Anatel (Brazil, +55303). Identify-only: they flag all compliant telemarketing calls, not just abusive ones.</string>
+    <string name="credits_source_wangiri_desc">International prefixes often cited in &quot;wangiri&quot; scam reports (one ring to lure you into calling back a premium-rate number). Identify-only, calls are not blocked since these are entire countries with many legitimate calls too.</string>
+    <string name="credits_public_domain_note">(public domain)</string>
+    <string name="credits_source_community_name">NoSpam user reports</string>
 </resources>

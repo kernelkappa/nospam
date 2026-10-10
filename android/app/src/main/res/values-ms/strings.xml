@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">Nombor yang dilaporkan terus oleh komuniti NoSpam (sekurang-kurangnya 5 laporan daripada pengguna berbeza).</string>
+    <string name="credits_source_shopsicuro_desc">Projek MIMIT &quot;Skuad Anti-Penipuan&quot; · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Senarai terbuka yang diselenggara oleh komuniti, dikuratori oleh thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Senarai nombor spam Sepanyol, dikuratori oleh mv12star.</string>
+    <string name="credits_source_callavert_desc">Nombor spam AS yang dikumpulkan daripada data awam &quot;Do Not Call&quot; FTC, dikuratori oleh projek Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">Julat kod awalan telemarketing Perancis, dikuratori oleh jeromerobert (juga sumber data untuk aplikasi sumber terbuka NoPhoneSpam). Tidak ada lesen eksplisit yang dinyatakan oleh penulis.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Kod awalan yang dikhaskan secara sah untuk telemarketing oleh TRAI (India, siri 140xx/1600) dan Anatel (Brazil, +55303). Hanya pengenalan: ia menandakan semua panggilan telemarketing yang mematuhi, bukan hanya yang menyalahgunakan.</string>
+    <string name="credits_source_wangiri_desc">Kod awalan antarabangsa yang sering disebut dalam laporan penipuan &quot;wangiri&quot; (satu dering untuk memikat anda menelefon semula ke nombor berkadar premium). Hanya pengenalan, panggilan tidak disekat kerana ini adalah seluruh negara dengan banyak panggilan sah juga.</string>
+    <string name="credits_public_domain_note">(domain awam)</string>
+    <string name="credits_source_community_name">Laporan pengguna NoSpam</string>
 </resources>

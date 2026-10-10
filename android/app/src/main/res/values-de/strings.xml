@@ -103,4 +103,14 @@
     <string name="error_no_internet">Keine Internetverbindung: Überprüfe deine Verbindung und versuche es erneut.</string>
     <string name="error_timeout">Die Anfrage hat zu lange gedauert: Bitte versuche es später erneut.</string>
     <string name="error_server_unavailable">Der Server ist derzeit nicht erreichbar (Code %1$d). Bitte versuche es später erneut.</string>
+    <string name="credits_source_community_desc">Von der NoSpam-Community direkt gemeldete Nummern (mindestens 5 Meldungen von verschiedenen Nutzern).</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT-Projekt „Betrugsbekämpfungsteam“ · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Offene, von der Community gepflegte Liste, kuratiert von thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Liste spanischer Spam-Nummern, kuratiert von mv12star.</string>
+    <string name="credits_source_callavert_desc">US-Spam-Nummern, zusammengestellt aus den öffentlichen „Do Not Call“-Daten der FTC, kuratiert vom Call-Avert-Projekt.</string>
+    <string name="credits_source_nophonespam_fr_desc">Bereiche französischer Telemarketing-Vorwahlen, kuratiert von jeromerobert (auch Datenquelle der Open-Source-App NoPhoneSpam). Vom Autor keine ausdrückliche Lizenz angegeben.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Vorwahlen, die gesetzlich dem Telemarketing vorbehalten sind, von TRAI (Indien, Serie 140xx/1600) und Anatel (Brasilien, +55303). Nur Hinweis: Sie kennzeichnen alle konformen Telemarketing-Anrufe, nicht nur missbräuchliche.</string>
+    <string name="credits_source_wangiri_desc">Internationale Vorwahlen, die oft in Berichten über „Wangiri“-Betrug genannt werden (ein Klingeln, um zum Rückruf einer Sondernummer zu verleiten). Nur Hinweis, Anrufe werden nicht blockiert, da es sich um ganze Länder mit vielen legitimen Anrufen handelt.</string>
+    <string name="credits_public_domain_note">(gemeinfrei)</string>
+    <string name="credits_source_community_name">NoSpam-Nutzermeldungen</string>
 </resources>

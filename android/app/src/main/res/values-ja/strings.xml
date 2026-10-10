@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">NoSpamコミュニティが直接報告した番号（異なるユーザーから少なくとも5件の報告）。</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT「詐欺対策チーム」プロジェクト · Federazione iConsumatori。</string>
+    <string name="credits_source_blocklist_it_desc">コミュニティによって維持されているオープンリスト。thesqual87 / Kallmによるキュレーション。</string>
+    <string name="credits_source_lista_es_desc">スペインのスパム番号リスト。mv12starによるキュレーション。</string>
+    <string name="credits_source_callavert_desc">FTCの公開「Do Not Call」データから編集された米国のスパム番号。Call Avertプロジェクトによるキュレーション。</string>
+    <string name="credits_source_nophonespam_fr_desc">フランスのテレマーケティング局番範囲。jeromerobertによるキュレーション（オープンソースアプリNoPhoneSpamのデータソースでもある）。作者による明示的なライセンスの表明なし。</string>
+    <string name="credits_source_regulatory_prefixes_desc">TRAI（インド、140xx/1600シリーズ）およびAnatel（ブラジル、+55303）により法律でテレマーケティング用に予約された番号帯。識別のみ：悪用されているものだけでなく、規約に準拠したすべてのテレマーケティング通話を示します。</string>
+    <string name="credits_source_wangiri_desc">「ワン切り」詐欺の報告でよく挙げられる国際プレフィックス（高額通話料番号への再発信を誘う一回の着信）。識別のみで、通話はブロックされません。これらは国全体であり、多くの正当な通話も含まれるためです。</string>
+    <string name="credits_public_domain_note">（パブリックドメイン）</string>
+    <string name="credits_source_community_name">NoSpamユーザーの報告</string>
 </resources>

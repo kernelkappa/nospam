@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">Números denunciats directament per la comunitat de NoSpam (almenys 5 denúncies d\'usuaris diferents).</string>
+    <string name="credits_source_shopsicuro_desc">Projecte MIMIT &quot;Equip Antifrau&quot; · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Llista oberta mantinguda per la comunitat, a cura de thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Llista de números de spam espanyols, a cura de mv12star.</string>
+    <string name="credits_source_callavert_desc">Números de spam dels EUA compilats a partir de les dades públiques &quot;Do Not Call&quot; de la FTC, a cura del projecte Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">Rangs de prefixos de telemàrqueting francesos, a cura de jeromerobert (també font de dades de l\'app de codi obert NoPhoneSpam). L\'autor no declara cap llicència explícita.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Prefixos reservats per normativa al telemàrqueting per TRAI (Índia, sèrie 140xx/1600) i Anatel (Brasil, +55303). Només avís: identifiquen totes les trucades de telemàrqueting conforme, no només les abusives.</string>
+    <string name="credits_source_wangiri_desc">Prefixos internacionals sovint citats en denúncies d\'estafes &quot;wangiri&quot; (un to per induir a trucar a un número de tarifació especial). Només avís, les trucades no es bloquegen perquè són països sencers amb moltes trucades legítimes.</string>
+    <string name="credits_public_domain_note">(domini públic)</string>
+    <string name="credits_source_community_name">Denúncies d\'usuaris de NoSpam</string>
 </resources>

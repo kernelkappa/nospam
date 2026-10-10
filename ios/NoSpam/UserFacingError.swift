@@ -7,14 +7,14 @@ import Foundation
 enum UserFacingError {
     static func message(for error: Error) -> String {
         if CallDirectoryManager.isExtensionDisabledError(error) {
-            return String(localized: "error.extensionDisabled")
+            return LanguagePreference.shared.string("error.extensionDisabled")
         }
         if let urlError = error as? URLError {
             switch urlError.code {
             case .notConnectedToInternet, .networkConnectionLost, .dataNotAllowed:
-                return String(localized: "error.noInternet")
+                return LanguagePreference.shared.string("error.noInternet")
             case .timedOut:
-                return String(localized: "error.timeout")
+                return LanguagePreference.shared.string("error.timeout")
             default:
                 break
             }

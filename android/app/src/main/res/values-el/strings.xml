@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">Αριθμοί που αναφέρθηκαν απευθείας από την κοινότητα του NoSpam (τουλάχιστον 5 αναφορές από διαφορετικούς χρήστες).</string>
+    <string name="credits_source_shopsicuro_desc">Έργο MIMIT «Ομάδα κατά της απάτης» · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Ανοιχτή λίστα που συντηρείται από την κοινότητα, επιμέλεια thesqual87 / Kallm.</string>
+    <string name="credits_source_lista_es_desc">Λίστα ισπανικών αριθμών ανεπιθύμητων κλήσεων, επιμέλεια mv12star.</string>
+    <string name="credits_source_callavert_desc">Αμερικανικοί αριθμοί ανεπιθύμητων κλήσεων που συγκεντρώθηκαν από τα δημόσια δεδομένα «Do Not Call» της FTC, επιμέλεια του έργου Call Avert.</string>
+    <string name="credits_source_nophonespam_fr_desc">Εύρη γαλλικών προθεμάτων τηλεμάρκετινγκ, επιμέλεια jeromerobert (επίσης πηγή δεδομένων της ανοιχτού κώδικα εφαρμογής NoPhoneSpam). Ο συντάκτης δεν δηλώνει ρητή άδεια χρήσης.</string>
+    <string name="credits_source_regulatory_prefixes_desc">Προθέματα που διατηρούνται νομίμως για τηλεμάρκετινγκ από την TRAI (Ινδία, σειρά 140xx/1600) και την Anatel (Βραζιλία, +55303). Μόνο αναγνώριση: επισημαίνουν όλες τις συμβατές κλήσεις τηλεμάρκετινγκ, όχι μόνο τις καταχρηστικές.</string>
+    <string name="credits_source_wangiri_desc">Διεθνή προθέματα που αναφέρονται συχνά σε αναφορές απάτης «wangiri» (ένα κουδούνισμα για να σας παρασύρει να καλέσετε έναν αριθμό ειδικής χρέωσης). Μόνο αναγνώριση, οι κλήσεις δεν αποκλείονται επειδή πρόκειται για ολόκληρες χώρες με πολλές νόμιμες κλήσεις.</string>
+    <string name="credits_public_domain_note">(δημόσιος τομέας)</string>
+    <string name="credits_source_community_name">Αναφορές χρηστών NoSpam</string>
 </resources>

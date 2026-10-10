@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">NoSpam കമ്മ്യൂണിറ്റി നേരിട്ട് റിപ്പോർട്ട് ചെയ്ത നമ്പറുകൾ (വ്യത്യസ്ത ഉപയോക്താക്കളിൽ നിന്ന് കുറഞ്ഞത് 5 റിപ്പോർട്ടുകൾ).</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT &quot;ആന്റി-ഫ്രോഡ് സ്ക്വാഡ്&quot; പ്രോജക്റ്റ് · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">കമ്മ്യൂണിറ്റി പരിപാലിക്കുന്ന ഓപ്പൺ ലിസ്റ്റ്, thesqual87 / Kallm ക്യൂറേറ്റ് ചെയ്തത്.</string>
+    <string name="credits_source_lista_es_desc">സ്പാനിഷ് സ്പാം നമ്പറുകളുടെ ലിസ്റ്റ്, mv12star ക്യൂറേറ്റ് ചെയ്തത്.</string>
+    <string name="credits_source_callavert_desc">FTC യുടെ പൊതു &quot;Do Not Call&quot; ഡാറ്റയിൽ നിന്ന് സമാഹരിച്ച യുഎസ് സ്പാം നമ്പറുകൾ, Call Avert പ്രോജക്റ്റ് ക്യൂറേറ്റ് ചെയ്തത്.</string>
+    <string name="credits_source_nophonespam_fr_desc">ഫ്രഞ്ച് ടെലിമാർക്കറ്റിംഗ് പ്രിഫിക്സ് ശ്രേണികൾ, jeromerobert ക്യൂറേറ്റ് ചെയ്തത് (ഓപ്പൺ സോഴ്സ് NoPhoneSpam ആപ്പിന്റെ ഡാറ്റ ഉറവിടം കൂടിയാണ്). രചയിതാവ് വ്യക്തമായ ലൈസൻസ് പ്രഖ്യാപിച്ചിട്ടില്ല.</string>
+    <string name="credits_source_regulatory_prefixes_desc">TRAI (ഇന്ത്യ, 140xx/1600 സീരീസ്), Anatel (ബ്രസീൽ, +55303) എന്നിവ നിയമപരമായി ടെലിമാർക്കറ്റിംഗിനായി സംവരണം ചെയ്ത പ്രിഫിക്സുകൾ. തിരിച്ചറിയൽ മാത്രം: ദുരുപയോഗം ചെയ്യുന്നവ മാത്രമല്ല, എല്ലാ അനുസരണമുള്ള ടെലിമാർക്കറ്റിംഗ് കോളുകളെയും ഇത് അടയാളപ്പെടുത്തുന്നു.</string>
+    <string name="credits_source_wangiri_desc">&quot;വാംഗിരി&quot; തട്ടിപ്പ് റിപ്പോർട്ടുകളിൽ പലപ്പോഴും പരാമർശിക്കുന്ന അന്താരാഷ്ട്ര പ്രിഫിക്സുകൾ (പ്രീമിയം-റേറ്റ് നമ്പറിലേക്ക് തിരികെ വിളിക്കാൻ പ്രേരിപ്പിക്കുന്ന ഒരു റിംഗ്). തിരിച്ചറിയൽ മാത്രം, നിരവധി നിയമാനുസൃത കോളുകളും ഉള്ള മുഴുവൻ രാജ്യങ്ങളായതിനാൽ കോളുകൾ തടയപ്പെടുന്നില്ല.</string>
+    <string name="credits_public_domain_note">(പബ്ലിക് ഡൊമൈൻ)</string>
+    <string name="credits_source_community_name">NoSpam ഉപയോക്തൃ റിപ്പോർട്ടുകൾ</string>
 </resources>

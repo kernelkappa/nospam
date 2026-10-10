@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">NoSpam சமூகத்தால் நேரடியாக புகாரளிக்கப்பட்ட எண்கள் (வெவ்வேறு பயனர்களிடமிருந்து குறைந்தது 5 புகார்கள்).</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT &quot;மோசடி எதிர்ப்பு குழு&quot; திட்டம் · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">சமூகத்தால் பராமரிக்கப்படும் திறந்த பட்டியல், thesqual87 / Kallm ஆல் தொகுக்கப்பட்டது.</string>
+    <string name="credits_source_lista_es_desc">ஸ்பானிஷ் ஸ்பாம் எண்களின் பட்டியல், mv12star ஆல் தொகுக்கப்பட்டது.</string>
+    <string name="credits_source_callavert_desc">FTC இன் பொது &quot;Do Not Call&quot; தரவிலிருந்து தொகுக்கப்பட்ட அமெரிக்க ஸ்பாம் எண்கள், Call Avert திட்டத்தால் தொகுக்கப்பட்டது.</string>
+    <string name="credits_source_nophonespam_fr_desc">பிரெஞ்சு டெலிமார்க்கெட்டிங் முன்னொட்டு வரம்புகள், jeromerobert ஆல் தொகுக்கப்பட்டது (ஓப்பன் சோர்ஸ் NoPhoneSpam ஆப்பின் தரவு மூலமும் ஆகும்). ஆசிரியர் வெளிப்படையான உரிமத்தை அறிவிக்கவில்லை.</string>
+    <string name="credits_source_regulatory_prefixes_desc">TRAI (இந்தியா, 140xx/1600 தொடர்) மற்றும் Anatel (பிரேசில், +55303) ஆல் சட்டப்படி டெலிமார்க்கெட்டிங்கிற்காக ஒதுக்கப்பட்ட முன்னொட்டுகள். அடையாளம் மட்டும்: இவை தவறாக பயன்படுத்தப்படும் அழைப்புகளை மட்டும் அல்ல, இணக்கமான அனைத்து டெலிமார்க்கெட்டிங் அழைப்புகளையும் குறிக்கும்.</string>
+    <string name="credits_source_wangiri_desc">&quot;வாங்கிரி&quot; மோசடி அறிக்கைகளில் அடிக்கடி குறிப்பிடப்படும் சர்வதேச முன்னொட்டுகள் (ப்ரீமியம்-రேட் எண்ணுக்கு மீண்டும் அழைக்க தூண்டும் ஒரு ரிங்). அடையாளம் மட்டும், பல சட்டபூர்வமான அழைப்புகளும் கொண்ட முழு நாடுகளாக இருப்பதால் அழைப்புகள் தடுக்கப்படுவதில்லை.</string>
+    <string name="credits_public_domain_note">(பொது உரிமை)</string>
+    <string name="credits_source_community_name">NoSpam பயனர் புகார்கள்</string>
 </resources>

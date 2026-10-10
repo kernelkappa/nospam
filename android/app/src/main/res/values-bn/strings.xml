@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">NoSpam কমিউনিটি দ্বারা সরাসরি রিপোর্ট করা নম্বর (বিভিন্ন ব্যবহারকারীর কাছ থেকে কমপক্ষে ৫টি রিপোর্ট)।</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT &quot;অ্যান্টি-ফ্রড স্কোয়াড&quot; প্রকল্প · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">কমিউনিটি দ্বারা পরিচালিত উন্মুক্ত তালিকা, কিউরেট করেছেন thesqual87 / Kallm।</string>
+    <string name="credits_source_lista_es_desc">স্প্যানিশ স্প্যাম নম্বরের তালিকা, কিউরেট করেছেন mv12star।</string>
+    <string name="credits_source_callavert_desc">FTC-এর সরকারি &quot;Do Not Call&quot; ডেটা থেকে সংকলিত মার্কিন স্প্যাম নম্বর, Call Avert প্রকল্প দ্বারা কিউরেট করা।</string>
+    <string name="credits_source_nophonespam_fr_desc">ফ্রেঞ্চ টেলিমার্কেটিং প্রিফিক্স রেঞ্জ, কিউরেট করেছেন jeromerobert (এটি ওপেন-সোর্স NoPhoneSpam অ্যাপের ডেটা উৎসও)। লেখক কোনো সুস্পষ্ট লাইসেন্স ঘোষণা করেননি।</string>
+    <string name="credits_source_regulatory_prefixes_desc">TRAI (ভারত, 140xx/1600 সিরিজ) এবং Anatel (ব্রাজিল, +55303) দ্বারা টেলিমার্কেটিংয়ের জন্য নিয়মতভাবে সংরক্ষিত প্রিফিক্স। শুধুমাত্র চিহ্নিতকরণ: এটি সব অনুগত টেলিমার্কেটিং কল চিহ্নিত করে, শুধু অপব্যবহারকারী কল নয়।</string>
+    <string name="credits_source_wangiri_desc">&quot;ওয়াংগিরি&quot; প্রতারণা রিপোর্টে প্রায়শই উল্লেখিত আন্তর্জাতিক প্রিফিক্স (একটি রিং যা আপনাকে একটি প্রিমিয়াম-রেট নম্বরে কলব্যাক করতে প্ররোচিত করে)। শুধুমাত্র চিহ্নিতকরণ, কলগুলি ব্লক করা হয় না কারণ এগুলি সম্পূর্ণ দেশ যেখানে অনেক বৈধ কলও রয়েছে।</string>
+    <string name="credits_public_domain_note">(পাবলিক ডোমেইন)</string>
+    <string name="credits_source_community_name">NoSpam ব্যবহারকারীদের রিপোর্ট</string>
 </resources>

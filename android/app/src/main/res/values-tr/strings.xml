@@ -104,4 +104,14 @@
     <string name="settings_language_uk">Українська</string>
     <string name="settings_language_ur">اردو</string>
     <string name="settings_language_vi">Tiếng Việt</string>
+    <string name="credits_source_community_desc">NoSpam topluluğu tarafından doğrudan bildirilen numaralar (farklı kullanıcılardan en az 5 bildirim).</string>
+    <string name="credits_source_shopsicuro_desc">MIMIT &quot;Dolandırıcılıkla Mücadele Ekibi&quot; projesi · Federazione iConsumatori.</string>
+    <string name="credits_source_blocklist_it_desc">Topluluk tarafından sürdürülen açık liste, thesqual87 / Kallm tarafından düzenlenmiştir.</string>
+    <string name="credits_source_lista_es_desc">İspanyol spam numaraları listesi, mv12star tarafından düzenlenmiştir.</string>
+    <string name="credits_source_callavert_desc">FTC\'nin kamuya açık &quot;Do Not Call&quot; verilerinden derlenen ABD spam numaraları, Call Avert projesi tarafından düzenlenmiştir.</string>
+    <string name="credits_source_nophonespam_fr_desc">Fransız telepazarlama ön ek aralıkları, jeromerobert tarafından düzenlenmiştir (aynı zamanda açık kaynak NoPhoneSpam uygulamasının veri kaynağıdır). Yazar tarafından açık bir lisans belirtilmemiştir.</string>
+    <string name="credits_source_regulatory_prefixes_desc">TRAI (Hindistan, 140xx/1600 serisi) ve Anatel (Brezilya, +55303) tarafından yasal olarak telepazarlama için ayrılmış ön ekler. Yalnızca tanımlama: yalnızca kötüye kullananları değil, uyumlu tüm telepazarlama aramalarını işaretler.</string>
+    <string name="credits_source_wangiri_desc">&quot;Wangiri&quot; dolandırıcılık raporlarında sıkça belirtilen uluslararası ön ekler (sizi özel ücretli bir numarayı geri aramaya kandırmak için tek bir çalma). Yalnızca tanımlama, çağrılar engellenmez çünkü bunlar çok sayıda meşru aramanın da geldiği tüm ülkelerdir.</string>
+    <string name="credits_public_domain_note">(kamu malı)</string>
+    <string name="credits_source_community_name">NoSpam kullanıcı bildirimleri</string>
 </resources>
