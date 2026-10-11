@@ -1,5 +1,6 @@
 package com.konrad.nospam
 
+import android.app.Activity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -23,6 +24,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.core.os.LocaleListCompat
@@ -78,6 +80,7 @@ private enum class SupportedLanguage(val tag: String?, val labelRes: Int) {
 
 @Composable
 fun SettingsScreen(themeMode: MutableState<ThemeMode>, onOpenCredits: () -> Unit, modifier: Modifier = Modifier) {
+    val context = LocalContext.current
     Column(
         modifier = modifier.fillMaxSize().padding(24.dp),
         verticalArrangement = Arrangement.spacedBy(20.dp),
@@ -128,6 +131,11 @@ fun SettingsScreen(themeMode: MutableState<ThemeMode>, onOpenCredits: () -> Unit
                             LocaleListCompat.forLanguageTags(language.tag)
                         }
                         AppCompatDelegate.setApplicationLocales(locales)
+                        // setApplicationLocales non garantisce un ricaricamento
+                        // immediato della schermata corrente - su alcuni
+                        // dispositivi/versioni si propaga solo alla prossima
+                        // apertura dell'app. Forziamo noi il recreate.
+                        (context as? Activity)?.recreate()
                     },
                 )
             }
