@@ -2,10 +2,9 @@ package com.konrad.nospam
 
 import android.content.Context
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 
 enum class ThemeMode(val prefValue: String) {
     SYSTEM("system"),
@@ -35,8 +34,20 @@ object ThemePreference {
     }
 }
 
-/** Stato osservabile del tema corrente, cosi' il cambio si riflette subito nella UI. */
+/** Stato osservabile del tema corrente: scrivere su `.value` aggiorna anche
+ * subito la UI (via AppCompatDelegate, che puo' ricreare l'Activity) E
+ * persiste la scelta, cosi' la nuova istanza dell'Activity la ritrova. */
 @Composable
-fun rememberThemeMode(context: Context): androidx.compose.runtime.MutableState<ThemeMode> {
-    return remember { mutableStateOf(ThemePreference.get(context)) }
+fun rememberThemeMode(context: Context): MutableState<ThemeMode> {
+    val backing = remember { mutableStateOf(ThemePreference.get(context)) }
+    return remember {
+        object : MutableState<ThemeMode> by backing {
+            override var value: ThemeMode
+                get() = backing.value
+                set(mode) {
+                    backing.value = mode
+                    ThemePreference.set(context, mode)
+                }
+        }
+    }
 }
