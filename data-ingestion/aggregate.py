@@ -172,7 +172,25 @@ def build_prefix_db() -> list[dict]:
     return sorted(prefix_db.values(), key=lambda entry: entry["prefix"])
 
 
+def load_previous_db() -> dict[str, dict]:
+    if not OUTPUT_PATH.exists():
+        return {}
+    try:
+        previous_entries = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    return {entry["number"]: entry for entry in previous_entries}
+
+
 def main() -> None:
+    # Archivio incrementale: un numero pubblicato in passato non sparisce mai
+    # solo perche' la fonte che lo aveva fornito e' irraggiungibile o scomparsa
+    # oggi (es. mv12star/lista-telefonos-spam, cancellato da GitHub il
+    # 13/10/2026 insieme all'intero account, che da solo forniva l'85% del
+    # database). Le fonti ancora vive possono sempre aggiornare un numero
+    # gia' noto; nessuna fonte, viva o morta, puo' farlo scomparire.
+    previous_db = load_previous_db()
+
     rows = fetch_reports()
     spam_db = build_spam_db(rows)
     crowdsourced_count = len(spam_db)
@@ -199,6 +217,12 @@ def main() -> None:
         external_total += len(qualifying)
         print(f"Numeri da {name} (>= {MIN_REPORTS} segnalazioni, di {len(entries)} totali): {len(qualifying)}", file=sys.stderr)
 
+    carried_over = 0
+    for number, entry in previous_db.items():
+        if number not in spam_db:
+            spam_db[number] = entry
+            carried_over += 1
+
     sorted_entries = sorted(spam_db.values(), key=lambda entry: entry["number"])
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -217,6 +241,7 @@ def main() -> None:
     print(f"Segnalazioni lette: {len(rows)}", file=sys.stderr)
     print(f"Numeri da crowdsourcing (>= {MIN_REPORTS} segnalazioni): {crowdsourced_count}", file=sys.stderr)
     print(f"Numeri da fonti esterne (totale grezzo): {external_total}", file=sys.stderr)
+    print(f"Numeri riportati da run precedenti (non ritrovati oggi): {carried_over}", file=sys.stderr)
     print(f"Numeri pubblicati totali (uniti, deduplicati): {len(sorted_entries)}", file=sys.stderr)
     print(f"Output numeri: {OUTPUT_PATH}", file=sys.stderr)
     print(f"Output numeri (lite): {LITE_OUTPUT_PATH}", file=sys.stderr)
