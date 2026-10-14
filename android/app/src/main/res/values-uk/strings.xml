@@ -109,6 +109,7 @@
     <string name="credits_source_blocklist_it_desc">Відкритий список, який підтримує спільнота, курує thesqual87 / Kallm.</string>
     <string name="credits_source_lista_es_desc">Список іспанських спам-номерів, курує mv12star.</string>
     <string name="credits_source_callavert_desc">Американські спам-номери, зібрані з публічних даних FTC «Do Not Call», курує проєкт Call Avert.</string>
+    <string name="credits_source_bundesnetzagentur_desc">Номери, щодо яких німецький регулятор зв\'язку Bundesnetzagentur уже вжив заходів за зловживання (спам-SMS, шахрайські дозвонювачі, маніпуляція номером тощо).</string>
     <string name="credits_source_nophonespam_fr_desc">Діапазони французьких префіксів телемаркетингу, курує jeromerobert (також джерело даних для застосунку NoPhoneSpam з відкритим кодом). Автор не заявив явної ліцензії.</string>
     <string name="credits_source_regulatory_prefixes_desc">Префікси, законно зарезервовані для телемаркетингу TRAI (Індія, серія 140xx/1600) та Anatel (Бразилія, +55303). Лише ідентифікація: позначають усі законні дзвінки телемаркетингу, а не лише зловживання.</string>
     <string name="credits_source_wangiri_desc">Міжнародні префікси, часто згадувані в повідомленнях про шахрайство «вангірі» (один дзвінок, щоб спонукати вас перетелефонувати на номер із підвищеним тарифом). Лише ідентифікація, дзвінки не блокуються, оскільки це цілі країни з багатьма законними дзвінками також.</string>

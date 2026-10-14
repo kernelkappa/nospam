@@ -20,6 +20,7 @@ import requests
 
 from external_sources import (
     fetch_blocklist_telefonica_italia,
+    fetch_bundesnetzagentur_de,
     fetch_callavert_us,
     fetch_lista_telefonos_spam_es,
     fetch_nophonespam_fr,
@@ -31,6 +32,7 @@ EXTERNAL_SOURCES = {
     "ShopSicuro": fetch_shopsicuro,
     "blocklist-telefonica-italia": fetch_blocklist_telefonica_italia,
     "lista-telefonos-spam": fetch_lista_telefonos_spam_es,
+    "bundesnetzagentur-de": fetch_bundesnetzagentur_de,
 }
 
 # Dati FTC "Do Not Call" non verificati (vedi external_sources.py): a
@@ -81,6 +83,15 @@ PREFIX_OUTPUT_PATH = Path(os.environ.get("PREFIX_OUTPUT_PATH", "docs/spam_prefix
 LITE_OUTPUT_PATH = Path(os.environ.get("LITE_OUTPUT_PATH", "docs/spam_numbers_lite.txt"))
 PAGE_SIZE = 1000
 
+# I numeri delle fonti esterne pre-verificate vengono archiviati anche su
+# Supabase (non solo nel JSON pubblicato), con questo device_hash sentinella
+# invece di un hash di dispositivo reale: non modifichiamo lo schema della
+# tabella, riusiamo la colonna esistente. fetch_reports() esclude
+# esplicitamente questi hash dal conteggio crowdsourcing, altrimenti un numero
+# gia' pre-verificato contribuirebbe anche a MIN_REPORTS insieme alle vere
+# segnalazioni utente.
+EXTERNAL_SOURCE_DEVICE_HASH_PREFIX = "external:"
+
 
 def fetch_reports() -> list[dict]:
     headers = {
@@ -95,6 +106,7 @@ def fetch_reports() -> list[dict]:
             headers=headers,
             params={
                 "select": "phone_number,category,device_hash",
+                "device_hash": f"not.like.{EXTERNAL_SOURCE_DEVICE_HASH_PREFIX}*",
                 "limit": PAGE_SIZE,
                 "offset": offset,
             },
@@ -107,6 +119,77 @@ def fetch_reports() -> list[dict]:
             break
         offset += PAGE_SIZE
     return rows
+
+
+def fetch_archived_external_numbers(device_hash: str) -> set[str]:
+    headers = {
+        "apikey": SUPABASE_SERVICE_KEY,
+        "Authorization": f"Bearer {SUPABASE_SERVICE_KEY}",
+    }
+    numbers: set[str] = set()
+    offset = 0
+    while True:
+        resp = requests.get(
+            f"{SUPABASE_URL}/rest/v1/reports",
+            headers=headers,
+            params={
+                "select": "phone_number",
+                "device_hash": f"eq.{device_hash}",
+                "limit": PAGE_SIZE,
+                "offset": offset,
+            },
+            timeout=30,
+        )
+        resp.raise_for_status()
+        page = resp.json()
+        numbers.update(row["phone_number"] for row in page)
+        if len(page) < PAGE_SIZE:
+            break
+        offset += PAGE_SIZE
+    return numbers
+
+
+def archive_external_entries(source_name: str, entries: list[dict]) -> None:
+    """Scrive su Supabase, una volta sola per numero, le voci di una fonte
+    esterna gia' pubblicate nel JSON: cosi' non vivono solo li', anche in un
+    archivio interrogabile. Controlla prima cosa e' gia' stato archiviato per
+    questa fonte e inserisce solo i numeri nuovi: altrimenti ogni run
+    quotidiano duplicherebbe l'intera fonte ogni giorno (device_hash +
+    phone_number sono univoci solo insieme alla data, che cambierebbe ad ogni
+    run)."""
+    if not entries:
+        return
+    device_hash = f"{EXTERNAL_SOURCE_DEVICE_HASH_PREFIX}{source_name}"
+    already = fetch_archived_external_numbers(device_hash)
+    new_rows = [
+        {
+            "phone_number": entry["number"],
+            "category": entry["category"],
+            "device_hash": device_hash,
+            # Valore convenzionale: queste righe non vengono da nessuna delle
+            # due app, il vincolo CHECK della colonna non ammette altro.
+            "app_platform": "ios",
+        }
+        for entry in entries
+        if entry["number"] not in already
+    ]
+    if not new_rows:
+        return
+
+    headers = {
+        "apikey": SUPABASE_SERVICE_KEY,
+        "Authorization": f"Bearer {SUPABASE_SERVICE_KEY}",
+        "Content-Type": "application/json",
+    }
+    for i in range(0, len(new_rows), PAGE_SIZE):
+        batch = new_rows[i : i + PAGE_SIZE]
+        resp = requests.post(f"{SUPABASE_URL}/rest/v1/reports", headers=headers, json=batch, timeout=30)
+        resp.raise_for_status()
+    print(
+        f"Archiviati su Supabase {len(new_rows)} numeri nuovi per {source_name} "
+        f"(gia' presenti: {len(already)})",
+        file=sys.stderr,
+    )
 
 
 def normalize_e164(raw_number: str) -> str | None:
@@ -205,6 +288,7 @@ def main() -> None:
         merge_external_entries(spam_db, entries)
         external_total += len(entries)
         print(f"Numeri da {name}: {len(entries)}", file=sys.stderr)
+        archive_external_entries(name, entries)
 
     for name, fetch_fn in UNVERIFIED_EXTERNAL_SOURCES.items():
         try:
@@ -216,6 +300,7 @@ def main() -> None:
         merge_external_entries(spam_db, qualifying)
         external_total += len(qualifying)
         print(f"Numeri da {name} (>= {MIN_REPORTS} segnalazioni, di {len(entries)} totali): {len(qualifying)}", file=sys.stderr)
+        archive_external_entries(name, qualifying)
 
     carried_over = 0
     for number, entry in previous_db.items():

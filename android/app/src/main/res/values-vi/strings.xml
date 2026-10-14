@@ -109,6 +109,7 @@
     <string name="credits_source_blocklist_it_desc">Danh sách mở do cộng đồng duy trì, biên tập bởi thesqual87 / Kallm.</string>
     <string name="credits_source_lista_es_desc">Danh sách số spam Tây Ban Nha, biên tập bởi mv12star.</string>
     <string name="credits_source_callavert_desc">Số spam Mỹ được tổng hợp từ dữ liệu công khai &quot;Do Not Call&quot; của FTC, biên tập bởi dự án Call Avert.</string>
+    <string name="credits_source_bundesnetzagentur_desc">Các số điện thoại mà Bundesnetzagentur, cơ quan quản lý viễn thông Đức, đã thực hiện biện pháp xử lý do lạm dụng (SMS rác, trình quay số lừa đảo, giả mạo số và tương tự).</string>
     <string name="credits_source_nophonespam_fr_desc">Phạm vi tiền tố tiếp thị qua điện thoại của Pháp, biên tập bởi jeromerobert (cũng là nguồn dữ liệu cho ứng dụng mã nguồn mở NoPhoneSpam). Tác giả không công bố giấy phép rõ ràng.</string>
     <string name="credits_source_regulatory_prefixes_desc">Tiền tố được pháp luật dành riêng cho tiếp thị qua điện thoại bởi TRAI (Ấn Độ, dòng 140xx/1600) và Anatel (Brazil, +55303). Chỉ nhận dạng: đánh dấu tất cả các cuộc gọi tiếp thị hợp lệ, không chỉ các cuộc gọi lạm dụng.</string>
     <string name="credits_source_wangiri_desc">Tiền tố quốc tế thường được đề cập trong các báo cáo lừa đảo &quot;wangiri&quot; (một tiếng chuông để dụ bạn gọi lại số tính phí cao). Chỉ nhận dạng, các cuộc gọi không bị chặn vì đây là toàn bộ quốc gia có nhiều cuộc gọi hợp pháp khác.</string>

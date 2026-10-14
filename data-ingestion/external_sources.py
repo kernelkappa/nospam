@@ -40,6 +40,20 @@ telemarketing (non solo quelle illecite): finiscono quindi in
 spam_prefixes.json in modalita' "identify" (etichetta informativa, la
 chiamata continua a squillare) invece di "block", perche' bloccare
 includerebbe anche telemarketing legittimo e conforme.
+
+bundesnetzagentur-de (bundesnetzagentur.de, l'autorita' federale tedesca delle
+telecomunicazioni) pubblica in PDF la "Maßnahmenliste": i numeri su cui ha
+gia' preso un provvedimento per abuso (spam SMS/fax/e-mail, dialer truffaldini,
+hacking/manipolazione del numero, ecc.), aggiornata continuamente per l'anno
+in corso. E' un atto amministrativo pubblico, non uno scraping di terzi: la
+trattiamo come fonte pre-verificata, anzi piu' solida delle altre perche' i
+numeri hanno gia' un provvedimento formale alle spalle, non solo segnalazioni.
+Il PDF usa due formati diversi (una tabella per la parte corrente, blocchi di
+testo "Bescheid/Kategorie/Maßnahme/Rufnummern" per l'archivio a fine lista):
+il parsing li gestisce entrambi pagina per pagina. Alcuni numeri sono scritti
+in formato internazionale con il prefisso di selezione "00" (equivalente al
+"+") invece che in formato nazionale tedesco: sono numeri esteri abusati
+tramite instradamento/operatori tedeschi, non un errore di estrazione.
 """
 
 import csv
@@ -48,6 +62,7 @@ import io
 import re
 import time
 
+import phonenumbers
 import requests
 
 SHOPSICURO_BASE_URL = "https://www.shopsicuro.it/numeri-spam"
@@ -261,3 +276,99 @@ def fetch_regulatory_telemarketing_prefixes() -> list[dict]:
     """Prefissi di telemarketing imposti per norma da TRAI (India) e Anatel
     (Brasile), non una lista scaricata: nessuna richiesta HTTP necessaria."""
     return list(REGULATORY_TELEMARKETING_PREFIXES)
+
+
+# Lista "corrente" (anno in corso), continuamente aggiornata: non usiamo gli
+# archivi storici per anno (2016-2024) perche' un numero disattivato anni fa
+# e' probabilmente stato riassegnato a un nuovo intestatario innocente nel
+# frattempo (riciclo delle numerazioni).
+BUNDESNETZAGENTUR_DE_URL = (
+    "https://www.bundesnetzagentur.de/SharedDocs/Downloads/DE/Sachgebiete/Telekommunikation/"
+    "Verbraucher/Rufnummernmissbrauch/Massnahmenlisten/Ma%C3%9Fnahmenliste2025.pdf?__blob=publicationFile"
+)
+
+# Le etichette di categoria usate nel PDF non corrispondono 1:1 alle nostre:
+# le raggruppiamo nelle stesse 5 usate da tutte le altre fonti.
+BUNDESNETZAGENTUR_DE_CATEGORY_MAP = {
+    "spam-sms": "spam",
+    "spam sms": "spam",
+    "sms": "spam",
+    "spam-fax": "spam",
+    "spam-e-mail": "spam",
+    "spam-messenger": "spam",
+    "sms messenger mit zahlungsaufforderung": "scam",
+    "internet popup": "scam",
+    "telefonie-dialer": "scam",
+    "rufnummernmanipulation": "scam",
+    "hacking": "scam",
+    "fake hotlines": "scam",
+    "bandansage": "robocall",
+    "sonstiges": "other",
+    "spezifische missbrauchsformen": "other",
+    "umgehungstatbestand": "other",
+}
+
+
+def _bundesnetzagentur_category(label: str) -> str:
+    normalized = " ".join(label.split()).strip().lower()
+    return BUNDESNETZAGENTUR_DE_CATEGORY_MAP.get(normalized, "other")
+
+
+def _bundesnetzagentur_normalize_number(raw: str) -> str | None:
+    digits = raw.strip()
+    if not digits:
+        return None
+    try:
+        # "00" e' il prefisso di selezione internazionale tedesco, equivalente
+        # al "+": alcuni numeri nell'archivio (soprattutto categoria Hacking)
+        # sono esteri scritti in questo formato, non nazionali tedeschi.
+        parsed = phonenumbers.parse("+" + digits[2:], None) if digits.startswith("00") else phonenumbers.parse(digits, "DE")
+    except phonenumbers.NumberParseException:
+        return None
+    if not phonenumbers.is_valid_number(parsed):
+        return None
+    return phonenumbers.format_number(parsed, phonenumbers.PhoneNumberFormat.E164)
+
+
+def fetch_bundesnetzagentur_de() -> list[dict]:
+    """Legge la Maßnahmenliste della Bundesnetzagentur (PDF): import di
+    pdfplumber fatto qui dentro, non in cima al modulo, perche' e' una
+    dipendenza pesante usata solo da questa fonte."""
+    import pdfplumber
+
+    resp = requests.get(BUNDESNETZAGENTUR_DE_URL, timeout=60)
+    resp.raise_for_status()
+
+    entries_by_number: dict[str, dict] = {}
+
+    def add_entries(raw_numbers: str, category_label: str) -> None:
+        category = _bundesnetzagentur_category(category_label)
+        for raw_number in re.split(r"[,\s]+", raw_numbers.strip()):
+            if not raw_number:
+                continue
+            number = _bundesnetzagentur_normalize_number(raw_number)
+            if number:
+                entries_by_number[number] = {"number": number, "report_count": 1, "category": category}
+
+    with pdfplumber.open(io.BytesIO(resp.content)) as pdf:
+        for page in pdf.pages:
+            # Parte corrente della lista: tabella con colonne
+            # Bescheid vom | Rufnummer(e) | Kategorie | Maßnahme.
+            tables = page.extract_tables()
+            if tables:
+                for table in tables:
+                    for row in table:
+                        if not row or len(row) < 3 or not row[0] or not re.match(r"\d{2}\.\d{2}\.\d{4}", row[0]):
+                            continue
+                        add_entries(row[1] or "", row[2] or "")
+                continue
+
+            # Archivio a fine lista: blocchi di testo libero, non tabellari,
+            # uno per Bescheid (puo' usare "Rufnummer:" o "Rufnummern:").
+            text = page.extract_text() or ""
+            category_match = re.search(r"Kategorie:\s*(.+?)\s*Maßnahme:", text, re.DOTALL)
+            numbers_match = re.search(r"Rufnummern?:\s*(.+)", text, re.DOTALL)
+            if category_match and numbers_match:
+                add_entries(numbers_match.group(1), category_match.group(1))
+
+    return list(entries_by_number.values())

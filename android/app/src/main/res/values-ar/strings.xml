@@ -109,6 +109,7 @@
     <string name="credits_source_blocklist_it_desc">قائمة مفتوحة يحافظ عليها المجتمع، من إعداد thesqual87 / Kallm.</string>
     <string name="credits_source_lista_es_desc">قائمة أرقام السبام الإسبانية، من إعداد mv12star.</string>
     <string name="credits_source_callavert_desc">أرقام سبام أمريكية مُجمَّعة من بيانات &quot;عدم الاتصال&quot; العامة الصادرة عن FTC، من إعداد مشروع Call Avert.</string>
+    <string name="credits_source_bundesnetzagentur_desc">أرقام اتخذت بشأنها الهيئة الاتحادية الألمانية للاتصالات (Bundesnetzagentur) إجراءً بالفعل بسبب إساءة الاستخدام (رسائل نصية مزعجة، برامج اتصال احتيالية، التلاعب بالأرقام وما شابه).</string>
     <string name="credits_source_nophonespam_fr_desc">نطاقات مقدمات التسويق الهاتفي الفرنسية، من إعداد jeromerobert (وهو أيضاً مصدر بيانات تطبيق NoPhoneSpam مفتوح المصدر). لم يُعلن المؤلف عن ترخيص صريح.</string>
     <string name="credits_source_regulatory_prefixes_desc">بادئات مخصصة قانونياً للتسويق الهاتفي من هيئة TRAI (الهند، سلسلة 140xx/1600) وAnatel (البرازيل، +55303). للتعريف فقط: تحدد كل مكالمات التسويق الهاتفي الملتزمة، وليس فقط المسيئة منها.</string>
     <string name="credits_source_wangiri_desc">بادئات دولية يتم ذكرها غالباً في بلاغات عمليات احتيال &quot;وانجيري&quot; (رنة واحدة لحثك على معاودة الاتصال برقم بتكلفة خاصة). للتعريف فقط، لا يتم حظر المكالمات لأنها دول كاملة بها الكثير من المكالمات المشروعة أيضاً.</string>

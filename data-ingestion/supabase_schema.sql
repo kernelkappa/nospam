@@ -19,6 +19,15 @@ create table if not exists reports (
 create unique index if not exists reports_device_number_day_idx
     on reports (device_hash, phone_number, report_date);
 
+-- Convenzione (non un vincolo imposto a livello di schema): device_hash che
+-- inizia con "external:" (es. "external:bundesnetzagentur-de") non e' un
+-- vero hash di dispositivo ma l'archivio dei numeri gia' pubblicati da una
+-- fonte esterna pre-verificata (vedi aggregate.py,
+-- EXTERNAL_SOURCE_DEVICE_HASH_PREFIX). app_platform per queste righe vale
+-- 'ios' per convenzione (il vincolo CHECK non ammette altro), senza alcun
+-- significato reale. aggregate.py esclude questi hash dal calcolo del
+-- crowdsourcing quando legge la tabella.
+
 create index if not exists reports_phone_number_idx on reports (phone_number);
 
 alter table reports enable row level security;

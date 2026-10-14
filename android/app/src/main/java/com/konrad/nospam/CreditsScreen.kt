@@ -63,6 +63,13 @@ private val dataSources = listOf(
         url = "https://github.com/Call-Avert/callavert-spam-list",
     ),
     DataSource(
+        name = "Bundesnetzagentur",
+        descriptionRes = R.string.credits_source_bundesnetzagentur_desc,
+        license = "§ 5 UrhG",
+        url = "https://www.bundesnetzagentur.de/DE/Vportal/TK/Aerger/Aktuelles/Ma%C3%9Fnahmen/start_RM.html",
+        isPublicDomain = true,
+    ),
+    DataSource(
         name = "nophonespam-fr",
         descriptionRes = R.string.credits_source_nophonespam_fr_desc,
         license = null,

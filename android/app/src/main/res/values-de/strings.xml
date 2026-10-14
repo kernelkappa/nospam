@@ -108,6 +108,7 @@
     <string name="credits_source_blocklist_it_desc">Offene, von der Community gepflegte Liste, kuratiert von thesqual87 / Kallm.</string>
     <string name="credits_source_lista_es_desc">Liste spanischer Spam-Nummern, kuratiert von mv12star.</string>
     <string name="credits_source_callavert_desc">US-Spam-Nummern, zusammengestellt aus den öffentlichen „Do Not Call“-Daten der FTC, kuratiert vom Call-Avert-Projekt.</string>
+    <string name="credits_source_bundesnetzagentur_desc">Rufnummern, gegen die die Bundesnetzagentur bereits wegen Missbrauchs (Spam-SMS, betrügerische Dialer, Rufnummernmanipulation u. Ä.) eine Maßnahme ergriffen hat.</string>
     <string name="credits_source_nophonespam_fr_desc">Bereiche französischer Telemarketing-Vorwahlen, kuratiert von jeromerobert (auch Datenquelle der Open-Source-App NoPhoneSpam). Vom Autor keine ausdrückliche Lizenz angegeben.</string>
     <string name="credits_source_regulatory_prefixes_desc">Vorwahlen, die gesetzlich dem Telemarketing vorbehalten sind, von TRAI (Indien, Serie 140xx/1600) und Anatel (Brasilien, +55303). Nur Hinweis: Sie kennzeichnen alle konformen Telemarketing-Anrufe, nicht nur missbräuchliche.</string>
     <string name="credits_source_wangiri_desc">Internationale Vorwahlen, die oft in Berichten über „Wangiri“-Betrug genannt werden (ein Klingeln, um zum Rückruf einer Sondernummer zu verleiten). Nur Hinweis, Anrufe werden nicht blockiert, da es sich um ganze Länder mit vielen legitimen Anrufen handelt.</string>

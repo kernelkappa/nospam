@@ -109,6 +109,7 @@
     <string name="credits_source_blocklist_it_desc">Öppen lista som underhålls av communityn, kurerad av thesqual87 / Kallm.</string>
     <string name="credits_source_lista_es_desc">Lista över spanska spamnummer, kurerad av mv12star.</string>
     <string name="credits_source_callavert_desc">Amerikanska spamnummer sammanställda från FTC:s offentliga &quot;Do Not Call&quot;-data, kurerad av Call Avert-projektet.</string>
+    <string name="credits_source_bundesnetzagentur_desc">Nummer som Bundesnetzagentur, den tyska telemyndigheten, redan har vidtagit åtgärder mot på grund av missbruk (spam-sms, bedrägliga uppringare, nummermanipulation och liknande).</string>
     <string name="credits_source_nophonespam_fr_desc">Franska telemarketing-prefixintervall, kurerad av jeromerobert (även datakälla för öppen källkod-appen NoPhoneSpam). Ingen explicit licens angiven av författaren.</string>
     <string name="credits_source_regulatory_prefixes_desc">Prefix som enligt lag är reserverade för telemarketing av TRAI (Indien, 140xx/1600-serien) och Anatel (Brasilien, +55303). Endast identifiering: de markerar alla regelrätta telemarketingsamtal, inte bara missbrukande.</string>
     <string name="credits_source_wangiri_desc">Internationella prefix som ofta nämns i rapporter om &quot;wangiri&quot;-bedrägerier (en ringsignal för att locka dig att ringa tillbaka till ett nummer med specialtaxa). Endast identifiering, samtal blockeras inte eftersom det är hela länder med många legitima samtal också.</string>

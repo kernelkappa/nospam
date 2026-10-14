@@ -109,6 +109,7 @@
     <string name="credits_source_blocklist_it_desc">コミュニティによって維持されているオープンリスト。thesqual87 / Kallmによるキュレーション。</string>
     <string name="credits_source_lista_es_desc">スペインのスパム番号リスト。mv12starによるキュレーション。</string>
     <string name="credits_source_callavert_desc">FTCの公開「Do Not Call」データから編集された米国のスパム番号。Call Avertプロジェクトによるキュレーション。</string>
+    <string name="credits_source_bundesnetzagentur_desc">ドイツの電気通信規制当局Bundesnetzagenturが、不正利用（迷惑SMS、詐欺的ダイヤラー、番号偽装など）を理由にすでに措置を講じた番号。</string>
     <string name="credits_source_nophonespam_fr_desc">フランスのテレマーケティング局番範囲。jeromerobertによるキュレーション（オープンソースアプリNoPhoneSpamのデータソースでもある）。作者による明示的なライセンスの表明なし。</string>
     <string name="credits_source_regulatory_prefixes_desc">TRAI（インド、140xx/1600シリーズ）およびAnatel（ブラジル、+55303）により法律でテレマーケティング用に予約された番号帯。識別のみ：悪用されているものだけでなく、規約に準拠したすべてのテレマーケティング通話を示します。</string>
     <string name="credits_source_wangiri_desc">「ワン切り」詐欺の報告でよく挙げられる国際プレフィックス（高額通話料番号への再発信を誘う一回の着信）。識別のみで、通話はブロックされません。これらは国全体であり、多くの正当な通話も含まれるためです。</string>

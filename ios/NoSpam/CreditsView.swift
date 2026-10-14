@@ -60,6 +60,13 @@ private let dataSources: [DataSource] = [
         license: "CC0 1.0",
         url: URL(string: "https://github.com/Call-Avert/callavert-spam-list")!
     ),
+    DataSource(
+        name: "Bundesnetzagentur",
+        descriptionKey: "credits.source.bundesnetzagentur.description",
+        license: "§ 5 UrhG",
+        isPublicDomain: true,
+        url: URL(string: "https://www.bundesnetzagentur.de/DE/Vportal/TK/Aerger/Aktuelles/Ma%C3%9Fnahmen/start_RM.html")!
+    ),
 ]
 
 struct CreditsView: View {
