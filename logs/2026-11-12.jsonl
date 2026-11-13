@@ -1,0 +1,1 @@
+{"id": "c7555b7d-18c2-4d63-9f01-f196313cb107", "platform": "ios", "context": "BGTaskManager.handleRefresh", "message": "Error Domain=com.apple.CallKit.error.calldirectorymanager Code=6 \"(null)\"", "app_version": "2.0.0", "os_version": "Version 27.2 (Build 24B119)", "reported_at": "2026-11-12T19:39:14.263331+00:00", "level": "info"}
