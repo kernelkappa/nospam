@@ -1,0 +1,1 @@
+{"id": "440fd014-777f-452a-9b15-26f8ace434fd", "platform": "ios", "context": "blockAndReport", "message": "server(statusCode: 409)", "app_version": "2.0.0", "os_version": "Version 27.0.1 (Build 24A446)", "reported_at": "2026-11-13T15:30:17.037815+00:00", "level": "error"}
